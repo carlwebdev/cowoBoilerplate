@@ -20,6 +20,40 @@ box-sizing: border-box; /* Opera/IE 8+ */
 
 
 
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+	
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+
+
+
+
 /* ==========================================================================
    HTML5 display definitions - Normalize.css
    ========================================================================== */
@@ -73,6 +107,29 @@ img {
 	font-size:100%; /* for headings, works */
 }
 
+
+
+/*
+
+body {
+	line-height: 1;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+*/
+
+
+
+
 ol, ul /* , li */ {list-style:none;}
 
 img {max-width:100%; height:auto;} /* The height is added to ensure the aspect ratio of the image is retained. */
@@ -113,22 +170,30 @@ strong {
 
 
 
+/**
+ * Address inconsistent and variable font size in all browsers.  - Normalize.js ( O dont really use this tag anyways, hmmm...)
+ */
+
+small {
+    font-size: 80%;
+}
 
 
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers. - Normalize.css
+ */
 
-/* START - CLEARFIX */ /* apply clearfix to parent */
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 	}
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
-/*/END - CLEARFIX */
 
+sup {top: -0.5em;}
+
+sub {bottom: -0.25em;}
 
 
 

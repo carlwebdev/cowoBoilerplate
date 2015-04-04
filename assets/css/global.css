@@ -28,13 +28,41 @@ and its two values border-box and content-box are supported everywhere.
   /* Opera/IE 8+ */
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+	
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
 /* ==========================================================================
    HTML5 display definitions - Normalize.css
    ========================================================================== */
 /**
  * Correct `block` display not defined in IE 8/9. 
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000376}}
 article,
 aside,
 details,
@@ -51,14 +79,14 @@ summary {
 }
 
 /* HTML5 display-role reset for older browsers */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000383}}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 /* COWOWO CSS RESET =============================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003102}}
 html, body,
 div, span,
 h1, h2, h3, h4, h5, h6,
@@ -76,12 +104,29 @@ img {
   /* for headings, works */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000376}}
+/*
+
+body {
+	line-height: 1;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003133}}
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003135}}
 img {
   max-width: 100%;
   height: auto;
@@ -89,7 +134,7 @@ img {
 
 /* The height is added to ensure the aspect ratio of the image is retained. */
 /* VIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  :-)  */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003138}}
 img {
   display: block;
 }
@@ -100,44 +145,49 @@ img {
 /* ==========================================================================
    Links
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003156}}
 a {
   background: transparent;
   /* Normalize.css - Remove the gray background color from active links in IE 10. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003166}}
 b,
 strong {
   font-weight: bold;
   /* Normalize.css - Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
 }
 
-/* START - CLEARFIX */
-/* apply clearfix to parent */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003120}}
-.clearfix:after, .frontWrapper_section:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+/**
+ * Address inconsistent and variable font size in all browsers.  - Normalize.js ( O dont really use this tag anyways, hmmm...)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003177}}
+small {
+  font-size: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003128}}
-* html .clearfix, * html .frontWrapper_section {
-  zoom: 1;
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers. - Normalize.css
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003187}}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
-/* IE6 */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003129}}
-*:first-child + html .clearfix, *:first-child + html .frontWrapper_section {
-  zoom: 1;
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003194}}
+sup {
+  top: -0.5em;
 }
 
-/* IE7 */
-/*/END - CLEARFIX */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003196}}
+sub {
+  bottom: -0.25em;
+}
+
 /* ====================================================================================================================== */
 /* FORMS                                                                                                                  */
 /* ====================================================================================================================== */
@@ -154,7 +204,7 @@ BUT DSOES ACTIVE still apply to input typoes??????
 */
 /* FORMS - iOS etc RESET ======================================= */
 /* !!!!!!!!!!! adda s a separate file, to make sure that is ======================================= */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003231}}
 input[type=text],
 input[type=submit],
 input[type=reset],
@@ -167,7 +217,7 @@ select {
   border-radius: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003243}}
 label,
 input[type="submit"],
 input[type="button"] {
@@ -180,7 +230,7 @@ input[type="button"] {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003270}}
 textarea {
   overflow: auto;
   /* 1 */
@@ -188,7 +238,7 @@ textarea {
   /* 2 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003279}}
 textarea {
   resize: vertical;
   /* HAY QUE CONFIGURARLO !!!! */
@@ -201,7 +251,7 @@ textarea {
 /**
  * Remove most spacing between table cells. (Nomalize.css & Eric Meyer's Reset)
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003296}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -246,6 +296,31 @@ table {
 /* creatte extend sor mixins for css transitions of all types, generiucally bg color transoition for buttons, etc, and then maybe stuff for the forms hover and active */
 /* MIXINS */
 /* SPACINGS */
+/* START - CLEARFIX */
+/* apply clearfix to parent */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_sass_layout\.scss}line{font-family:\0000378}}
+.clearfix:after, .frontWrapper_section:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_sass_layout\.scss}line{font-family:\0000386}}
+* html .clearfix, * html .frontWrapper_section {
+  zoom: 1;
+}
+
+/* IE6 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_sass_layout\.scss}line{font-family:\0000387}}
+*:first-child + html .clearfix, *:first-child + html .frontWrapper_section {
+  zoom: 1;
+}
+
+/* IE7 */
+/*/END - CLEARFIX */
 /* FUNCTIONS */
 /* CSS Document - FRONT-END */
 /* ====================================================================================================================== */
@@ -283,14 +358,27 @@ a:hover {
 }
 
 /*  Typography - Headers ======================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000345}}
+/*
+h1, h2, h3, h4 {
+	margin: 10px 0 5px 0;
+}
+h1 {font-size: 25px;}
+
+h2 {font-size: 23px;}
+
+h3 {font-size: 21px;}
+
+h4 {font-size: 19px;}
+
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000361}}
 h1, h2, h3, h4, h5, h6 {
   font-family: Tahoma, Geneva, sans-serif;
   font-weight: normal;
   margin-top: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000368}}
 h1 {
   font-size: 4rem;
   line-height: 1.4;
@@ -298,7 +386,7 @@ h1 {
   margin-bottom: 0.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000376}}
 h2 {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -307,7 +395,7 @@ h2 {
   margin-top: .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000383}}
 h3 {
   font-size: 1.75rem;
   line-height: 1.3;
@@ -316,7 +404,7 @@ h3 {
   letter-spacing: -1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000390}}
 h4 {
   font-size: 1.5rem;
   line-height: 1.25;
@@ -324,14 +412,14 @@ h4 {
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000396}}
 h5 {
   font-size: 1.25rem;
   color: #555;
   margin-bottom: 1.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\00003101}}
 h6 {
   color: #666;
   font-size: 16px;
