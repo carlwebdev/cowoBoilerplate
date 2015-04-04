@@ -2,6 +2,22 @@
 /* Front-End */
 
 
+
+/*
+// ideas de font size y line height
+body{
+  font-size:100%;
+  line-height: 1.5;
+}
+*/
+
+
+
+// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
+// http://css-tricks.com/ie-background-rgb-bug/
+
+
+
 /* do sass for colors, and for interactiuon behaviours */
 
 @mixin f_base {
