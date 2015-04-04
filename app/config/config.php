@@ -62,39 +62,11 @@ $min='FALSE'; // falta mejorar el grunt process, pero ya casi estoy ahi
 ?>
 
 
-
-<?
-/*
- * CONFIG - COPY - sistema multilingue
- */ 
- 
-// $includepath='../../config/config/lang'.$lang.'/general.php';
-
-/*
-if(is_file('../../config/config/lang'.$lang.'/general.php')) 
-// tb funciona con file_exists, pero es mas seguro con is_file (ya que file exists se puede quedar en nombre de carpeta y no necesariamente en nombre de archivo
-// include $includepath;  
-{
-	include ('../../config/config/lang'.$lang.'/general.php');
-}
-else
-{
-	include ('../../config/lang'.$lang.'/general.php');
-	
-}
-*/
-?>
-
-<? 
-// include ('app/config/lang/en/general.php'); 
-?>
-
 <? 
 include ('app/config/copy/general.php');
 include ('app/config/copy/pagenames.php'); 
  
 include ('app/config/copy/seo.php'); 
-
 ?>
 
 
