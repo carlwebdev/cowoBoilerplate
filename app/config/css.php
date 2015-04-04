@@ -6,7 +6,9 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/global.css" >
 
-
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="assets/css/all-ie-only.css" />
+<![endif]-->
 
 
 <!--

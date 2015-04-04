@@ -703,7 +703,188 @@ http://papermashup.com/simple-jquery-tabs/    <br />
 <br>
 
 
+	<div id="frontWrapper_header">Another shitty accorion...</div>
+    <div class="frontWrapper_section">
+        <div class="frontWrapper_sectionTitle">UNDER CONSTRUCTION</div>
+        <div class="frontWrapper_sectionContent">check it out!</div>
+    </div>
+    
+    
 
+
+<style type="text/css">
+
+
+
+
+
+.accordion {
+   margin: 50px;   
+   dt, dd {
+      padding: 10px;
+      border: 1px solid black;
+      border-bottom: 0; 
+      &:last-of-type {
+        border-bottom: 1px solid black; 
+      }
+      a {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 0; 
+     font-size: 12px;
+     &:last-of-type {
+       border-top: 1px solid white;
+       position: relative;
+       top: -1px;
+     }
+  }
+}
+
+
+
+
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function($) {
+    
+  var allPanels = $('.accordion > dd').hide();
+    
+  $('.accordion > dt > a').click(function() {
+    allPanels.slideUp();
+    $(this).parent().next().slideDown();
+    return false;
+  });
+
+});
+</script>
+
+
+
+
+
+<dl class="accordion">
+
+<dt><a href="">Panel 1</a></dt>
+<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+
+<dt><a href="">Panel 2</a></dt>
+<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+
+<dt><a href="">Panel 3</a></dt>
+<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+
+</dl>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+	<div id="frontWrapper_header">jQuery UI Accordion</div>
+    <div class="frontWrapper_section">
+        <div class="frontWrapper_sectionTitle">UNDER CONSTRUCTION</div>
+        <div class="frontWrapper_sectionContent">check it out!</div>
+    </div>
+    
+    
+    
+    
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+ 
+    
+    
+<div id="accordionxx">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+    <p>
+    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+    inceptos himenaeos.
+    </p>
+  </div>
+</div>  
+
+    
+    
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    
     
   
 	<div id="frontWrapper_header">Dropdown</div>
@@ -747,6 +928,98 @@ http://papermashup.com/simple-jquery-tabs/    <br />
 
 
 
+
+
+	<div id="frontWrapper_header">Grid - List functionality</div>
+    <div class="frontWrapper_section">
+        <div class="frontWrapper_sectionTitle">UNDER CONSTRUCTION</div>
+        <div class="frontWrapper_sectionContent">check it out!</div>
+    </div>
+    
+    
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+
+<style type="text/css">
+.w_gridlist ul { list-style: none; }
+.w_gridlist .buttons { margin-bottom: 20px; }
+.w_gridlist .is-list li { width: 100%; border-bottom: 1px dotted #CCC; margin-bottom: 10px; padding-bottom: 10px; }
+
+.w_gridlist .is-grid ul { 
+/* overflow: hidden; */
+ }
+
+.w_gridlist .is-grid li { float: left; width: 20%; height: 50px; border-right: 1px dotted #CCC; border-bottom: 1px dotted #CCC; padding: 20px; }
+</style>
+
+<!-- <script src="jquery-1.7.2.min.js"></script> -->
+<script>
+$(document).ready(function(){
+	$('button').click(function() {
+		if ($(this).hasClass('grid')) {
+			$('#container ul').removeClass('is-list').addClass('is-grid');
+		}
+		else if($(this).hasClass('list')) {
+			$('#container ul').removeClass('is-grid').addClass('is-list');
+		}
+	});
+});	
+</script>
+
+    
+    
+    
+    
+
+<div class="w_gridlist">
+
+
+    <div class="buttons">
+        <button class="grid">Grid View</button>
+        <button class="list">List View</button>
+    </div>
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+
+    
+    <ul class="is-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ul>
+</div>  
+    
+    
+    
+    
+    
+
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+          
 
 	<div id="frontWrapper_header">Lightbox</div>
     <div class="frontWrapper_section">
@@ -892,7 +1165,7 @@ http://papermashup.com/simple-jquery-tabs/    <br />
 
 
 <!-- jQuery PLugin - RWD - Videos - FitVids,js -->
-<script src="assets/js/plugins/rwd/jquery.fitvids.js"></script>
+<script src="assets/js/plugins/jquery.fitvids.js"></script>
 <script>
 $(".fitvids_container").fitVids(); 
 </script>
@@ -914,6 +1187,21 @@ $(".fitvids_container").fitVids();
 <script src="assets/js/plugins/jquery.lightbox_me.js"></script>
 <script src="assets/js/custom/lightboxme.js"></script>
 
+
+
+
+<!-- jQuery UI - Accordion -->
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script>
+  $(function() {
+    $( "#accordionxx" ).accordion();
+  });
+  </script>   
+  
+  
+  
+  
 <!-- InstanceEndEditable -->  
 </body>
 <!-- InstanceEnd --></html>

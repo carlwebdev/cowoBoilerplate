@@ -1,6 +1,0 @@
-htpasswd INFO:
-
-
-a) generate password pair
-
-b) getfullpath.shtml / file for route in online server

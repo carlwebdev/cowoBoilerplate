@@ -15,7 +15,7 @@
 </script>
 </head>
 
-<!-- CARL - tool to get full path for online server folder  -->
+<!-- CARL - tool to get full path for online server folder (for htpassw location in htaccess file)  -->
 
 <body onload="GetFullPath()">
 <form action="" method="post" name="TestForm" id="TestForm">

@@ -3,6 +3,22 @@
 
 
 
+/*
+The point here is that box-sizing will not change any more. 
+Its purpose is to switch box models, 
+and its two values border-box and content-box are supported everywhere.
+*/
+
+/* BOX MODEL */
+* {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box; /* Firefox, other Gecko */
+box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+// * COMAPSS IT !!! */
+
+
 
 /* ==========================================================================
    HTML5 display definitions - Normalize.css
@@ -28,7 +44,11 @@ summary {
 }
 
 
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
 
 
@@ -92,18 +112,7 @@ strong {
 
 
 
-/*
-The point here is that box-sizing will not change any more. 
-Its purpose is to switch box models, 
-and its two values border-box and content-box are supported everywhere.
-*/
 
-/* BOX MODEL */
-* {
--webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box; /* Firefox, other Gecko */
-box-sizing: border-box; /* Opera/IE 8+ */
-}
 
 
 
@@ -122,23 +131,70 @@ box-sizing: border-box; /* Opera/IE 8+ */
 
 
 
+
+
+/* ====================================================================================================================== */
+/* FORMS                                                                                                                  */
+/* ====================================================================================================================== */
+	
+
+/* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
+
+Write CSS? 
+
+Please don't forget to add :focus and :active styles along with :hover. :focus is important for keyboard and d-pad users.
+
+Iinput ytops _ HOVER &  FOCUS  ar now ok in my framework (and infoOD & fart be)
+
+BUT DSOES ACTIVE still apply to input typoes??????
+
+*/
+
+
+
+
+
+/* FORMS - iOS etc RESET ======================================= */
+/* !!!!!!!!!!! adda s a separate file, to make sure that is ======================================= */
+
+input[type=text], 
+input[type=submit],
+input[type=reset],
+input[type=button], 
+input[type=image], 
+textarea,
+select {
+	-webkit-appearance: none; /* VIP - to override al i.e. iOS safari stryling */
+	border-radius:0px;
+	} 
+
+
+
+
+
+
+label,
+input[type="submit"],
+input[type="button"] { // BUTTON !!!!
+    cursor:pointer; 
+	}
+	
+	
+	
+
 /* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */
 
 /*
 
 I USE overflow:hidden, hwich works the same, UNLESS YOU GET FUCKED UP BY DELETED OVERFLOWING CONTENT.
-
 view-source:http://mattbango.com/demos/hover-zoom/
-
 http://css-tricks.com/snippets/css/clear-fix/
 
 ///
 to avoid cleafix hack, use display inline block, and then add the vertcal align top..
 but ther's the sapcing issue too... several ways to fix that
 
-
 */
-
 
 
 /* FORM NORTMALIZE.CSS */
@@ -155,11 +211,19 @@ textarea {
 
 
 
-/* TABLES */
+textarea {
+	// resize: none;
+	resize:vertical; /* HAY QUE CONFIGURARLO !!!! */
+	}
+
+
+
 
 /* ==========================================================================
    Tables
    ========================================================================== */
+
+/* TABLES */
 
 /**
  * Remove most spacing between table cells. (Nomalize.css & Eric Meyer's Reset)
