@@ -1,0 +1,81 @@
+/* CSS Document - FRONT-END */
+
+/* =================================================================== */
+/* TABS - Simple jQuery tabs                         				   */
+/* =================================================================== */
+
+/* ============ */
+/* TABS WRAPPER */
+/* ============ */
+#tabs {}
+	
+		
+/* ============ */
+/* TABS MENU    */
+/* ============ */	
+.jq_tabsMenu ul {
+	overflow:hidden;
+	}
+	.jq_tabsMenu li {
+		float:left;
+		width:100px; /* !!!!!!!!!!!!! */ 
+		text-align:center; 
+		margin-right: 8px;				 
+		}
+		.jq_tabsMenu li, 
+		.jq_tabsMenu li a {
+			color:#fff;
+			} 
+			.jq_tabsMenu li a {
+				display:block; /* */ 
+				padding: 8px;
+				border-top-left-radius:10px;
+				border-top-right-radius:10px;
+				background:$color3; 				
+				} 
+				.jq_tabsMenu li a:hover,
+				.jq_tabsMenu li.active a {
+					background:$color2; 
+					color:$color1;
+					}
+
+		
+		
+/* ============ */
+/* THE TABS     */
+/* ============ */			
+#tabs .tab {
+	clear:both; /* ????????????? */
+	background: $color2; 
+	padding: 15px; /* min-height: 200px; */
+	min-height:200px; /* DEMO */
+	}
+
+
+
+
+
+
+
+/*  600  ================================================================================================== */
+@media only screen and (max-width: 600px) { /* width is inclusive */
+		
+.jq_tabsMenu li {
+	width:23.5%; 
+	margin-right:2%; 
+	color:#FF0 !important;
+	}
+	.jq_tabsMenu li:last-of-type {margin-right:0%;}
+	
+	
+}
+
+
+
+
+/*  380   =========================================================================================== */
+@media only screen and (max-width: 380px) { /* width is inclusive */
+
+.jq_tabsMenu li a {font-size:0.75rem; }	
+	
+}

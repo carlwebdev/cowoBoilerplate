@@ -1,0 +1,61 @@
+/* =========================================================================================================================================== */
+/* BUTTONS =================================================================================================================================== */
+/* =========================================================================================================================================== */
+
+
+
+.pointer {cursor: pointer;} /* THIS IS TOO GENERIC !!!!!!!!! */
+
+
+
+
+
+
+/* UI ELEMENTS / move to buttons file ================================================================================== */
+
+
+
+.buttonStyleX {
+	background-color:$color2;
+	}
+
+	.buttonStyleX:hover { /* FUNCIONA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+		background-color:$color3;
+		}
+	
+	
+	
+.button {
+	@include transitionButton;
+	
+	
+	cursor:pointer;
+	@extend .buttonStyleX;
+	
+	float:left;
+	clear:left;
+	margin-bottom: $baseSpacing;
+	
+	font-weight: bold;
+	color:#fff;
+	}
+
+
+	.buttonSmall {
+		@extend .button;
+		font-size: $fontsizeSmall;
+		padding: 5px;
+		border-radius:3px;
+		}
+	.buttonMedium {
+		@extend .button;
+		font-size: $fontsizeMedium;
+		padding: 10px;
+		border-radius:6px;
+		}	
+	.buttonBig {
+		@extend .button;
+		font-size: $fontsizeBig;
+		padding: 20px;
+		border-radius:9px;
+		}		

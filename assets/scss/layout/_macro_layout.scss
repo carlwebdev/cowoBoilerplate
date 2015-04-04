@@ -1,0 +1,63 @@
+/* CSS Document - FRONT-END */
+
+/* ====================================================================================================================== */
+/* MACRO LAYOUT                                                                                                           */
+/* ====================================================================================================================== */
+
+
+
+
+#container {
+	
+	}
+
+	/* FULL WIDTH */
+	.container_section_1 {
+		background-color:$color2;
+		} 
+	.container_section_2 {
+		
+		} 
+		
+		/* CONTENT WIDTH */
+		.container_content {
+			@include centered;
+			max-width:1300px; 
+			min-width:320px; 
+			position:relative; 
+			@include paddingh(20px)
+			} 
+			
+
+
+
+
+			
+@media only screen and (max-width: $bpBig) { 
+
+		
+					
+} // MEDIA-QUERY			
+
+
+
+@media only screen and (max-width: $bpMedium) { 
+
+		.container_content {
+			@include paddingh(15px)
+			} 		
+				
+					
+} // MEDIA-QUERY
+
+
+
+@media only screen and (max-width: $bpSmall) { 
+
+		.container_content {
+			@include paddingh(10px)
+			} 		
+				
+					
+} // MEDIA-QUERY
+

@@ -1,0 +1,45 @@
+/* CSS Document - FRONT-END */
+
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - FOOTER                                                                                          */
+/* ====================================================================================================================== */
+	
+#footer {
+	/* margin-bottom:20px; */
+	/* @extend .clearfix; */
+	overflow:hidden;
+	padding: 6px;
+	}
+
+
+
+	#footerContent {
+		color:#fff;
+		float:right;
+		text-align:right;
+		
+		}
+		#footerContent_line1 {
+			// font-size: $fontsizeHuge;
+			font-size: $fontsizeBig;
+			}
+		#footerContent_line2 {
+			// font-size: $fontsizeBig;
+			font-size: $fontsizeMedium;
+			
+			a {
+				color:#fff;
+				}		
+							
+			}			
+		
+	
+	
+
+
+
+
+@media only screen and (max-width: $bpBig) { /* width is inclusive */ /* 320 , 420 , .... 480   , 568    ,  ... 600 */
+
+			
+}	

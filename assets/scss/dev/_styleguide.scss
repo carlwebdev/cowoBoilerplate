@@ -1,0 +1,23 @@
+/* CSS Document - SASS */
+/* Front-End */
+
+
+/* STYLEGUIDE */
+
+
+#styleguideWrapper {
+	/* background-color:#ccc; */
+	}
+	
+	.styleguideColor {
+		background-color:$color2;
+		}
+	.styleguideColor:nth-of-type(2) {
+		background-color:$color3;
+		}
+				
+				
+				
+	.styleguideFont {
+		@include font0;
+		}				

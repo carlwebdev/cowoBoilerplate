@@ -1,0 +1,52 @@
+/* CSS Document - FRONT-END */
+
+		
+		
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - HEADER                                                                                          */
+/* ====================================================================================================================== */
+	
+#header {
+	padding:5px;
+	}
+
+	#headerContent {
+		position:relative;
+		overflow: hidden; /* !!!!!!!!!!!!!!!!!!!!! */
+		}
+
+		#weblogo {
+			float:left; /* margin-bottom:50px; */
+			}
+			#weblogo, 
+			#weblogo a {
+				// font-size: $fontsizeHuge; 
+				font-size: 28px; 
+				font-size: 34px; 
+				color:#fff;
+				}
+		#slogan {
+			position:absolute; bottom:5px; right:0;
+			font-size: $fontsizeBig; 
+			color:#fff;		
+			}
+			#slogan a {
+				color:#fff;
+				}		
+			
+			
+					
+@media only screen and (max-width: $bpBig) { 
+
+	#weblogo {
+		float:none;
+		text-align:center;
+		}
+	#slogan {
+		position:relative;
+		text-align:center;		
+		}
+		
+		
+					
+}	// MEDIA-QUERY	

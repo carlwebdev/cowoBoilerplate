@@ -1,0 +1,91 @@
+/* CSS Document - FRONT-END */
+
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - CONTENT                                                                                          */
+/* ====================================================================================================================== */
+	
+#content {
+	min-height:200px; 
+	overflow:hidden; 
+	padding:20px;
+	}
+
+
+.text {
+	font-size:1rem; 
+	background-color:$color3; 
+	margin-bottom:20px; 
+	}
+
+
+
+
+
+/* DEMO FOR THE HOME PAGE */
+
+
+#frontWrapper {
+	padding-top: $baseSpacing;
+
+	}
+
+
+#frontWrapper_headerMega {
+	color: $color3;
+	font-size: 60px;
+	/* margin-bottom: $baseSpacing; */
+	/* @include spacing(5); */
+	margin-bottom: 60px;
+	/* text-align:right; */
+	text-align:center;
+	}
+	
+	
+	
+#frontWrapper_header {
+	color: $color2;
+	font-size: $fontsizeHuge;
+	/* margin-bottom: $baseSpacing; */
+	/* @include spacing(5); */
+	margin-bottom: $baseSpacing;
+	}
+	
+
+	
+	
+.frontWrapper_section {
+	/* margin-bottom: $baseSpacing; */
+	margin-bottom: 48px;
+	@extend .clearfix;
+	}	
+	
+
+	.frontWrapper_sectionTitle {
+		font-size: $fontsizeBig;
+		margin-bottom: $baseSpacing;
+		font-weight:bold;
+		}	
+			
+	.frontWrapper_sectionContent {
+		font-size: $fontsizeMedium;
+		}	
+		
+		.frontWrapper_sectionContent a {
+			color: $color2; 
+			font-weight:bold;
+			}		
+			.frontWrapper_sectionContent a:hover {
+				text-decoration:underline;
+				}		
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) { /* width is inclusive */ /* 320 , 420 , .... 480   , 568    ,  ... 600 */
+
+			
+}
+

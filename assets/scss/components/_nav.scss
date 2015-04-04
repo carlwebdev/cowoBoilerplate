@@ -1,0 +1,32 @@
+/* CSS Document - FRONT-END */
+		
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - NAV                                                                                          */
+/* ====================================================================================================================== */
+	
+#nav {
+	font-size: $fontsizeMedium; 
+	color:#fff;	
+	}	
+	#nav ul {
+		overflow:hidden; /* !!!!!!! */
+		}						
+		#nav li {
+			float:left;
+			margin-right:10px;
+			}	
+			#nav li:last-of-type {
+				margin-right:0px;
+				}			
+		
+		#nav li a {
+			display:block;
+			padding: 5px 10px;
+			background-color: $color3;
+			color:#fff;
+			}	
+			#nav li a:hover,
+			#nav li.current a {
+				background-color:#fff;
+				color: $color2;
+				}	

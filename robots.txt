@@ -1,0 +1,19 @@
+# comment like this
+
+# User-agent = crawler
+# * = any
+# Dissalow = not allow indexing
+# / = all
+#   = none
+# /bla.bla = specific
+
+
+User-agent: *
+
+# Un-comment this line when in production
+# Disallow: /
+
+
+# Dissalow always
+Disallow: /404.php
+Disallow: /admin/

@@ -1,0 +1,39 @@
+/* CSS Document - FRONT-END */
+
+/* =================================================================== */
+/* LIGHTBOX ME                                       				   */
+/* =================================================================== */
+
+
+.lightboxme_trigger {
+	cursor:pointer;
+	background-color:$color2; 
+	float:left;
+	padding:$baseSpacing;
+	color:#fff;
+	}
+
+	.lightboxme_trigger:hover {
+		background-color:$color3; 
+		}
+	
+.lightboxme_content {
+	clear:right; 
+	display:none; 
+	background-color:$color3; 
+	color:#fff;
+	/* width:700px; */
+	width:62%; 
+	
+	padding:$baseSpacing;
+	}
+
+	.lightboxme_content .close {
+		cursor:pointer;
+		text-align:right;
+		margin-bottom: $baseSpacing;
+		
+		&:hover {color:$color2;}
+					
+		}
+		

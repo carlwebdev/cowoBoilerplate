@@ -1,0 +1,58 @@
+### ErrorDocument 404
+### LOCAL SERVER
+ErrorDocument 404 http://cowoserver/carl_github/cowo-Boilerplate/404.php
+### STAGING SERVER
+# ErrorDocument 404 http://carljohansson.net/404.php
+### PRODUCTION SERVER
+# ErrorDocument 404 http://carljohansson.net/404.php
+
+
+
+# MOSTRAR index.html y no index.php por defecto - DESHABILITADO AHORA
+# DirectoryIndex index.html index.htm index.php
+
+
+
+### add instructions to use getfullpath to write the correct path
+
+### htpasswd
+
+### PASSWORD PROTECTED ACCESS TO THE WEBSITE
+
+#### Restricted access - with ".htpasswd"
+# AuthName "Restricted Area" 
+# AuthType Basic 
+# AuthUserFile /home/domain/public_html/.htpasswd
+# AuthGroupFile /dev/null 
+# require valid-user
+
+# no poner el htpasswd file within the root folder of the website, place it above in the sever's folders
+
+
+
+
+
+
+##### RewriteEngine on
+# NOTE: Rewrite code fucks up in localhost! 
+
+
+### rewrite index without index
+
+# CANONICAL
+### The following line redirects all calls to index.(php/htm/html) to domain name without mentioning index, format, nor slash, .
+
+#THE FOLLOWING LINE FUCKS EVERYTHING UP IN LOCAL
+#### and this i have to learn to have different htaccess files in each project, and define in each server the name of the htaccess file to use !!!
+# RewriteRule ^index\.(php|html|htm)$ http://www.domain.net/ [R=301,L]
+
+### RewriteRule ^portfolio\.(php|html|htm)$ http://www.domain.net/ [R=301,L]
+
+
+
+# CREATE SECRET AREA WITH PASSWORD 
+
+
+
+### el stagig server tiene que estar capado !!!!!! si o si.
+

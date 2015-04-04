@@ -1,0 +1,108 @@
+/* humanstxt.org */
+
+
+Developed by COWOWO
+http://www.cowowo.cat
+info [at] cowowo.cat
+
+
+
+
+
+/* TEAM - example */
+
+Name: 			eg: Chris Da Sie
+Site:			eg: http://chrisdasie.com
+Twitter:		eg: @chrisdasie
+Location:		eg: Canada
+
+
+
+
+/* TEAM */
+
+	Programmer: Joan Estadella
+	Contact: joan [at] cowowo.cat
+	Twitter:
+	From: Barcelona, Catalonia, Spain
+	
+	Web designer: Jaime Bertrán
+	From: Barcelona, Catalonia, Spain
+	
+	Web Developer: Carl Johansson
+	Contact: carl [at] cowowo.cat
+	Twitter: @lo_kal
+	From: Barcelona, Catalonia, Spain
+
+
+/* THANKS */
+
+
+
+
+
+
+/* SITE */
+
+	Last update:
+	Language: English
+	Doctype: HTML5
+	IDE: 
+	
+	
+Standards: 
+
+HTML5
+CSS3
+
+Components: 
+
+jQuery: 		http://jquery.com
+
+
+
+320 and Up: 		http://stuffandnonsense.co.uk/projects/320andup 
+Bootstrap: 		http://twitter.github.com/bootstrap
+Font Awesome: 		http://fortawesome.github.com/Font-Awesome
+Frameless grid: 	http://framelessgrid.com
+jQuery: 		http://jquery.com
+Modernizr: 		http://modernizr.com
+Selectivizr: 		http://selectivizr.com	
+
+
+
+
+jQuery Plugins: (used in the website...)
+
+FitVids.js - http://fitvidsjs.com/
+FitText.js - http://fittextjs.com/
+Letterings.js - http://letteringjs.com/
+ResponsiveSlides.js - http://responsiveslides.com/
+
+
+
+
+/* OTHER CREDITS */
+
+Fonts: Google Fonts - http://www.google.com/fonts - and put their names
+Colors: 
+Color scheme - Kuler / Adobe - link to color scheme
+Icons: (iconic...)
+Icon font:
+
+
+
+
+OTHER CODING TECHNOLOGIES:
+- HTML(5-ISH) 
+- CSS3
+SASS - CSS pre-processing
+
+
+- rwd - Responisve Web Design
+
+php & mysql versions .....
+
+
+
+

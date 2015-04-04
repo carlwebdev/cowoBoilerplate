@@ -1,0 +1,1218 @@
+/* ==========================================================================
+   GLOBAL
+   ========================================================================== */
+/*
+Susy: Responsive grids for Compass
+http://susy.oddbird.net/
+susy might not work as such in compass / scpout / sass, unless manually downloaded and refernced to susy.
+now testing zengrids.com , as it seams to have support inside scout / for compass.
+http://zengrids.com/
+*/
+/* SASS, COMPASS AND SUZY STUFF */
+/* @import "compass/css3"; */
+/* RESET */
+/* CSS Document - CSS Reset and Base by Carl Johansson (@lo_kal) */
+/* COWOWO FRAMEWORK */
+/* COWOWO CSS RESET =============================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000314}}
+html, body,
+div, span,
+h1, h2, h3, h4, h5, h6,
+p,
+pre, code,
+img,
+dl, dt, dd,
+ol, ul, li,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  /* for headings, works */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000322}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000324}}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* The height is added to ensure the aspect ratio of the image is retained. */
+/* VIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  :-)  */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000327}}
+img {
+  display: block;
+}
+
+/* this takes away the bottom margin of imgs, it's inline behaviour causes the margin */
+/* img {display:inline-block;} */
+/* THIS DIDN'T WORK */
+/*
+The point here is that box-sizing will not change any more. 
+Its purpose is to switch box models, 
+and its two values border-box and content-box are supported everywhere.
+*/
+/* BOX MODEL */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000346}}
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* START - CLEARFIX */
+/* apply clearfix to parent */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000355}}
+.clearfix:after, .frontWrapper_section:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000363}}
+* html .clearfix, * html .frontWrapper_section {
+  zoom: 1;
+}
+
+/* IE6 */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000364}}
+*:first-child + html .clearfix, *:first-child + html .frontWrapper_section {
+  zoom: 1;
+}
+
+/* IE7 */
+/*/END - CLEARFIX */
+/* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */
+/* FORM NORTMALIZE.CSS */
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\0000393}}
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* TABLES */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_reset\.scss}line{font-family:\00003105}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* SASS */
+/* CSS Document - SASS */
+/* Front-End */
+/* do sass for colors, and for interactiuon behaviours */
+/* SASS =========================== */
+/* 
+ * VARIABLES - COLORS - 1ST LEVEL !  
+ */
+/* white */
+/* dark brown */
+/* light brown */
+/* dark blue */
+/* light blue */
+/* VARIABLES */
+/* dark blue */
+/* light blue */
+/* deberia ser 16/24 o 1 a 1.5 .... */
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+/* Variables - font families */
+/* BASE per tota la web / text menys important */
+/* 1a TIPUS ESPECIAL */
+/* BASE per tota la web / text menys important */
+/* 1a TIPUS ESPECIAL */
+/* CSS Document - SASS */
+/* Front-End */
+/* MEDIA-QUERIES (AS VARIABLES ) */
+/* add dev rwd ruler maybe to this front thing !!!!!!!!!!!! */
+/* EXTENDS AND PLACEHOLDERS */
+/* centered, paddingh, paddingv, etc */
+/* LAYOUT RELATED */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/sass\/_sass_layout\.scss}line{font-family:\0000338}}
+.clearfix, .frontWrapper_section {
+  /* MUST CRETAE THIS ONE BETTER !!!!!!!!!!!!!!!!!!!!!!! */
+  overflow: hidden;
+}
+
+/* LAYOUT RELATED */
+/* creatte extend sor mixins for css transitions of all types, generiucally bg color transoition for buttons, etc, and then maybe stuff for the forms hover and active */
+/* MIXINS */
+/* SPACINGS */
+/* FUNCTIONS */
+/* DEV TOOLS */
+/* CSS Document - Carl Reset and Base */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_temp\.scss}line{font-family:\000033}}
+.cowowo, .cowowo_ok {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_temp\.scss}line{font-family:\000035}}
+.cowowo {
+  background-color: #f00;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_temp\.scss}line{font-family:\000036}}
+.cowowo_ok {
+  background-color: #0f0;
+}
+
+/* ==================================== */
+/* DEVELOPMENT WEBDEV TOOLS =========== */
+/* AKA PSEUDO-FRAMEWORK */
+/* ==================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_temp\.scss}line{font-family:\0000314}}
+.breaker {
+  clear: both;
+}
+
+/* @import "dev/dev_rwd_ruler"; */
+/* CSS Document */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\000034}}
+#devRuler {
+  background-color: #e67e22;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  /* padding:10px 0px; */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000316}}
+.item {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000325}}
+  .item:nth-of-type(1) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000326}}
+  .item:nth-of-type(2) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000335}}
+  .item:nth-of-type(2) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000336}}
+  .item:nth-of-type(3) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000345}}
+  .item:nth-of-type(3) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000346}}
+  .item:nth-of-type(4) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000355}}
+  .item:nth-of-type(4) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000356}}
+  .item:nth-of-type(5) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000366}}
+  .item:nth-of-type(5) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000367}}
+  .item:nth-of-type(6) {
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_dev_ruler\.scss}line{font-family:\0000371}}
+  #devRuler {
+    background-color: #c0392b;
+  }
+}
+/* CSS Document - SASS */
+/* Front-End */
+/* STYLEGUIDE */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_styleguide\.scss}line{font-family:\000038}}
+#styleguideWrapper {
+  /* background-color:#ccc; */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_styleguide\.scss}line{font-family:\0000312}}
+.styleguideColor {
+  background-color: #d35400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_styleguide\.scss}line{font-family:\0000315}}
+.styleguideColor:nth-of-type(2) {
+  background-color: #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/dev\/_styleguide\.scss}line{font-family:\0000321}}
+.styleguideFont {
+  font-family: "Raleway", sans-serif;
+}
+
+/* BASE */
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* TYPOGRAPHY                                                                                                             */
+/* ====================================================================================================================== */
+/*  TEXT: FONTS (font-face declarations) ======================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000310}}
+body {
+  color: #000;
+  /* default */
+  /* font-family: '$fontfamily1' ;*/
+  font-family: 'Roboto', Arial, sans-serif;
+  /* always put the arial in there, hmmmmm qa ... ? DONT ERASE THIS EASILY  */
+  background-color: white;
+  font-size: 16px;
+  /* line-height: $baseSpacing; */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000326}}
+p {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000328}}
+p:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000335}}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: #000;
+  /* font-weight:bold; */
+}
+
+/*  Typography - Headers ======================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000345}}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: normal;
+  margin-top: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000352}}
+h1 {
+  font-size: 4rem;
+  line-height: 1.4;
+  color: #000;
+  margin-bottom: 0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000360}}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000367}}
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: #333;
+  margin-bottom: 0.3em;
+  letter-spacing: -1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000374}}
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: #444;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000380}}
+h5 {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 1.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_typography\.scss}line{font-family:\0000385}}
+h6 {
+  color: #666;
+  font-size: 16px;
+}
+
+/* =========================================================================================================================================== */
+/* BUTTONS =================================================================================================================================== */
+/* =========================================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\000037}}
+.pointer {
+  cursor: pointer;
+}
+
+/* THIS IS TOO GENERIC !!!!!!!!! */
+/* UI ELEMENTS / move to buttons file ================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000318}}
+.buttonStyleX, .button, .buttonSmall, .buttonMedium, button, input[type=submit],
+input[type=reset], .buttonBig {
+  background-color: #d35400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000322}}
+.buttonStyleX:hover, .button:hover, .buttonSmall:hover, .buttonMedium:hover, button:hover, input[type=submit]:hover,
+input[type=reset]:hover, .buttonBig:hover {
+  /* FUNCIONA !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  background-color: #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000328}}
+.button, .buttonSmall, .buttonMedium, button, input[type=submit],
+input[type=reset], .buttonBig {
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  float: left;
+  clear: left;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000344}}
+.buttonSmall {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000350}}
+.buttonMedium, button, input[type=submit],
+input[type=reset] {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_buttons\.scss}line{font-family:\0000356}}
+.buttonBig {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+/* BEFORE FORMS !!!!!!!! */
+/* 
+ * Project: mdrubio.com
+ * Product: cowoCMS
+ * File: Forms reset
+ */
+/* ====================================================================================================================== */
+/* FORMS                                                                                                                  */
+/* ====================================================================================================================== */
+/* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
+
+Write CSS? 
+
+Please don't forget to add :focus and :active styles along with :hover. :focus is important for keyboard and d-pad users.
+
+Iinput ytops _ HOVER &  FOCUS  ar now ok in my framework (and infoOD & fart be)
+
+BUT DSOES ACTIVE still apply to input typoes??????
+
+*/
+/* FORMS - iOS etc RESET ======================================= */
+/* !!!!!!!!!!! adda s a separate file, to make sure that is ======================================= */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms_reset\.scss}line{font-family:\0000340}}
+input[type=text],
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=image],
+textarea,
+select {
+  -webkit-appearance: none;
+  /* VIP - to override al i.e. iOS safari stryling */
+  border-radius: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms_reset\.scss}line{font-family:\0000352}}
+label,
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
+
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* FORMS                                                                                                                  */
+/* ====================================================================================================================== */
+/* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
+
+Write CSS? 
+
+Please don't forget to add :focus and :active styles along with :hover. :focus is important for keyboard and d-pad users.
+
+Iinput ytops _ HOVER &  FOCUS  ar now ok in my framework (and infoOD & fart be)
+
+BUT DSOES ACTIVE still apply to input typoes??????
+
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000328}}
+input[type=range] {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000333}}
+button {
+  width: 125px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000341}}
+form {
+  max-width: 400px;
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000351}}
+.formLine {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000356}}
+.formLine:last-of-type {
+  margin-bottom: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000365}}
+label {
+  color: #d35400;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000375}}
+input[type=text],
+input[type=password],
+select,
+textarea,
+input[type=file] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000381}}
+select {
+  padding: 2px 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000387}}
+input[type=submit],
+input[type=reset] {
+  /* float:right;  */
+  margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\0000394}}
+input[type=submit],
+input[type=reset] {
+  /*
+  @extend .buttonMedium;
+  float:left;
+  */
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003104}}
+input[type=submit],
+input[type=reset] {
+  width: 125px;
+}
+
+/*
+input[type=reset] {
+	@extend .buttonSmall;
+	}
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003115}}
+textarea {
+  resize: vertical;
+  /* HAY QUE CONFIGURARLO !!!! */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003124}}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  background-color: #e67e22;
+  border: 3px solid #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003133}}
+input[type=text],
+input[type=password],
+textarea {
+  padding: 10px 20px;
+}
+
+/* FOCUS and ANIMATIONS */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003143}}
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+/* HOVER must be before ACTIVE */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003151}}
+input[type=text]:hover,
+input[type=password]:hover,
+select:hover,
+textarea:hover {
+  background: #ff9999;
+  /* border: 1px solid #D3D3D3; */
+}
+
+/* ACTIVE must be after HOVER */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003161}}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  /* VIP */
+  background-color: #fff;
+  border: 3px solid #d35400;
+}
+
+/* & meter lo de los checkboxes !!!!!!!!!!!!!!!!!!!!!! */
+/* FRAMEWORK - input type image */
+/* input[type=file] & label trick */
+/* THE HTML
+        <label class="filebutton">
+        Seleccionar arxiu
+        <span><input type="file" name="doiser" id="dosier" /></span>
+        </label>
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003186}}
+label.filebutton {
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003195}}
+label.filebutton:hover {
+  background-color: #ddd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003199}}
+label span input {
+  z-index: 999;
+  line-height: 0;
+  /* font-size: 50px; */
+  font-size: 15px;
+  position: absolute;
+  /* top: -2px; */
+  top: -4px;
+  /* left: -700px; */
+  left: -245px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  cursor: pointer;
+  /* _cursor: hand; */
+  margin: 0;
+  padding: 0;
+}
+
+/* END OF - FORM - label covering input[type=file] */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003219}}
+label {
+  cursor: pointer;
+}
+
+/* for lables triggering checkboxes and radio buttons :-) */
+/* ADD ALSO PLACEHOLDER TEXT THINGEES !!!!!!!!! */
+/* BELONGS HERE IN FORMS IN RESET FILE  / class="css_submit_button" */
+/* USE css style for submit button (input) inseide generic_links */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003241}}
+.css_submit_button {
+  cursor: pointer;
+  border: none;
+  border: 2px solid #000;
+  padding: 0.2rem 0.5rem;
+  background-color: #bdbec0;
+  /* GRISACEO */
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003250}}
+.css_submit_button:hover {
+  background-color: #000;
+  color: #0d80a1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/base\/_forms\.scss}line{font-family:\00003253}}
+input[type="submit"].css_submit_button:disabled {
+  background: #dddddd;
+  color: #F00;
+  cursor: default;
+}
+
+/* @import "base/tables"; */
+/* LAYOUT */
+/*
+ * CODE FOR RESPONSIVE STICKY FOOTER
+ * Instructions: class "block" to footer
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_sticky_footer\.scss}line{font-family:\000036}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_sticky_footer\.scss}line{font-family:\000039}}
+#container {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_sticky_footer\.scss}line{font-family:\0000314}}
+.block {
+  display: table-row;
+  height: 1px;
+}
+
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* MACRO LAYOUT                                                                                                           */
+/* ====================================================================================================================== */
+/* FULL WIDTH */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_macro_layout\.scss}line{font-family:\0000315}}
+.container_section_1 {
+  background-color: #d35400;
+}
+
+/* CONTENT WIDTH */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_macro_layout\.scss}line{font-family:\0000323}}
+.container_content {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  min-width: 320px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_macro_layout\.scss}line{font-family:\0000346}}
+  .container_content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (max-width: 599px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/layout\/_macro_layout\.scss}line{font-family:\0000357}}
+  .container_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* COMPONENTS - INTERACTIVITY  - FUNCTIONALITITES*/
+/* CSS Document - FRONT-END */
+/* =================================================================== */
+/* TABS - Simple jQuery tabs                         				   */
+/* =================================================================== */
+/* ============ */
+/* TABS WRAPPER */
+/* ============ */
+/* ============ */
+/* TABS MENU    */
+/* ============ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000316}}
+.jq_tabsMenu ul {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000319}}
+.jq_tabsMenu li {
+  float: left;
+  width: 100px;
+  /* !!!!!!!!!!!!! */
+  text-align: center;
+  margin-right: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000326}}
+.jq_tabsMenu li,
+.jq_tabsMenu li a {
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000329}}
+.jq_tabsMenu li a {
+  display: block;
+  /* */
+  padding: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000337}}
+.jq_tabsMenu li a:hover,
+.jq_tabsMenu li.active a {
+  background: #d35400;
+  color: white;
+}
+
+/* ============ */
+/* THE TABS     */
+/* ============ */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000347}}
+#tabs .tab {
+  clear: both;
+  /* ????????????? */
+  background: #d35400;
+  padding: 15px;
+  /* min-height: 200px; */
+  min-height: 200px;
+  /* DEMO */
+}
+
+/*  600  ================================================================================================== */
+@media only screen and (max-width: 600px) {
+  /* width is inclusive */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000363}}
+  .jq_tabsMenu li {
+    width: 23.5%;
+    margin-right: 2%;
+    color: #FF0 !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000368}}
+  .jq_tabsMenu li:last-of-type {
+    margin-right: 0%;
+  }
+}
+/*  380   =========================================================================================== */
+@media only screen and (max-width: 380px) {
+  /* width is inclusive */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_tabs\.scss}line{font-family:\0000379}}
+  .jq_tabsMenu li a {
+    font-size: 0.75rem;
+  }
+}
+/* CSS Document */
+/* ============================================ */
+/* COWOWO ACCORDION                             */
+/* ============================================ */
+/* CONTAINER */
+/* EACH PAIR OF TRIGGER AND HIDDEN SECTION */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_accordion\.scss}line{font-family:\0000313}}
+.accordion_item {
+  background-color: #e67e22;
+  margin-bottom: 5px;
+}
+
+/* TRIGGER */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_accordion\.scss}line{font-family:\0000318}}
+.accordion_top {
+  background-color: #d35400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_accordion\.scss}line{font-family:\0000321}}
+.accordion_top.active {
+  background-color: #0f0 !important;
+}
+
+/* HIDDEN SECTION */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_accordion\.scss}line{font-family:\0000326}}
+.accordion_bottom {
+  background-color: #e67e22;
+  height: 50px;
+  /* display:none; */
+}
+
+/* CSS Document */
+/* ============================================ */
+/* COWOWO DROPDOWN                              */
+/* ============================================ */
+/* DESIGN */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000315}}
+.genericDropdownItem {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000320}}
+.genericDropdownItem:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* TOP */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000325}}
+.genericDropdownItem_top {
+  position: relative;
+  /* for the trigger */
+  padding-top: 5px;
+  background-color: #e67e22;
+  min-height: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000332}}
+.genericDropdownItem_top_trigger {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: white;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000338}}
+.genericDropdownItem_top_trigger:hover,
+.genericDropdownItem_top_trigger.is_active {
+  background-color: #d35400;
+  /* TESTING NEW THING */
+  /* SASS IT !!!!!!!!!!!!!! */
+  color: white;
+}
+
+/* BOTTOM */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000345}}
+.genericDropdownItem_bottom {
+  background-color: #d35400;
+  min-height: 100px;
+}
+
+/* FUNCTION */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000357}}
+.jq_dropdown {
+  /* THE PARENT OF EACH DROPDOWN TOP/BOTTOM PAIR */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000362}}
+.jq_dropdown_shown.is_active {
+  background-color: #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000366}}
+.jq_dropdown_trigger {
+  cursor: pointer;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000369}}
+.jq_dropdown_trigger.is_active {
+  background-color: #d35400;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000373}}
+.jq_dropdown_trigger.is_active:hover {
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_cowo_dropdown\.scss}line{font-family:\0000378}}
+.jq_dropdown_hidden {
+  display: none;
+}
+
+/* CSS Document - FRONT-END */
+/* =================================================================== */
+/* LIGHTBOX ME                                       				   */
+/* =================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_lightboxme\.scss}line{font-family:\000038}}
+.lightboxme_trigger {
+  cursor: pointer;
+  background-color: #d35400;
+  float: left;
+  padding: 20px;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_lightboxme\.scss}line{font-family:\0000316}}
+.lightboxme_trigger:hover {
+  background-color: #e67e22;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_lightboxme\.scss}line{font-family:\0000320}}
+.lightboxme_content {
+  clear: right;
+  display: none;
+  background-color: #e67e22;
+  color: #fff;
+  /* width:700px; */
+  width: 62%;
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_lightboxme\.scss}line{font-family:\0000331}}
+.lightboxme_content .close {
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/functionalities\/_lightboxme\.scss}line{font-family:\0000336}}
+.lightboxme_content .close:hover {
+  color: #d35400;
+}
+
+/* SECTIONS - PROJECTS CSS FILES - COMPONENTS */
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - HEADER                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\000039}}
+#header {
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000313}}
+#headerContent {
+  position: relative;
+  overflow: hidden;
+  /* !!!!!!!!!!!!!!!!!!!!! */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000318}}
+#weblogo {
+  float: left;
+  /* margin-bottom:50px; */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000322}}
+#weblogo,
+#weblogo a {
+  font-size: 28px;
+  font-size: 34px;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000328}}
+#slogan {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000333}}
+#slogan a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000341}}
+  #weblogo {
+    float: none;
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_header\.scss}line{font-family:\0000345}}
+  #slogan {
+    position: relative;
+    text-align: center;
+  }
+}
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - NAV                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_nav\.scss}line{font-family:\000037}}
+#nav {
+  font-size: 16px;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000311}}
+#nav ul {
+  overflow: hidden;
+  /* !!!!!!! */
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000314}}
+#nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000318}}
+#nav li:last-of-type {
+  margin-right: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000322}}
+#nav li a {
+  display: block;
+  padding: 5px 10px;
+  background-color: #e67e22;
+  color: #fff;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_nav\.scss}line{font-family:\0000329}}
+#nav li a:hover,
+#nav li.current a {
+  background-color: #fff;
+  color: #d35400;
+}
+
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - FOOTER                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_footer\.scss}line{font-family:\000037}}
+#footer {
+  /* margin-bottom:20px; */
+  /* @extend .clearfix; */
+  overflow: hidden;
+  padding: 6px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000316}}
+#footerContent {
+  color: #fff;
+  float: right;
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000322}}
+#footerContent_line1 {
+  font-size: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000326}}
+#footerContent_line2 {
+  font-size: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_footer\.scss}line{font-family:\0000330}}
+#footerContent_line2 a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* width is inclusive */
+  /* 320 , 420 , .... 480   , 568    ,  ... 600 */
+}
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* LAYOUT SECTION - CONTENT                                                                                          */
+/* ====================================================================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\000037}}
+#content {
+  min-height: 200px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000314}}
+.text {
+  font-size: 1rem;
+  background-color: #e67e22;
+  margin-bottom: 20px;
+}
+
+/* DEMO FOR THE HOME PAGE */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000327}}
+#frontWrapper {
+  padding-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000333}}
+#frontWrapper_headerMega {
+  color: #e67e22;
+  font-size: 60px;
+  /* margin-bottom: $baseSpacing; */
+  /* @include spacing(5); */
+  margin-bottom: 60px;
+  /* text-align:right; */
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000345}}
+#frontWrapper_header {
+  color: #d35400;
+  font-size: 48px;
+  /* margin-bottom: $baseSpacing; */
+  /* @include spacing(5); */
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000356}}
+.frontWrapper_section {
+  /* margin-bottom: $baseSpacing; */
+  margin-bottom: 48px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000363}}
+.frontWrapper_sectionTitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000369}}
+.frontWrapper_sectionContent {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000373}}
+.frontWrapper_sectionContent a {
+  color: #d35400;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/carl_github\/cowo-Boilerplate\/assets\/scss\/components\/_content\.scss}line{font-family:\0000377}}
+.frontWrapper_sectionContent a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* width is inclusive */
+  /* 320 , 420 , .... 480   , 568    ,  ... 600 */
+}
+/* MODULES */
