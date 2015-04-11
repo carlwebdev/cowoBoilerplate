@@ -2,61 +2,34 @@
 /* Front-End */
 
 
-
-
-/* MEDIA-QUERIES (AS VARIABLES ) */     /* add dev rwd ruler maybe to this front thing !!!!!!!!!!!! */
-
-$bpBig: 1024px;
-$bpMedium: 800px;
-$bpSmall: 599px;
+ /* add dev rwd ruler maybe to this front thing !!!!!!!!!!!! */
+ 
+ 
 
 
 
 
 
-/* EXTENDS AND PLACEHOLDERS */
 
-/* centered, paddingh, paddingv, etc */
-
-
-/* LAYOUT RELATED */
-
-@mixin centered {
-	/* display: block; */
-	margin-left: auto;
-	margin-right: auto;
-	}
-
-@mixin fullwidth {
-	float:none; 
-	width:100%;
-	}
-	
+/* MEDIA-QUERIES (AS VARIABLES ) */    
+$bp_xl: 1200px;
+$bp_l: 1024px;
+$bp_m: 800px;
+$bp_s: 599px;
+$bp_xs: 480px;
 
 
+$spacing: 24px;
+$spacing2: $spacing * 2;
+$spacing3: $spacing * 3;
+$spacing4: $spacing * 4;
+$spacing6: $spacing * 6;
+$spacing8: $spacing * 8;
+$spacing075: $spacing * 0.75;
+$spacing05: $spacing * 0.5;
+$spacing025: $spacing * 0.25;
+$spacing0125: $spacing * 0.125;
 
-.clearfix {/* MUST CRETAE THIS ONE BETTER !!!!!!!!!!!!!!!!!!!!!!! */
-	overflow:hidden;
-	}
-	
-	
-	
-	/* LAYOUT RELATED */
-
-
-/* creatte extend sor mixins for css transitions of all types, generiucally bg color transoition for buttons, etc, and then maybe stuff for the forms hover and active */
-
-/* MIXINS */
-
-@mixin paddingh($paddingh) {
-	padding-left: $paddingh;
-	padding-right: $paddingh;
-	}
-
-@mixin paddingv($paddingv) {
-	padding-top: $paddingv;
-	padding-bottom: $paddingv;
-	}
 
 
 
@@ -69,9 +42,30 @@ $bpSmall: 599px;
 	
 	
 	
-	
 
 
+
+/* LAYOUT RELATED */
+
+@mixin centered {
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	}
+@mixin fullwidth {
+	float:none; 
+	width:100%;
+	}
+
+@mixin paddingh($paddingh) {
+	padding-left: $paddingh;
+	padding-right: $paddingh;
+	}
+
+@mixin paddingv($paddingv) {
+	padding-top: $paddingv;
+	padding-bottom: $paddingv;
+	}
 
 
 /* START - CLEARFIX */ /* apply clearfix to parent */
@@ -89,10 +83,10 @@ $bpSmall: 599px;
 
 
 
+	
+/* FUNCTIONS */ // for the sass grid thingee	 - would be as sepoarate file anyways
 
 
 
-	
-	
-	
-/* FUNCTIONS */ // for the sass grid thingee	
+
+

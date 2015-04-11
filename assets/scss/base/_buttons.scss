@@ -4,6 +4,18 @@
 
 
 
+@mixin transitionButton {
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	}
+	
+	
+	
+	
+
+
 .pointer {cursor: pointer;} /* THIS IS TOO GENERIC !!!!!!!!! */
 
 
@@ -34,7 +46,7 @@
 	
 	float:left;
 	clear:left;
-	margin-bottom: $baseSpacing;
+	margin-bottom: $spacing;
 	
 	font-weight: bold;
 	color:#fff;
@@ -43,19 +55,19 @@
 
 	.buttonSmall {
 		@extend .button;
-		font-size: $fontsizeSmall;
+		font-size: $fs_s;
 		padding: 5px;
 		border-radius:3px;
 		}
 	.buttonMedium {
 		@extend .button;
-		font-size: $fontsizeMedium;
+		font-size: $fs_m;
 		padding: 10px;
 		border-radius:6px;
 		}	
 	.buttonBig {
 		@extend .button;
-		font-size: $fontsizeBig;
+		font-size: $fs_l;
 		padding: 20px;
 		border-radius:9px;
 		}		

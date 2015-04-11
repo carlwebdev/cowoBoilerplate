@@ -1,21 +1,14 @@
-<div class="container_section_1">
-    <div class="container_content">
+<header>
+ <div class="frame">
+    <div class="inner">
     
-        <div id="header">
-            <div id="headerContent">
-                <div id="weblogo"><a href="index.php"><?=$website_name ?></a></div>  
-                <div id="slogan"><?=$website_slogan ?></div>  
-            </div>
-        </div>
-        
-        <div id="nav">
-            <ul>
-                <li><a href="index.php"><?=$pagename_index ?></a></li>
-                <li><a href="styleguide.php">Styleguide</a></li>
-                <li><a href="">Grid (link)</a></li>
-                <li><a href="404.php"><?=$pagename_404 ?></a></li>
-            </ul>                
-        </div> <!-- /nav -->                    
-        
-    </div> <!-- /container_content -->
-</div> <!-- /container_section -->
+      <div class="navicon">
+        <a href="#menu"><?=$icon_navicon?></a>
+      </div>  
+         
+      <div id="main_logo"><h1><a href="index.php"><?=$website_name ?></a></h1></div>  
+      <div id="slogan"><h2><span>a simple Front-End Boilerplate</span> <span>by <a href="https://twitter.com/carlwebdev" target="_blank">@carlwebdev</a></span></h2></div>  
+      
+    </div> <!-- /inner -->
+  </div> <!-- /frame -->      
+</header>

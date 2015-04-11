@@ -27,8 +27,23 @@ Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if ne
 
 <script src="assets/js/website_scripts.js"></script>
 
+
+
+<!-- Mmenu - Side menu -->
+<script type="text/javascript" src="assets/js/plugins/mmenu/jquery.mmenu.min.all.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('nav#menu').mmenu(); // select what should be the side menu
+	});
+</script> 
+
+
+
 <!-- <script type="text/javascript" src="../js/custom/cowo_tabs.js"></script> -->
 <script src="assets/js/custom/cowo_dropdown.js"></script>
+
+
+
 
 
 <? 

@@ -21,53 +21,61 @@
 
 
 
+
+
+
+
+
+
+
+
 /* DEMO FOR THE HOME PAGE */
 
 
 #frontWrapper {
-	padding-top: $baseSpacing;
+	padding-top: $spacing;
 
 	}
 
 
 #frontWrapper_headerMega {
 	color: $color3;
-	font-size: 60px;
+	font-size: $fs_xl;
 	/* margin-bottom: $baseSpacing; */
 	/* @include spacing(5); */
 	margin-bottom: 60px;
 	/* text-align:right; */
-	text-align:center;
+	// text-align:center;
 	}
 	
 	
 	
 #frontWrapper_header {
 	color: $color2;
-	font-size: $fontsizeHuge;
+	font-size: $fs_l;
 	/* margin-bottom: $baseSpacing; */
 	/* @include spacing(5); */
-	margin-bottom: $baseSpacing;
+	margin-bottom: $spacing;
 	}
 	
 
 	
 	
 .frontWrapper_section {
-	/* margin-bottom: $baseSpacing; */
+	/* margin-bottom: $spacing; */
 	margin-bottom: 48px;
 	@extend .clearfix;
 	}	
 	
 
 	.frontWrapper_sectionTitle {
-		font-size: $fontsizeBig;
-		margin-bottom: $baseSpacing;
+		font-size: $fs_l;
+		margin-bottom: $spacing;
 		font-weight:bold;
 		}	
 			
 	.frontWrapper_sectionContent {
-		font-size: $fontsizeMedium;
+		font-size: $fs_m;
 		}	
 		
 		.frontWrapper_sectionContent a {

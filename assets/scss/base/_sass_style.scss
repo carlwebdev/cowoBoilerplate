@@ -58,14 +58,32 @@ $color5: #c5cadb; /* light blue */
 
 
 
-$baseSpacing: 20px; /* deberia ser 16/24 o 1 a 1.5 .... */
+
+/* 
+ * VARIABLES - Colors 
+ */
+$c_primary: #FF5722;
+$c_primary_dark: #E64A19; 
+$c_primary_light: #FFCCBC; 
+
+$c_accent: #03A9F4;
+
+$c_white: #fff; /* white */
+$c_text: #212121;
+$c_text_2: #727272;
+$c_divider: #B6B6B6;
 
 
 
-$fontsizeHuge: 48px;
-$fontsizeBig: 20px;
-$fontsizeMedium: 16px;
-$fontsizeSmall: 12px;
+/* 
+ * VARIABLES - Font size 
+ */
+$fs_xxl: 34px;
+$fs_xl: 28px;
+$fs_l: 20px;
+$fs_m: 16px;
+$fs_s: 12px;
+
 
 
 
@@ -92,12 +110,11 @@ $tipo1:'Cantora One'; /* 1a TIPUS ESPECIAL */
 
 
 
-@mixin transitionButton {
--webkit-transition: all 0.4s linear;
--moz-transition: all 0.4s linear;
--o-transition: all 0.4s linear;
-transition: all 0.4s linear;
-}
+
+
+
+
+
 
 
 

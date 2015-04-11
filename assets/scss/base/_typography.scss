@@ -1,5 +1,47 @@
 /* CSS Document - FRONT-END */
 
+
+
+
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+@mixin f_roboto { // regular
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	}
+		@mixin f_roboto_italic {
+			@include f_roboto;
+			font-style: italic;
+			}
+	
+	@mixin f_roboto_light {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 300;
+		}	
+		@mixin f_roboto_light_italic {
+			@include f_roboto_light;
+			font-style: italic;
+			}					
+	@mixin f_roboto_bold {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: bold;
+		// font-weight: 700;
+		}
+
+
+@mixin f_main { // CMS MAIN FONT - for body tag 
+    @include f_roboto;
+    }		
+		
+
+
+body { 
+	@include f_main;
+	}
+	
+	
+	
 /* ====================================================================================================================== */
 /* TYPOGRAPHY                                                                                                             */
 /* ====================================================================================================================== */
@@ -24,7 +66,7 @@ body {
 
 
 p {
-	margin-bottom: $baseSpacing;	
+	margin-bottom: $spacing;	
 	&:last-of-type {margin-bottom: 0px;}
 	}
 
@@ -38,6 +80,13 @@ a:hover {
 	/* font-weight:bold; */
 	}
 	
+
+
+h1, h2 {
+	font-weight: 300;
+}
+
+
 
 
 /*  Typography - Headers ======================== */
@@ -57,7 +106,7 @@ h4 {font-size: 19px;}
 */
 
 
-
+/*
 h1, h2, h3, h4, h5, h6 {
 font-family: Tahoma, Geneva, sans-serif;
 font-weight : normal;
@@ -106,7 +155,7 @@ h6 {
 	font-size: $fontsizeMedium; 
 	
 	}
-	
+*/	
 	
 	
 		

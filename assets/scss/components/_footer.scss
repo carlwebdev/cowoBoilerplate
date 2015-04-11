@@ -1,45 +1,31 @@
-/* CSS Document - FRONT-END */
-
-/* ====================================================================================================================== */
-/* LAYOUT SECTION - FOOTER                                                                                          */
-/* ====================================================================================================================== */
-	
-#footer {
-	/* margin-bottom:20px; */
-	/* @extend .clearfix; */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Footer
+ */
+ 
+footer {
 	overflow:hidden;
-	padding: 6px;
-	}
-
-
-
-	#footerContent {
-		color:#fff;
-		float:right;
-		text-align:right;
-		
+	
+	.inner {
+		overflow:hidden;
+		padding: $spacing05;
+		text-align: center;    
+    color:#fff;		
 		}
-		#footerContent_line1 {
-			// font-size: $fontsizeHuge;
-			font-size: $fontsizeBig;
-			}
-		#footerContent_line2 {
-			// font-size: $fontsizeBig;
-			font-size: $fontsizeMedium;
 			
-			a {
-				color:#fff;
-				}		
-							
-			}			
-		
-	
-	
+	} // footer
 
 
-
-
-@media only screen and (max-width: $bpBig) { /* width is inclusive */ /* 320 , 420 , .... 480   , 568    ,  ... 600 */
-
+		.footerContent {
+			font-size: $fs_l;
 			
-}	
+			span {font-size: $fs_m;}
+			
+			
+			img {
+				width: 86px;
+				vertical-align: middle;
+				}
+				
+			} // footerContent			

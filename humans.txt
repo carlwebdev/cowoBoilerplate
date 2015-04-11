@@ -1,3 +1,9 @@
+humans.txt al header link rel=author href=humans.txt 
+
+
+
+
+
 /* humanstxt.org */
 
 

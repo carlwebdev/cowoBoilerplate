@@ -1,4 +1,46 @@
-/* CSS Document - FRONT-END */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: Layout
+ */
+
+
+body {
+	background-color: $c_white; 
+  }
+
+
+#page {
+	
+	}
+
+	header, footer {
+		background-color: $c_primary;  
+		}
+	
+		
+.frame { 
+	@include centered;
+	/* max-width:1300px; */
+	max-width:1140px;
+	min-width:320px; 
+	@include paddingh($spacing);	
+  } 			
+	
+	
+	
+@media only screen and (max-width: $bp_m) { 
+
+.frame { 
+	@include paddingh($spacing05);	
+  } 
+		
+					
+} // MEDIA-QUERY		
+
+
+
+
 
 
 
@@ -55,7 +97,7 @@ html, body {
 
 
 			
-@media only screen and (max-width: $bpBig) { 
+@media only screen and (max-width: $bp_l) { 
 
 		
 					
@@ -63,7 +105,7 @@ html, body {
 
 
 
-@media only screen and (max-width: $bpMedium) { 
+@media only screen and (max-width: $bp_m) { 
 
 		.container_content {
 			@include paddingh(15px)
@@ -74,7 +116,7 @@ html, body {
 
 
 
-@media only screen and (max-width: $bpSmall) { 
+@media only screen and (max-width: $bp_s) { 
 
 		.container_content {
 			@include paddingh(10px)

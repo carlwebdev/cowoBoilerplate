@@ -67,6 +67,13 @@ include ('app/config/copy/general.php');
 include ('app/config/copy/pagenames.php'); 
  
 include ('app/config/copy/seo.php'); 
+
+
+include ('app/config/iconfonts.php'); 
+
+
+
+
 ?>
 
 

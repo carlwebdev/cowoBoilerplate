@@ -1,14 +1,12 @@
-<div class="container_section_1 block">
-    <div class="container_content">
+<footer class="block">
+  <div class="frame">
+    <div class="inner">
 
-        <div id="footer" class="clearfix">
-        
-            <div id="footerContent">
-                <div id="footerContent_line1"><?=$website_name ?></div>
-                <div id="footerContent_line2">by <a href="http://cowowo.cat" target="_blank">cowowo</a></div>
-            </div>
-            
-        </div>
+      <div class="footerContent">
+        <?=$website_name ?><br>
+        <span>by</span> <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png"></a>
+      </div>
     
-    </div> <!-- /container_content -->
-</div> <!-- /container_section -->
+    </div> <!-- /inner -->
+  </div> <!-- /frame -->    
+</footer>

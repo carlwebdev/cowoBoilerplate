@@ -9,7 +9,7 @@
 	cursor:pointer;
 	background-color:$color2; 
 	float:left;
-	padding:$baseSpacing;
+	padding:$spacing;
 	color:#fff;
 	}
 
@@ -25,13 +25,13 @@
 	/* width:700px; */
 	width:62%; 
 	
-	padding:$baseSpacing;
+	padding:$spacing;
 	}
 
 	.lightboxme_content .close {
 		cursor:pointer;
 		text-align:right;
-		margin-bottom: $baseSpacing;
+		margin-bottom: $spacing;
 		
 		&:hover {color:$color2;}
 					

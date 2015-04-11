@@ -11,9 +11,8 @@ http://zengrids.com/
 */
 
 
-/* SASS, COMPASS AND SUZY STUFF */
+/* COMPASS */
 @import "compass/css3";
-
 
 /* BASE */
 @import "base/reset";
@@ -25,13 +24,10 @@ http://zengrids.com/
 /* @import "base/tables"; */
 @import "base/layout";
 
-
 /* COMPONENTS */
 @import "components/header";
-@import "components/nav";
 @import "components/footer";
 @import "components/content";
-
 
 /* MODULES */
 @import "modules/cowo_tabs";
@@ -40,3 +36,6 @@ http://zengrids.com/
 @import "modules/lightboxme";
 @import "modules/dev_ruler"; 
 @import "modules/dev_styleguide"; // !!!
+
+
+@import "modules/jquery.mmenu.all"; /* Mmenu - Side menu */
