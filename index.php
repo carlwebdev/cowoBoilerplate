@@ -8,7 +8,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <? include('app/config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
-
 <!-- InstanceEndEditable -->
 <? include('app/config/copy/seo.php'); ?>
 <link rel="shortcut icon" href="assets/favicon/favicon.ico">
@@ -21,19 +20,17 @@
 
 </head>
 <body>
-<div id="container">
-
-<a href="https://github.com/carlwebdev/" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
-
+<div id="page">
+	<? include('app/components/dev/github.php'); ?>
+  <? include('app/components/cookies.php'); ?>
 	<? include('app/components/dev/dev_ruler.php'); ?>
 	<? include('app/components/header.php'); ?>  
-  <div class="frame">
-  <!-- InstanceBeginEditable name="content" -->
+  <div id="content">
+    <div class="frame">
+    <!-- InstanceBeginEditable name="content" -->
 
 
 
-
-<? /*
 <div id="frontWrapper_headerMega">Intro</div>
 
 
@@ -42,43 +39,116 @@
                 <div class="text">
 		                cowo-Boilerplate is a simple responsive PHP front-end framework that is built with HTML5, CSS3, Sass, Compass, jQuery, and PHP.<br>                    
         						It is the starting point for all websites that I build, which I customize in each case according to each new project.<br />
-										There are a few "pre-installed" jQuery plugins, mainly a few that are responsive, as I always tend to use them.
                 </div> <!-- /text -->
-
-*/ ?>                
                 
                 
+                
+<br>
+<br>
+
+<br />
+cowo_Tabs<br />
+<br />
+cowo_DropDown<br />
+<br />
+<br />
+<br />
+<br />
+lugeo una lista con enlaces a subpaginas que se llaman segun lo que son , y que muestran una fincionalida o un efecto o lo que sea, pero con su llamada a jquer propia en el foot, ademas de algun css loco encima, aunk no me mola eso, mejor en css/ algo.<br />
+<br />
 
 
-<div id="frontWrapper_headerMega">StyleGuide</div>
 
 
 
-
-<div id="frontWrapper_header">Colors</div>
-
+				<!--- CREATE CSS FILE JUST FOR THSI DEMOetc -->
 
                 
+                <div class="demo_text">
+                    The cowowo-frawork is built upon both html4 and html5, css3 etc. All css (almost all) is preprocessed, written in SASS.<br />
+        			<br />
+                </div> <!-- /demo_text -->
                 
+                <div class="demo_text">
+                    The cowowo-frawork includes the following &quot;external&quot; files and functionalities:<br />
+                    <br />
 
-<div id="styleguideWrapper">
-	
-	<div class="styleguideColor">styleguideColor</div>
-    <div class="styleguideColor">styleguideColor</div>
-    <br />
-    <br />
+                    FOR INTERNET EXPLORER<br />
+                    2) css3mediaqueries.js -&gt; para que IE 6-8 entiendan los mediaqueries (RESPONSIVE) / VS response.js 
+                    <br />
+                    EN EL HEAD????<br />
+                    <br />
+                    <br />
+                    FOR INTERNEGT EXPLORER<br />
+                    SelectivizR<br />
+                    CSS3 selectors for IE<br />
+                    selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8. Simply include the script in your pages and selectivizr will do the rest.<br />
+                    http://selectivizr.com/
 
-    <br />
+                </div> <!-- /demo_text -->    
+                
+                
+                
+<br>
+<br>
+<br>
+                
+                
+                
+<div id="frontWrapper_headerMega">Styleguide</div>
+
+
+	<div id="demo_wrapper">
+
+
+
+
+<div id="frontWrapper_headerMega">Colors</div>      
+
+
+    <div id="w_colors">
+          <div class="colors_item"></div> 
+          <div class="colors_item"></div> 
+          <div class="colors_item"></div> 
+          <div class="colors_item"></div>  
+          <div class="colors_item"></div> 
+          <div class="colors_item"></div> 
+          <div class="colors_item"></div> 
+          <div class="colors_item"></div>                
+    </div> 
     
-<div id="frontWrapper_header">Fonts</div>
+    
+    
+    
+    
+<div id="frontWrapper_headerMega">Fonts</div>
   
-    <div class="styleguideFont">Font 0</div>
-        
-        
+     <div id="w_fonts">
+          <div class="fonts_item">Roboto</div> 
+          <div class="fonts_item">Roboto Italic</div> 
+          <div class="fonts_item">Roboto Light</div> 
+          <div class="fonts_item">Roboto Light Italic</div>  
+          <div class="fonts_item">Roboto Bold</div> 
+    </div> 
+    
+      
+<br>
+<br>
+<br>
+<br>
+   
 
-</div>
 
+ 
 
+    
+
+	</div> <!-- /demo_wrapper --> 
+  
+  
+  
+  
+                 
 
 
 
@@ -226,54 +296,7 @@
 
 
 
-COSAS A HACER:<br />
-<br />
-<br />
-1) esto es el index, con cosas de css genericas.<br />
-<br />
-<br />
-cowo_Tabs<br />
-<br />
-cowo_DropDown<br />
-<br />
-<br />
-<br />
-<br />
-lugeo una lista con enlaces a subpaginas que se llaman segun lo que son , y que muestran una fincionalida o un efecto o lo que sea, pero con su llamada a jquer propia en el foot, ademas de algun css loco encima, aunk no me mola eso, mejor en css/ algo.<br />
-<br />
-
-
-
-
-
-				<!--- CREATE CSS FILE JUST FOR THSI DEMOetc -->
-
-                
-                <div class="text">
-                    The cowowo-frawork is built upon both html4 and html5, css3 etc. All css (almost all) is preprocessed, written in SASS.<br />
-        			<br />
-                </div> <!-- /text -->
-                
-                <div class="text">
-                    The cowowo-frawork includes the following &quot;external&quot; files and functionalities:<br />
-                    <br />
-                    RESPONSIVE THINGS IN MIND <br />
-                    1) metatags para responsive zoom etc<br />
-                    <br />
-
-                    FOR INTERNET EXPLORER<br />
-                    2) css3mediaqueries.js -&gt; para que IE 6-8 entiendan los mediaqueries (RESPONSIVE) / VS response.js 
-                    <br />
-                    EN EL HEAD????<br />
-                    <br />
-                    <br />
-                    FOR INTERNEGT EXPLORER<br />
-                    SelectivizR<br />
-                    CSS3 selectors for IE<br />
-                    selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8. Simply include the script in your pages and selectivizr will do the rest.<br />
-                    http://selectivizr.com/
-
-                </div> <!-- /text -->        
+    
 
                 
                 
@@ -1141,10 +1164,11 @@ $(document).ready(function(){
              
 
 <!-- InstanceEndEditable -->
-  </div> <!-- /frame -->              
+    </div> <!-- /frame --> 
+  </div> <!-- /content -->            
 	<? include('app/components/footer.php'); ?>
 <? include "app/components/side_menu.php"; ?>    
-</div> <!-- /container -->
+</div> <!-- /page -->
 <? include('app/config/scripts.php'); ?>
 <!-- InstanceBeginEditable name="scripts" -->
 <script src="js/nav/nav_1.js"></script>

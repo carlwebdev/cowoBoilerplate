@@ -7,9 +7,7 @@ UNDER CONSTRUCTION
 
 What is it?
 A starting point for creating front-end web development.
-
-
-que incluye todas las dependenciales
+It include most if the stuff I use regularly.
 
 
 How does it work?
@@ -48,7 +46,7 @@ favicon.ico
 
 
 
-
+// dev ruler is included 
 
 
 

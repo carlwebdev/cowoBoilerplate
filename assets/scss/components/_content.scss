@@ -6,25 +6,28 @@
 	
 #content {
 	min-height:200px; 
-	overflow:hidden; 
-	padding:20px;
-	}
+	overflow:hidden; // ????????? 
+	// background-color: #999;
+	@include paddingv($spacing2);
+	
+	.inner {}
+	
+	
+	} // content
 
 
-.text {
+
+
+
+
+
+
+
+.demo_text {
 	font-size:1rem; 
 	background-color:$color3; 
 	margin-bottom:20px; 
 	}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -39,7 +42,8 @@
 
 
 #frontWrapper_headerMega {
-	color: $color3;
+	// color: $color3;
+	
 	font-size: $fs_xl;
 	/* margin-bottom: $baseSpacing; */
 	/* @include spacing(5); */
@@ -51,7 +55,8 @@
 	
 	
 #frontWrapper_header {
-	color: $color2;
+	// color: $color2;
+	
 	font-size: $fs_l;
 	/* margin-bottom: $baseSpacing; */
 	/* @include spacing(5); */
@@ -69,9 +74,10 @@
 	
 
 	.frontWrapper_sectionTitle {
-		font-size: $fs_l;
+		font-size: $fs_m;
 		margin-bottom: $spacing;
-		font-weight:bold;
+		// font-weight:bold;
+		color: $c_text_2;
 		}	
 			
 	.frontWrapper_sectionContent {

@@ -11,7 +11,7 @@
 User-agent: *
 
 # Un-comment this line when in production
-# Disallow: /
+Disallow: /
 
 
 # Dissalow always

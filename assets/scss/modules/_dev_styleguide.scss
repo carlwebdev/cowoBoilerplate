@@ -9,40 +9,22 @@
 
 
 
-
-
-
-
-
-
-
-
 /* STYLEGUIDE */
 
 
 #styleguideWrapper {
-	/* background-color:#ccc; */
+
 	}
 	
 	.styleguideColor {
-		background-color:$color2;
-		}
-	.styleguideColor:nth-of-type(2) {
-		background-color:$color3;
+	
 		}
 				
 				
 				
 	.styleguideFont {
-		@include font0;
+		
 		}				
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
@@ -58,59 +40,68 @@
 
 
 
+
+
+// .w_demo_section
+
+
 #demo_wrapper {
 background-color:#ccc;
-font-family: 'Cantora One', sans-serif;
 }
 
-.font_wrapper_1 {
-background-color:#ccc;
-font-family: 'Anton', sans-serif;
-}
-.font_wrapper_2 {
-background-color:#ccc;
-font-family: '', sans-serif;
-}
-.font_wrapper_3 {
-background-color:#ccc;
-font-family: 'Open Sans', sans-serif;
-}
 
-#colors_wrapper { overflow:hidden;
-font-family: 'Cantora One', sans-serif;
-}
-	#colors_item {float:left; width:23.5%; margin-right:2%; height:200px;}
-		#colors_item:nth-of-type(4) {margin-right:0%;}	
 
-			#colors_item:nth-of-type(1) {background-color:#0d80a1;}	
-			#colors_item:nth-of-type(2) {background-color:#0d80a1;}	
-			#colors_item:nth-of-type(3) {background-color:#0d80a1;}	
-			#colors_item:nth-of-type(4) {background-color:#0d80a1;}	
-		/* TRUCO A) sass, vs truco b) ....... find tool to do this...   vs c) rbga(0,0,0,0.3)  */
 
-#colors_wrapper_2 { overflow:hidden;
-font-family: 'Cantora One', sans-serif;
-}
-	#colors_item_2 {float:left; width:23.5%; margin-right:2%; height:200px;}
-		#colors_item_2:nth-of-type(4) {margin-right:0%;}	
 
-			#colors_item_2:nth-of-type(1) {background-color:rgba(13,128,161,1);}			
-			#colors_item_2:nth-of-type(2) {background-color:rgba(13,128,161,0.50);}	
-			#colors_item_2:nth-of-type(3) {background-color:rgba(13,128,161,0.25);}	
-			#colors_item_2:nth-of-type(4) {background-color:rgba(13,128,161,0.10);}	
-		/* TRUCO A) sass, vs truco b) ....... find tool to do this...   vs c) rbga(0,0,0,0.3)  */
-				
+#w_fonts { 
+	font-size: $fs_xl;
+
+	
+	}
+
+
+		.fonts_item { // grid !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			&:nth-of-type(1) {@include f_roboto}	
+			&:nth-of-type(2) {@include f_roboto_italic}
+			&:nth-of-type(3) {@include f_roboto_light}
+			&:nth-of-type(4) {@include f_roboto_light_italic}
+			&:nth-of-type(5) {@include f_roboto_bold}
+			&:nth-of-type(6) {@include f_roboto}
+			&:nth-of-type(7) {@include f_roboto}
+			&:nth-of-type(8) {@include f_roboto}
+			}
 
 
 
 
 
+#w_colors { 
+	overflow:hidden;
+	}
+
+	.colors_item { // grid !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		float:left; 
+		width: 23.5%; 
+		padding-top: 23.5%; 
+		margin-right:2%; 
+		margin-bottom:2%; 
+		&:nth-of-type(4n) {margin-right:0%;}	
+		
+		// inlcude mixin, (loop) with color and color hex added as pseudo eleent so that its on tiop of the box.. sass loops and maps of colors or arrays or whatever...
+		&:nth-of-type(1) {background-color: $c_primary_dark;}	
+		&:nth-of-type(2) {background-color: $c_primary;}	
+		&:nth-of-type(3) {background-color: $c_primary_light;}	
+		&:nth-of-type(4) {background-color: $c_white;}	
+		&:nth-of-type(5) {background-color: $c_accent;}	
+		&:nth-of-type(6) {background-color: $c_text;}	
+		&:nth-of-type(7) {background-color: $c_text_2;}	
+		&:nth-of-type(8) {background-color: $c_divider;}	
+		
+		}
+		
 
 
 
 
-$colorprofestival:#0d80a1;
-.profestival_color_1 {background-color:$colorprofestival;}
-.profestival_color_2 {background-color: lighten($colorprofestival, 50%); }
-.profestival_color_3 {background-color: lighten($colorprofestival, 75%); }
-.profestival_color_4 {background-color: lighten($colorprofestival, 10%); }		
+
+	

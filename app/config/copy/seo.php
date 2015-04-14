@@ -21,12 +21,12 @@ if ($pagename==$pagename_index) // INDEX
 elseif ($pagename==$pagename_404) // 404
     {
     ?>
-    <title><?=$pagename_404 ?> - <?=$website_name ?></title>
-    <meta name="description" content="DESCRIPTION"> 
-    <meta name="keywords" content="KEYWORDS">  
+<title><?=$pagename_404 ?> - <?=$website_name ?></title>
+<meta name="description" content="DESCRIPTION"> 
+<meta name="keywords" content="KEYWORDS">  
     <?
     }												
-else // ...
+else // ... takle away as elseif, just else.  hmm, ojo copn los osts dinamicos !!!! 
     {
     ?>  	
     

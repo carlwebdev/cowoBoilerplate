@@ -14,6 +14,9 @@ ErrorDocument 404 http://cowoserver/carl_github/cowo-Boilerplate/404.php
 
 
 ### add instructions to use getfullpath to write the correct path
+# use the file to find the correct path in the sever
+
+
 
 ### htpasswd
 

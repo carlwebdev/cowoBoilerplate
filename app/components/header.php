@@ -1,3 +1,12 @@
+<? 
+/*
+ * cowo-Boilerplate
+ * Built by cowowo.cat
+ * Project: 
+ * Component: Header
+ * Filename: header.php
+ */
+?>
 <header>
  <div class="frame">
     <div class="inner">

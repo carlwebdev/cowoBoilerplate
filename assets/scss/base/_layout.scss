@@ -5,13 +5,35 @@
  */
 
 
+
+/*
+ * CODE FOR RESPONSIVE STICKY FOOTER
+ * Instructions: class "block" to footer
+ */
+html, body {
+	height: 100%;
+	}
+#page {
+	display: table;
+	height: 100%;
+	width:100%;
+	}
+.block {
+	display: table-row;
+	height: 1px;
+	}
+
+
+
+
+
 body {
 	background-color: $c_white; 
   }
 
 
 #page {
-	
+	/* PLACEHOLDER */
 	}
 
 	header, footer {
@@ -44,22 +66,7 @@ body {
 
 
 
-/*
- * CODE FOR RESPONSIVE STICKY FOOTER
- * Instructions: class "block" to footer
- */
-html, body {
-	height: 100%;
-	}
-#container {
-	display: table;
-	height: 100%;
-	width:100%;
-	}
-.block {
-	display: table-row;
-	height: 1px;
-	}
+
 	
 	
 	

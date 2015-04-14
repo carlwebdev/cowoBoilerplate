@@ -23,7 +23,8 @@ $min='FALSE';
 elseif($_SERVER['SERVER_NAME']=='carljohansson.net' || $_SERVER['SERVER_NAME']=='www.carljohansson.net')
 {	
 // ONLINE - PRODUCTION SERVER
-$domain = 'www.carljohansson.net';
+// $domain = 'www.carljohansson.net';
+$domain = 'www.carljohansson.net/tools/cowo-Boilerplate/';
 // $path = 'www.carljohansson.net';
 ?>       
 <base href="http://<?=$domain ?>/">    
@@ -69,10 +70,8 @@ include ('app/config/copy/pagenames.php');
 include ('app/config/copy/seo.php'); 
 
 
+
 include ('app/config/iconfonts.php'); 
-
-
-
 
 ?>
 

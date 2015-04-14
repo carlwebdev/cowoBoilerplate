@@ -1,3 +1,12 @@
+<? 
+/*
+ * cowo-Boilerplate
+ * Built by cowowo.cat
+ * Project: 
+ * Component: Footer
+ * Filename: footer.php
+ */
+?>
 <footer class="block">
   <div class="frame">
     <div class="inner">
