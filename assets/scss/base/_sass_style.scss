@@ -3,64 +3,11 @@
 
 
 
-/*
-// ideas de font size y line height
-body{
-  font-size:100%;
-  line-height: 1.5;
-}
-*/
-
-
-
-// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
-// http://css-tricks.com/ie-background-rgb-bug/
-
-
-
-/* do sass for colors, and for interactiuon behaviours */
-
-@mixin f_base {
-	font-family: 'Roboto', Arial, sans-serif; /* always put the arial in there, hmmmmm qa ... ? DONT ERASE THIS EASILY  */
-	}
-
-
-
-
-
-/* SASS =========================== */
-
-
-/* 
- * VARIABLES - COLORS - 1ST LEVEL !  
- */
-$white: #fff; /* white */
-$color2: #8f8772; /* dark brown */
-$color3: #dbd5c5; /* light brown */
-$color4: #646e8f; /* dark blue */
-$color5: #c5cadb; /* light blue */
-
-
-$carrot: #e67e22;
-$pumpkin: #d35400;
-
-
-/* VARIABLES */
-$color1: $white; 
-$color2: $pumpkin; 
-$color3: $carrot;
-$color4: #646e8f; /* dark blue */
-$color5: #c5cadb; /* light blue */
-
-
-
-
-
 
 
 
 /* 
- * VARIABLES - Colors 
+ * SASS - VARIABLES - Colors 
  */
 $c_primary: #FF5722;
 $c_primary_dark: #E64A19; 
@@ -88,24 +35,26 @@ $fs_s: 12px;
 
 
 
+
+/* 
+ * FALLBACKS using Sass
+ */
+ 
+ 
+
 /* CREATE MIXIN for rem fontsize and px fallback solution */
 
+/* FALLBACK for background opacity */
+	#asfgasafasf {
+		background: #ccc; /* Fall-back for brosers that don't support opacity */
+		background: rgba(204, 204, 204, 0.85);
 
-
-$fontfamily1: Raleway; 
-
-
-/* Variables - font families */
-$tipo0:'Open Sans'; /* BASE per tota la web / text menys important */
-$tipo1:'Antonio'; /* 1a TIPUS ESPECIAL */
+	}
 
 
 
-$tipo0:'Raleway'; /* BASE per tota la web / text menys important */
-$tipo1:'Cantora One'; /* 1a TIPUS ESPECIAL */
-
-@mixin font0 {font-family: $tipo0, sans-serif;}
-@mixin font1 {font-family: $tipo1, sans-serif;}
+// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
+// http://css-tricks.com/ie-background-rgb-bug/
 
 
 

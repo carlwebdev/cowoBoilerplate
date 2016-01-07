@@ -7,20 +7,24 @@
 
 .lightboxme_trigger {
 	cursor:pointer;
-	background-color:$color2; 
+	background-color:$c_primary; 
 	float:left;
 	padding:$spacing;
 	color:#fff;
-	}
-
-	.lightboxme_trigger:hover {
-		background-color:$color3; 
+	
+	&:hover {
+		background-color:$c_primary_dark;    // MUST EXTEND BUTTON STYLE CLASS OR MIXIN FOR THIS S!!!!!!!!!!!!!!!!!!!!! TEST WITH MIXIN, i THINK IT WAS OK , YEAH....
 		}
+		
+			
+	} // lightboxme_trigger
+
+
 	
 .lightboxme_content {
 	clear:right; 
 	display:none; 
-	background-color:$color3; 
+	background-color:$c_primary_light; 
 	color:#fff;
 	/* width:700px; */
 	width:62%; 
@@ -33,7 +37,7 @@
 		text-align:right;
 		margin-bottom: $spacing;
 		
-		&:hover {color:$color2;}
+		&:hover {color:$c_primary;}
 					
 		}
 		

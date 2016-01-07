@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/master_en.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-<? /* <meta charset="utf-8"> */?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? /* Always force latest IE rendering engine (even in intranet) & Chrome Frame */?>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<? include('app/config/config.php'); ?>
+<? include('config/head_top.php'); ?>
+<? include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
 <? $pagename = $pagename_404 ?>
 <!-- InstanceEndEditable -->
-<? include('app/config/copy/seo.php'); ?>
-<link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<? include('app/config/css.php'); ?>
-<link rel="stylesheet" href="assets/fonts/icon-font/styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+<? include('config/seo.php'); ?>
+<? include('config/head_bottom.php'); ?> 
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -22,24 +15,27 @@
 </head>
 <body>
 <div id="page">
-	<? include('app/components/dev/github.php'); ?>
-  <? include('app/components/cookies.php'); ?>
-	<? include('app/components/dev/dev_ruler.php'); ?>
-	<? include('app/components/header.php'); ?>  
+  <div id="w_headroom" class="headroom">
+	<? include('components/dev/github.php'); ?> 
+  <? include('components/cookies.php'); ?> 
+	<? include('components/dev/dev_ruler.php'); ?>
+	<? include('components/header.php'); ?> 
+  </div> <!-- /w_headroom -->  
   <div id="content">
     <div class="frame">
     <!-- InstanceBeginEditable name="content" -->
-
-						<div id="frontWrapper_headerMega"><?=$pagename?></div>
-
-					<!-- InstanceEndEditable -->
+			<? include('components/pages/404_view.php'); ?>
+		<!-- InstanceEndEditable -->
     </div> <!-- /frame --> 
   </div> <!-- /content -->            
-	<? include('app/components/footer.php'); ?>
-<? include "app/components/side_menu.php"; ?>    
+	<? include('components/footer.php'); ?>
+  
+<? include "components/side_menu.php"; ?>    
 </div> <!-- /page -->
-<? include('app/config/scripts.php'); ?>
+<? include('config/scripts.php'); ?>
 <!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable -->  
+<script src="js/nav/nav_4.js"></script>
+<!-- InstanceEndEditable -->
+<? include('config/credits.php'); ?>  
 </body>
 <!-- InstanceEnd --></html>

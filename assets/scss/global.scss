@@ -26,6 +26,7 @@ http://zengrids.com/
 
 /* COMPONENTS */
 @import "components/header";
+@import "components/nav";
 @import "components/footer";
 @import "components/content";
 
@@ -42,3 +43,14 @@ http://zengrids.com/
 
 
 @import "modules/jquery.mmenu.all"; /* Mmenu - Side menu */
+
+
+@import "modules/megatron"; 
+
+
+@import "modules/headroom"; 
+
+
+/* FOR THE RESPONSIVE BEHAVIOUR */
+@import "grid/cowo_grid";
+// @import "grid/cowo_grid_queries";

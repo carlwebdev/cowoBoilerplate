@@ -1,0 +1,25 @@
+mODERNIZr contains html5shiv, and html5shiv is only for IE older than 9
+
+///////////////
+
+
+1) If I'm already using Modernizer then even will I need HTML5 Shiv to enable HTML5 tag supports for IE.
+
+You don't need to separately include html5shiv, because Modernizr includes it:
+
+As of Modernizr 1.5, this script is identical to what is used in the popular html5shim/html5shiv library.
+
+http://www.modernizr.com/docs/#html5inie
+
+2) and is HTML5 Shiv only for IE or for all browser who don't have native HTML 5 support. like older version of Firefox, Safari, Chrome etc.
+
+It's only for Internet Explorer.
+
+Older versions of other browsers don't need it: http://caniuse.com/html5semantic
+
+And the recommended snippet to include it is:
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+Which will only ever run for IE less than 9.

@@ -1,4 +1,12 @@
-/* CSS Document - FRONT-END */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Forms
+ */
+
+
+// boilrplate - button disabled ! and button submit vs reset, osea, yes vs no, con diferencia para que se vea qué ahu que clikar UX
+
 
 
 // CSS FORMS !!! - UI - FOCUS FACE IS IMPORTANT, SPECIALLY WEHN TOGGLING WITH TAB THROUGHT THE TAB INDEX
@@ -63,7 +71,7 @@ form {
 	
 	
 label {
-	color:$color2;
+	color: $c_text_2;
 	font-size: $fs_m;
 	}
 	
@@ -117,8 +125,8 @@ input[type=text],
 input[type=password],
 textarea,
 select  {
-	background-color:$color3;
-	border:3px solid $color3;
+	background-color:$c_divider;
+	border:3px solid $c_primary;
 	}
 	
 	
@@ -156,7 +164,7 @@ textarea:focus,
 select:focus {
 	outline: none; /* VIP */
 	background-color:#fff;
-	border:3px solid $color2;
+	border:3px solid $c_primary_dark;
 	}
 	
 	

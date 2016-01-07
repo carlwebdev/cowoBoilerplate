@@ -1,11 +1,13 @@
-### ErrorDocument 404
+#######################
+### ErrorDocument 404 #
+#######################
 ### LOCAL SERVER
 ErrorDocument 404 http://cowoserver/carl_github/cowo-Boilerplate/404.php
 ### STAGING SERVER
 # ErrorDocument 404 http://carljohansson.net/404.php
 ### PRODUCTION SERVER
 # ErrorDocument 404 http://carljohansson.net/404.php
-
+#############################################################################
 
 
 # MOSTRAR index.html y no index.php por defecto - DESHABILITADO AHORA
@@ -17,8 +19,9 @@ ErrorDocument 404 http://cowoserver/carl_github/cowo-Boilerplate/404.php
 # use the file to find the correct path in the sever
 
 
-
+#################
 ### htpasswd
+#################
 
 ### PASSWORD PROTECTED ACCESS TO THE WEBSITE
 

@@ -1,0 +1,103 @@
+<!-- Open Graph -->
+<meta property="og:title" content="slick - the last carousel you'll ever need" />
+<meta property="og:description" content="slick is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping &amp; much more!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://kenwheeler.github.io/slick/" />
+<meta property="og:image" content="http://kenwheeler.github.io/slick/img/slick.gif" />
+<meta property="og:image:type" content="image/gif" />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="300" />
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="slick - the last carousel you'll ever need" />
+<meta name="twitter:description" content="slick is a responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping &amp; much more!" />
+<meta name="twitter:creator" content="@ken_wheeler" />
+<meta name="twitter:image:src" content="http://kenwheeler.github.io/slick/img/slick.gif" />
+<meta name="twitter:domain" content="http://kenwheeler.github.io/slick/" />
+  
+  
+<!-- Normalize is a modern, HTML5-ready, alternative to the traditional CSS reset -->
+<!--<link rel="stylesheet" type="text/css" href="../css_special/normalize.css" >-->
+
+<? /*
+<!--[if (lt IE 9) & (!IEMobile)]> -->
+<!--  <script src="js/lib/selectivizr-min.js"></script> -->
+<!--  <![endif]-->
+<!-- me suena que selectivizr va en el head !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+*/ ?>
+
+
+
+cssmediaqueries snippet for header - WITH CDN !!!
+
+<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+
+
+<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+<!-- <script type="text/javascript" src="../admin/js/lib/css3-mediaqueries.js"></script> -->
+
+<!-- 
+CSS3 MEDIA QUERIES (FOR INTERNET EXPLORER till 8 etc ) 
+And you should combine and compress with other scripts and include it just before </body> for better page speed - but you already knew that 
+-->
+<script type="text/javascript" src="../js/css3-mediaqueries.js"></script>
+
+
+
+
+
+y tema ese de http sucks, pero mejor guardar scripts externos via cache
+
+ergo, hacer eso del cahe etc
+
+//////////////////////////////////////////////////////
+
+jquery lib calling with js fallback solution
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+
+
+//////////////////////////////////////////////////////
+snippet hmtl5shiv: / not needed if already using modernizr... but hey, not quite there yet !!!
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://getbootstrap.com/2.3.2/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+////////////////////////
+
+IE
+
+IE 7 thingee form didier's gamefever
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+
+& MORE STIUFF ABOUT CNDITIONAL STYLESHEETS, which suck anyways...
+
+///////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

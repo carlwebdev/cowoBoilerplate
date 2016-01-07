@@ -1,28 +1,9 @@
-humans.txt al header link rel=author href=humans.txt 
-
-
-
-
-
 /* humanstxt.org */
-
+# humans.txt al header link rel=author href=humans.txt (?) 
 
 Developed by COWOWO
 http://www.cowowo.cat
 info [at] cowowo.cat
-
-
-
-
-
-/* TEAM - example */
-
-Name: 			eg: Chris Da Sie
-Site:			eg: http://chrisdasie.com
-Twitter:		eg: @chrisdasie
-Location:		eg: Canada
-
-
 
 
 /* TEAM */
@@ -30,85 +11,81 @@ Location:		eg: Canada
 	Programmer: Joan Estadella
 	Contact: joan [at] cowowo.cat
 	Twitter:
-	From: Barcelona, Catalonia, Spain
-	
-	Web designer: Jaime Bertrán
-	From: Barcelona, Catalonia, Spain
+	Location: Barcelona, Catalonia, Spain
 	
 	Web Developer: Carl Johansson
 	Contact: carl [at] cowowo.cat
-	Twitter: @lo_kal
-	From: Barcelona, Catalonia, Spain
-
-
-/* THANKS */
-
-
-
-
-
+	Site: 
+	Twitter: @carlwebdev
+	Location: Barcelona, Catalonia, Spain
+	
+	Web Designer: James Ruins
+	Location: Barcelona, Catalonia, Spain
+	
 
 /* SITE */
 
 	Last update:
 	Language: English
 	Doctype: HTML5
-	IDE: 
+	IDE: Brackets, Wamp, Filezilla, Scout, PNGgauntlet, Ghostlab
 	
-	
-Standards: 
 
-HTML5
-CSS3
-
-Components: 
-
-jQuery: 		http://jquery.com
-
-
-
-320 and Up: 		http://stuffandnonsense.co.uk/projects/320andup 
-Bootstrap: 		http://twitter.github.com/bootstrap
-Font Awesome: 		http://fortawesome.github.com/Font-Awesome
-Frameless grid: 	http://framelessgrid.com
-jQuery: 		http://jquery.com
-Modernizr: 		http://modernizr.com
-Selectivizr: 		http://selectivizr.com	
+/* STANDARDS */
+ 
+	HTML5
+	CSS3
+	Sass - CSS pre-processing - http://sass-lang.com/
+	Responsive Web Design
+	Adaptative Web Design
+	jQuery, 
+	jQuery UI
+	jQuery Mobile	
 
 
+/* COMPONENTS */
+
+	jQuery: 		http://jquery.com
+	Modernizr: 		http://modernizr.com
+	Selectivizr: 		http://selectivizr.com	
+	css3mediaqueries.js - https://code.google.com/p/css3-mediaqueries-js/ 
 
 
-jQuery Plugins: (used in the website...)
+	320 and Up: 		http://stuffandnonsense.co.uk/projects/320andup 
+	Bootstrap: 		http://twitter.github.com/bootstrap
+	Font Awesome: 		http://fortawesome.github.com/Font-Awesome
+	Frameless grid: 	http://framelessgrid.com
+
+
+/* jQuery Plugins: (used in the website...) */
+
+jquery.mmenu.min.all.js (side menu) - LINK
+Headroom.js - LINK
 
 FitVids.js - http://fitvidsjs.com/
-FitText.js - http://fittextjs.com/
-Letterings.js - http://letteringjs.com/
-ResponsiveSlides.js - http://responsiveslides.com/
+
+
+	FitText.js - http://fittextjs.com/
+	Letterings.js - http://letteringjs.com/
+	ResponsiveSlides.js - http://responsiveslides.com/
+
+
+/* ASSETS */
+
+# Fonts: Google Fonts - http://www.google.com/fonts - and put their names
+
+# Icon font
+Fontastic - http://fontastic.me/
+
+# (SVG) icons .
+
+# Colors - Color scheme - Kuler / Adobe - link to color scheme ie (https://kuler.adobe.com/create/color-wheel/)
 
 
 
+/* IDE / APPS */
 
-/* OTHER CREDITS */
-
-Fonts: Google Fonts - http://www.google.com/fonts - and put their names
-Colors: 
-Color scheme - Kuler / Adobe - link to color scheme
-Icons: (iconic...)
-Icon font:
-
-
-
-
-OTHER CODING TECHNOLOGIES:
-- HTML(5-ISH) 
-- CSS3
-SASS - CSS pre-processing
-
-
-- rwd - Responisve Web Design
-
-php & mysql versions .....
-
-
-
-
+Adobe Brackets - http://brackets.io/
+Scout app - http://mhs.github.io/scout-app/
+PSPad - http://www.pspad.com/
+Ghostlab - LINK

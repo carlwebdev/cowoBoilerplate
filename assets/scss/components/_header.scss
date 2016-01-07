@@ -3,6 +3,14 @@
  * Project: cowo-Reset
  * File: Header
  */
+
+
+#w_headroom {
+	
+	
+	
+	}
+
 	
 header {
 	// border-top: $spacing solid $c_primary_dark; // implement THIS N OTHER REPOS TOO
@@ -29,9 +37,16 @@ header {
 			// img {@include img;}
 		
 					
-			display: inline-block !important;
+			// display: inline-block !important;
 			
 			// background-color: #999; // TEST
+
+			display: none;
+			@media only screen and (max-width: $bp_m) { 
+				display: block !important;	
+				// display: inline-block !important;	
+				} // MEDIA-QUERY	
+
 
 
 	
@@ -87,6 +102,8 @@ header {
 	#main_logo {
 		float:none;
 		text-align:center;
+		
+		display: none;
 		}
 	#slogan {
 		position:relative;

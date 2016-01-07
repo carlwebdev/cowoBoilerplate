@@ -16,7 +16,7 @@ html, body {
 #page {
 	display: table;
 	height: 100%;
-	width:100%;
+	width:100%; /* VIP for responsiveness */
 	}
 .block {
 	display: table-row;
@@ -47,33 +47,22 @@ body {
 	max-width:1140px;
 	min-width:320px; 
 	@include paddingh($spacing);	
-  } 			
+	@include transition(padding-left, $t_slow);
+	@include transition(padding-right, $t_slow);
 	
 	
+	@media only screen and (max-width: $bp_m) { 
+		@include paddingh($spacing05);					
+		} // MEDIA-QUERY	
+
 	
-@media only screen and (max-width: $bp_m) { 
-
-.frame { 
-	@include paddingh($spacing05);	
-  } 
-		
-					
-} // MEDIA-QUERY		
-
-
-
-
-
-
-
-
+  } // frame 			
 	
 	
 	
 	
-/* ====================================================================================================================== */
-/* MACRO LAYOUT                                                                                                           */
-/* ====================================================================================================================== */
+
+
 
 
 
@@ -84,7 +73,7 @@ body {
 
 	/* FULL WIDTH */
 	.container_section_1 {
-		background-color:$color2;
+		background-color:$c_primary_dark; // ?!??!?!?!?
 		} 
 	.container_section_2 {
 		

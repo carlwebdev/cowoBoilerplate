@@ -29,3 +29,18 @@ footer {
 				}
 				
 			} // footerContent			
+			
+			
+a.scrollToTop {
+	
+	 color: inherit;
+	 cursor: pointer;
+	 &:hover {color: $c_primary_light;}
+	
+		
+		.icon {
+			font-size: 32px;
+			}
+	
+	
+	}			

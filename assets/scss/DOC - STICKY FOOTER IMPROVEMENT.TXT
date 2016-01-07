@@ -1,0 +1,59 @@
+http://ryanfait.com/sticky-footer/
+& EXPLANATION OF SAME CODE:
+http://ryanfait.com/resources/footer-stick-to-bottom-of-page/
+
+faqs etc
+http://stackoverflow.com/questions/5552937/maintain-element-at-the-bottom-of-page-on-page-scrolling
+http://bytes.com/topic/html-css/answers/99065-positioning-div-bottom-page
+
+
+
+CSS STICKY FOOTER THAT SEEMS TO WQORK...
+http://css-tricks.com/snippets/css/sticky-footer/
+
+
+
+<div class="page-wrap">
+  
+  Content!
+      
+</div>
+
+<footer class="site-footer">
+  I'm the Sticky Footer.
+</footer>
+
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: orange;
+}
+
+
+it's different than my sticky footer, doesn't use display table, so it might be cleaner than my current sticky footer !!!
+
+
+
+
+
+
+
+
+IN SAME SITE AS THE JQUERY STICKY FOOTER I'M USING NOW.

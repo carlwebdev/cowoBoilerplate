@@ -1,0 +1,55 @@
+/* CSS Document */
+
+
+<!-- PRE / CODE -->
+<!-- <pre><code>Code here</code></pre> -->
+pre {
+background-color:#999;
+border:1px solid #000;
+padding:10px;
+width:100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+border-radius:10px 30px;		
+}
+
+
+<!-- CSS3 - TEXT-SHADOW (with different color layers !!!) -->
+		h1 {
+			background: rgba(0,0,0,0.2);
+			text-align: center;
+			color:#fff;
+			font: 95px/1 "Impact";
+			text-transform: uppercase;
+			display: block;
+			margin: 5% auto 5%;
+			text-shadow:#253e45 -1px 1px 0,
+			#253e45 -2px 2px 0,
+			#d45848 -3px 3px 0,
+			#d45848 -4px 4px 0;	
+		}
+		
+		
+		
+		
+		
+<!-- IMAGES & RESPONSIVE : image height auto-->		
+
+
+#example img {
+    width: 100%;
+    height: auto;
+    max-width: 690px; // Width of the image uploaded.
+}	
+
+/* */
+img {
+  width: inherit;  /* Make images fill their parent's space. Solves IE8. */
+  max-width: 100%; /* Add !important if needed. */
+  height: auto;    /* Add !important if needed. */
+}	
+
+
+
+

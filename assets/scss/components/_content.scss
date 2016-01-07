@@ -1,11 +1,13 @@
-/* CSS Document - FRONT-END */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Content - MOSTLY DEMO STUFF TO CLEAR AWAY AND PROCESS
+ */
+ 
 
-/* ====================================================================================================================== */
-/* LAYOUT SECTION - CONTENT                                                                                          */
-/* ====================================================================================================================== */
 	
-#content {
-	min-height:200px; 
+#content { // 
+	// min-height:200px; 
 	overflow:hidden; // ????????? 
 	// background-color: #999;
 	@include paddingv($spacing2);
@@ -18,14 +20,28 @@
 
 
 
-
+.test_text {
+	font-size:1.25rem; 
+	background-color:$c_primary_light; 
+	margin-bottom:20px; 
+	
+		&::first-line { // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			font-size:2rem; 
+			word-spacing:80px; 
+			// white-space:pre-wrap;
+			// white-space:nowrap;
+			// word-wrap:break-word;
+			// overflow:hidden;
+			}
+	
+	}
 
 
 
 
 .demo_text {
 	font-size:1rem; 
-	background-color:$color3; 
+	background-color:$c_primary_light; 
 	margin-bottom:20px; 
 	}
 
@@ -85,12 +101,13 @@
 		}	
 		
 		.frontWrapper_sectionContent a {
-			color: $color2; 
+			color: $c_primary; 
 			font-weight:bold;
-			}		
-			.frontWrapper_sectionContent a:hover {
-				text-decoration:underline;
-				}		
+			
+			&:hover { text-decoration:underline;}	
+							
+			} // a		
+	
 
 
 
@@ -98,8 +115,8 @@
 
 
 
-@media only screen and (max-width: 1024px) { /* width is inclusive */ /* 320 , 420 , .... 480   , 568    ,  ... 600 */
+@media only screen and (max-width: 1024px) { 
 
 			
-}
+} // MEDIA-QUERY
 

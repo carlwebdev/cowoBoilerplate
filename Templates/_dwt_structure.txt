@@ -1,0 +1,27 @@
+TEMPLATE STRUCTURE
+
+
+/// BACK-END 
+
+admin.dwt
+
+
+
+
+/// FRONT-END 
+
+master 
+
+	master_en       
+		
+		master_en_main  
+			
+		master_en_aside 
+		
+	
+	master_es
+	
+		master_es_main 
+				
+		master_es_aside
+				

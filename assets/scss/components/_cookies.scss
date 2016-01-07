@@ -4,11 +4,14 @@
  *
  */
 
-.leydecookies { // m_ or ???? 
-		// background-color: $c_primary_light;
-    @include paddingv($spacing025);  
-    }
-
+.modal_leydecookies { // m_ or ????  // modal_lorem !!!!!!!!!!!!!!!!!
+		background-color: $c_primary_light;
+    @include paddingv($spacing025); 
+		
+		position: fixed;  
+		bottom: -200px; // es la altura que escondo mediante jquery - ahi debveria ser un toggle class para que funcione autonomamente
+		width: 100%;
+    } // modal_leydecookies
 
 
     .leydecookies_content { // inner ...must be nested in trhat case...
@@ -24,7 +27,6 @@
 					font-size: 12px;
 					}
         
-        
         .options {
 						display: inline-block;
 						vertical-align: middle;					
@@ -33,33 +35,32 @@
 						ul {}
 
             li {
-                float: left;
-                margin-right: 10px;
-                &:last-of-type {margin-right: 0;}
+							float: left;
+							margin-right: 10px;
+							&:last-of-type {margin-right: 0;}
 
-                a {
-                    cursor: pointer; /* para el ajax onclick - pasar esto a este reset, y luego al cowo-Reset  */
-                    display: block; 
-                    // padding: 5px 10px;
-                    padding: 4px 8px;
-                    // width: 100px;
-                    min-width: 100px;
-                    min-width: 60px;
-                    text-align: center;
-                    
-                    font-size: 12px;
-                    color: #fff;
-                    
-                    @include transition(background-color, 0.5s); // sass it !!!!!!!!
-										background-color: $c_primary;
-                    
-                    &:hover {
-											// background-color: darken($c_green, 5%);
-											background-color: $c_primary_dark;
-										}
+							a {
+								cursor: pointer; /* para el ajax onclick - pasar esto a este reset, y luego al cowo-Reset  */
+								display: block; 
+								// padding: 5px 10px;
+								padding: 4px 8px;
+								// width: 100px;
+								min-width: 100px;
+								min-width: 60px;
+								text-align: center;
+								
+								font-size: 12px;
+								color: #fff;
+								
+								@include transition(background-color, 0.5s); // sass it !!!!!!!!
+								background-color: $c_primary;
+								
+								&:hover {
+									// background-color: darken($c_green, 5%);
+									background-color: $c_primary_dark;
+								}
 
-                    } // a
-
+								} // a
 
 
             } // item

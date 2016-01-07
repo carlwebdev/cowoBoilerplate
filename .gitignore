@@ -47,7 +47,9 @@ Temporary Items
 
 # Ignoring files & directories
 
-assets/js/plugins/Alertify.js
+js/plugins/Alertify.js
 
+_STUFF
+_dev
 
 # assets/css/css_resets

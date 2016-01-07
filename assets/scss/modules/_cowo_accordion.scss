@@ -11,12 +11,12 @@
 
 	/* EACH PAIR OF TRIGGER AND HIDDEN SECTION */
 	.accordion_item {
-	background-color:$color3;
+	background-color:$c_primary;
 	margin-bottom:5px;
 	}
 		/* TRIGGER */
 		.accordion_top {
-		background-color:$color2;
+		background-color:$c_primary_light;
 		}
 			.accordion_top.active {
 			background-color:#0f0 !important;
@@ -24,7 +24,7 @@
 		
 		/* HIDDEN SECTION */
 		.accordion_bottom {
-		background-color:$color3;
+		background-color:$c_primary_dark;
 		height:50px;
 		/* display:none; */
 		}

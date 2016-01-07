@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/master_en.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-<? /* <meta charset="utf-8"> */?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<? /* Always force latest IE rendering engine (even in intranet) & Chrome Frame */?>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<? include('app/config/config.php'); ?>
+<? include('config/head_top.php'); ?>
+<? include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
 <!-- InstanceEndEditable -->
-<? include('app/config/copy/seo.php'); ?>
-<link rel="shortcut icon" href="assets/favicon/favicon.ico">
-<? include('app/config/css.php'); ?>
-<link rel="stylesheet" href="assets/fonts/icon-font/styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+<? include('config/seo.php'); ?>
+<? include('config/head_bottom.php'); ?> 
 
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -21,49 +14,35 @@
 </head>
 <body>
 <div id="page">
-	<? include('app/components/dev/github.php'); ?>
-  <? include('app/components/cookies.php'); ?>
-	<? include('app/components/dev/dev_ruler.php'); ?>
-	<? include('app/components/header.php'); ?>  
+  <div id="w_headroom" class="headroom">
+	<? include('components/dev/github.php'); ?> 
+  <? include('components/cookies.php'); ?> 
+	<? include('components/dev/dev_ruler.php'); ?>
+	<? include('components/header.php'); ?> 
+  </div> <!-- /w_headroom -->  
   <div id="content">
     <div class="frame">
     <!-- InstanceBeginEditable name="content" -->
-
-
-
-<div id="frontWrapper_headerMega">Intro</div>
-
-
-
-
-                <div class="text">
-		                cowo-Boilerplate is a simple responsive PHP front-end framework that is built with HTML5, CSS3, Sass, Compass, jQuery, and PHP.<br>                    
-        						It is the starting point for all websites that I build, which I customize in each case according to each new project.<br />
-                </div> <!-- /text -->
-                
-                
-                
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
-<br />
-cowo_Tabs<br />
-<br />
-cowo_DropDown<br />
-<br />
-<br />
-<br />
-<br />
-lugeo una lista con enlaces a subpaginas que se llaman segun lo que son , y que muestran una fincionalida o un efecto o lo que sea, pero con su llamada a jquer propia en el foot, ademas de algun css loco encima, aunk no me mola eso, mejor en css/ algo.<br />
-<br />
+<div id="frontWrapper_headerMega">Intro ...</div>
 
 
 
 
+    <div class="test_text">
+        cowo-Boilerplate is a simple responsive PHP front-end framework that is built with HTML5, CSS3, Sass, Compass, jQuery, and PHP.<br>                    
+        It is the starting point for all websites that I build, which I customize in each case according to each new project.<br />
+    </div> <!-- /text -->
 
 				<!--- CREATE CSS FILE JUST FOR THSI DEMOetc -->
 
-                
                 <div class="demo_text">
                     The cowowo-frawork is built upon both html4 and html5, css3 etc. All css (almost all) is preprocessed, written in SASS.<br />
         			<br />
@@ -74,9 +53,6 @@ lugeo una lista con enlaces a subpaginas que se llaman segun lo que son , y que 
                     <br />
 
                     FOR INTERNET EXPLORER<br />
-                    2) css3mediaqueries.js -&gt; para que IE 6-8 entiendan los mediaqueries (RESPONSIVE) / VS response.js 
-                    <br />
-                    EN EL HEAD????<br />
                     <br />
                     <br />
                     FOR INTERNEGT EXPLORER<br />
@@ -229,82 +205,21 @@ lugeo una lista con enlaces a subpaginas que se llaman segun lo que son , y que 
         <div class="frontWrapper_sectionTitle">... they also mean something</div>
         <div class="frontWrapper_sectionContent">
 
-       		<p><?php include('app/components/dev/lorem/lorem.php'); ?> <?php include('app/components/dev/lorem/lorem.php'); ?></p>
-            <p><?php include('app/components/dev/lorem/lorem.php'); ?> <?php include('app/components/dev/lorem/lorem.php'); ?></p>
-            <p><?php include('app/components/dev/lorem/lorem.php'); ?> <?php include('app/components/dev/lorem/lorem.php'); ?></p>
+       		<p><?php include('components/dev/lorem/lorem.php'); ?> <?php include('components/dev/lorem/lorem.php'); ?></p>
+            <p><?php include('components/dev/lorem/lorem.php'); ?> <?php include('components/dev/lorem/lorem.php'); ?></p>
+            <p><?php include('components/dev/lorem/lorem.php'); ?> <?php include('components/dev/lorem/lorem.php'); ?></p>
             
         
         </div>
     </div>
     
     
-
-
-	<div id="frontWrapper_headerMega">Other stuff</div>
-
-
-
-	<div id="frontWrapper_header">Lists</div>
-    <div class="frontWrapper_section">
-        <div class="frontWrapper_sectionTitle">WORK ON THIS SECTION ! (should be a pre code snippety thingee!</div>
-        <div class="frontWrapper_sectionContent">
-
-
-            <ul>
-                <li><a href="">Item</a></li>
-                <li><a href="">Item</a>
-                    <ul>
-                        <li><a href="">Sub-Item</a></li>
-                        <li><a href="">Sub-Item</a></li>
-                        <li><a href="">Sub-Item</a></li>
-                        <li><a href="">Sub-Item</a></li>
-                    </ul>    
-                </li>
-                <li><a href="">Item</a></li>
-                <li><a href="">Item</a></li>
-            </ul>
-
-        
-        </div>
-    </div>
-    
-    
-
-
- 
-
-
-
-    
-    
-
-
-                
-    
-
-
-
-
- 
-    
-        
-  
   
     
 </div>
 
 
-
-
-    
-
-                
-                
-                
-                
-                
-                
-                
+              
                 
 <br>
 <br>
@@ -313,20 +228,12 @@ lugeo una lista con enlaces a subpaginas que se llaman segun lo que son , y que 
 <br>
 <br>
 <br>
-
-
 
 
 <div id="frontWrapper">
 
-
-
-
-
 	<div id="frontWrapper_headerMega">HTML5 Form inputs</div>
 
-    
-    
 
 	<div id="frontWrapper_header">Base</div>
     <div class="frontWrapper_section">
@@ -460,30 +367,20 @@ Enter a date after 2000-01-01:<br>
                 </div>
                 
                 
-                
-                
-                
-                
+ 
                 <div class="formLine"> 
                 	<label>Color</label>
                     <br>
                     <input type="color" name="favcolor" value="#ff0000">
                 </div>
                 
-                
-                    
-                    
-                    
-                
+ 
                 <div class="formLine"> 
                 	<label>Range (slider)</label>
                     <br>
                     <input type="range" name="points" min="0" max="10">
                 </div>
-                
-                
-                
-                
+                        
   
 <br>
 <br>
@@ -498,90 +395,44 @@ Enter a date after 2000-01-01:<br>
 
 
 
-<div class="frontWrapper_sectionTitle">TIME & DATE STUFF !!!!</div>
+								<div class="frontWrapper_sectionTitle">TIME & DATE STUFF !!!!</div>
 
-                
-                
-                
                 <div class="formLine"> 
                 	<label>Time</label>
                     <br>
                     <input type="time" name="usr_time">
                 </div>
-                
-                
-                
-                
-                
                 <div class="formLine"> 
                 	<label>Month ((month and year))</label>
                     <br>
                     <input type="month" name="bdaymonth">
                 </div>
-                
-                
-                
-                
                 <div class="formLine"> 
                 	<label>Color</label>
                     <br>
                     <input type="color" name="favcolor" value="#ff0000">
                 </div>
-                
-                
-                
-                                                                
-                                                
-
-                
             </form>
             
             
-            
-            
-            
-            
-
         </div>
     </div>
     
 
 
-
-    
-
-  
-    
 </div> <!-- /frontWrapper -->                
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-
-
-
-
 
 
 	<div id="frontWrapper_headerMega">Web interactivity</div>
-
-
 
 
 	<div id="frontWrapper_header">Tabs</div>
@@ -589,9 +440,6 @@ Enter a date after 2000-01-01:<br>
         <div class="frontWrapper_sectionTitle">'cause they're nice to have</div>
         <div class="frontWrapper_sectionContent"><a href="demos/cowo_tabs.php">check it out!</a></div>
     </div>
-  
-
-
 
 
 				<div id="frontWrapper_header">Tabs</div>
@@ -600,37 +448,30 @@ Enter a date after 2000-01-01:<br>
 SOURCE OF ORIGINAL CODE, WHICH I HAVE LATER ADAPTED FOR SCALABILITY <br />
 http://papermashup.com/simple-jquery-tabs/    <br />
 <br />
-
-    
+   
 
                 <div id="tabs">
-                
-                	<div class="jq_tabsMenu">
-                        <ul>
-                            <li><a href="#tab-1">Tab 1</a></li> <!-- anchor link -->
-                            <li><a href="#tab-2">Tab 2</a></li> <!-- anchor link -->
-                            <li><a href="#tab-3">Tab 3</a></li> <!-- anchor link -->
-                            <li><a href="#tab-4">Tab 4</a></li> <!-- anchor link -->
-                        </ul> 
-                	</div>
-            
-            
+                    <div class="jq_tabsMenu">
+                          <ul>
+                              <li><a href="#tab-1">Tab 1</a></li> <!-- anchor link -->
+                              <li><a href="#tab-2">Tab 2</a></li> <!-- anchor link -->
+                              <li><a href="#tab-3">Tab 3</a></li> <!-- anchor link -->
+                              <li><a href="#tab-4">Tab 4</a></li> <!-- anchor link -->
+                          </ul> 
+                    </div>
                     <div class="tab" id="tab-1"> <!-- name is just anchor target -->         
-      					Tab 1	
+      								Tab 1	
                     </div> <!-- /a tab --> 
                     <div class="tab" id="tab-2"> <!-- name is just anchor target -->
-             			Tab 2
+             					Tab 2
                     </div> <!-- /a tab --> 
                     <div class="tab" id="tab-3"> <!-- name is just anchor target -->
-        				Tab 3
+        							Tab 3
                     </div> <!-- /a tab -->  
                     <div class="tab" id="tab-4"> <!-- name is just anchor target -->
-                    	Tab 4               
-                    </div> <!-- /a tab -->   
-                                                  
-
-                    
-				</div> <!-- /tabs --> 
+                    	Tab 4 
+                      </div> <!-- /a tab -->              
+								</div> <!-- /tabs --> 
 
 
 
@@ -651,15 +492,7 @@ http://papermashup.com/simple-jquery-tabs/    <br />
         <div class="frontWrapper_sectionContent">check it out!</div>
     </div>
     
-    
-
-
-
-
-				<div id="frontWrapper_header">Accordion</div>
-    
-    
-    
+   
 
 <div id="accordion_wrapper">
     
@@ -703,99 +536,6 @@ http://papermashup.com/simple-jquery-tabs/    <br />
 
 
 
-    
-    
-    
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-	<div id="frontWrapper_header">Another shitty accorion...</div>
-    <div class="frontWrapper_section">
-        <div class="frontWrapper_sectionTitle">UNDER CONSTRUCTION</div>
-        <div class="frontWrapper_sectionContent">check it out!</div>
-    </div>
-    
-    
-
-
-<style type="text/css">
-
-
-
-
-
-.accordion {
-   margin: 50px;   
-   dt, dd {
-      padding: 10px;
-      border: 1px solid black;
-      border-bottom: 0; 
-      &:last-of-type {
-        border-bottom: 1px solid black; 
-      }
-      a {
-        display: block;
-        color: black;
-        font-weight: bold;
-      }
-   }
-  dd {
-     border-top: 0; 
-     font-size: 12px;
-     &:last-of-type {
-       border-top: 1px solid white;
-       position: relative;
-       top: -1px;
-     }
-  }
-}
-
-
-
-
-
-</style>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
-
-});
-</script>
-
-
-
-
-
-<dl class="accordion">
-
-<dt><a href="">Panel 1</a></dt>
-<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-
-<dt><a href="">Panel 2</a></dt>
-<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
-
-<dt><a href="">Panel 3</a></dt>
-<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-
-</dl>
-
-
 
 
 <br>
@@ -803,102 +543,9 @@ $(document).ready(function($) {
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
 
 
 
-
-
-
-
-	<div id="frontWrapper_header">jQuery UI Accordion</div>
-    <div class="frontWrapper_section">
-        <div class="frontWrapper_sectionTitle">UNDER CONSTRUCTION</div>
-        <div class="frontWrapper_sectionContent">check it out!</div>
-    </div>
-    
-    
-    
-    
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
-  <!-- <script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
- 
-    
-    
-<div id="accordionxx">
-  <h3>Section 1</h3>
-  <div>
-    <p>
-    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-    </p>
-  </div>
-  <h3>Section 2</h3>
-  <div>
-    <p>
-    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-    suscipit faucibus urna.
-    </p>
-  </div>
-  <h3>Section 3</h3>
-  <div>
-    <p>
-    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-    </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
-  <h3>Section 4</h3>
-  <div>
-    <p>
-    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-    mauris vel est.
-    </p>
-    <p>
-    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-    inceptos himenaeos.
-    </p>
-  </div>
-</div>  
-
-    
-    
-    
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    
-    
   
 	<div id="frontWrapper_header">Dropdown</div>
     <div class="frontWrapper_section">
@@ -1139,19 +786,14 @@ $(document).ready(function(){
         
             
     
-                  <div class="fitvids_container">
-                        <iframe width="1600px" height="900px" src="http://www.youtube.com/embed/sVOCMiufyW4" frameborder="0" allowfullscreen></iframe>
-                  </div> <!-- /fitvids_container -->
+    <div class="fitvids_container">
+          <iframe width="1600px" height="900px" src="http://www.youtube.com/embed/sVOCMiufyW4" frameborder="0" allowfullscreen></iframe>
+    </div> <!-- /fitvids_container -->
                   
                   
                   
                   
-                  
-                  
-                  
-                      
-    
-        
+
 	<div id="frontWrapper_header">Backstretch.js</div> 
     <div class="frontWrapper_section">
         <div class="frontWrapper_sectionTitle">frontWrapper_sectionTitle</div>
@@ -1166,54 +808,37 @@ $(document).ready(function(){
 <!-- InstanceEndEditable -->
     </div> <!-- /frame --> 
   </div> <!-- /content -->            
-	<? include('app/components/footer.php'); ?>
-<? include "app/components/side_menu.php"; ?>    
+	<? include('components/footer.php'); ?>
+  
+<? include "components/side_menu.php"; ?>    
 </div> <!-- /page -->
-<? include('app/config/scripts.php'); ?>
+<? include('config/scripts.php'); ?>
 <!-- InstanceBeginEditable name="scripts" -->
 <script src="js/nav/nav_1.js"></script>
 
-
-
-
-<!-- jQuery PLugin - RWD - Videos - FitVids,js -->
-<script src="assets/js/plugins/jquery.fitvids.js"></script>
+<!-- jQuery PLugin - RWD - Videos - FitVids.js -->
+<script src="js/plugins/fitvids/jquery.fitvids.js"></script>
 <script>
 $(".fitvids_container").fitVids(); 
 </script>
 
-
-
-
-<script src="assets/js/custom/cowo_tabs.js"></script>
-
-<script src="assets/js/custom/cowo_accordion.js"></script>
-
-<script src="assets/js/custom/cowo_dropdown.js"></script>
-
-
-
-
+<script src="js/custom/cowo_tabs.js"></script>
+<script src="js/custom/cowo_accordion.js"></script>
+<script src="js/custom/cowo_dropdown.js"></script>
 
 <!-- jQuery PLugin - RWD - Lightbox -->
-<script src="assets/js/plugins/jquery.lightbox_me.js"></script>
-<script src="assets/js/custom/lightboxme.js"></script>
-
-
-
+<script src="js/plugins/jquery.lightbox_me.js"></script>
+<script src="js/custom/lightboxme.js"></script>
 
 <!-- jQuery UI - Accordion -->
-  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css" />
-  <script>
-  $(function() {
-    $( "#accordionxx" ).accordion();
-  });
-  </script>   
-  
-  
-  
-  
-<!-- InstanceEndEditable -->  
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<script>
+$(function() {
+	$( "#accordionxx" ).accordion();
+});
+</script>   
+<!-- InstanceEndEditable -->
+<? include('config/credits.php'); ?>  
 </body>
 <!-- InstanceEnd --></html>

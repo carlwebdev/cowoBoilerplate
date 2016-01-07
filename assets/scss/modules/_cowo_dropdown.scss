@@ -25,25 +25,25 @@
 		.genericDropdownItem_top {
 			position:relative; /* for the trigger */
 			padding-top:5px;
-			background-color:$color3;
+			background-color:$c_primary;
 			min-height:50px;
 			}					
 										
 			.genericDropdownItem_top_trigger {
 				position:absolute; bottom:0px; right:0px;
-				background-color:$color1;
+				background-color:$c_primary;
 				font-weight:bold;				
 				}
 				.genericDropdownItem_top_trigger:hover,
 				.genericDropdownItem_top_trigger.is_active {
-					background-color:$color2; /* TESTING NEW THING */    /* SASS IT !!!!!!!!!!!!!! */
-					color:$color1;
+					background-color:$c_primary; /* TESTING NEW THING */    /* SASS IT !!!!!!!!!!!!!! */
+					color:$c_white;
 					}	
 						
 
 		/* BOTTOM */		
 		.genericDropdownItem_bottom {
-			background-color:$color2;
+			background-color:$c_primary_dark;
 			min-height:100px;
 			}		
 
@@ -60,15 +60,15 @@
 	.jq_dropdown_shown {}
 
 		.jq_dropdown_shown.is_active {
-			background-color:$color3;
+			background-color:$c_primary;
 			}	
 			
 			.jq_dropdown_trigger {
 				cursor:pointer;
 				}			
 				.jq_dropdown_trigger.is_active {
-					background-color:$color2;
-					color:$color1;
+					background-color:$c_primary_dark;
+					color:$c_white;
 					}	
 					.jq_dropdown_trigger.is_active:hover {
 						color:#000;
