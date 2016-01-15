@@ -1,9 +1,29 @@
 /* CSS Document - FRONT-END */
 
 
+
+
+
+/*  TEXT: GENERAL TYPOGRAPHY ======================== */
+
+.name {
+	font-variant:small-caps; 
+	text-transform:capitalize;
+	}	/* SHOULD BE A CLASS !!!!!!!!!!!!!!!!!!!!!! */
+	
+	
+	
+	
+	
+	
 /* 
  * FONTS - FONT-FACE
  */
+
+
+// meter algun con fontface aqui para tenerlo ya montado tambien !!!!
+
+
 
 
 
@@ -18,7 +38,6 @@
 			@include f_roboto;
 			font-style: italic;
 			}
-	
 	@mixin f_roboto_light {
 		font-family: 'Roboto', Arial, sans-serif;
 		font-weight: 300;
@@ -57,14 +76,12 @@ body {
 	}
 
 
-
-
 a, 
 a:visited, 
 a:hover {
 	text-decoration:none; 
 	color: $c_text; /* VS color: inherit */
-	// ?? default transition
+	// ?? default transition - maybe, for color... and boldness... hmmm
 	}
 	
 	
@@ -255,12 +272,7 @@ color: #666;
 
 
 
-/*  TEXT: GENERAL TYPOGRAPHY ======================== */
 
-.name {
-	font-variant:small-caps; 
-	text-transform:capitalize;
-	}	/* SHOULD BE A CLASS !!!!!!!!!!!!!!!!!!!!!! */
 
 
 

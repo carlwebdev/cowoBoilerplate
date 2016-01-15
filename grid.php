@@ -32,7 +32,7 @@
 
    
 
-						<div id="frontWrapper_headerMega"><?=$pagename?> - Grid</div>
+						<div id="frontWrapper_headerMega">cowoGrid</div>
 
 
 

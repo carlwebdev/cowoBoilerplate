@@ -20,29 +20,11 @@
 
 
 
-.test_text {
-	font-size:1.25rem; 
-	background-color:$c_primary_light; 
-	margin-bottom:20px; 
+
+section {
+	background-color: #CCC; 
+	margin-bottom: $spacing2; // TEST
 	
-		&::first-line { // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-			font-size:2rem; 
-			word-spacing:80px; 
-			// white-space:pre-wrap;
-			// white-space:nowrap;
-			// word-wrap:break-word;
-			// overflow:hidden;
-			}
-	
-	}
-
-
-
-
-.demo_text {
-	font-size:1rem; 
-	background-color:$c_primary_light; 
-	margin-bottom:20px; 
 	}
 
 
@@ -51,7 +33,7 @@
 /* DEMO FOR THE HOME PAGE */
 
 
-#frontWrapper {
+#frontWrapper { // should be a section !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	padding-top: $spacing;
 
 	}

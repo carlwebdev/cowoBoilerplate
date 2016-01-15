@@ -7,7 +7,7 @@
  * Filename: header.php
  */
 ?>
-<header >
+<header>
  <div class="frame">
     <div class="inner">
     
@@ -29,6 +29,7 @@
           <li><a href="cookies.php"><?=$pagename_cookies ?></a></li>
           <li><a href="404.php"><?=$pagename_404 ?></a></li>    
           <li><a href="styleguide.php">Styleguide</a></li>
+          <li><a href="ui.php">UI</a></li>
           <li><a href="snippets.php">Snippets</a></li>
           <li><a href="grid.php">Grid</a></li>
           <li><a href="megatron.php">Megatron</a></li>

@@ -39,57 +39,7 @@
 <section>
 
 
-    <div class="frontWrapper_section">
-        <div class="title"><h4>Form</h4></div>
-        <div class="content">
 
-
-<form>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <select name="mes">
-        <option value="gener">gener</option>
-        <option value="febrer">febrer</option>
-        <option value="març">març</option>
-        <option value="abril">abril</option>
-    </select>
-    <br />                      
-    <input type="checkbox" id="lable_whatever"/> <label for="lable_whatever" />ashfgas</label>
-    <br />
-    <input type="radio" name="whatever" id="radio_1"/> <label for="radio_1" />radio_1</label>  
-    <input type="radio" name="whatever" id="radio_2"/> <label for="radio_2" />radio_2</label>
-    <br />          
-    <input type="submit" value="Submit"/>
-    <input type="reset" value="Reset"/>
-</form>
-
-
-
-<pre class="brush:javascript">
-<form>
-    <input type="text"/>
-    <input type="text"/>
-    <input type="text"/>
-    <select name="mes">
-        <option value="gener">gener</option>
-        <option value="febrer">febrer</option>
-        <option value="març">març</option>
-        <option value="abril">abril</option>
-    </select>
-    <br />                      
-    <input type="checkbox" id="lable_whatever"/> <label for="lable_whatever" />ashfgas</label>
-    <br />
-    <input type="radio" name="whatever" id="radio_1"/> <label for="radio_1" />radio_1</label>  
-    <input type="radio" name="whatever" id="radio_2"/> <label for="radio_2" />radio_2</label>
-    <br />          
-    <input type="submit" value="Submit"/>
-    <input type="reset" value="Reset"/>
-</form> 
-</pre> 
-
-        </div>
-    </div>
     
 
 
@@ -136,9 +86,18 @@ not yet
         <div class="title"><h4>HTML5 template</h4></div>
         <div class="content">
 
-<pre class="brush:javascript">
-not yet
-</pre> 
+<samp>
+<?php /*?><!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Template</title>
+  </head>
+  <body>
+    <p>Insert content here.</p>
+  </body>
+</html><?php */?>
+</samp> 
         
         </div>
     </div>
@@ -151,9 +110,11 @@ not yet
         <div class="title"><h4>PHP loop</h4></div>
         <div class="content">
 
-<pre class="brush:javascript">
-not yet
-</pre> 
+<code>
+	<? for ($x = 0; $x <= 2; $x++) { ?>
+    <div class="col span_1of3">1of3</div>
+  <? } ?> 
+</code> 
         
         </div>
     </div>    

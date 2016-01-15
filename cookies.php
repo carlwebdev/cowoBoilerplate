@@ -24,7 +24,7 @@
   <div id="content">
     <div class="frame">
     <!-- InstanceBeginEditable name="content" -->
-			<? include('components/pages/cookies_view.php'); ?>
+			<? include('components/pages/cookies_view.php'); ?>  
 			<!-- InstanceEndEditable -->
     </div> <!-- /frame --> 
   </div> <!-- /content -->            
@@ -34,7 +34,7 @@
 </div> <!-- /page -->
 <? include('config/scripts.php'); ?>
 <!-- InstanceBeginEditable name="scripts" -->
-<script src="js/nav/nav_4.js"></script>
+<script src="js/nav/nav_cookies.js"></script>
 <!-- InstanceEndEditable -->
 <? include('config/credits.php'); ?>  
 </body>

@@ -11,7 +11,10 @@ ErrorDocument 404 http://cowoserver/carl_github/cowo-Boilerplate/404.php
 
 
 # MOSTRAR index.html y no index.php por defecto - DESHABILITADO AHORA
-# DirectoryIndex index.html index.htm index.php
+DirectoryIndex index.php index.html index.htm index.php
+
+# el html para caso updating - ergo do a 1 page integrated thing... hmmm
+
 
 
 

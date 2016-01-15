@@ -42,6 +42,15 @@ Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if ne
  * UI - scrollToTop // jg_scrollToTop
  */ 
 ?> 
+
+
+
+<!-- !!! ELEVATOR.js -->
+
+
+
+
+
 <script>
 $(".jq_trigger_scroll").click(function() {
     $('html, body').animate({
@@ -50,6 +59,26 @@ $(".jq_trigger_scroll").click(function() {
     }, 800);
 });
 </script>
+
+<!--
+/* 
+SOURCE - http://webdesignerwall.com/tutorials/animated-scroll-to-top 
+thers is the image show part and the scroll part, here i jusat have the scrooll part
+*/
+/* THERE IS A FALLBACK IMPLEMENTED ALREADY - WITH ANCHOR */
+$(document).ready(function(){
+	// scroll body to 0px on click
+	$('.bottom a').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 800); // 800 ms
+		return false;
+	});
+});
+-->
+
+
+
 <? 
 /* 
  * UI - SCROLL TO A SPECIFIC DIV (NON-TOP CASE) // jg_scrollToContent , jg_scrollToDiv

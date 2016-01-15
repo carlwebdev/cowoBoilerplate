@@ -3,7 +3,7 @@
  * CONFIG - base tag & minification
  */  
 // DEVELOPMENT SERVER
-$cowoserverfolder = 'carl_github/cowo-Boilerplate'; 
+$cowoserverfolder = 'carl_github/cowoBoilerplate'; 
 if($_SERVER['SERVER_NAME']=='cowoserver' || $_SERVER['SERVER_NAME']=='172.16.0.100')
 {
 	$domain = '172.16.0.100'; // for html // 'cowoserver' doesn't work with devices
@@ -17,7 +17,7 @@ if($_SERVER['SERVER_NAME']=='cowoserver' || $_SERVER['SERVER_NAME']=='172.16.0.1
 // PRODUCTION SERVER
 elseif($_SERVER['SERVER_NAME']=='carljohansson.net' || $_SERVER['SERVER_NAME']=='www.carljohansson.net')
 {	
-	$domain = 'www.carljohansson.net/tools/cowo-Boilerplate/';
+	$domain = 'www.carljohansson.net/tools/cowoBoilerplate/';
 	// $path = 'www.carljohansson.net';
 	?>       
 	<base href="http://<?=$domain ?>/">    

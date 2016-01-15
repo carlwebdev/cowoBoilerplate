@@ -24,8 +24,10 @@
   <div id="content">
     <div class="frame">
     <!-- InstanceBeginEditable name="content" -->
-			<? include('components/pages/404_view.php'); ?>
-		<!-- InstanceEndEditable -->
+    
+    	MESSAGE HAS BEEN SENT!
+			<? include('components/pages/contact_view.php'); ?>
+	  <!-- InstanceEndEditable -->
     </div> <!-- /frame --> 
   </div> <!-- /content -->            
 	<? include('components/footer.php'); ?>
@@ -34,6 +36,7 @@
 </div> <!-- /page -->
 <? include('config/scripts.php'); ?>
 <!-- InstanceBeginEditable name="scripts" -->
+<?php /*?><script src="js/nav/nav_3.js"></script><?php */?>
 <!-- InstanceEndEditable -->
 <? include('config/credits.php'); ?>  
 </body>

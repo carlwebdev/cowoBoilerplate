@@ -1,15 +1,15 @@
 /*
- * Author: Carl Johansson @carlwebdev
- * Project: cowo-Boilerplate
- * File: Forms
- */
+* cowoBoilerplate
+* Built by cowowo.cat
+* Author: Carl Johansson @carlwebdev 
+* Project: XXX
+* File: Forms
+* Filename: _forms.scss
+*/
+
 
 
 // boilrplate - button disabled ! and button submit vs reset, osea, yes vs no, con diferencia para que se vea qué ahu que clikar UX
-
-
-
-// CSS FORMS !!! - UI - FOCUS FACE IS IMPORTANT, SPECIALLY WEHN TOGGLING WITH TAB THROUGHT THE TAB INDEX
 
 
 
@@ -17,6 +17,10 @@
 /* FORMS                                                                                                                  */
 /* ====================================================================================================================== */
 	
+
+
+// CSS FORMS !!! - UI - FOCUS FACE IS IMPORTANT, SPECIALLY WEHN TOGGLING WITH TAB THROUGHT THE TAB INDEX
+
 
 /* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
 
@@ -46,24 +50,34 @@ button { // necesita mismos tratamientos que input type submit // reset etc
 
 
 
+
 form {
-    max-width:400px;
-    @include centered;
-
-    }
-
-
-
-
-
-.formLine {
-	margin-bottom: 24px;	
-    
-    overflow:hidden; // por los submits etc
+	max-width:400px;
+	@include centered;
 	
+	
+	&.formType_1 {}
+
+	&.formType_2 {} 
+
+
+} // form
+
+
+
+
+
+
+.formLine {	 
+	overflow:hidden; /* if submit is floated (right)) */
+	margin-bottom: $spacing;
 	&:last-of-type {margin-bottom: 0px;}	
-	
-	}
+
+	// Instruction
+
+	// Error
+
+} // formLine
 	
 	
 	
@@ -73,7 +87,10 @@ form {
 label {
 	color: $c_text_2;
 	font-size: $fs_m;
-	}
+
+	&.is-clickable {}
+	cursor:pointer; /* for lables triggering checkboxes and radio buttons :-) */
+}
 	
 	
 input[type=text],
