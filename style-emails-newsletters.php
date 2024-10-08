@@ -4,7 +4,7 @@
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
-<? $pagename = $pagename_404 ?>
+<? $pagename = 'Style - Emails & Newsletters to plit' ?>
 <!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
@@ -34,10 +34,26 @@ include ( 'components/template/page/page_start.php');
   ?> 
     
 	<!-- InstanceBeginEditable name="content" -->
-    
-    	MESSAGE HAS BEEN SENT!
-			<? include('components/pages/page-contact.php'); ?>
-	  <!-- InstanceEndEditable -->
+	  
+	  
+	  
+	  
+		<?php /* include('components/atoms/page_title.php'); */ ?>
+	  
+	
+	  
+       
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	
+	  
+	  
+		<!-- InstanceEndEditable -->
   <?php 
   /* Page Content End 
    * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end

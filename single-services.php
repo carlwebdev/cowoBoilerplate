@@ -4,7 +4,7 @@
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
-<? $pagename = $pagename_404 ?>
+<? $pagename = "Single Service"; // THIS IS A NEW PAGE ...  ?>
 <!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
@@ -34,10 +34,52 @@ include ( 'components/template/page/page_start.php');
   ?> 
     
 	<!-- InstanceBeginEditable name="content" -->
+
     
-    	MESSAGE HAS BEEN SENT!
-			<? include('components/pages/page-contact.php'); ?>
-	  <!-- InstanceEndEditable -->
+    
+    
+    <?php 
+      /* 
+       *
+       * PAGE BASICS 
+       *
+       */
+      // header positioning options
+      // header layout options
+
+      // show popups etc etcetce
+
+      $show_dev_columns = '1';
+
+      /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+      $show_page_banner = '1'; // hacky situation in this case .... or not
+      $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+      $show_page_title = '0'; 
+      $show_page_excerpt = '0';
+
+      // ad the content, asin wp_eoimoe ... 
+
+      include('components/includes/page_basics.php'); // PAGE BASICS
+    ?> 
+    
+    
+    
+    
+    
+  <?php
+  /*
+   *
+   *
+   * PAGE CONTENT...  - - -BUILS SECTION CLASS, FOR 100VH HEIGHT, FULLCREEN POR EJEMP ... & ALSO VERTILALLY CENTER, I MEAN YES ESOS
+   *
+   *
+   */ 
+  ?>
+
+
+
+    
+  <!-- InstanceEndEditable -->
   <?php 
   /* Page Content End 
    * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end

@@ -4,7 +4,7 @@
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
-<? $pagename = $pagename_404 ?>
+<? $pagename = 'Dev - Components' ?>
 <!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
@@ -35,9 +35,45 @@ include ( 'components/template/page/page_start.php');
     
 	<!-- InstanceBeginEditable name="content" -->
     
-    	MESSAGE HAS BEEN SENT!
-			<? include('components/pages/page-contact.php'); ?>
-	  <!-- InstanceEndEditable -->
+    <?php 
+      /* 
+       *
+       * PAGE BASICS 
+       *
+       */
+      $show_dev_columns = '0'; // THIS SHOULD BE A GENRAL FILE, NOT PER PAGE .... HMMM OK
+      // PLUS ADD THE CSS DEBUGGING THSINGS, ALT IMAGE % ETC , EASY  
+      /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+      $show_page_banner = '0'; // hacky situation in this case .... or not
+      $show_page_banner_map = '0'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
+      $show_breadcrumbs = '0'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+      $show_page_title = '1'; 
+      $show_page_excerpt = '0';
+      // ad the content, asin wp_eoimoe ... 
+      include('components/includes/page_basics.php'); // PAGE BASICS
+    ?> 
+    
+    
+
+
+
+
+    
+
+
+    
+    <?php include('components/repo_components.php'); ?>
+
+
+
+
+
+
+
+
+
+
+  <!-- InstanceEndEditable -->
   <?php 
   /* Page Content End 
    * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
