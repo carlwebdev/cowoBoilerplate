@@ -1,0 +1,18 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Dev temp stuff
+ */
+*, *:before, *:after {
+  /* TODO - CHOOSE A MORE NEUTRAL COLOR !!!  */
+  outline: 1px solid #999 !important; /* not all tags where getitng te outline for some odd reason...  */
+}
+
+*, *:before, *:after {
+  /* background-color: rgba(240,243,196,0.50); */
+  /* background-color: rgba(240,243,196,0.10); */ /* MORE SUBTLE, ALLOWS WHITE TEXT TO STILL WORK */
+  background-color: rgba(240,243,196,0.05); /* MORE SUBTLE, ALLOWS WHITE TEXT TO STILL WORK */
+
+  background-color: #cf2b2b05;
+
+}
