@@ -1,0 +1,61 @@
+/* CSS Document - SASS */
+/* Front-End */
+
+
+
+
+
+// css_transitions
+  // doc - exampes transform rotate
+		// transform:rotate(-30deg);
+		// -ms-transform:rotate(-30deg); /* IE 9 */
+		// -moz-transform:rotate(-30deg); /* Firefox */
+		// -webkit-transform:rotate(-30deg); /* Safari and Chrome */
+		// -o-transform:rotate(-30deg); /* Opera */
+
+
+
+
+
+	
+@mixin transitionButton {
+	// @include transition(all $t_slow linear);
+	// @include transition(all $t_base linear);
+  // transition: all $t_base linear 1s;
+  transition: all $t_base linear;
+}
+	
+@mixin transitionGeneral {
+	// @include transition(all $t_fast linear);
+  transition: all $t_fast linear;
+}
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+/*
+ * CSS
+ * Layout - Page (generic page elements) - Media
+ */
+
+
+
+
+/* MULTIMEDIA - layout_media PARTIAL FOR THIS !!! */
+ 
+ 
+
+
+
+video {
+	// width: 100%; // MOVE TO RESET / here yes issue, as vdieo need sot be portoprtinal, could be with warpper and padding top trick..
+	
+}
+
+
+
+
+
+.m_video {
+	
+	video {
+		width: 100%; // MOVE TO RESET
+  }
+
+} // m_video
+
+
+
+
+
+
+
+audio {
+	width: 100%; // FREE SCENARIO , NO ISSUES // MOVE TO RESET - JUST O THIS !!!
+}
+
+
+ 
+
+
+
+
+
+/* CREATE SASS PARTIAL FOR THIS */  
+.fitvids_container {
+  // @include dev_border;
+  
+	/* 
+	width: 50%; 
+	margin:0px auto;
+	*/
+	/*
+	padding: 5%;
+	
+	background:#fff;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+	*/
+	
+	
+	
+	.fitvids_container iframe {
+		/* width: 100%; */
+		/* height:auto; */
+		}
+		
+} // fitvids_container
+
+
+
+ 
+ 
+

@@ -1,0 +1,493 @@
+/*
+ * CSS
+ * Layout - Page (generic page elements)
+ */
+
+
+
+// cta .... s
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Module - Full-page item with backround image and overlay with text
+ */
+ 
+ 
+ 
+.fullpage_text { // m_fullPage
+	/* DEV */
+	// border: 3px solid red;
+	
+	/* LAYOUT */
+	position: relative;
+	// height: 100%;
+	height: 100vh;
+	
+	
+	/* BG IMAGE */
+	@include bg_img;
+	
+	
+	/* CENTER THE CHILD - horizonatlly & vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+	.text {
+		// color: $c_accent;
+		font-size: 92px;
+		
+		color: white;
+		
+		} // text
+	
+	
+	} // m_fullPage
+
+
+	
+	
+.l_fullpageImage { // vs just above the fold... / !!!!!!!!!!!!!!!!! s & d this !!!!!!!!!!!!!!!!!!!!
+	//
+	border: 3px solid #f06;
+	height: 100vh; // VS dvh
+	} // l_fullpageImage
+	
+	
+
+// 1, 2, 3, 4 index
+
+
+.page_banner {
+  // 1 - dev border
+  // border: 3px solid $c_accent; // TEST 
+  
+  // img vs bg image ... bg, as its decorative .... anyways, test also aspect rationow that we're at it !!!!
+
+  img {@include img;} // MOVE TO RESET.. SAME AS IFRAME ... 
+  
+  .image {
+    @include bg_img;    
+    // border: 3px solid $c_accent; // TEST 
+    height: 100%; // hacky 
+  } // image
+  
+  
+  // @include ar_16_9;
+
+  
+  // height & centerings ....
+  
+  
+  /* */ // BUT WOULD STIL NEED TO CENTER THE IMAGE WITH OBJECT FIT ..... 
+ 
+  // height: 40vh;
+  // height: 50vh; // TEST 
+  // height: 62vh; // TEST - make goodlen variable  check in infoood .... 
+  height: 61.8vh; // TEST - make goodlen variable  check in infoood .... 
+  overflow: hidden; // ????
+  
+  // CASE FULLPAGE
+  // height: 100vh; // 
+  
+  
+  // can also do ar...
+  
+   /*
+  width: 30%;
+  
+  // aspect-ratio: 16 / 9; // https://web.dev/aspect-ratio/
+  // aspect-ratio: 16 / 3; // https://web.dev/aspect-ratio/
+  
+  
+  object-fit: contain; // https://web.dev/aspect-ratio/ // SMIILAR TO BG PERO NOT BG ... MAGIC ?! // yesssssssssss !!!!!!!!!!!!! wow ! must learn css properties & !! atriubutes 
+  // err, maybe didnt do anything ....
+  
+  */
+  /*
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+  */
+  
+  // no me esta funcianndo ni aspect ratio ni object-fit !!!!!!!! wtf !!!!!!!!!!
+  
+  
+  // iframe googfle maps? just add it ....
+  
+  
+  position: relative;
+  
+
+  /*   */
+  .cover {} // vs have th e image as background, y luego grd possuito overlap ychris coyier trick y no lo de absolute, estaba en jobs o mentors creo ....
+
+  
+  .cover {
+    // border: 3px solid red; // DEV    
+    // position: absolute; top: 0; width: 100%; height: 100%;
+    @include cover_absolute;
+    
+    // & lo de blurry !!!!! / como habia hecho en epic the missio ... 
+    
+    
+    // background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));  
+    // background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));  
+      
+      
+// background: -webkit-linear-gradient(bottom right,red,yellow 30%,green);
+// background: linear-gradient(to top left,red,yellow 30%,green);
+// background: linear-gradient(to top left,red,yellow 30%,transparent);
+// background: linear-gradient(to top left,$c_accent,yellow 30%,transparent);
+// background: linear-gradient(to top left,$c_accent,$c_primary 30%,transparent);
+// background: linear-gradient(to top right,$c_accent,$c_primary 30%,transparent);
+// background: linear-gradient(to top right,$c_accent,$c_primary 30%,transparent 50%);
+// background: linear-gradient(to top right,$c_accent,$c_primary 30%,red 50%, transparent 50%); // FUL PERFET TRIENGLE DIAGONBAL SPLIT.. NICE & RWD 
+
+    // background: linear-gradient(to top right,$c_accent,$c_primary 30%, transparent 50%);
+    
+      /* BUILD A FADE FROM TOP TO BOTTMO ... SPOTIFY STYLE */
+
+      /* opacity gradient form top to bottom */  
+      background: linear-gradient(
+        /* to bottom, */ /* DEFAULT */
+        rgba(0,0,0, 0),
+        rgba(0,0,0, 0) 50%,
+        rgba(0,0,0, 100) 90%
+      );
+    
+    // aka gradient spotify as include 
+    // display: flex;
+    /*
+    display: grid; // https://css-tricks.com/almanac/properties/p/place-items/
+    place-items: center;
+    */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+    .text {
+      // @include dev_border;
+
+      color: $c_white;
+      text-shadow: 0px 2px 2px #000;
+      // font-size: 48px; // CSS CLAMP !!!!!!!!
+      // font-size: 56px; // CSS CLAMP !!!!!!!!
+      font-size: var(--fs-xxxl); // CSS CLAMP !!!!!!!!
+      // padding: 48px;
+      // padding: 2em; // TEST 
+      padding: 1em; // TEST 
+    } // text 
+    
+    
+  } // cover
+
+  
+  
+} // page_banner
+
+
+
+
+
+
+
+
+
+/*
+ * BREADCRUMBS
+ */
+.breadcrumbs {
+  // @include dev;  
+  // @include paddingv($spacing025);
+  // padding-top: $spacing05;
+  padding-top: $spacing;
+  // font-size: 12px; 
+  // font-size: 13px; 
+  font-size: 0.9em; 
+  // color: gray; //  ... / variabel de fonts colors etc 
+  color: var(--secondary-text); // ETST / todo - --c-text-alt
+  text-transform: uppercase;
+  font-weight: bold;
+
+  a {
+    // color: var(--primary-text); // cudl be a rule,., / --C-TEXT / C-TEXT-2
+    color: var(--c-text); // cudl be a rule,., / --C-TEXT / C-TEXT-2
+    // @include a_ui_default;
+    @include a_ui_alt;
+  } // a
+
+  
+  span { // no need for span not last, can just do for all a...
+    
+    /*
+    &:not(:last-of-type) {
+      color: #ff0000;
+      
+      &::after { //s not last, asi me ebvito la revsision de la excecpcin !!!!
+        content: '>';
+        margin-left: 0.3em;
+      } // after
+       
+    }
+    */
+    
+    &::after { // not last, asi me ebvito la revsision de la excecpcin !!!!
+      content: '>';
+      margin-left: 0.3em;
+    } // afterss
+    
+    &:last-of-type {
+      &::after { //s not last, asi me ebvito la revsision de la excecpcin !!!!
+        content: '';
+        margin-left: unset;
+      } // after
+    } // last
+    
+  } // span
+  
+  
+} // breadcrumbs
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * TITLES - PAGE TITLE (h1)
+ */
+.page_title____NOT {
+	@include paddingv($spacing); // ---  padv vs padh & marv vs marh
+	/* TEXT */
+	// font-size: $fs_xl; // TEST
+	font-size: $fs_xxl; // TEST
+	text-transform: uppercase; // TEST
+  font-weight: bold;
+
+  h1 {
+    margin: 0;
+  }
+  
+} // page_title
+
+
+h1.page_title {
+  margin: 0; // RESET 
+
+	// @include paddingv($spacing); // ---  padv vs padh & marv vs marh
+  // padding-block: $spacing05;
+
+
+	/* TEXT */
+	// font-size: $fs_xl; // TEST
+	font-size: $fs_xxl; // TEST
+	text-transform: uppercase; // TEST
+  font-weight: bold;
+} // page_title
+
+
+/*
+ *
+ * TITLES - SECTION TITLE (h2)
+ *
+ */
+.section_title { // as header ..., SI ACASO, heading ...  // m_sectionTitle
+	/* LAYOUT */
+	// margin-bottom: $spacing;
+	margin-bottom: $spacing2;
+	/* TEXT */
+	// color: $color2;
+  
+	// font-size: $fs_xxl;
+  // font-size: var(--fs-xxl);
+  font-size: var(--fs-xxxl);
+
+
+  // color: var(--c-text);
+  
+  h2 {
+    margin: 0;
+    // font-size: var(--fs-xxxl);
+    font-size: var(--fs-xxxl);
+    font-weight: bold;
+  }
+  
+  &.center {
+    text-align: center;
+  }
+  
+} // m_sectionTitle
+
+
+
+
+
+
+
+
+
+// AND MAYBE ADD ALSMAL LATERAL IMAGE FOR THIS ....
+
+.page_excerpt {
+	/* LAYOUT */
+	// background-color: $c_accent; // TEST
+	@include paddingv($spacing); // ---  padv vs padh & marv vs marh
+	/* TEXT */
+	// font-size: $fs_xl; // TEST
+	// font-size: $fs_xxl; // TEST
+	font-size: $fs_l; // TEST
+	// text-transform: uppercase; // TEST
+  
+  // TODO - ADD PAGE_EXCERPT AS INTRO TEXT ETC - GOILDEN WIDDTH... 1 PARAGRAPH O LO QUE SEA ....
+  
+  // width: 62%; // GOLDEN ...
+  width: 68%; // GOLDEN ...
+  
+  // & RWD IT !!!!!
+ 
+  // have these as class modifiers for p tag !!!!
+  // p::first-line {
+  &::first-line {
+    font-size: 1.5em;
+    // font-size: 3em;
+    font-weight: bold;
+  }
+  
+  // p::first-letter {
+  &::first-letter {
+    font-weight: bold;
+    // color: red;
+    color: $c_accent;
+    
+    font-size: 2em; // nice, it scales
+    // vertical-align: sub;
+    // vertical-align: text-top;
+    vertical-align: middle;
+  }
+  
+} // page_excerpt
+
+
+
+
+
+
+
+
+.card_base { // AS A DEMO PURPISE AL INCLUDE IVE ELEMET ... / CONFLICT CON MEGATRON, SO RRENAME FOR NOWE ... // card
+  @include s_card;
+  
+	&:hover {
+		// cursor: pointer; // // // // // // // !!!!!!!!!!!!!!!!!!!
+		box-shadow: 0px 0px 4px 0px #ccc;
+		// @include transition(box-shadow, 0.2s);
+    transition: box-shadow $t_fast linear;
+  }
+  
+} // w_slider
+
+
+
+
+
+
+
+
+// slider & carrousel, pro ahora....
+
+// / una cosa es el style este ...
+
+// y otr a cosa es el aspect ratio de adentro, erg hacerlo difefent
+
+
+.card_slider { // VS card_slider or event card_media , also for videos, audios, carousels, etc 
+  @include s_card;
+  
+	&:hover {
+		// cursor: pointer; // // // // // // // !!!!!!!!!!!!!!!!!!!
+		box-shadow: 0px 0px 4px 0px #ccc;
+		// @include transition(box-shadow, 0.2s);
+    transition: box-shadow $t_fast linear;
+  }
+  
+} // w_slider
+
+
+
+
+
+
+
+// carousel, add clas smodifier for space between eleemnt,s plus trick lateralli e4se ....
+
+.w_slick_carrousel { // could be more generic name ??? - about slider ...
+  // border: 3px solid orange; 
+  
+  .image {
+    // padding-top: 100%; // 1:1 - squared
+     @include ar_square;
+  } // image
+  
+  
+} // w_test_ui
+
+
+.w_slick_slider { // could be more generic name ??? - about slider ...
+  // border: 3px solid orange; 
+  
+  .image {
+    // padding-top: 50%;
+    // padding-top: 50%; // no esta en elso variable s... ????
+    @include ar_2_1;
+  } // image
+  
+} // w_test_ui
+
+
+
+.placeholder_slide { // placeholder_slide
+  /* cannot have border, as its border box or whatver in there ... */
+  // border: 3px solid red;
+  // outline: 3px solid red;
+  
+  .image {
+    @include bg_img; // also do this to slider ....
+    // padding-top: 50%;
+    // padding-top: 80%;
+  } // image
+  
+  
+  &.case_carrousel {} // case_carrousel
+  
+  
+  
+  
+} // placeholder_slide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

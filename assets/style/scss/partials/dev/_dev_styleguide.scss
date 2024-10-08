@@ -1,0 +1,153 @@
+/* 
+ * CSS
+ * Dev - Styleguide: 
+*/
+
+
+
+#styleguideWrapper {
+
+	}
+	
+	.styleguideColor {
+	
+		}
+					
+	.styleguideFont {
+		
+		}				
+		
+
+		
+		
+// /////////////////////////////////////////////////////////////
+
+
+// .w_demo_section
+
+#demo_wrapper {
+background-color:#ccc;
+  
+  
+  // just add some padidng & pista. ,por ahora, cambiandole el name etc 
+  
+  padding: 1em;
+  
+  
+} // demo_wrapper
+
+
+
+
+
+
+/* 
+ *
+ * STYLEGUIDE 
+ *
+ */
+
+
+
+// styleguide_box ... sth generic ...
+
+
+
+/* 
+ * STYLEGUIDE - FONTS
+ */
+.styleguide_fonts { // WAS #w_fonts .... cowo-font(s)-group
+  // border: $s_border;
+	font-size: $fs_xl;
+  
+  .item { 
+    &:nth-of-type(1) {@include f_roboto}	
+    &:nth-of-type(2) {@include f_roboto_italic}
+    &:nth-of-type(3) {@include f_roboto_light}
+    &:nth-of-type(4) {@include f_roboto_light_italic}
+    &:nth-of-type(5) {@include f_roboto_bold}
+    &:nth-of-type(6) {@include f_roboto}
+    &:nth-of-type(7) {@include f_roboto}
+    &:nth-of-type(8) {@include f_roboto}
+  } // item
+  
+} // styleguide_fonts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * STYLEGUIDE - COLORS
+ */
+.styleguide_colors {
+  // border: $s_border;
+  // also nice as a list down...
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr); // minmax...
+  gap: 2em;
+  
+	.item {
+    aspect-ratio: 16 / 9; // :-)
+        
+    // and learn to ciombine aspoect 5ratio with img object fuiit thineee !!!
+    
+    
+    // color: var(--text-icons);
+    
+    &::after {
+      content: 'hello';
+      height: 100%;
+      display: grid;
+      place-items: center;
+      color: var(--text-icons);
+      font-weight: bold; // 
+    } // pseudo
+
+		// inlcude mixin, (loop) with color and color hex added as pseudo eleent so that its on tiop of the box.. sass loops and maps of colors or arrays or whatever...
+		/*
+    &:nth-of-type(1) { background-color: $c_primary_dark; &::after {content:'--dark-primary-color';} }	
+		&:nth-of-type(2) {background-color: $c_primary; &::after {content:'light-primary-color';} }	
+		&:nth-of-type(3) {background-color: $c_primary_light; &::after {content:'primary-color';} }	
+		&:nth-of-type(4) {background-color: $c_white; &::after {content:'text-icons';} }	
+		&:nth-of-type(5) {background-color: $c_accent; &::after {content:'accent-color';} }	
+		&:nth-of-type(6) {background-color: $c_text; &::after {content:'primary-text';} }	
+		&:nth-of-type(7) {background-color: $c_text_2; &::after {content:'secondary-text';} }	
+		&:nth-of-type(8) {background-color: $c_divider; &::after {content:'divider-text';} }	 
+    */
+    
+		&:nth-of-type(1) { background-color: var(--dark-primary-color); &::after {content:'--dark-primary-color';} }	
+		&:nth-of-type(2) {background-color: var(--primary-color); &::after {content:'primary-color';} }	
+		&:nth-of-type(3) {background-color: var(--light-primary-color); &::after {content:'light-primary-color';} }	
+		&:nth-of-type(4) {background-color: var(--text-icons); &::after {content:'--text-icons'; color: var(--secondary-text);}  }	
+		&:nth-of-type(5) {background-color: var(--accent-color); &::after {content:'--accent-color';} }	
+		&:nth-of-type(6) {background-color: var(--primary-text); &::after {content:'--primary-text';} }	
+		&:nth-of-type(7) {background-color: var(--secondary-text); &::after {content:'--secondary-text';} }	
+		&:nth-of-type(8) {background-color: var(--divider-text); &::after {content:'--divider-text';} }	
+    
+    
+    
+  } // item
+
+} // styleguide_colors
+
+
+
+	

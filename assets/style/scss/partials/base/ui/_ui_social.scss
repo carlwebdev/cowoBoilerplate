@@ -1,0 +1,320 @@
+/* 
+ * CSS
+ * Social
+ *
+ * MOVE PARTIAL DTO MOLECULES, OR ATOMS ...  // MOVE TO MOLECULE S....................
+ */	
+	
+/*
+ * CASES: 
+ * - STANDLONE
+ * - HEADER
+ * - FOOTER
+ * - ... Y POST SHARE BUTTON SETC !!!!
+*/	
+		
+.social_header { 
+	// @include dev_border;
+
+	ul {
+    // @include dev_border;
+		display: flex;
+		justify-content: center;
+		// gap: $space05; 
+  } // ul
+	
+  
+	li {
+    @include gaph($spacing05);
+		// @include rotate; // ??? if so, move down to anchor ...
+  } // li	
+		
+	a {
+		// display: block;
+    font-size: 2em;
+		// font-size: 3em;
+    @include ui_c_white_to_accent;
+  }	 // a
+	
+  
+  
+	img {
+		// border: 1px solid black;
+		// display: block;
+		// @include img; // move to reset 
+  }		
+
+  
+
+} // m_socialHeader
+	
+	
+
+
+
+
+
+	
+.social_footer {
+	// @include dev_border;
+	// @include paddingv($space05);
+	@include marginv($spacing05); // DEMO
+
+	ul {
+		display: flex;
+		justify-content: center;
+    gap: 0.25em;
+		}
+	
+    li {
+      // width:32px; 
+      /*
+      margin-right: $spacing025;  
+      &:last-of-type {margin-right: 0;}
+      */
+      // @include rotate;
+      } // li			
+		
+      a {
+        // border: 1px solid orange;
+        display: block; // VIP, FOR FLEX
+      }	// a
+	
+  
+  // font-size: 3em; // TEST 
+  // font-size: 2em; // TEST 
+  font-size: 2.5em; // TEST 
+  
+  a {
+    // color: $c_accent; 
+    // color: var(--primary-color);  // C-PRIMARY, C-SECONDARY, C-ACCENT ....  & LIGTH/DARK MODIFIERS ...
+    // color: $c_primary_light;
+    // color: var(--c-white);
+    color: white;
+    
+    @include transitionGeneral; // TEST 
+    &:hover {
+      // color: red;  
+      // color: $c_accent;  
+      // color: var(--primary-color);  
+      // color: $c_primary_light;   
+      // color: $c_primary_dark;  
+      color: $c_accent; 
+    }
+    
+  } // a
+  
+  
+	img {
+		// border: 1px solid black;
+		@include img;
+  }		
+		
+					
+} // social_footer
+
+
+
+
+
+
+
+
+
+
+// is this being used? being affected somehow ,?? maybve its teh biog case sceanrio  ???
+
+
+	
+.m_social { // l_homeSocial / ?? social_featured ... ?????
+    // background-color:$c_white;
+		// background-color:$c_red;
+		// background-color: $c_primary_light;
+		// @include border; // ???????????????????????????????????????????????????????????
+		
+		// @include background-opacity($c_primary_light, 0.25); // ???????????
+		// @include background-opacity($c_primary_light, 0.75); // ???????????
+		
+		
+		
+    // @include paddingv($spacing05);
+    // text-align:center;
+    
+		
+		@media only screen and (max-width: $bp_s) { 
+			@include paddingv($spacing);
+			}	// MEDIA-QUERY
+	
+			
+    ul {
+      display: flex;
+      justify-content: center;
+      // gap: 0.5em;
+      gap: 1em;
+    }
+    
+  
+    li {
+        // float:left; 
+				// width:48px; 
+				
+				@media only screen and (max-width: $bp_s) { 
+					// width:32px;			 // comentado, ya que he quitado varios iconos temporalmente
+				} // MEDIA-QUERY	
+				/*
+        margin-right: $spacing025;  
+        &:last-of-type {margin-right: 0;}
+				*/
+        
+      
+      // @include rotate;
+      
+      
+        a {
+          /*
+          display: block;
+          width: 100%; // 
+          */
+          // border: 1px solid red; 
+          
+          // img {@include img;}
+          
+          i {
+            font-size: 3em;
+            font-size: 6em;
+          } // i
+          
+          
+          &:hover{
+            color: $c_accent;
+            
+          }
+          
+          
+        } // a
+      
+        
+      
+      } // li
+  
+  
+
+    
+} // l_homeSocial
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social_contact {
+    // background-color:$c_white;
+		// background-color:$c_red;
+		// background-color: $c_primary_light;
+		/*
+  @include border; 
+		
+		@include background-opacity($c_primary_light, 0.25);
+	*/	
+		
+		
+    @include paddingv($spacing05);
+    // text-align:center;
+    
+		
+		@media only screen and (max-width: $bp_s) { 
+			@include paddingv($spacing);
+			}	// MEDIA-QUERY
+	
+			
+    ul {
+        @extend .clearfix;
+        display:inline-block;
+        }
+    
+    li {
+        float:left; 
+				width:48px; 
+				
+				@media only screen and (max-width: $bp_s) { 
+					// width:32px;			 // comentado, ya que he quitado varios iconos temporalmente
+					} // MEDIA-QUERY	
+				
+        // margin-right: $spacing025;  
+        /*
+        margin-right: $spacing05;  
+        &:last-of-type {margin-right: 0;}
+        */
+      
+        @include gaph($spacing025); // COULD USE NOT !!!! EVEN CLEANER ... HMMM 
+      
+				// @include rotate;
+      
+      
+      
+      } // li
+
+    
+  
+  // font-size: 3em; // TEST 
+  // font-size: 2em; // TEST 
+  font-size: 2.5em; // TEST 
+  
+  
+  a {
+    // color: $c_accent; 
+    // color: var(--primary-color);  // C-PRIMARY, C-SECONDARY, C-ACCENT ....  & LIGTH/DARK MODIFIERS ...
+   
+    
+    
+    // color: $c_primary_light;
+    // color: $c_primary_dark; 
+    color: $c_primary;
+    
+    @include transitionGeneral; // TEST 
+    &:hover {
+      // color: red;  
+      // color: $c_accent;  
+      // color: var(--primary-color);  
+      
+      // color: $c_primary_light;   
+      // color: $c_primary_dark;   
+      // color: $c_primary_light;
+      // color: $c_primary;
+      color: $c_primary_dark; 
+    }
+    
+    
+    // c_transition (_1) ... c_trans_primary_light-to_primary whatevr 
+    
+    
+    
+    
+  } // a
+  
+  
+  
+  
+  
+} // l_homeSocial
+
+
+
+
+

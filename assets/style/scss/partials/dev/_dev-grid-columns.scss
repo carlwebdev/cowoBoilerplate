@@ -1,0 +1,88 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Dev temp stuff
+ */
+
+// THI SIS GREAT !!!
+// THE FRAME MUST HAVE POSITION REALTIVE SO THAT TIS CAN GO BEHIND,SO THAT CSS COULD EVEN BE DEIFNED HERE AS WELL... 
+
+section, .frame {
+  position: relative; // GOAL - FOR THE DEV GRID CIOLUMSN SYSTEM TO BE BEHIND THE CONTENT ITSELF
+}
+
+
+.dev-grid-columns {
+	// border: 3px solid red; // DEV
+	
+	/* LAYOUT - POSITIONING */
+	// MIXIN FOR THIS
+	// position: absolute; 
+	position: fixed; 
+	top: 0px;
+	width: 100%; 
+	height: 100%;
+	
+	z-index: 0;
+
+  
+	/* LAYOUT - GRID */
+	display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  // grid-template-columns: repeat(8, 1fr);
+  // grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 10% 10% 10%;
+	// grid-gap: 24px;
+	// grid-gap: 1em;
+	// gap: 2em;
+	gap: 1em;
+	
+  
+	/* GENERIC INDIVIDUAL ITEM, FOR THE DEMO, FOR DEMO PURPOSES. */
+	.item {	// aka "col"  
+		// cursor: pointer;
+		// background-color: #ccc;	
+		background-color: #F3F3F3;	
+		/* border: 3px solid black; */
+		// box-shadow: 0px 0px 2px 1px #000;
+		box-shadow: 0px 0px 2px 1px #ccc;
+		    
+    color: #ccc;
+    
+		// font-size: 32px;
+		// font-size: 2em;
+		font-size: 3em;
+		text-align: center; /* no suple al flex */
+		
+		/* LAYOUT - FLEX */
+		display: flex;
+		justify-content: center;
+		// align-items: center;
+		// align-items: flex-end; // bottom.....
+    // padding-bottom: 24px; 
+		// align-items: flex-start; // top = default.....
+		align-items: center; // test in the middle = VERY NICE 
+	  
+    
+		/* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow */
+		
+		/*
+		grid-auto-flow: column;
+		grid-auto-flow: row;
+		grid-auto-flow: row dense;
+		*/
+		/* css counter, as marker for the fornt end , nice !! visyallly nice tool */
+		} /// ITEM
+
+
+	} // dev-grid
+	
+	
+/* MIXIN TO DECLARE-CSS-COUNTER */
+.dev-grid-columns .item::before {
+  counter-increment: section;                   /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */   /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+	/* content: "# " counter(section); */ 
+	content: counter(section); 
+}
+	

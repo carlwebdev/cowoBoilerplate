@@ -1,0 +1,148 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Dev temp stuff
+ */
+
+
+// .pointer {cursor: pointer;} /* THIS IS TOO GENERIC !!!!!!!!! */
+
+
+/*
+.breaker { clear: both; }
+
+.button {cursor:pointer;}
+*/
+
+
+
+
+:root {
+	// --c-dev: #f06; 
+} /* ROOT */
+
+// COLOR
+$c_dev: #f06;
+// $c_dev: var(--c-dev);
+
+
+// BORDER
+$dev_border: 3px solid $c_dev;
+// $dev_border: 3px solid var(--c-dev);
+
+
+
+
+/*
+QA - DEBUGGING
+img not alt, then red border
+& iframe not title, red border
+*/
+
+
+
+// QA DEV DEBUGGING - ACCESSIBILITY & SEO i guesss
+img:not([alt]) {
+  border: $dev_border;
+}
+
+
+
+
+
+
+
+@mixin dev_border { // WAS dev-border (renaming didnt change anything weird)  - or just t¡let the comiler find the erors 
+	// border: 3px solid $c_dev; // use a dev variable color insitead $c_dev - and use my #F06 !!! NICE 
+	border: $dev_border; // OVER-ENGINEERED 
+}
+
+// BUILD - DEV_BOX ...
+// with bg colro being a lightnen of the dev colro !!! nice 
+
+
+
+// and then kill these 2 clases etc  with s & d !!! - hmm leave dev_msg as well ...
+/* KILL THIS */
+@mixin test {
+	// background-color: #f0f;
+	background-color: #f0f;
+	padding: 24px;
+}
+
+@mixin todo { // TODO aka TO REVIEW
+	outline: 3px solid $c_dev;
+	// outline: 3px solid var(--c-dev);
+  outline-offset: 3px; 
+
+  padding-block: $spacing8; 
+}
+
+.todo { // dev_todo
+	// background-color: #f0f;
+	/*
+  background-color: #f0f;
+  padding: 24px;
+  */
+  
+  /*
+	outline: 3px solid $c_dev;
+	// outline: 3px solid var(--c-dev);
+  outline-offset: 3px; 
+  */
+  padding-block: $spacing4; 
+  border: 3px solid $c_dev;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 3em;
+  line-height: 1.5em; // 
+}
+
+
+// .dev_msg @include dev_msg ... both ways ... 
+
+
+
+
+
+
+
+/*
+ * DEV HIDE
+ */
+.dev_hide {
+  // display: none;
+  display: none !important;
+} // dev_msg
+
+
+
+
+
+
+
+/*
+ * DEV MESSAGE
+ */
+.dev_msg {
+  // @include dev_border;  
+  background-color: $c_dev;
+  color: $c_white;  
+  font-size: var(--fs-xl);
+  padding: 1em;
+  text-align: center;
+} // dev_msg
+
+
+
+
+
+
+
+
+
+
+
+
+
+

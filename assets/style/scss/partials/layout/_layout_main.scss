@@ -1,0 +1,404 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: Layout
+ */
+
+
+
+// HACKY PLUGIN
+.fit-vids-style {display: none;}
+
+
+
+
+
+// Smooth Scrolling
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+html {
+  
+  /* START OF BLOCK */
+  // NICE FOR cowo_index MODULE + FOR PAGE HASHTAG TARGET LINKS I GUESS ...
+  scroll-behavior: smooth; // MAKES SCROLL BEHAVIOUR IN PLAIN HTML WORKS SMOOTHLY - CAN IT BE CUSTOMIZED FURTHER (NATIVELY) ? ... NO
+  // Does it also cause that epic-assoc scroll to position after page refresh?
+  /* END OF BLOCK */
+  
+  /* START OF BLOCK */
+  // scroll-padding-top: 50px; // GOAL, OFFSET THE HEIGHT OF THE HEADER (DYNAMICALLY) SO THAT THE SCROLL BEHAVIOUR (SMOOTH) ISN'T HIDDEN BEHIND THE HEADER ... / GOAL, HAVE BOTH HTINGS COMBINES ??? HMMMMMMMMMMS
+  // scroll-padding-top: 110px; // sthis could be a css variable, and it can be geenrrate din the form through jquery !!!!!!!!!!!!!!!!!!!!! --- SCRIPTING REQUIRED
+  scroll-padding-top: 100px; // AFTER "HEADER IS SMALLERS"
+  
+  /* END OF BLOCK */
+} // html
+
+
+
+html {
+	/* ... */
+  }
+	
+body {
+	// background-color: $c_white; 
+  // background-color: antiquewhite; 
+  background-color: var(--c-bg);
+  }
+
+#page {
+	/* PLACEHOLDER */
+  
+  // background-image: radial-gradient(red, green, blue);
+  
+  // background-color: var(--primary-color); // FALL-BACK PRECAUTION ...
+  // background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+  
+}
+
+
+#page_content {
+  padding-top: var(--header-height); // JS
+} // page_content
+
+
+
+
+/* move sticky footer flex here instead !! simpleer !!!!  */
+
+
+
+
+
+
+/* 
+ * VERTICAL - EXTREMES 
+ */
+	header/* , footer */ {
+		// background-color: $c_primary;  
+		// background-color: var(--primary-color);  
+    
+    // background-color: var(--c-bg-dark); 
+    
+  }
+	footer { 
+    // background-color: var(--primary-color);  
+    // background-color: var(--dark-primary-color);  
+    // background-color: $c_primary; 
+    
+    // background-color: var(--c-bg-dark);   
+    background-color: var(--c-bg);  
+  }
+	
+
+/* 
+ *
+ * HORIZONTAL - FRAMES 
+ *
+ */		
+	
+.frame { 
+  margin-inline: auto; // @include centered;
+  min-width: 320px; 
+	/* max-width:1300px; */
+	// max-width:1140px;
+	// max-width: 1240px; // vs 1440px / or 1680  even.
+	max-width: 1440px; // vs 1440px / or 1680  even. // TODO - set as css variable, and decalres ina a settings file at the top outose php 
+  
+  // position: relative; // GOAL - FOR THE DEV GRID CIOLUMSN SYSTEM TO BE BEHIND THE CONTENT ITSELF  
+  
+	// @include paddingh($space);
+	@include paddingh($spacing2);	
+  /*
+	@include transition(padding-left, $t_slow);
+	@include transition(padding-right, $t_slow);
+	*/
+  transition: padding-left $t_base linear, padding-right $t_base linear;
+  
+  @media only screen and (max-width: $bp_l) {@include paddingh($spacing);} // MEDIA-QUERY
+  @media only screen and (max-width: $bp_m) {@include paddingh($spacing05);} // MEDIA-QUERY	
+
+
+  // &.medium {max-width: 1024px;}
+  &.narrow {max-width: 1024px;} 
+	&.wide {max-width: 1660px;}
+		
+	&.full {max-width: 1920px;}
+	
+  // also add flush, as in padding .... combo with width ...
+  
+  &.flush {
+    /* !!! */ max-width: 1920px; // REMOVE THIS, AS FLISH SHOULD BE ABLE TO BE USANBEL ALWAYS, NICE TRICK
+    @include paddingh(0px);
+  } // full
+  
+
+   
+} // frame 			
+	
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * SYSTEM ALTERNATING BACKGROUND COLORS 
+ */
+// DIDNT FIND THIS, SO I BUILT IT AGAIN:active
+
+.backgrounds { // s_
+  
+  .background:nth-of-type(odd) { // ALWAYS START WITH LIGHTER COLOR
+    // background-color: #ccc;
+    background-color: none;
+    // background-color: $c_gray_medium; 
+    // background-color: $c_gray_light; 
+  } // odd
+  
+  .background:nth-of-type(even) { // AND CONTINUE WITH DARKER TONE
+    // background-color: #999;
+    // background-color: #ccc;
+    background-color: #e28630;
+    
+    // background-color: $c_gray_dark; 
+    // background-color: $c_gray_medium; 
+  } // even
+  
+} // backgrounds
+
+
+
+
+
+
+
+
+
+
+
+section {
+
+  /* 
+   * HEIGHT aka SCREEN REAL ESTATE 
+   */
+  
+  &.fullscreen {
+    min-height: 100vh;
+  } // fullscreen
+  
+  
+  
+  //NO HA FUNCIONADO COM EN WP_EIOE !!! OR SOL POR MEDIA ISSUE ???
+  &.vcenter {
+    display: grid;
+    place-items: center; 
+  } // vcenter
+  
+  
+  
+  
+  /*
+	&.center_v {
+		display: flex;
+    // flex-direction: column;
+    
+    > div {
+      // ...
+      flex-grow: 1;
+      
+    } 
+  }
+  */
+  
+  
+  
+   
+   // padding(1), padding2, padding_3 ...
+    
+  
+  // rename hti ssystem ...
+	&.padding { // p_1
+		@include paddingv($spacing);
+  }
+	
+	&.padding_2 { // p_2
+		@include paddingv($spacing4);
+  }
+  
+	&.padding_3 { // p_3
+		@include paddingv($spacing3);
+  }
+  
+	&.padding_3_4 { // p_3_4 - ??????????????????????
+		// @include paddingv($spacing3);
+    padding-top: $spacing3;
+    padding-bottom: $spacing4;
+  }
+  
+
+	&.pb4 { 
+		@include paddingv(4em);
+    // // @include pb(4em); // // 
+  }
+	&.pb8 { 
+		@include paddingv(8em);
+  }
+
+	&.padding_4 { // p_4
+		@include paddingv($spacing4);
+  }
+  
+	&.padding_8 { // p_4
+		@include paddingv($spacing8); // NEW
+  }
+  
+
+
+
+
+
+
+  
+	&.accent { // bg_accent - ???
+		background-color: $c_accent;
+		}
+	
+	&.light { // & dark // bg_light & bg_dark
+		// background-color: var(--light-primary-color); // TEST 
+		background-color: var(--divider-text); // TEST 
+		background-color: rgba(16,16,16,0.5); // TEST 
+		}
+  
+  
+  
+  
+	&.fullHeightTest { //fullheight 
+	 	background-color: #f06; 
+		// height: 100%;
+		height: 100vh;
+  } // 
+	
+	
+  
+  
+  
+	&.test {
+		// border-bottom: 3px solid black;
+		// @include paddingv($space2); // TEST
+		
+		background-color: #ccc; 
+		&:nth-of-type(odd) {background-color: #999;}
+		
+		
+		// min-height: 50vh;
+		// min-height: 62vh;
+		
+		/* LAYOUT - FLEX */
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		
+		} // test
+	
+	
+	} // section
+	
+	
+	
+// CREATE STH FOR GENERIC PAGE CNTENT TOP SPACE, AND BOTTOM SPACE, AS AVARIABLE SOMEHOW... OR AS A DIV DUMMY IN BOTH EXTREMES	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content { // 
+	// min-height:200px; 
+	
+	// background-color: #999;
+	/*
+	overflow:hidden; // ????????? 
+	@include paddingv($space2);
+	*/
+	
+	// VIP TEMP
+	// padding-top: 60px; // TESTheadroom  - por lo del header hedroom etc ?!?!?!! - check with javascript, or with position sticky !!!!!
+	
+	
+	/*
+	position: relative;
+	height: 100%;
+	*/
+	
+	.inner {}
+	
+	
+} // content
+
+
+
+
+
+
+
+
+
+
+// .m_
+
+// HTML5 TAGS - main, article, etc 
+// https://www.tutorialrepublic.com/html-reference/html5-tags.php
+// ARTICLE
+// https://www.tutorialrepublic.com/html-reference/html5-article-tag.php
+
+			
+@media only screen and (max-width: $bp_l) { 
+
+		
+} // MEDIA-QUERY			
+
+@media only screen and (max-width: $bp_m) { 
+
+									
+} // MEDIA-QUERY
+
+@media only screen and (max-width: $bp_s) { 
+
+					
+} // MEDIA-QUERY
+

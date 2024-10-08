@@ -1,0 +1,41 @@
+/* 
+ * CSS VARIABLES
+ * COLOR SCHEME
+ */ 
+
+/*
+:root {
+  color-scheme: light dark; 
+}
+
+// If user prefers a dark appearance
+@media (prefers-color-scheme: dark) {
+  :root {
+    // DARK MODE
+    --c-bg: var(--c-black);
+    --c-text: var(--c-white);
+    --c-accent: var(--c-special-2);
+  }
+}
+*/  
+
+
+/* 
+ * CSS VARIABLES
+ * COLOR SCHEME
+ */ 
+
+
+ :root {
+  color-scheme: light dark; 
+}
+  
+/* If user prefers a dark appearance */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*DARK MODE */
+    --c-bg: var(--c-black);
+    --c-text: var(--c-white);
+    // --c-accent: var(--c-special-2);
+  }
+}

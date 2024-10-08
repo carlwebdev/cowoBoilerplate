@@ -1,0 +1,55 @@
+// to page partial 
+
+nav#lateral { // AKA side_nav nav.lateral ... // m_lateralSocial
+    display: none; // shwo with jquery ... fadein or slide whatver foomr the side 
+  
+  
+  
+  
+  
+    position: fixed;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba( 255, 255, 255, 0.7);
+    border: 2px solid var(--c-accent);
+    // border-radius: 0.4em; // bt only left top & left bottom !!!
+    border-top-left-radius: 0.4em;
+    border-bottom-left-radius: 0.4em;
+    padding: 1em;
+    font-size: 0.8em; // 
+  
+  
+    z-index: 1;
+    
+    
+    // tasks - have adynaic menu, but with images... how to assign image to men item, by id? or just make it all pseudo hardcoded !!!
+  
+    // .item {}
+  
+    // ul vs menu tag !!!!!!!!!!!!! -but perhaps not both nav & menu tag within each other ?!
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em; // 
+    }
+  
+    li {
+        // border: 1px solid black; // 
+        align-self: center;
+    }
+  
+    a {}
+  
+    /*
+    img {
+        // width: 3em; // 
+        width: 4em; //
+        margin-inline: auto; 
+    }
+    */
+  
+  } // m_lateralSocial
+  
+  
+  

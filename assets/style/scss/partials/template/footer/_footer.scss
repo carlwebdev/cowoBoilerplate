@@ -1,0 +1,363 @@
+/*
+ * CSS
+ * Footer
+
+ * TODO:
+    developer
+    copyright
+
+    social links - copy el l homesocial bigge, o ese dejarlo como cowo-module-social... 
+
+    de paso, build social links for header as well !!!
+
+    sas folder for social... vs just 1 partial for all the social buttons, ok, good comepromise there...
+
+ */
+ 
+
+ 
+footer {
+  
+	.inner {
+    padding-block: $spacing2;
+		// text-align: center; // very unspecific    
+    // color:#fff; // very unspecific		
+    
+    // color: $c_white; // very unspecific	- white, for the logo ... 
+    // color: var(--c-text-inv);
+    // color: var(--c-white);
+    color: white;
+    // color: red;
+    
+    display: flex;
+    flex-direction: column;
+    gap: $spacing2; 
+  } // inner
+  
+} // footer
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+/*
+ * Footer - Bar - Top
+ */	
+.footer_bar_top { 
+  display: flex;
+  justify-content: flex-end;
+} // footer_bar_top
+
+
+
+
+
+
+
+
+.scrolltotop { // footer_scrolltotop
+	// @include dev_border;
+  /*
+	display: flex;
+	justify-content: center;
+	*/
+	// button, form wp_eime ?????????????????????????? 
+  
+  /*
+	a {
+   // @include dev_border;
+   color: inherit;
+   cursor: pointer;
+   &:hover {color: $c_primary_light;}
+
+
+  // line height issue ....
+
+  .icon {
+    // @include dev_border;
+    font-size: 32px;
+    // line-height: 32px;
+    // line-height: 26px;
+    }
+
+  }	// a		
+	
+  */
+  
+  
+  button {
+    // could extend thge class, or mixin mejor ...
+    // currently used inline class, as well as btn_reset  
+    
+    // reset ya estaba ?? hmmm
+    
+    
+    span {display:block;}
+    
+    
+  } // button
+  
+  
+  
+} // scrolltotop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+/*
+ * Footer - Bar - Main
+ */	
+.footer_bar_main { 
+  // border: 3px solid black;
+  
+  
+  
+  // background-color: rgba($c_black, 0.50); 
+  // margin-bottom: $spacing; // 
+  /*
+  .inner {
+    @include paddingv($spacing0125);
+    display:flex;
+    justify-content: flex-end; 
+    // align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
+  } // inner
+  */
+
+  /*
+  display: flex;
+  justify-content: flex-end;
+  */
+  
+  
+  
+
+} // footer_bar_main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.footerContent {
+      // border: 3px solid red; // 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      
+			text-align: center; // very unspecific  ...  
+			
+			font-size: $fs_l;
+			span {font-size: $fs_m;}
+			
+			/*
+			img {
+				width: 86px;
+				vertical-align: middle;
+				}
+		  */		
+		} // footerContent			
+			
+
+
+
+
+
+			
+    .logo_footer { // logo_footer // footer_logo
+      // flex-shrink: 0; 
+      max-width: 320px;
+      img {@include img;} // RESET !!!
+    } // logo_footer
+	
+
+		.footer_copyright {
+      font-size: $fs_m;
+    } // footer_copyright	
+
+
+		.footer_contact {
+      // margin-top: $spacing; //
+      margin-top: $spacing05; //
+      font-size: $fs_m;
+      
+      a {
+        color: inherit;; // ? reset ?
+        @include a_ui_alt;
+      } // a
+      
+    } // footer_contact		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Grid - Footer
+ */	
+.grid_footer {
+  // @include dev_border;
+  // margin-top: $spacing;
+  display: flex;
+  justify-content: space-between;
+
+  
+  
+  
+  
+  .item {
+
+    .title,
+    h5, 
+    h6 {
+      margin-bottom: $spacing025;
+      font-weight: bold;
+      font-size: var(--fs-l);        
+      // font-size: var(--fs-xl);        
+    }
+
+    .text {
+      font-size: var(--fs-m);
+      // font-size: var(--fs-l);
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        // gap: $spacing0125;           
+        // gap: $spacing025;           
+        // gap: 1em;           
+        // gap: 1rem;           
+        /*
+        gap: 0.6rem;           
+        */
+        // line-height: 1.6rem;           
+      }
+
+      li {
+
+        a {
+          display: block;
+          padding-block: $spacing025;
+          color: inherit;
+          @include a_ui_alt;
+        } // a
+
+      } // li
+
+    } // text
+
+  } // item	
+
+
+} // grid_footer	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////
+
+/*
+ * Footer - Bar - Bottom
+ */	
+.footer_bar_bottom { 
+  // background-color: rgba($c_black, 0.50); 
+  display:flex;
+  justify-content: flex-end; 
+  // align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
+} // footer_bar_bottom
+
+
+
+  .footer_developer {
+    // @include dev_border; // 
+
+    span {
+      // font-size: $fs_m;
+      // font-size: $fs_s;
+      font-size: $fs_m;
+    }
+
+    img {
+      // width: 86px;
+      width: 10em;
+      vertical-align: middle;
+    }
+
+  } // footer_developer			
+			
+
+
+			
+			
+
+
+
+

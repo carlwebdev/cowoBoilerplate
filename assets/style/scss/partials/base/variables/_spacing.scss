@@ -1,0 +1,48 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: CSS Reset
+ */
+
+
+/*
+ * GOLDEN RATIO (phi)
+ */ 
+/*
+$golden_long: 61.8%;
+$golden_short: 32.2%;
+*/
+
+
+
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - SPACING => "SPACE" ... LESS IS MORE
+ */
+$spacing: 24px;
+$spacing2: $spacing * 2;
+$spacing3: $spacing * 3;
+$spacing4: $spacing * 4; 
+$spacing6: $spacing * 6; // mayeb also add the 5 & 7, etc
+$spacing8: $spacing * 8;
+$spacing0875: $spacing * 0.875;
+$spacing075: $spacing * 0.75;
+$spacing0625: $spacing * 0.625;
+$spacing05: $spacing * 0.5;
+$spacing0375: $spacing * 0.375;
+$spacing025: $spacing * 0.25;
+$spacing0125: $spacing * 0.125;
+
+// and remmeber rems font isze fomrat s !!!
+
+
+
+// use the formula for any other case...
+
+
+
+/* SPACINGS */
+@mixin spaceing($anyth)  { // RENAME TO SPACE , no, to spacing - aahah pero esto es otra cosa es floaty griddy gap thig eee float_gap_experiment ... 
+	margin-bottom: $baseSpacing x $anyth; // ??!!!!!!!!!!!!!!!!!!!!
+	}

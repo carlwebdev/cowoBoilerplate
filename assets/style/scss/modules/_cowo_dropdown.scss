@@ -1,0 +1,143 @@
+/*
+ * cowo-Boilerplate
+ * CSS
+ * cowo-dropdown  -case 1 - jquery - then do a dialog summary verisn (its nota ccordion, ok)
+ */ 
+ 				
+.cowo-dropdown { 
+	// border: $s_border; // 
+  display: grid;
+  // gap: $spacing05;
+  // gap: 3em;
+  // gap: 2em;
+  gap: 1em;
+  font-size: 1.5em; // 
+  
+	.dropdown-pair { // batch... 
+    
+		.dropdown-header {
+			/* PLACEHOLDER */		
+		} // dropdown-header
+
+			.dropdown-trigger { // TODO - ASLO DO SUMMARY DIALOG SUSTEM HEER 
+				cursor: pointer; 	
+				// padding: 1em;
+				padding: 0.6em 1em;
+        background: var(--c-bg-dark);
+        color: var(--c-text-inv); 
+
+				// MOVE UP A BIT, ALSO THE ONE FOR THE TABS , AS IT'LL BE VISUALLY CLEARER
+				
+				/* STATE - HOVER */
+				&:hover {
+          background-color: var(--c-accent); 
+          color: var(--c-text);
+				}
+				
+				/* STATE - ACTIVE */
+				&.is-active {
+          background-color: var(--c-accent); 
+          color: var(--c-text);          
+					
+					&:hover { // FORCED BEHAVIOR - COULD JUST USE AN IMPORTANT ON TOP Y PUNTO ... 
+            background-color: var(--c-accent); 
+            color: var(--c-text);            
+          }
+
+        } // is-active		
+
+      } // dropdown-trigger
+
+		
+		
+		/* HIDDEN SECTION */
+		.dropdown-target { // TARGET - AS TOP BOTTOM HACE PRESUNCIONES...  // was accordion_bottom
+			display:none; /* DO WITH CSS OR WITH JS.. simpler to be done through css, it's more failproof */
+		  min-height:200px; /* DEMO */
+			// margin-top: $space025;
+      // padding: $spacing;
+      padding: 3em;
+      background: var(--c-bg-dark);
+      color: var(--c-text-inv); 
+      // font-size: 1.5em;
+
+      p {
+        margin-block: unset;
+        &:not(:last-of-type) {
+          // margin-bottom: 1em;
+          margin-bottom: 2em;
+        }
+      } // p
+      
+    } // dropdown-target
+
+  } // dropdown-pair
+
+} // cowo-dropdown
+	
+	
+		
+
+
+// ????????????????????????????????
+// s&d , kil this shit !!!
+
+
+		.genericDropdownItem_top {
+			position:relative; /* for the trigger */
+			padding-top:5px;
+			background-color:$c_primary;
+			min-height:50px;
+			
+			.genericDropdownItem_top_trigger {
+				position:absolute; bottom:0px; right:0px;
+				background-color:$c_primary;
+				font-weight:bold;		
+				
+				.genericDropdownItem_top_trigger:hover,
+				.genericDropdownItem_top_trigger.is_active {
+					background-color:$c_primary; /* TESTING NEW THING */    /* SASS IT !!!!!!!!!!!!!! */
+					color:$c_white;
+					}	// UI
+					
+											
+				} // genericDropdownItem_top_trigger
+				
+							
+			}	// genericDropdownItem_top				
+										
+
+				
+
+						
+
+			
+							
+		
+		
+/* FUNCTION */		
+.jq_dropdown {/* THE PARENT OF EACH DROPDOWN TOP/BOTTOM PAIR */}
+
+	.jq_dropdown_shown {}
+
+		// .jq_dropdown_shown.is_active {background-color:$c_primary;}	
+			
+			// .jq_dropdown_trigger {cursor:pointer;}			
+				
+				
+				.jq_dropdown_trigger.is_active {
+					/*
+					background-color:$c_primary_dark;
+					color:$c_white;
+					*/
+					background-color:$c_primary_light;
+					color:$c_primary_dark;
+					}	
+					
+					
+					.jq_dropdown_trigger.is_active:hover {
+						color:#000;
+						}
+									
+			
+	// .jq_dropdown_hidden {display:none;}	

@@ -1,0 +1,716 @@
+/*
+ * cowo-Boilerplate
+ * CSS
+ * TYPOGRAPHY - HTML-EDITOR
+ */ 
+
+
+
+
+
+  hr {
+    
+    // DEFAULT
+    /* margin: 8px 0px; */ // (0.5em...)
+    
+    
+    // https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php#:~:text=Answer%3A%20Use%20the%20CSS%20background,color%20an%20element.
+    
+    // the "hr" element is a weird one, and it is kind of a border which behaves weirdly
+    // hr is a weird eleemnt, it's like a box with a 1px border... weird...
+    // bg color, border color, weird behaviour...    
+    
+    // TODO
+    // 1 -check if it has to be resetted somehow    
+    // so first step is to reset the border to none, making the hr element absent
+    border: none;
+    // then we add some height and a background color, thus customizing the hr element (uuse grey-ish vs accent color)
+    // height: 1px;
+    height: 2px; // TEST
+    // 2 - define some behavious, somoe accent coors, some gray nbg color, etc eetcetec    
+    // a - base behaviur (vs defaiult)
+    // background-color: #ccc;
+    background-color: #000;
+    // background-color: $c_accent;
+    // b - accent behavious -  case-accent or just accent, simpler...
+    // &.case-accent {background-color: $c_accent;}
+    
+    
+    // width: 62%;
+    
+    margin-block: $spacing;
+    
+  } // hr
+
+
+
+
+
+
+
+
+
+
+
+.m_htmleditor { /// STYKE DE LO QUE VIENE DE LA BBDD, NO MAS, NO MENOS.
+
+
+  /*
+  ADD INDEX
+  
+  
+  
+  X - hr
+  
+  */
+  
+  
+  hr {
+    // https://www.tutorialrepublic.com/faq/how-to-change-the-color-of-an-hr-element-using-css.php#:~:text=Answer%3A%20Use%20the%20CSS%20background,color%20an%20element.
+    
+    // the "hr" element is a weird one, and it is kind of a border which behaves weirdly
+    // hr is a weird eleemnt, it's like a box with a 1px border... weird...
+    // bg color, border color, weird behaviour...    
+    
+    // TODO
+    // 1 -check if it has to be resetted somehow    
+    // so first step is to reset the border to none, making the hr element absent
+    border: none;
+    // then we add some height and a background color, thus customizing the hr element (uuse grey-ish vs accent color)
+    // height: 1px;
+    height: 2px; // TEST
+    // 2 - define some behavious, somoe accent coors, some gray nbg color, etc eetcetec    
+    // a - base behaviur (vs defaiult)
+    background-color: #ccc;
+    background-color: #000;
+    // b - accent behavious -  case-accent or just accent, simpler...
+    &.case-accent {background-color: $c_accent;}
+    
+    
+    
+    // DEFAULT
+    /* margin: 8px 0px; */ // (0.5em...)
+    
+    
+    
+  } // hr
+  
+  
+
+// ESTO SOLO ES PARA LO QUE VENGA DINAMICAMENTE DE LA BBDD !!!!!! - en este caso, deberia ser s_baseTypography or s_typographyBase
+// s_htmleditor !!!!
+
+
+    /*
+		// DO STH FOR DARK MODE SELSCCION, OR EVEN DETERCTION 
+		&.case_dark {
+			// background-color: $c_black_2; // TEMP
+			background-color: #252525;
+			color: $c_white;
+			a {color: inherit;} // TEST
+			}
+		*/
+		
+
+		
+		
+		
+		
+		/* 1 - HEADERS - FONT & FONT STYLING ... */
+		
+	/*
+	h1, h2, h3, h4, h5, h6 {
+			
+			// TEST WITH FNT SECINDARY ...
+			// oPEN SASN VS ROBOTO.
+			
+			
+			// DEFAULT VALUES
+			font-weight: bolder;
+			
+			
+			font-weight: 300; 
+
+			// font
+			// color
+
+			color: $c_primary_dark; // TEST
+			} // all headers
+		
+		
+    h1 {
+        font-size: 32px;
+        margin-top: $space;
+        margin-bottom: $space;
+        }
+						
+    h2 { // tb se usa en legalpages !!!
+        font-size: 24px;
+        margin-top: $space;
+        margin-bottom: $space075;
+        }
+							
+    h3 {
+        font-size: 19px;
+        // color: #f00;
+        margin-top:24px;
+        // margin-bottom:12px;
+				margin-bottom:6px;
+				margin-bottom: $space05;
+        // color: $c_blue;
+        }
+    
+    h4 {
+        font-size: 16px;
+        margin-top:24px;
+        margin-bottom:36px;
+				margin-bottom: $space05;
+        }
+				
+    h5 {
+        font-size: 13px;
+        margin-top:24px;
+        margin-bottom: $space025;
+        }
+				
+    h6 {
+        font-size: 11px;
+        margin-top:24px;
+        margin-bottom: $space025;
+        }
+			
+		*/
+		
+		
+		
+		
+  
+  
+  
+  
+				
+    p {
+			// margin-bottom: 12px;
+			// padding-bottom: 12px; // LAST OF TYPE...
+      
+      
+      
+      /*  CSS COLUMNS  =============================================== */
+      &.p_cols_2 { // + rwd !!!
+        // TODO - CHECK FOR NEEDED VENDOR PREFIXES...
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        -moz-column-gap: 2em;
+        -webkit-column-gap: 2em;
+        column-gap: 2em;
+        
+        text-align: justify; // TEST, LOOKING GOOD! 
+        
+      } // p_cols_2
+      
+      &.p_cols_3 { // + rwd !!!  
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        -moz-column-gap: 2em;
+        -webkit-column-gap: 2em;
+        column-gap: 2em;
+        
+        text-align: justify; // TEST, LOOKING GOOD! 
+        
+      } // p_cols_3
+      
+      &.p_cols_4 { // + rwd !!!  
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+        -moz-column-gap: 2em;
+        -webkit-column-gap: 2em;
+        column-gap: 2em;
+        
+        text-align: justify; // TEST, LOOKING GOOD! 
+        
+      } // p_cols_3
+      
+      &.p_cols_5 { // + rwd !!!  
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+        -moz-column-gap: 2em;
+        -webkit-column-gap: 2em;
+        column-gap: 2em;
+        
+        text-align: justify; // TEST, LOOKING GOOD! 
+        
+        FONT-SIZE: 14PX;
+        
+        
+        
+      } // p_cols_3
+      
+      
+		} // p
+    
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+		
+		
+    a {
+			// color: $c_black_grey; // test 
+			font-weight: bold; // HMMMMMMM
+			&:hover {text-decoration: underline;}
+			} // a
+    
+
+	
+	
+
+// BLOCKQUOTE ... 
+
+
+		blockquote {
+			// DO SOME CSS RESET !!!!!!!!!!!!!!!!!!!!!!!!!! TODO
+			margin-left: 0px; // CSS RESET !!!
+			
+			
+			
+			border-left: 3px solid $c_primary_dark;
+			background-color: black;
+			color: white;
+			
+			// padding-left: $space;
+			padding: $spacing $spacing2;
+			
+			font-size: 2rem;
+			} // blockquote
+
+	
+	
+	
+	
+/*
+
+https://stackoverflow.com/questions/14523927/vertically-centering-content-of-before-after-pseudo-elements
+Assuming your element is not an <img> (because pseudo elements are not allowed on self-closing elements), let's suppose it's a <div>, so a way could be:
+		
+*/ 	
+	
+	
+	
+	
+		/*
+		 * LISTS
+		 */
+	
+	
+    ul, ol  {
+			// margin-left:24px;
+			// margin-left:16px; // to verticalalign with title ui monthly hightlights
+			margin-left:24px; // to verticalalign with title ui monthly hightlights // !!!!! truco de aligment eytec -....
+			// THIS SHOULD BE A VARIABLE			
+			margin-left:24px;
+			// margin-bottom: 12px;
+			margin-bottom: 24px;
+			}
+	
+    ol {
+			list-style: decimal;
+			// list-style-image: url('../assets/img/bullet_blue.jpg'); /* deberia ser un gif */
+			
+			// font-size: 32px;
+			}
+
+    ul {
+			list-style:  disc;
+			// list-style-image: url('../assets/img/bullet_blue.jpg'); /* deberia ser un gif */
+			}
+			
+			li {
+				// margin-bottom: 18px;
+				// margin-bottom: 12px;
+				// margin-bottom: 10px;
+				margin-bottom: 12px;
+				
+				/* SECOND LEVEL */
+				ul, ol {
+					margin-top: 12px;
+					margin-bottom: 12px;
+					}  
+				
+				
+				} // li  
+			
+	
+	
+	
+  li::marker { // BRANDING !!!!!!! AKA STYLING AS WELL AS TEXT SELEWCTION - COPY ALSO FOMR MOSS, ETC & CARET TB ........ 
+    // color: red;
+    color: $c_accent;
+  }
+  
+  
+  
+  
+  
+	
+			// for when case manuakl bullets etc 
+			li___not { // aaplies to all , for now - pero ojo con el alignment segun el font size, test fix it here with ul & ol in deiferent sizes 
+				// and then apply the fix to epic websiet 
+				position: relative;
+				&::before {
+					// content: '&deg;'; // poner el dot,m con font size etc 
+					// content: '&#176'; // poner el dot,m con font size etc 
+					// content: '&#8226'; // poner el dot,m con font size etc 
+					// content: '\U+2022'; // poner el dot,m con font size etc 
+					content: '•'; // poner el dot,m con font size etc 
+					position: absolute; 
+					
+					
+					
+					
+		// ALMOST, BUT FUCKED WHEN UL IS NESTED INSIDE A LI... 			
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    // content: "";
+					
+					
+					
+					
+					
+					left: -24px; // THIS SHOULD BE A VARIABLE
+					// color: $c_text_blue; // COLOR DEL DOT, BLUE, RED, ETC ... 
+					color: blue; // COLOR DEL DOT, BLUE, RED, ETC ... 
+					font-size: 24px; // TEST 
+					
+					line-height: 0.9em; // TRICK FOR ALIGNMENT, BUT MANUAL, NOT BUENO
+					
+					
+					
+					// background-color: grey;
+					// border-radius: 50%;
+					} // before 
+				
+				} // li 
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		/*
+		 * MEDIA INSERTADO EN EL HTMLEDITOR - guardar esto, esto es para el contenido dinamico de la bbdd, almenos 1 solo tipo en cada web, quizás más.... hmm, ok.
+		 */
+	
+		img {
+			@include img; // MOVED TO RESET
+			// @include marginv($space);	
+			@include marginv($spacing2);				
+			}	
+		
+		iframe { // TARGET IT WITH FITVIDS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! premetiveley !!!! - tod o this !!!!!!!!!!!!!! pero ojom,quizas no ouqireo asi ... 
+			width: 100%; // MOVED TO RESET
+			// @include marginv($space);
+			@include marginv($spacing2);	
+			}
+	
+    } // m_htmleditor
+
+
+
+
+
+/*
+.m_link { // solo usado en email_enviado
+ 	margin-top: $space; // TEST
+	
+	// font-size: 36px;
+	// text-align: center;
+
+	a {
+		// display: inline-block;
+		// display: block;
+		display: inline-block; // para que no sea fullwidth !!!
+		@extend .buttonMain;
+	} // a
+
+	
+	// centrar el boton
+	@media only screen and (max-width: $bp_s) {
+		text-align: center;		
+		} // MEDIA-QUERY	
+	
+} // link
+*/
+
+
+	
+
+
+
+.m_htmleditor { /* REALMENTE SERIA S_ DE STYLE  */
+	
+} /* m_htmleditor */
+
+
+/*
+https://material.io/design/typography/the-type-system.html#type-scale
+*/
+
+    .m_htmleditor h1 {
+			font-weight: 300; /* LIGHT - BUT NOT REALLY ADDED THROUGH THE CDN !!! I THINK ... */			
+			font-size: 96px;
+			letter-spacing: -1.5px;
+			/* REM ETC */
+			
+			
+			/*  color: var(--dark-primary-color);*/
+			/*
+			margin-top: $spacing;
+       margin-bottom: $spacing;
+			*/
+    }
+						
+    .m_htmleditor h2 { /*tb se usa en legalpages !!! */
+			font-weight: 300; /* LIGHT - BUT NOT REALLY ADDED THROUGH THE CDN !!! I THINK ... */
+			font-size: 60px;
+			letter-spacing: -0.5px;
+
+			/*
+			margin-top: $spacing;
+			margin-bottom: $spacing075;
+			*/
+    }
+						
+
+
+
+    .m_htmleditor h3 {
+        /* margin-top:24px; */
+        /* margin-bottom:12px; */
+				/* margin-bottom:6px; */
+				/* margin-bottom: $spacing05; */
+			
+			
+			font-size: 48px;
+			font-weight: 400;  /* NORMAL, AKA REGULRA, BUT WHY .. JUST CAUSE, FOR THE RESET IS NOT DOOUING IT !!!  */
+			
+			/* so maybe ad dit to the reset, for other situations, makes sense 
+			did, but th happened ... 
+			*/
+       }
+    
+    .m_htmleditor h4 {
+			font-weight: 400;	
+			font-size: 34px;
+			letter-spacing: 0.25px;		
+			/*
+			margin-top:24px;
+			margin-bottom:36px;
+			*/
+			/* margin-bottom: $spacing05; */
+      }
+				
+    .m_htmleditor h5 {
+        /*
+			margin-top:24px;
+        margin-bottom: $spacing025;
+			*/
+			font-size: 24px;
+			font-weight: 400;
+    }
+				
+    .m_htmleditor h6 {
+        /*
+			margin-top:24px;
+        margin-bottom: $spacing025;
+			*/
+			font-weight: 500; /* MEDIUM */
+			font-size: 16px;
+			letter-spacing: 0.5px;		
+			
+     }
+		
+/* que toda oestso sean mixins del materail desig type scale (system) */
+
+
+/*
+
+Subtitle 1
+Subtitle 2
+
+Body 1
+Body 2
+
+Button (uppercase)
+Caption
+Overline (uppercase)
+
+
+*/
+
+
+    .m_htmleditor .aka_button  {
+        /* font-size: 16px; */
+        /*
+			margin-top:24px;
+        margin-bottom: $spacing025;
+			*/
+			font-weight: 500; /* MEDIUM */
+			font-size: 14px;
+			letter-spacing: 1.25px;		
+			/* TEXT TRANSOMR UPPERCASE */
+        }
+
+
+
+
+button {
+	
+
+
+
+
+
+	
+	/* FOR RESET FILE */
+	/* border-radius: 0px; */ /* ALSO DO FOR IOS ETC */
+	/* this cause sglitcthy border color thingee */
+	
+	border: 0;  /* OK - THIS TAKES CARE OF THE BORDER ASPECT & RADIUS */
+	/*outline: 0;*/ /* DOES NOTHING */
+
+	padding: 0; /* OK */
+	/* margin: 0; */ 
+
+	background: none; /* OK, TO DELETE BG COLOR */ 
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/* default is deisplay inline ((block)), so there is a spaceing */
+	/* display: block; */  /* ok, pero comentado por ahor aY LUEGO GETSINAR DESDE PARENT CON FLEX */
+	
+	
+	
+	
+	/* font reset */
+	/* */
+
+	font-family: 'Roboto'; 
+	
+	/* HAS BG COLR & BORDER ON FICUS (CLICK) */
+	
+	font-weight: 500; /* MEDIUM - but looks a bit dirty wonky */
+	font-size: 14px;
+	letter-spacing: 1.25px;		
+	text-transform: uppercase;  /* PRECAUTION */
+	
+	
+	
+	// // // // // // // height: 36px; /* THE TEXT IS VERTICALLLY VENTERED FOR SOME STRANGE REASON ... ??? */
+	/* border: 1px solid red; */
+} /* button */
+
+
+
+
+button.text-button {
+	color: var(--dark-primary-color);
+	color: var(--accent-color);
+	padding: 0px 12px;
+} /* button */
+
+
+
+button.outlined-button {
+	color: var(--dark-primary-color);
+	color: var(--accent-color);
+	padding: 0px 16px;
+	border-radius: 3px ; /* TEST */
+	border-radius: 6px ; /* TEST */
+	
+	border: 2px solid var(--divider-text);
+} /* button */
+
+
+
+
+button.contained-button-with-icon {
+	/* background-color: var(--dark-primary-color);*/
+	background-color: var(--accent-color);
+	color: var(--text-icons);
+	border-radius: 3px ; /* TEST */
+	border-radius: 6px ; /* TEST */
+} /* button */
+
+button.contained-button {
+	padding: 0px 16px;
+	
+	/* background-color: var(--dark-primary-color);*/
+	background-color: var(--accent-color);
+	color: var(--text-icons);
+	
+	border-radius: 3px ; /* TEST */
+	border-radius: 6px ; /* TEST */
+	
+	
+} /* button */
+
+
+
+
+
+
+		/* DO NOTHING, JUST KEEP THE DEFAUKLT BEHAVIOUR, LESS IS MORE */
+    .m_htmleditor p {
+			/* color: red;  */
+			/*
+			margin-bottom: 12px;
+			// padding-bottom: 12px; // LAST OF TYPE...
+			*/
+			}
+			.m_htmleditor p:last-of-type {
+				/*
+				margin-bottom: 12px;
+				// padding-bottom: 12px; // LAST OF TYPE...
+				*/
+				}
+	
+
+
+
+
+
+
+	

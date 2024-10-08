@@ -1,0 +1,79 @@
+/*
+ * CSS
+ * Header - Smaller (Plugin: Resize Header On Scroll - or is it just a script ?? )
+ */
+header {
+  // border: $s_border;
+  
+  // REMEBER SYSTEM .-  PHILOSOPHY - smaller view, is same as rwd mobiel view, as much as possible 
+  
+  /*
+   * 1 - LIST THE CLASSES WHERE TRANSITIONS SHOULD APPLY
+   */
+  // aqu poner las transiciones,como en some other site ...
+  // ADD ALL THE ITEMS THAT HAVE TRANSITIOSN DURING THE "header is smaller "
+  .header_bar_main .inner, 
+  .header_logo,
+  // nav.main /* TEST A VER SI APLICA A LSO HIJOS */
+  
+  nav.main ul.menu li,
+  nav.main ul.menu li a { 
+    @include transitionGeneral; // OBS, THIS TRANSITION IS NOT WORKING ANYMORE !!!!!!!!!!!!
+  } // ALL TRANSITIONS
+  
+
+  
+  // duuh...
+  // / guess it aint working as headroom is a layer around this, so header is not doig sticky or whebete e..  !!!!!!!!!!!!
+  
+  
+  
+  /*
+   * 2 - DEFINE WHAT ACTUALLY HAPPENS WHEN ACTIVATED
+   */
+  &.smaller { // PLUGIN - Resize header on scroll    
+    // border: $s_border;
+    // border: $dev_border;
+    
+    
+    /*
+     * Header - Bar - Main
+     */
+    .header_bar_main {
+
+      .inner {
+        // @include paddingv($spacing0125);
+      } // inner
+
+    } // header_bar_main
+
+    .header_logo {
+      // width: 200px; // aka half .. not here i guess
+      width: 260px; // OBS RWD !!!
+      // max-width: 45%; // TEST 
+    } // header_logo
+    
+    
+  
+  
+  
+    // wtf !! gap !!!!!!!!!!!!
+    nav.main {
+      ul.menu {
+        li {
+          // margin-right: $spacing05; // TEST 
+          margin-right: $spacing025; // TEST 
+          a { 
+            // padding: $spacing025 $spacing05;
+            // font-size: $fs_l;
+            font-size: $fs_m; // fs_nav
+          } // a
+        } // li
+      } // ul.menu
+    } // nav.main
+    
+    
+  } // smaller PLUGIN
+  
+  
+} // header

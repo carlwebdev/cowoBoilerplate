@@ -1,0 +1,238 @@
+/*
+* CSS
+* Forms - 2 - Inputs
+*/
+
+
+
+/* 
+ * STATES
+ *
+ * 1 - Default
+ * 2 - Hover
+ * 3 - Focus
+ * 4 - Active
+ * 5 - ? Error? 
+ * 6 - Disabled - maybe inetrchange the last 2 rows
+ */
+
+
+
+
+
+
+/* 
+ * STATE - STANDARD / edefault - also add disabled, etc 
+ */	
+
+// https://material.io/components/text-fields#usage
+
+// FILLED TEXT FILEDS vs OUTLINED TEXT FIELDS
+
+input[type=text],
+input[type=search], 
+input[type=password], 
+input[type=email],
+input[type=tel],
+select,
+textarea, 
+input[type=file] {
+	// background-color: $c_white; // no afecta a ls otions del select !!!... 
+	background-color: #E8E8E8; // no afecta a ls otions del select !!!... 
+	// border:3px solid $c_primary;
+	border: none; /* RESET */
+	border-bottom: 2px solid #989898; // EYEDROPPÈR
+	// padding: $space05 $space;	
+	// padding: $spacing05 $spacing075;
+	padding: $spacing05 $spacing05;
+	
+	// border-top-left-radius: 6px;
+	// border-top-right-radius: 6px;	
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	}	
+	
+/*	
+option {
+	background-color: $c_white;
+	}	
+*/	
+// do stuff with radio & checkboxes!!!! sth cool!! 	
+
+
+
+
+
+
+// STATE 1 - DEFAULT
+// STATE 2 - HOVER
+// STATE 3 - FOCUS
+// STATE 4 - ACTIVE
+// STATE 5 - ERROR
+// STATE 6 - DISABLED
+
+
+
+
+
+
+
+	
+	
+input[type=text]:disabled,
+input[type=search]:disabled,
+input[type=password]:disabled,
+input[type=email]:disabled,
+input[type=tel]:disabled,
+select:disabled, // ???? !!!!!!!!!!!!!!
+textarea:disabled	  {
+	background-color: #ccc;; // CREATE C_DISABLED ...
+	// border:10px solid $c_primary;
+	border-color: black;
+} // STATE = DISABLED	
+	
+
+
+
+
+		
+/* 
+ * STATE - DEFAULT - FOCUS and ANIMATIONS - just UI animatiosn, and can go at the begining of the list  
+ */
+input[type=text], 
+input[type=search], 
+input[type=password], 
+input[type=email],
+input[type=tel],
+select, 
+textarea {
+	// @include transitionButton; // change to general
+	@include transitionGeneral; // change to general - DONE 
+} // STATE = DEFAULT	
+
+
+
+
+
+/* 
+ * STATE - HOVER (must be before ACTIVE)
+ */
+input[type=text]:hover, 
+input[type=search]:hover, 
+input[type=password]:hover, 
+input[type=email]:hover,
+input[type=tel]:hover,
+select:hover, 
+textarea:hover {
+	/* background:#ff9999; */
+	/* border: 1px solid #D3D3D3; */
+	
+	/* NO UI FX */
+	
+} // STATE = HOVER	
+
+
+/* 
+ * STATE - ACTIVE (must be after HOVER)
+ */
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus,
+select:focus {
+	outline: none; /* VIP */
+	// background-color:#fff;
+	// border:3px solid $c_primary_dark;
+	
+	// border: 2px solid #989898; // TEST - TRANSITIONNOT GOOD, Y CON SPPED NOT NUL TAMPOS .. AUN MENOS ... 
+	border-color: var(--dark-primary-color);
+} // STATE = ACTIVE	
+	
+	
+
+
+
+	// active, for th ewbutton s??? on click action, as in desafualt ... 
+	
+	
+
+
+
+
+
+
+// https://www.digitalocean.com/community/tutorials/css-styling-form-input-validity
+
+/*
+When it comes to validating the content of input fields on the frontend, things are much easier now than they they used to be. We can use the :required, :optional, :valid and :invalid pseudo-classes coupled with HTML5 form validation attributes like required or pattern to create very visually engaging results. These pseudo-classes work for input, textarea and select elements.
+*/
+
+
+// error state ?? can it be feined per se ??? 
+// 1 - check throug email cvalidation 
+
+
+// erro, vs rquirered, bvlid, invalid etc 
+
+input[type=email]:error {
+	outline: none; /* VIP */
+	background-color: red;
+	border:30px solid $c_primary_dark;
+	}
+
+
+input[type=email]:invalid { // YES - EHWN VALIDARTTIN DOESNT COMPLY ... but becaiuse its required o no viene a cuent ??
+	// outline: none; /* VIP */
+	
+	
+	// background-color: red;
+	// border: 3px solid $c_primary_dark; // my error color, variable for now ...
+	border: 3px solid #f06; // my error color, variable for now ...
+	// just change the border colro, vs all ??? 
+	}
+
+
+// ALSO THINK OF ORDER OF RQUIEREDNESS AND VALIDNESS... CREQO UE VALIDUTY ES MAS IMPRTANE Y POR LO TANTO DEBERIA IR DESPYUES 
+input[type=text]:valid { // YES - EHWN VALIDARTTIN DOESNT COMPLY ...
+	outline: none; /* VIP */
+	// background-color: red;
+	// border:30px solid $c_primary_dark;
+	}
+
+input[type=text]:required { // YES - EHWN VALIDARTTIN DOESNT COMPLY ...
+	outline: none; /* VIP */
+	background-color: orange;
+	border:30px solid $c_primary_dark;
+	}
+
+input[type=text]:optional { // YES - EHWN VALIDARTTIN DOESNT COMPLY ...
+	outline: none; /* VIP */
+	// background-color: green;
+	// border:30px solid $c_primary_dark;
+	}
+
+/* & meter lo de los checkboxes !!!!!!!!!!!!!!!!!!!!!! */	
+	/* scale ?? */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	

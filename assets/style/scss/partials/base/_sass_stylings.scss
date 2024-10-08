@@ -1,0 +1,360 @@
+/* CSS Document - SASS */
+/* Front-End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * BORDERS
+ */
+$s_border: 3px solid $c_accent;
+// $s_border_alt: ... ;
+
+
+
+
+
+
+@mixin frosted_glass { 
+
+  // background-color: rgba($c_white, 0.5); /* PRECAUTION - JUST IN CASE hte header is positioned over the content */  
+  
+  /* THS IS KINDA "GLASS-WARE-ISH" */ // BUILD ESTEND FOR GLASWARE STYLE BG , mixin !!!
+  /*
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);    
+  background-color: rgba(255, 255, 255, 0.5); 
+  */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  // either use coompass or a mixin for this - check can i use first .
+
+} // frosted_glass
+
+
+
+
+
+/*
+ *
+ * S CARD
+ *
+ */
+
+// OJO, THSI SI STYLE - ok por eso lo he movido aqui 
+
+@mixin s_card { // // s_card_default // default / (base, or just npothing ...)
+  // s_CARD_BASE ... ETC 
+	background-color: $c_white; /* PRECAUTION */
+	// box-shadow: 0px 0px 2px #ccc;
+	// box-shadow: 0px 0px 4px 2px #ccc;
+	// box-shadow: 0px 0px 8px -2px #ccc;
+
+
+
+	/* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+
+
+	// padding: $space025;		
+	padding: $spacing05;
+  border-radius: $spacing05;
+  
+	&:hover {
+		// cursor: pointer; // // // // // // // !!!!!!!!!!!!!!!!!!!
+    
+		// @include transition(box-shadow, 0.2s);
+    transition: box-shadow $t_fast linear;
+
+
+    /* box-shadow: 0px 0px 4px 0px #ccc; */
+    /* box-shadow: 0px 0px 8px 2px #ccc; */
+    box-shadow: 0px 0px 8px 4px #ccc;
+
+		// box-shadow: 0px 0px 4px 0px $c_accent;
+  }
+  
+} // mixin s_card
+
+
+
+
+// forms, add fieldwety todo eso por accesibility !!!!
+
+
+
+
+
+
+
+// DUMB BRANDING THINSG THAT I INVENTED, PLACEHOLDER FOUC IMAGE BG COLOR THINGEE... COULD BE A GRADIENT TOO, WOULD BE NICER !!!!!! N IAGONAL LEFT TO RIGHT TOP TO BOTTOM , SIMPLE... 
+
+
+// NICE CONCEPT, FOR BRANDING ETC , FOR SYSTHEMATICS
+
+// not usin this one on this siet
+@mixin bg_c_placeholder {
+	/*
+  // border: 3px solid $c_primary_dark;
+  
+  // background-color: #ccc; // TEMP
+  background-color: var(--moss-c-b-1); // smooth
+  background-color: var(--moss-c-b-2); // NICE TOUCH - - - - - - - impement sth new for thsi websiet !!!!! and test it !!!!!!!!!!!!!!!!!!!!!!!!!!
+  // background-color: var(--moss-c-b-3); // maybe not  
+  // background-color: var(--moss-c-a-1); // THIS IS THE ONE AS PER DESIGN CONCEPT, BUT REALLY ??
+
+  */
+  background-color: var(--light-primary-color);
+  
+
+}
+
+
+
+
+// BRAINDG BASICS - NOVE TO OTHER PARTIUAL, DE STYLING S
+
+@mixin bg_placeholder {
+
+
+    // background-color: var(--primary-color); // FALL-BACK PRECAUTION ...
+    // background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+    
+    // background-image: radial-gradient(red, green, blue);
+    
+    // background-color: #ccc; /* TEMP PLACEHOLDER */
+    // background-color: var(--primary-color);
+
+  // background-color: #ccc; /* TEMP PLACEHOLDER */ // do with a gradient cricular ...
+  // background-color: var(--primary-color); /* TEMP PLACEHOLDER */ // do with a gradient cricular ...
+  // background-image: radial-gradient(red, green, blue);
+  
+  // background-color: var(--primary-color); // FALL-BACK PRECAUTION ... andf also for ewhrn items alrady have bg image decalred ... 
+  background-color: var(--light-primary-color); // FALL-BACK PRECAUTION ... andf also for ewhrn items alrady have bg image decalred ... 
+  background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+} // bg_placeholder
+
+
+
+
+
+
+/* 
+ * FALLBACKS using Sass
+ */
+ 
+ 
+
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+
+/* FALLBACK for background opacity */
+	#asfgasafasf {
+		background: #ccc; /* Fall-back for brosers that don't support opacity */
+		background: rgba(204, 204, 204, 0.85);
+
+	}
+
+
+
+// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
+// http://css-tricks.com/ie-background-rgb-bug/
+
+
+/*
+@mixin card {
+  // CARD - CONTAINER
+  background-color: $c_white;  // card - need bg color always, as precautin but also as best practices ...
+  // box-shadow: 0px 0px 2px #ccc;
+  // box-shadow: 0px 2px 11px 8px #999; // 999 - FOR EHWN BG IS CCC
+  box-shadow: 0px 4px 4px 2px #999; // 999 - FOR EHWN BG IS CCC
+  border-radius: 6px; // TEST 
+} // card
+*/
+
+
+
+
+
+
+
+
+@mixin bg_c_placeholder {
+  background-color: #f06; // very temp do sth barnding or template greys etc como separator etc ...  hmmm 
+  
+}
+
+
+
+
+
+
+
+	// @mixin c_transition_base
+	// @mixin c_transition_alt (ernate) , for example...
+	
+	
+
+
+
+
+
+// before fomrs, cause they are used there... and maybe also before buttons, as the styling colro changes could be used there
+
+
+// tehrfore transitionara also part of stylings, so add them there as well, like in 3 - stylings ...
+
+
+
+
+
+// TEST STH NEW HERE, CORO TRANSITIONS...
+
+
+
+
+// classes can de fedined later, they are not an extend .... placehodler... seria mejor uso, si no quieres que sea standalonee.....
+.buttonStyleX { // MAYEB ADD TRASNITION SPEED !!!
+	// background-color:$c_primary_dark;
+	// background-color: $c_primary;
+	background-color: $c_accent;
+	&:hover {
+		// background-color: $c_primary;
+		background-color: $c_primary_dark;
+		// background-color: $c_primary_light; // waaay too light
+		}		
+	} // buttonStyleX
+
+
+
+
+/* do sass for colors, and for interactiuon behaviours - UI */
+/* do sass for interactiuon behaviours - UI */
+
+
+
+
+
+
+
+@mixin border { // s_ /(style) - s_border_base / s_border_alt
+	border: 3px solid $c_primary_dark;
+}
+
+
+
+
+
+/* 
+ * FALLBACKS using Sass
+ */
+ 
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+
+
+/* FALLBACK for background opacity */
+
+// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
+// http://css-tricks.com/ie-background-rgb-bug/
+
+
+
+
+
+
+// call
+// @include background-opacity($c_primary_light, 0.25);
+// me suena que tenai que ser background y no backgroound-color
+@mixin background-opacity($color, $opacity) { // bg-opacity
+	background: $color; /* Fall-back for brosers that don't support opacity */
+	background: rgba($color, 0.85);
+}
+
+
+
+
+
+
+
+
+// // // css_snippets
+
+/*
+DOC - OPACITY PREFIX BUNDLE
+*/
+/* START: OPACITY PREFIX BUNDLE */	
+/* 
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:alpha(opacity=50);
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  */
+/* /END: OPACITY PREFIX BUNDLE */	
+
+/*
+DOC - CSS TEXT SHADOW SUPER COOOL
+*/
+/*
+text-shadow:#253e45 -1px 1px 0,
+#253e45 -2px 2px 0,
+#d45848 -3px 3px 0,
+#d45848 -4px 4px 0;
+*/
+/* COM EN fITtEXT,JS DEMO STRETCH TO FIT. */
+
+
+
+
+
+/* 
+ * FALLBACKS using Sass
+ */
+ 
+ 
+
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+
+/* FALLBACK for background opacity */
+	#asfgasafasf {
+		background: #ccc; /* Fall-back for brosers that don't support opacity */
+		background: rgba(204, 204, 204, 0.85);
+
+	}
+
+
+
+// create mixin - CSS_FALLBACK_tricks - LINK - the RGB fallback color only works when using shorthand. 
+// http://css-tricks.com/ie-background-rgb-bug/
+
+
+
+
+
+
+
+
+
+
+
+@mixin ui_c_white_to_accent { // ui_trans_c_accent_to_dark
+  @include transitionGeneral;
+  color: $c_white; 
+  &:hover /*,
+  &.is-current */ {
+    color: $c_accent; 
+  }
+} // mixin
+

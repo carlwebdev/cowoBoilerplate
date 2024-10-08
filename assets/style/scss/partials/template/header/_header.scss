@@ -1,0 +1,128 @@
+/*
+ * CSS
+ * HEADER
+ */
+
+
+/*
+ * Headroom.js
+ */
+#w_headroom {
+	/* PLACEHOLDER */
+  // z-index: 1; // por lo del banner con tenxt cover etc por el absoluet malo anyways ... 
+  z-index: 101; // WHY ?? // por lo del banner con tenxt cover etc por el absoluet malo anyways ... 
+  // ojo faltan z inex d elos dots del slick slider !!!!
+} // w_headroom
+	
+
+/*
+ *
+ * Header
+ *
+ */	
+header {
+  // border: $s_border; // DEV
+  // border: $dev_border; // DEV
+  
+  /* CASE : FIXED HEADER */ // ALSO RQUIRES TEH SSCRIPT !!!!!!!!!!!!!!!!!!!!! - BUT 1ST MUST CELANY THE HEADROOM SITUATIN 
+  &.case-is-fixed { // vs just "is-fixed"
+    position: fixed; top: 0; width: 100%;
+    z-index: $zi_header;
+  } // case
+  
+  // background-color: rgba($c_white, 0.5); /* PRECAUTION - JUST IN CASE hte header is positioned over the content */ 
+  // background-color: var(--dark-primary-color);  
+  // background-color: rgba(red, 0.50); 
+  // background-color: var(--primary-color);  // change to c-primary eytc etec etce
+  // background-color: rgba(red, 0.50); // TODO // must use a variable !!!!!
+  // background-color: rgba(var(--primary-color), 0.50); // TODO // must use a variable !!!!!
+  // background-color: rgba(--primary-color, 0.50); // TODO // must use a variable !!!!!
+  
+  // background-color: rgba($c_primary, 0.50); // TODO // must use a variable !!!!!
+  // background-color: rgba($c_black, 0.50); // TODO // must use a variable !!!!!
+  // background-color: rgba(#212121, 0.50); // TODO // must use a variable !!!!!
+  // background-color: rgba(#212121, 0.90); // TODO // must use a variable !!!!!
+  // background-color: rgba(#212121, 0.80); // TODO // must use a variable !!!!!
+  
+  /*
+  background-color: rgba(#212121, 0.70); // TODO // must use a variable !!!!!
+  @include frosted_glass;
+  */
+  
+  // background-color: rgba(var(--primary-color), 0.50); // TODO // must use a variable !!!!!
+  // background-color: var(--primary-color); // TODO // must use a variable !!!!!
+
+
+
+  // background-color: var(--c-bg-dark);
+  // background-color: var(--c-bg);  
+  background-color: var(--c-bg-alt); 
+  // background-color: var(--c-gray-dark);
+
+// HERE WERE THE HEADER BARS
+// AND THEN THE HEADER ATOMS/LECULES
+// ALL INIDE THE HEADER WRAPER, BUT NOT HEADER#HEADER ,..
+
+
+} // header
+
+
+
+  /*
+   *
+   * Header - Bar - Main - COMPONENTS / ATOMS
+   *
+   */
+
+
+
+/*
+ *
+ * LOGO - HEADER - LOGO
+ *
+ */
+
+// CLASS NAMING - ... header_logo VS logo_footer & social_header VS social_footer etc
+
+.header_logo {
+  flex-shrink: 0; // FLEX PRECAUTION  
+  width: 320px; // ??? // 420px !!! // 24em // 36em
+  img {
+   // @include img;
+  } // RESET &/VS PICTURE TAG!! ELSE JUST PLAIN OLD IMAG SCON SU CLAS SI ACASO ... FRO MORE SEMANTIC AND ACCESSIBLE HTML !!
+  
+} // header_logo
+	
+
+
+@media only screen and (max-width: $bp_m) { 
+  /*
+	.header_logo {
+
+  } // header_logo
+  */				
+} // MEDIA-QUERY		
+
+@media only screen and (max-width: $bp_s) { 	
+					
+} // MEDIA-QUERY	
+
+
+
+
+/* header_logo_text, instead */
+.logo_header_text { // REPO, just in case - IT'S FOR LOG IN TET FOMRAT !!! AAHA OK, THEN CLAMP IT... 
+	// AAPLIES TO ANCHOR, IF IT'S TEXT WE'RE TALKING ABOUT 
+  font-size: $fs_xl; 
+	// color:#fff;
+	color: var(--text-icons);
+	@include f_roboto_light;	
+	font-weight: bold; // ...
+	
+	a {
+		color: inherit;
+		// color: #fff;
+		// &:hover {color: var(--light-primary-color); }
+  } // a
+
+} // logo_header_text

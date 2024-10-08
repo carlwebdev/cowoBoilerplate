@@ -1,0 +1,200 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: a grid ... 
+ */
+
+/*
+// boilerplate - kill ellipisi and js and just leave css line clamp - and test clamp for other atributes... 
+// CSS - line-clamp WORKS !
+*/
+
+
+
+// COWObOILERPLATE . CONTINIUE
+
+/*
+// PHP AUDIT -. DISABLE IN SERVER WAMP TEMPORARILLY !!! 
+// BOILERPLATES - PHP LONG TAG, OK
+*/
+
+/*
+INSTRUCTIONS FOR ANY GRID: 
+separate grid behavior (wrapper & cols) from item behavior (and its own rwd behavior)
+*/
+
+
+	// TOTALLY SEPARATE, THE ITEMS, THE MODULES N
+	
+	// m_ = STANDALONE, location agnsotic
+
+
+// @import "modules/cowo_gridlist";
+
+
+
+
+
+
+// MY FONT AWESOME GOES IN CBPOILERPLATE 
+
+// cB - FLEX FOR GRID... 
+
+// cB - grid, without masonry, with masonry (both all equal columns) - with scrol in from below...
+
+
+// PATTERNS ... SCSS PÀRTIALS !!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid_base { // naming system grid_products etc, nice and clena
+	// border: 3px solid green; // DEV
+	// border: 3px solid red;
+  
+  
+  
+	display: grid;
+	/* LAYOUT - COLUMNS */
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // must be a simpler shorthand way
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	// grid-template-columns: repeat(4, 25%); // TEST THIS
+	// grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+  	// grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 10% 10% 10%;
+	// grid-gap: 36px;
+	gap: 36px;
+	// grid-column-gap: 10px;
+	grid-row-gap: $spacing2;
+	@media only screen and (max-width: $bp_l) {grid-template-columns: repeat(3, 1fr);} // MEDIA-QUERY	
+	@media only screen and (max-width: $bp_m) {grid-template-columns: repeat(2, 1fr);} // MEDIA-QUERY	
+	@media only screen and (max-width: $bp_s) {grid-template-columns: repeat(1, 1fr);} // MEDIA-QUERY		
+  
+  
+  
+  // insetad of alterng this one, just make a grid_videos & card_video etc to have it done.
+  
+  
+  &.case_2 {
+    grid-template-columns: repeat(2, 1fr);
+    @media only screen and (max-width: $bp_s) {grid-template-columns: repeat(1, 1fr);} // MEDIA-QUERY	 
+  } // case_2
+  
+  
+  
+  
+} // grid_base
+	
+	
+
+
+
+.m_item_base_01 {
+  
+  
+  // s_CARD_BASE ... ETC 
+	background-color: $c_white; /* PRECAUTION */
+	// box-shadow: 0px 0px 2px #ccc;
+	// box-shadow: 0px 0px 4px 2px #ccc;
+	// box-shadow: 0px 0px 8px -2px #ccc;
+	box-shadow: 0px 0px 8px 2px #ccc;
+	// padding: $space025;		
+	padding: $spacing05;	
+
+  
+  // @include s_card;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	&:hover {
+		cursor: pointer; // // // // // // // !!!!!!!!!!!!!!!!!!!
+		box-shadow: 0px 0px 4px 0px #ccc;
+		// @include transition(box-shadow, 0.2s);
+    transition: box-shadow $t_fast linear;
+		}
+
+	.image {
+		// OPTION A - IMAGE
+		img {@include img;}
+
+		// OPTION B - BACKGORUND IMAGE
+		@include bg_img;
+		@include ar_4_3;
+		background-color: #ccc; /* TEMP PLACEHOLDER */
+		} // image
+
+	.info { //etc, vs flex & grid layout !!!
+		// padding-top: 0.5em;
+		// padding-top: 1em;
+		padding: $spacing05;	
+		padding-top: $spacing075;
+
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+
+			padding-bottom: $spacing025;
+			border-bottom: 2px solid;
+			margin-bottom: $spacing025;
+			// a
+      
+      
+      @include css_line_clamp(3); // TEST 
+      
+      
+			} // title
+
+		.text {
+
+      
+      @include css_line_clamp(5); // TEST 
+  
+  
+			} // text
+
+		.link {
+      margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
+			} // link
+
+
+		} // info
+
+
+	} // m_item_base_01
+
+
+
+
+
+
+// keeomb teh oroiginal for `page prodycsit , fo rnow.
+
+// ename the one used in blog, as grid_blog & standalone card_blog ... as a start
+
+
+
+
+
+
+
+
+
+		
+		

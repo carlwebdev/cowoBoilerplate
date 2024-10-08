@@ -1,0 +1,111 @@
+/* CSS Document */
+
+/* ============================================ */
+/* COWOWO ACCORDION                             */
+/* ============================================ */
+
+// BUILD ACCORCISON VERTCIAL, PAR APONER POR EJEMPO IMAGENES DE FNDO Y ETC DESPLEGABLES ... BUILD STH 
+
+
+// ACCORIDON, BTY DEFINITION, IS THAT 
+// A) THE OTHERS CLOSE WHRN SELECTING A NEW ONE
+// B) THE SEL FITEM CAN BE CLOSED - VALLENATO VS MINE
+
+
+// SO WHAT I WAS HAVING FOR AN ACCORDION WAS ACTUALLY JUST A LIST OF INDEENDENT DROPDOWNS 
+
+
+
+/* 
+ * CSS COUNTER 
+ */
+.cowo-accordion .accordion-pair .accordion-trigger::before {
+  counter-increment: accordion-trigger;                   /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */   /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+	/* content: "# " counter(section); */ 
+	/* content: counter(section);  */
+	content: "Accordion-Trigger " counter(accordion-trigger);
+}
+
+
+
+// pattern_accordion_jquery basic etc 
+
+/* CONTAINER */
+.cowo-accordion {
+  // border: $s_border; // 
+  display: grid;
+  // gap: 1em;
+  gap: 0.5em;
+  
+  font-size: 1.5em; // 
+  
+  
+	.accordion-pair { 
+		margin-bottom: $spacing075;
+		&:last-of-type {margin-bottom: 0px;}
+	
+		.accordion-trigger {
+			// cursor: pointer; 	
+			// background-color:$c_primary_dark;
+			/*
+      background-color:$c_primary;
+			color: white;	 // TODO - UNIFY VARIANBL EUSAGE 
+			
+      padding: $spacing025;
+      */
+      
+      
+      cursor: pointer; 	
+
+      // padding: $spacing025;
+      // padding: 1em;
+      padding: 0.6em 1em;
+      background: var(--c-bg-dark);
+      color: var(--c-text-inv); 
+      
+      
+      
+      
+      
+			&:hover {
+        background-color: var(--c-accent); 
+        color: var(--c-text);  
+		  }
+			
+			&.is-active {
+        background-color: var(--c-accent); 
+        color: var(--c-text);  
+        /*
+				&:hover { // FORCED BEHAVIOR - COULD JUST USE AN IMPORTANT ON TOP Y PUNTO ... 
+          background-color: var(--c-accent); 
+          color: var(--c-text);   
+        }
+        */
+      } // is-active		
+		
+		} // accordion-trigger
+
+		
+		/* HIDDEN SECTION */
+		.accordion-target { // TARGET - AS TOP BOTTOM HACE PRESUNCIONES...  // was accordion_bottom
+			/* display:none; */ /* DO WITH CSS OR WITH JS.. simpler to be done through css, it's more failproof */
+		  min-height:200px; /* DEMO */
+			// margin-top: $space025;
+      padding: 3em;
+      background: var(--c-bg-dark);
+      color: var(--c-text-inv); 
+      
+      p {
+        margin-block: unset;
+        &:not(:last-of-type) {
+          // margin-bottom: 1em;
+          margin-bottom: 2em;
+        }
+      } // p
+      
+		} // accordion-target
+    
+	} // accordion-pair
+	
+} // accordion_wrapper

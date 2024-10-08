@@ -1,0 +1,271 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Sass - Layout
+ */
+
+	
+
+
+
+
+
+
+
+// NEW - FAUX GAPS .... - ADD TO Cb & ETC & COWOsASS ONINE THINGEEE, YA TU SABES .....
+
+@mixin gaph($gap) { // faux_gap_h VS gaph & gapv, nice
+  margin-right: $gap;
+  &:last-of-type {margin-right: 0px;}  // vs unset or whatve r...
+} // faux_gap_h
+
+@mixin gapv($gap) { // faux_gap_v
+  margin-bottom: $gap;
+  &:last-of-type {margin-bottom: 0px;}  // vs unset or whatve r...
+} // faux_gap_v
+
+
+
+
+
+
+
+@mixin cover_absolute { // NOW JUST DO INSET 0 !!!!!
+  // background-color: #f06;
+  position: absolute; 
+  top: 0px;
+  width: 100%;
+  height: 100%;
+} // cover_absolute
+
+
+
+
+
+
+
+
+
+
+// BEHAVUIOUR BASICS
+
+
+
+
+// BEHAVUIOUR BASICS - TEXT (links in nav, and also for URLS in text...)
+
+
+
+
+
+/*
+ * BEHAVUIOUR BASICS - ANCHORS
+ */
+	
+@mixin a_ui_default { // vs a_ui va alt & bold
+  text-decoration: underline;
+  &:hover {text-decoration: none;}
+} // a_ui_default
+
+@mixin a_ui_alt { // as in "alternate"
+  text-decoration: none;
+  &:hover {text-decoration: underline;}
+} // a_ui_default
+/*
+@mixin a_ui_bold { // TEST, ...
+  font-weight: bold;
+  //
+} // a_ui_default
+*/
+
+
+
+
+
+/* 
+ * SASS - MIXINS - TEXT
+ */
+  
+@mixin ellipsis { // THIS WAS THE OLD-SCHOOL NATIVE SYSTEM FOR "LINE CLAMOING" BEFORE IT EXISTED ...
+  overflow: hidden;
+
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;  
+}
+	
+
+/* 
+ * SASS - MIXINS - LAYOUT - line clamp / clamps // css clamps 
+ */
+@mixin css_line_clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines; // number of lines
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}	
+			
+		
+
+
+@mixin nowrap { // TO PREVENT LINE BREAK IN ANCHORS (in nav, using flex, etc)
+  // CREATE MIXIN FOR THIS (LAYOUT MIXIN, TEXT/ANCHORS.... TEXT, REALY, AS ALSO FR URLS INSISD TEXT ETC )    
+  // and then Ill be able tiupdatethis:  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;   
+  
+  /*  
+  // https://stackoverflow.com/questions/25952496/prevent-nested-nav-items-from-breaking-on-to-the-next-line  
+  white-space: nowrap;
+  // width: 100%;	
+  */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * SASS - MIXINS - LAYOUT - RESPONSIVE
+ */
+@mixin centered {
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	}
+@mixin fullwidth {
+	float:none; 
+	width:100%;
+	/*
+	margin-left: 0px; // RESET PRECAUTION
+	margin-right: 0px; // RESET PRECAUTION
+	*/	
+	}
+	
+/* 
+ * SASS - MIXINS - LAYOUT - PADDING
+ */
+@mixin paddingh($paddingh) {
+	padding-left: $paddingh;
+	padding-right: $paddingh;
+	}
+@mixin paddingv($paddingv) {
+	padding-top: $paddingv;
+	padding-bottom: $paddingv;
+	}
+	
+/* 
+ * SASS - MIXINS - LAYOUT - MARGIN
+ */  
+@mixin marginh($marginh) {
+  margin-left: $marginh;
+  margin-right: $marginh;
+  }
+@mixin marginv($marginv) {
+  margin-top: $marginv;
+  margin-bottom: $marginv;
+  }
+
+
+
+
+
+/* 
+ * SASS - MIXINS - IMAGES
+ */  
+
+
+// moveD to reset , as well as iframe - BUT KEEP THERE FOR CURRANT USAGES..
+/* */
+@mixin img { 
+  width: 100%;
+  display: block;
+  }  
+
+
+// BUT MISINS ALSO USED IN TYPOGRAPY, OSEA QUE SI O SI TRENGO QUE MOVER STYLING A ENCIMA DE TYPOGRAPHY EN EL GLOBAL 
+
+@mixin bg_img {
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  }  
+
+/* 
+ * SASS - MIXINS - IMAGES - ASPECT RATIOS
+ */  
+@mixin ar_square {padding-top: 100%;} 
+@mixin ar_4_3 {padding-top: 75%;} 
+@mixin ar_2_1 {padding-top: 50%;} 
+@mixin ar_16_9 {padding-top: 56.25%;} 
+@mixin ar_cinemascope {padding-top: 42.55%;}        
+@mixin ar_poster {padding-top: 134.5%;}
+
+
+
+
+
+
+/* 
+ * SASS - MIXINS - SIMPLE SHAPES
+ */ 
+@mixin circle($diameter) {
+    width: $diameter;
+    height: $diameter;
+    border-radius:50%;
+    }    
+@mixin square($edge) {
+    width: $edge;
+    height: $edge;
+    }      
+@mixin rectangle($h_edge, $v_edge) {
+    width: $h_edge;
+    height: $v_edge;
+    } 
+
+// TRIANGLES... DIFFERENT SCENARIO.... O NO???		
+		
+
+
+
+
+
+
+/* START - CLEARFIX */ /* apply clearfix to parent */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/*/END - CLEARFIX */
+
+
+/* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */
+
+/*
+
+I USE overflow:hidden, hwich works the same, UNLESS YOU GET FUCKED UP BY DELETED OVERFLOWING CONTENT.
+
+view-source:http://mattbango.com/demos/hover-zoom/
+
+http://css-tricks.com/snippets/css/clear-fix/
+
+///
+to avoid cleafix hack, use display inline block, and then add the vertcal align top..
+but ther's the sapcing issue too... several ways to fix that
+
+*/

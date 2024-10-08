@@ -1,0 +1,47 @@
+/*
+ * CSS
+ * Variables - Break Points - sass vs css !!!!!!!!!!!!!!!!!
+ */
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
+ */ 
+
+// 1024, 768, 576 ... 480 ... 320 ..
+
+
+$bp_xl: 1200px;
+$bp_l: 1024px;
+$bp_m: 768px; // change to 767px ??? // 800px
+$bp_s: 568px; // 599px
+$bp_xs: 414px; // 480px
+
+
+	/* BREAK POINTS FOR MEDIA QUERIES */
+	/* CSS Variables Level 1’s var() cannot be used in media queries. - SO THIS IS A GOOD USE CASE FOR SASS VARIABLES USAGE , OK, GOOD */
+	/* VS rem SYSTEM */
+	/*
+	--bp-1: 1024px; 
+	--bp-m: 768px;
+	--bp-s: 568px;
+	--bp-xs: 414px; 
+	*/
+
+
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - MEDIA-QUERIES
+ */ 
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(max-width: 767px)";
+/*
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(max-width: 767px)";
+
+y entonces dentro del elemento que quiero que tenga una media query le meto esto:
+// @media #{$mobile}{
+//    ...
+// }
+*/

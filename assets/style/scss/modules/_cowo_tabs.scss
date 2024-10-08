@@ -1,0 +1,171 @@
+/*
+ * cowo-Boilerplate
+ * CSS
+ * cowo-tabs
+ */ 
+ 
+ 
+// rename as ui_tabs etc, in ui folder, simpler !!!!! o reactions o plugins, less, - pero modules seguro qu eno es la palabra adecuanda ...
+
+
+/* 
+ * COW TABS - TABS - STANDALONE OPTION
+ */
+/* 
+ * CSS COUNTER 
+ */
+.cowo-tabs-menu ul li a::before {
+  counter-increment: tab;                   /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */   /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+	/* content: "# " counter(section); */ 
+	/* content: counter(section);  */
+	content: "Tab " counter(tab);
+}
+
+
+
+
+/* 
+ * COWO TABS
+ */
+.cowo-tabs {
+	
+  /* 
+   * TAB
+   */  
+  .tab {
+    min-height:200px; /* DEMO */
+    // padding: $spacing;
+    // padding: 2em;
+    padding: 3em;
+    /*
+    background: $c_primary_light;
+    color: $c_primary_dark; 
+    // color: $c_white; // USE "white", its cleaner... and "black" as well, less si more.	
+    */
+    background: var(--c-bg-dark);
+    color: var(--c-text-inv); 
+    
+    font-size: 1.5em;
+    
+    p {
+      margin-block: unset;
+      &:not(:last-of-type) {
+        // margin-bottom: 1em;
+        margin-bottom: 2em;
+      }
+    } // P
+
+  } // tab
+	
+} // cowo-tabs 
+	
+	
+
+		
+/*
+ * TABS MENU   - design it materlia styla, like the one in the cowoCMS ..   
+ // NEEDNOT BE LOCATED INSIDE THE OTHER WRAPPER, ITS FREE.. 
+ */
+ 
+.cowo-tabs-menu { // WAS .jq_tabsMenu
+	display: flex; // "causes child to behave as if floated left"
+  padding-bottom: $spacing025;
+  
+  font-size: 1.5em;
+  
+	ul {
+		display: flex;
+    gap: $spacing025;
+		// justify-content: flex-end;
+		// justify-content: flex-start; /* DEFAULT BEHAVIOR */
+		// justify-content: space-around;
+		}
+
+	li {
+		// width: 64px; /* TEMP - DEMO */ 
+		// min-width: 64px; /* TEMP - DEMO */ 
+		min-width: 4em; /* TEMP - DEMO */ 
+		min-width: 8em; /* TEMP - DEMO */ 
+		text-align: center; 
+    // color: white;	
+    // color: var(--c-text-inv); 
+		
+		a {
+			color: inherit;
+			display: block; /* */ 
+			padding: $spacing025;
+			/*
+      // background: $c_primary_dark; 				
+			background: $c_primary; 	
+      */
+      background: var(--c-bg-dark);
+      color: var(--c-text-inv); 
+      
+      
+      
+		} // a
+
+						
+			a:hover {
+				/*
+        background:$c_primary_dark; 
+				color: $c_white;				
+        */
+        background-color: var(--c-accent); 
+				color: var(--c-text);
+		  }
+		
+		
+			&.is-active a { // TODO - CHANGE HE ACTIVE TO THE A... AND FUCK THE A, MAKE IT A BUTTON !!!! 
+        background-color: var(--c-accent); 
+				color: var(--c-text);
+        
+				&:hover { // FORCED BEHAVIOR - COULD JUST USE AN IMPORTANT ON TOP Y PUNTO ... 
+					/*
+          background: $c_primary_light; 
+					color: $c_primary_dark; 					
+          */
+          /*
+          background-color: inherit; 
+					color: inherit; 	
+          */
+          background-color: var(--c-accent); 
+          color: var(--c-text);          
+				}
+				
+		} // is-active
+
+					 
+		} // li
+
+				
+	} // .cowo-tabs-menu
+	
+	
+	
+
+				
+			
+
+@media only screen and (max-width: 600px) { 
+		
+.cowo-tabs-menu li {
+	width:23.5%; 
+	margin-right:2%; 
+	color:#FF0 !important;
+	
+	&:last-of-type {margin-right:0%;}
+	
+	}
+
+	
+	
+} /* MEDIA-QUERY - width is inclusive */
+
+
+@media only screen and (max-width: 380px) {
+
+.cowo-tabs-menu li a {font-size:0.75rem; }	
+	
+} /* MEDIA-QUERY - width is inclusive */

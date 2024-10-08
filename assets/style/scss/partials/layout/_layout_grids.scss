@@ -1,0 +1,93 @@
+/*
+ * CSS
+ * Layout - Grids (generic page elements)
+ */
+
+
+
+
+// MOVE TO REPO
+
+
+.FAKE-grid {
+	
+	// CSS TRICKS - https://css-tricks.com/equidistant-objects-with-css/
+	/*
+	text-align: justify;
+	&:after {
+		content: '';
+		width: 100%; // 
+		display: inline-block;
+		}		
+	*/
+	// ojo que causa espacio debajo, habria que pasar a font size 0 y luego reajustarlo ...
+	
+	.FAKE-col {
+		// CSS TRICKS - https://css-tricks.com/equidistant-objects-with-css/
+		/*
+		display: inline-block;
+		vertical-align: top; // TEST
+		text-align: left; // RESET - TEST
+		*/		
+		}
+		
+		
+} // .FAKE-grid
+		
+		
+			
+/////////////////////////////		
+
+
+
+
+
+// .grid_4_3_2_1 {} // etc 
+
+
+
+
+.l_gridBase_50_50 {
+	display: grid; 
+	// grid-template-columns: 1fr 1fr;
+	// grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 48px;
+	
+	.col {
+		
+		// TEMP., CARD 
+		
+		
+		// border: 1px solid grey; 
+		// padding: 24px;
+		
+		
+		// .m_item_base_01 // COPIED FOMR HERE 
+			background-color: $c_white; /* PRECAUTION */
+			// box-shadow: 0px 0px 2px #ccc;
+			// box-shadow: 0px 0px 4px 2px #ccc;
+			// box-shadow: 0px 0px 8px -2px #ccc;
+			box-shadow: 0px 0px 8px 2px #ccc;
+			// padding: $space025;		
+			padding: $spacing05;	
+
+		
+		  padding: 24px;
+		
+		
+			&:hover {
+				cursor: pointer; // 
+				box-shadow: 0px 0px 4px 0px #ccc;
+				// @include transition(box-shadow, 0.2s);
+        transition: box-shadow $t_fast linear;
+		  }
+
+			// } 
+	
+	
+	
+		
+	} // col
+	
+} // l_gridBase_50_50

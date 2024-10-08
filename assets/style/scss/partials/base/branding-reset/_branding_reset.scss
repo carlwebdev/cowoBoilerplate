@@ -1,0 +1,74 @@
+/* 
+ * CSS 
+ * Branding reset - use the site's qaccent color to personalize some features
+ */
+
+
+/* 
+ * STYLE IMPLEMENTATIONS 
+ *
+ * 1 - (text) selection
+ * 2 - caret (input) - chekc del historial css tricks...
+ * 3 - marker (li) - copy form moss
+ *
+
+
+ 4 - SROLL BAR - https://css-tricks.com/custom-scrollbars-in-webkit/
+
+
+ 5) checbox color ... 
+
+
+*/
+
+
+
+/* 
+ * 1 - (TEXT) SELECTION - aka tuypohgraphy ... 
+ */
+
+@mixin text_selection {
+  background-color: $c_accent; // TEST 
+  color: white;
+}
+  ::-moz-selection { @include text_selection;} /* Code for Firefox */ 
+  ::selection {@include text_selection;}
+
+
+
+/* 
+ * 2 - caret (input)  
+ */
+
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color
+// caret-color: $c_accent;
+input, textarea {
+  // caret-color: $c_accent; // does it apply only to the line ?????
+  caret-color: var(--primary-color); // does it apply only to the line ?????
+}
+
+
+
+// this is all kinda like "re-braqding reset-.ish concept , nice "
+
+
+
+/* 
+ * 3 - marker (li)
+ */
+
+// https://developer.mozilla.org/en-US/docs/Web/CSS/::marker
+// ..... https://www.w3schools.com/tags/tag_summary.asp 
+
+li::marker {
+  // color: blue; // TEST 
+  color: $c_accent; // TEST 
+  // font-size: 1.2em; // ?? para el size????
+}
+
+
+
+// falta scrollbar 
+
+// & alfuna cosa mas que debe existir, com el checkbox color ec !!

@@ -1,0 +1,30 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: asfasfasfasfasfasfasfasfaf
+ */
+
+
+/*
+css counter, solo va 1 a la vez ???
+
+
+https://stackoverflow.com/questions/29410563/css-list-with-multiple-counters-doesnt-count-properly
+
+maybe all css counter restes del body tahg... tiene que estar unidos, solo con espacio sin ninun caracter..
+
+  YES !!!
+  
+  so, need counter reset file partial.. in dev...   or not, as i might actaully use this..
+*/
+
+body {
+	/* MIXIN TO INVOKE-CSS-COUNTER */
+  counter-reset: tab accordion-trigger gridlist vallenato section;
+}
+
+/*
+tab // cowo-tabs ..... 
+gridlist // cowo-gridlist
+
+*/

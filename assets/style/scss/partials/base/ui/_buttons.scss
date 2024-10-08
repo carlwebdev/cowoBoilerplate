@@ -1,0 +1,151 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Buttons
+ */
+
+
+.cowo-buttonGroup {
+	
+	ul {
+		display: flex;
+		align-items: center;
+		}
+	 	
+		li {
+			margin-right: $spacing05; // TEST
+			&:last-of-type {margin-right: 0px;}
+			}
+	
+  
+  
+  // demo purposes only 
+  
+  .pill {@extend %pill;}
+  .pill_small {@extend %pill_small;}
+  .pill_big {@extend %pill_big;}
+  
+} // cowo-buttonGroup 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* UI ELEMENTS / move to buttons file ================================================================================== */
+
+
+
+
+
+
+
+
+/* 
+ * "NORMAL" BUTTONS - but also make outlined buttns without bg color !!!!!! sth like button_outline ... no fill, or whatever
+... and then also have buttn without any decoartion at all !!!! but also the same 3 sizes... bg for the hover only in this last case... JUST BUILD IT ALL !!!!
+ */
+
+
+.button { // NOooooooo! sdont use button cvlass. si acaso un extend par aimplemetar en otros sitios ... 
+	cursor:pointer; // VIP
+	@include transitionButton;
+	@extend .buttonStyleX; // turn to placeholder extend  in origin ... 
+	// font-weight: bold;
+	color: white;	
+	
+	/* LAYOUT RELATED - SHOULDN'T BE HERE !!! */
+	// float:left;
+	// clear:left;
+	// margin-bottom: $space;
+  
+} // button
+
+
+	.buttonSmall {
+		@extend .button;
+		border-radius: $spacing0125;
+    padding: 0.5em 0.8em;
+    font-size: var(--fs-m);
+  } // buttonSmall
+
+	.buttonMedium {
+		@extend .button;
+		// border-radius: $spacing025;
+		border-radius: $spacing0125;
+		padding: 0.5em 0.8em;
+		font-size: var(--fs-base);
+  }	// buttonMedium
+
+	.buttonBig {
+		@extend .button;
+		// border-radius: $spacing025;
+		border-radius: $spacing0125;
+    padding: 0.5em 0.8em;
+		// font-size: $fs_l;
+    font-size: var(--fs-l);
+  } // buttonBig 		
+
+
+
+
+
+
+
+
+
+
+/* 
+ * PILL BUTTON
+ */
+
+%pill {
+  border-radius: 24px;
+  padding: 12px 24px;
+  
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  // font-size: 1.2em;
+  font-size: 1.1em;
+  
+  &:hover {
+    
+    
+  } // hover
+  
+  
+} // pill
+
+
+
+// pill_small & pill_big
+// just build them, and ad threm ito the style gudie somwhere ...  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+%pill_small {
+  @extend %pill;
+  font-size: 0.8em; // TEST 
+} // pill
+
+%pill_big {
+  @extend %pill;
+  font-size: 1.4em; // TEST 
+} // pill
+
+
+
+
+
+
+

@@ -1,0 +1,159 @@
+/*
+ * CSS
+ * Header - Nav
+ */
+
+ // 1 - MOVE TO HEADER TEMPLATE FOLDER .........
+
+nav.main { 
+	margin-left: auto; // FLEX
+  
+	@media only screen and (max-width: $bp_m) {display: none;} /* MEDIA-QUERY */
+  
+	.inner {
+		@include paddingv($spacing05);
+		position:relative; // ???
+  	}
+	
+	/* 
+	 * LEVEL #1 
+	 */	
+	ul {
+		display: flex;
+		// gap: $spacing025; // reahcnhe rpto spacing - and then to css native variable system ...
+		flex-wrap: wrap;
+	} // ul
+	
+  
+		li {
+			// @include gaph($space05); 
+			
+			a {
+        		@include nowrap; // THUS APPLIED TO ALL LEVELS // NEEDED FOR DROPDOWN MENUS
+
+				display: block;
+				padding: 0.5em 0.8em;
+
+				/* */
+				text-transform: uppercase;
+				/*
+				font-variant:small-caps; // !!!
+				text-transform:capitalize;
+				*/
+				
+				
+				// color: var(--c-white);
+				// color: var(--c-text); // vs just inherit...
+
+
+				font-weight: bold;
+				
+				
+				// font-size: $fs_xl; //s s & d !!!!!!!!!!!!
+				// font-size: var(--fs-base); // TETS THIS CHANGE TO COMILE SASS THROUGH VSCODE DIRECTLY 
+				font-size: var(--fs-l);
+				// font-size: var(--fs-xl);
+
+
+
+				
+				// transition: color $t_fast linear;			
+				/*
+        
+        transition: all $t_fast linear;			
+				
+        */
+        
+        
+        
+        
+        
+			&:hover,
+			&.is_current {
+				// text-decoration: underline
+				// background-color: $c_accent;
+				background-color: var(--c-accent);
+				color: var(--c-text);
+			} // UI
+
+				
+		} // a
+			
+				
+			
+		// add second level, and 3rd level ... form nli copy !!!!!
+						
+				// &:hover ul {display: block;} /* SHOW NEXT LEVEL */
+				&:hover > ul {display: block;} /* SHOW NEXT LEVEL */
+				
+				/* LEVEL #2 */		
+				ul {
+					display: none; /* UI - SHOW ON HOVER : CSS */
+          
+					position: absolute;
+					// background-color: $c_primary; // AKA c_header 
+          // background-color: var(--primary-color);  
+          
+          // background-color: var(--dark-primary-color);  
+          // background-color: var(--c-bg-dark);  
+		  background-color: var(--c-bg-alt); 
+
+					// padding-top: 42px; // TEST
+					// padding-bottom: 36px; 
+					// padding-bottom: 24px;  // ?? usage ????
+					// spadding-bottom: 12px;  // ?? usage ????
+					// padding-bottom: 8px;  // ?? usage ????
+          
+          
+					li {
+						float: none; /* RESET */
+						display: block;
+						margin-right: 0%; // RESET 
+						
+            
+            position: relative;
+            
+						/* 
+             * 3rd LEVEL 
+            */
+            
+            &:hover ul {display: block;} /* SHOW NEXT LEVEL .... */
+            
+						ul {
+              display: none;
+              
+              
+              // border: 3px solid red; 
+              
+              top: 0;
+              // left: 0;
+              left: 100%;
+              // right: 0;
+              
+							padding-top: 0px; // RESET
+							// position: relative; // RESET
+							padding-bottom: 0px; // RESET
+							// margin-left: $space05; // TEST
+							// margin-left: $spacing075; // TEST
+              
+              /*
+			  li a {
+                // white-space: nowrap;
+              }
+              */
+              
+            } // ul
+
+          } // li
+					
+
+
+
+			
+        } // ul
+
+	
+			} // li 
+	
+
+	} // nav.main

@@ -1,0 +1,96 @@
+/* CSS Document - FRONT-END */
+
+/* =================================================================== */
+/* LIGHTBOX ME                                       				   */
+/* =================================================================== */
+
+
+/*
+ * LIGHTBOXME PLUGIN - LIGHTBOX TRIGER
+ */
+.cowo-lightboxme-trigger {
+  display: inline-block; // VIP
+	@extend .buttonBig;		
+} // lightboxme_trigger
+
+
+
+/*
+ * LIGHTBOXME PLUGIN - LIGHTBOX TARGET
+ */
+.cowo-lightboxme-target {
+	display:none; // UI - Show with jQuery 
+	/* width:700px; */
+	width: 62%; 
+	// border: 3px solid $c_primary_dark; // MIXIN FOR A GENERIC BORDER
+  border: $s_border;
+	// background-color:$c_primary_light; 	
+} // cowo-lightboxme-target
+	
+
+
+	.cowo-lightboxme-content {
+		// clear:right; // !!!!!!!!!!!!!!!!!!!
+		/* COMMON STYLE */
+		/*
+    background-color:$c_primary_light; 
+		padding: $spacing;
+		color: $c_primary_dark; 	
+    */
+    // padding: 0.6em 1em;
+    // padding: 3em;
+    padding: 2em;
+    background: var(--c-bg-dark);
+    color: var(--c-text-inv); 
+    font-size: 1.5em; // 
+    
+    p {
+      margin-block: unset;
+      &:not(:last-of-type) {
+        // margin-bottom: 1em;
+        margin-bottom: 2em;
+      }
+    } // p
+    
+  } // cowo-lightboxme-content
+
+
+	.cowo-lightboxme-close { // LIGHTBOX_CLOSE !!!!!!!!!!!!!
+		position: relative;
+		
+		.close { /* ".close" for lightboxme script */ 
+			cursor:pointer; // UI
+		
+			position: absolute; top: -36px; right: -32px;
+	
+			/* CIRCLE */
+			@include circle(64px);
+			// background-color: $c_primary; // !!!
+			
+			text-align: center; // VS FLEX ... 
+			
+			padding-top: 14px; // TEST 
+			font-size: 32px;
+			// @include vcenter;
+			
+			// TEST
+			@extend .buttonBig;		
+			
+			&:hover {
+				// color:$c_primary;
+      }
+
+    } // close
+
+  } // cowo-lightboxme-close
+		
+		
+		
+		
+
+
+		
+		
+		
+		
+		

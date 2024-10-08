@@ -1,0 +1,22 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * CSS
+ * File: Header
+ */
+.map {
+  // border: 2px solid yellow;
+  height: 100%;
+  
+  iframe { // // iframe withouttitle, que tb se marque en rojo !! etc !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // test aspect ratio !!!!!!!
+    // border: 2px solid red;
+    // outline: 2px solid red;
+    display: block; // por inline, y por width // MOVE TO RESET .---
+    width: 100%; // ambos eran necesarios ... //  MOVE TO RESET .---
+
+    // height: 100%;
+    min-height: 100%;
+  } // iframe
+  
+} // map

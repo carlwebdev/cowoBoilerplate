@@ -1,0 +1,279 @@
+/*
+* cowoBoilerplate
+* Built by cowowo.cat
+* Author: Carl Johansson @carlwebdev 
+* Project: XXX
+* File: Forms
+* Filename: _forms.scss
+*/
+
+
+
+/*
+CURRENT GOAL:
+- CLEANUP THE FORM PARTIALS, TO MAKE EVERUYTHING MNICRE & TIDY ... 
+
+OBS, ALSO TYPOGRAPHY FORMS ..
+
+*/
+
+
+
+
+
+
+// boilrplate - button disabled ! and button submit vs reset, osea, yes vs no, con diferencia para que se vea qué ahu que clikar UX
+
+
+
+/*
+ STATES
+
+
+STATIC
+..DISABLED... ALSO THEOUGH <FIELDSET DIABLED> ALLIN ONE GO!
+HOVER
+FOCUS
+ERROR
+*/
+
+
+// CSS FORMS !!! - UI - FOCUS FACE IS IMPORTANT, SPECIALLY WEHN TOGGLING WITH TAB THROUGHT THE TAB INDEX
+
+
+/* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
+
+Write CSS? 
+
+Please don't forget to add :focus and :active styles along with :hover. :focus is important for keyboard and d-pad users.
+
+Iinput ytops _ HOVER &  FOCUS  ar now ok in my framework (and infoOD & fart be)
+
+BUT DSOES ACTIVE still apply to input typoes??????
+
+*/
+
+
+
+
+
+form {
+	/*
+	max-width:400px;
+	@include centered;
+	*/
+	
+	&.formType_1 {}
+
+	&.formType_2 {} 
+
+	
+	// ojo, en vez de class modifiers, que sean wrappers, quer asi me asefuro podelro usar en wp si no tengo acceso al form decalrtion row.
+	
+	// y aqui crear cases: case-form-login / etc case-form-search etc 
+	
+	
+	
+	
+} // form
+
+
+
+
+
+
+
+form.onerow { // for search box, and email signup box - but witrh diferrent inout types, as one is serach wih x, and the other is email with validation...
+
+	display: flex; // STEP 1
+	align-items: flex-end;
+	> *:first-of-type {
+		flex-group: 1; // PRECAUTION ..
+	}
+
+	.formLine {margin-bottom: 0;}
+} // form.onerow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* s_i is tight !!! */
+.s_form_contact {
+  @include s_card; // TEST - NICE
+  
+  // padding: 2em; // TEST 
+  padding: 1em; // TEST 
+  
+}
+
+
+
+// METER CADA FORM EN UN CARD , COMO EN PRODUCTS ETC ....
+
+
+
+
+// COWO-BOILERPLATE - system for ir 3 class forms, etc, severak environments in one - DOING THIS IIN GLOBALDESK to start
+
+
+
+
+// css reset checkbox hover should have cyrsor pointer, hmmmm
+
+
+
+
+/* 
+ * FORM - FIELDSET + LEGEND
+ */
+
+fieldset {	 
+	margin-bottom: $spacing;
+	// &:last-of-type {margin-bottom: 0px;}	
+	
+	@include border;
+	border-color: $c_primary;
+} // fieldset
+
+// Tip: The <legend> tag defines a caption for the <fieldset> element.
+legend {
+	// color: $c_primary_dark;
+	color: $c_primary;
+	} // legend
+
+
+
+
+
+
+
+
+
+
+// cols de 2 y 3 y 4 elemetos por ejemplo... - TENERLSO YA PREPARADSO AQUI EN EL SISTEMA ...
+
+
+.formLine {	 
+	// overflow:hidden; /* if submit is floated (right)) */
+	@extend .clearfix; // PRECAUTION FOR FLOATS & SELECT BOXES
+	margin-bottom: $spacing;
+	&:last-of-type {margin-bottom: 0px;}	
+	
+	// vs grid or flex gap !!!!!!!!!!!!!!
+	
+	//INSTRUCTION
+	.msg_instruction { } // msg_instruction
+	// ERROR
+	.msg_error { } // msg_error
+
+} // formLine
+	
+	
+	
+
+
+
+
+	
+	
+// input typpe file - have standard , aaand have my hacky filebutotn thing ...
+	
+	
+	
+label {
+	/* LAYOUT */
+	display: inline-block; /* NEEDED FOR margin-bottom - COULD EVENT BE BLOCK, ELSE ... CHECKBOX SITUATION ... */
+	// margin-bottom: $space025;
+	margin-bottom: $spacing0125;
+	
+	/* TEXT */
+	color: $c_text_2;
+	// font-size: $fs_m;
+	font-size: var(--fs-m);
+	
+	&.is-clickable { //s mejor hacer al reves, hacer not clickable cuando sea la excepcion ... o sol si atributo este arrelenado en el label ... 
+    // cursor:pointer; 
+  } // case
+  
+	cursor:pointer; /* for lables triggering checkboxes and radio buttons :-) */
+	// shouwl it be cursor, default usabilty ettc ... 
+	// https://stackoverflow.com/questions/7176942/while-hovering-over-a-label-mouse-pointer-changes-to-hand
+	
+} // label
+
+	
+
+
+/* ADD ALSO PLACEHOLDER TEXT THINGEES !!!!!!!!! - esto va en typogtraphy  */
+
+
+
+
+/* FRAMEWORK - input type image */
+
+/* input[type=file] & label trick */
+/* THE HTML
+        <label class="filebutton">
+        Seleccionar arxiu
+        <span><input type="file" name="doiser" id="dosier" /></span>
+        </label>
+*/	
+
+label.filebutton {
+    width:120px;
+    height:40px;
+    overflow:hidden;
+    position:relative;
+    background-color:#fff;
+	border:1px solid #ccc;
+	padding:0 5px;
+}
+label.filebutton:hover {
+    background-color:#ddd;
+}
+
+label span input {
+    z-index: 999;
+    line-height: 0;
+    /* font-size: 50px; */
+	font-size: 15px;
+    position: absolute;
+    /* top: -2px; */
+	top: -4px;
+    /* left: -700px; */
+	left: -245px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+    /* _cursor: hand; */
+    margin: 0;
+    padding:0;
+}
+/* END OF - FORM - label covering input[type=file] */
+
+label {cursor:pointer;} /* for lables triggering checkboxes and radio buttons :-) */
+
+
+
+
+	
+
+
+
+
+
+

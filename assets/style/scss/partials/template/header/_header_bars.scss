@@ -1,0 +1,113 @@
+/*
+ * CSS
+ * Header - Bars
+ */
+
+
+  /*
+   *
+   * Header - Bar - Admin - is this one realy exsting, the class name i mean ?!
+   *
+   */	
+   .header_bar_admin { 
+    // background-color: rgba($c_black, 0.50); 
+    border: $s_border; // 
+    
+		.inner {
+			// @include paddingv($spacing0125);
+			display:flex;
+			justify-content: flex-end; 
+			// align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
+    } // inner
+
+  } // header_bar_top
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+
+  
+  
+  
+  /*
+   *
+   * Header - Bar - Top
+   *
+   */	
+	.header_bar_top { // ... & main:& butotn ............
+    // background-color: rgba($c_black, 0.50); 
+    
+		.inner {
+			// @include paddingv($spacing0125);
+			display:flex;
+			justify-content: flex-end; 
+			// align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
+    } // inner
+
+  } // header_bar_top
+	
+  
+  
+  /*
+   *
+   * Header - Bar - Main
+   *
+   */
+	.header_bar_main {
+    // border: $s_border;
+    // border: $dev_border;
+
+
+
+    
+    // background-color: var(--primary-color);  change to c-primary eytc etec etce
+    // background-color: rgba(red, 0.50);  // must use a variable !!!!!
+    padding-block: 1em; // 
+    
+    
+    .inner {
+      // padding-block: $spacing05;
+      display:flex;
+      justify-content: space-between; // hacky, with nav with margin auto...
+      // justify-content: flex-end;
+      align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON.. - valign siempre interesa... 
+      // gap: $spacing2;
+      gap: $spacing;
+
+      @media only screen and (max-width: $bp_m) { 
+        justify-content: flex-start; // ok, pero could be better  - TEST NEW CSS ALIGN TEXT TYPOGRAPHY LINES ETC !!! DEL TWITER & POPICKET !!!
+      } // MEDIA-QUERY		
+
+    } // inner
+
+  } // header_bar_main
+  
+
+  
+ 
+  
+  /*
+   *
+   * Header - Bar - Bottom
+   *
+   */
+	.header_bar_bottom {
+		background-color: var(--dark-primary-color);  
+		
+		.inner { 
+			@include paddingv($spacing0125);
+			display:flex;
+			justify-content: flex-end; 
+			// align-items: center; // PRECAUTION - ME INTERESA PARA CUANDO SALE EL NAVICON..
+    } // inner
+
+  } // header_bar_bottom
+
+	

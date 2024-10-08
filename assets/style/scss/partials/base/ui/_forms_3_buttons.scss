@@ -1,0 +1,192 @@
+/*
+* CSS
+* Forms - 2 - Inputs
+*/
+
+
+
+button.btn_reset {
+  // soft reset 
+    
+  
+  
+  // hard reset de my button tag aqui arriba 
+  
+  
+} // btn_reset
+
+
+
+
+
+button.btn_icon_white {
+  // soft reset 
+    
+  
+  
+  // hard reset de my button tag aqui arriba 
+  
+  
+  
+  // style
+  color: $c_white;
+  font-size: 32px;
+  
+	/* */
+  @include transitionButton;
+	@extend .buttonStyleX; // ?
+  
+  
+} // btn_reset
+
+
+
+
+
+
+
+
+
+/* 
+ * STATES
+ *
+ * 1 - Default
+ * 2 - Hover
+ * 3 - Focus
+ * 4 - Active
+ * 5 - ? Error?  , yes, error
+ * 6 - Disabled - maybe inetrchange the last 2 rows
+ */
+
+
+// 1 - reset the button 
+
+
+
+
+// 6 STATES TO ALL FORM ELEEMNTS -- HAVE THEM HEERE, AND MAYBE EVEN USE THEM ETC 
+
+
+
+	
+// & BUTTON FAMILY ....  
+input[type=submit],
+input[type=reset] {
+	border:none; /* VIP	*/
+	@extend .buttonMedium;
+	
+	// case-fullwidth
+	// // // width: 100%; // test // THIS ISNT THE BEST SITUATION, REALLYY , UNLESS RWD SITUATION .... 
+	
+	}	
+
+
+
+
+
+/*
+input[type=reset] {
+	@extend .buttonSmall; / USE SIMPLE BUTTON AS IN MD, AL LADO
+	}
+*/		
+	
+	
+	
+input[type=submit]:hover,
+input[type=reset]:hover {
+	/* border:none;	*/
+	// @extend .buttonMedium;
+	
+	/* background:#ff9999; */
+	}	
+
+input[type=submit]:focus,
+input[type=reset]:focus {
+	/* border:none;	*/
+	// @extend .buttonMedium;
+	background: red;
+	outline: 3px solid blue; // THAT BLUE SHADE ... 
+	}	
+
+input[type=submit]:active,
+input[type=reset]:active {
+	/* border:none;	*/
+	// @extend .buttonMedium;
+	background: green;
+	}	
+
+
+
+
+
+
+
+/* BELONGS HERE IN FORMS IN RESET FILE  / class="css_submit_button" */
+
+/* USE css style for submit button (input) inseide generic_links */
+.css_submit_button {cursor:pointer; border:none;
+border:2px solid #000; 
+padding:0.2rem 0.5rem;
+background-color:#bdbec0; /* GRISACEO */
+font-family: 'Antonio', sans-serif;
+font-weight:bold;
+font-size:1.25rem;
+color:#000;
+}
+	.css_submit_button:hover {background-color:#000; color:#0d80a1;}
+
+input[type="submit"].css_submit_button:disabled
+{
+background:#dddddd; color:#F00; cursor:default;
+}
+
+
+
+
+
+
+
+
+
+// TODO - BUILD PARTTIAL partial for inputs & partial for buttons ..... & ALSO SEPERAR FORM_LAYOUT THINGEES FORM THE TOP forms_1_layout , forms_2_inutes , forms_3_buttons
+
+
+
+// states,,, o com se llame ... la lsiuat de 6 states !!!
+
+
+
+
+
+button { // necesita mismos tratamientos que input type submit // reset etc
+	/*
+  @extend .buttonMedium;
+  width:125px;
+  */
+}	
+
+
+
+// selection color, casi qu eel msimo qu eel img bg color placehodler thing eee..... y ahsta con glass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

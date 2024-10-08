@@ -1,0 +1,248 @@
+/* CSS Document - FRONT-END */
+
+
+/* 
+FONT OPTIONS:
+FONT_FACE 
+vs GOOGLE_FONTS 
+Y TB TENGO MY ADOBE CC FONTS !!!!
+*/
+
+
+
+
+
+// SOURCES - IMPRT GOOGEL FONST / FONTFACT / ADOBE FONST TYPEKIT LEARNTHAT !!! QUE PARA ALGO PAGO !!!!!
+
+
+
+
+
+
+
+/*  TEXT: GENERAL TYPOGRAPHY ======================== */
+
+/*
+
+font-family: neo-sans, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: neo-sans, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+font-family: neo-sans, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: neo-sans, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+*/
+	
+	
+
+	
+/* 
+ * FONTS - FONT-FACE
+ */
+
+
+// meter algun con fontface aqui para tenerlo ya montado tambien !!!!
+
+
+
+
+
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+/*
+@mixin f_roboto { // regular
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	}
+		@mixin f_roboto_italic {
+			@include f_roboto;
+			font-style: italic;
+			}
+	@mixin f_roboto_light { // f_roboto_light
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 300;
+		}	
+		@mixin f_roboto_light_italic {
+			@include f_roboto_light;
+			font-style: italic;
+			}					
+	@mixin f_roboto_bold {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: bold;
+		// font-weight: 700;
+		}
+*/
+
+/*
+	@mixin f_neo_sans_light {
+		font-family: neo-sans, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		}
+	@mixin f_neo_sans_regular {
+		font-family: neo-sans, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		}
+
+
+*/
+
+
+
+
+// IMPORT - GOOGLE FONTS - DM Sans Regular(400) + Bold(700)
+// @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+
+
+
+@mixin f_main { // CMS MAIN FONT - for body tag 
+    // @include f_neo_sans_light;
+    }		
+		
+@mixin f_main_bold { // CMS MAIN FONT - for body tag 
+    // @include f_neo_sans_regular;
+    }	
+
+
+
+
+
+
+
+
+
+
+
+/*
+MY REPO OF GOOGLE FONTS - MOVE TO COWOBOILERPLATE
+
+// LOBSTER font, move to repo 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+font-family: 'Raleway', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+font-family: 'Cantora One', sans-serif;
+
+*/
+
+
+
+
+
+
+
+
+
+
+/* 
+ * FONTS - FONT-FACE
+ */
+
+
+// TODO - meter algun con fontface aqui para tenerlo ya montado tambien !!!!
+
+
+
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+ 
+ 
+//  TODO - poner el import directameet aqui, para ctenrlo centralizado y sin ruido en el header.
+
+
+
+/* "IMPORT" GOOGLE FONTS */
+/*
+@mixin f_roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+*/
+
+
+
+
+
+/*
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+*/
+
+
+/* ALL ROBOTO FAMILY */	
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+
+@mixin f_roboto { // regular
+	// font-family: 'Roboto', Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	}
+		@mixin f_roboto_italic {
+			@include f_roboto;
+			font-style: italic;
+			}
+	@mixin f_roboto_light { // f_roboto_light
+		// font-family: 'Roboto', Arial, sans-serif;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		}	
+		@mixin f_roboto_light_italic {
+			@include f_roboto_light;
+			font-style: italic;
+			}					
+	@mixin f_roboto_bold {
+		// font-family: 'Roboto', Arial, sans-serif;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		// font-weight: 700;
+		}
+
+@mixin f_main { // CMS MAIN FONT - for body tag 
+    @include f_roboto;
+    }		
+		
+
+
+
+
+
+// meter fonts para iputs & placeholder - y el truco de mus creo qde cambiar elcolor del placeholde renfocus... nice effcet.
+// Y EST O DEBERI AESTRA EN TYPIGRAPHY FKE, NO EN EL DE FONTS FILE
+// TYOIGRAPHY ES EL HECHO DE USRA LAS FONTS, DE PLICARLAS.
+
+
+
+
+/*		
+@mixin f_inputs { // FORM - INPUTS
+    @include f_roboto_light;
+    }
+
+@mixin f_placeholders { // FORM - INPUT PLACEHOLDERS
+		@include f_roboto_light_italic;
+    }
+    ::-webkit-input-placeholder {@include f_placeholders;}
+    ::-moz-placeholder {@include f_placeholders;}
+    :-ms-input-placeholder {@include f_placeholders;}
+    input:-moz-placeholder {@include f_placeholders;} 
+
+*/
+

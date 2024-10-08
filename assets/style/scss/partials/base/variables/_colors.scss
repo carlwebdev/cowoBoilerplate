@@ -1,0 +1,338 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * VARIABLES - COLORS
+ *
+ * 1 - defnitions
+ * 2 - usages (variables deinfed by previous variables)
+ * 3 - color sheme system (light / dark)
+ * next - other clor schemes
+ */
+
+
+/*
+ *
+ *
+ * CSS VARIABLES - RNAMEAS PLURAL !!!
+ *
+ *
+ */
+
+
+/* https://www.materialpalette.com/red/lime */
+/* BUILD AS MATERIAL DESIGN , SO COLORS, AND ROBOTO FONTS */ 
+
+// buld all this as metaruial deisgn tempalet or theme e!!!!!!!!!!! yes start eh tehemo optins !!!
+
+// php if, con deifnicvion de css variables en mnassa !!!!
+
+
+
+:root {
+	
+/* 
+	DEFINE VARIABLES FOR COLORS OF MATERIAL DESIGN SCHEME 
+	https://www.materialpalette.com/red/lime
+*/	
+  /*
+	--dark-primary-color: #D32F2F;
+	--light-primary-color: #FFCDD2;
+	--primary-color: #F44336;
+	--text-icons: #FFFFFF;
+	--accent-color: #CDDC39;
+	--primary-text: #212121;
+	--secondary-text: #757575;
+	--divider-text: #BDBDBD;
+  */
+  
+	--dark-primary-color: #D32F2F;
+	--light-primary-color: #FFCDD2;
+	--primary-color: #F44336; // USED IN SASS TOO
+	--text-icons: #FFFFFF; // 2 - WHITE - USED IN SASS TOO
+	--accent-color: #CDDC39;
+	--primary-text: #212121; // 1 - BLACK - USED IN SASS TOO
+	--secondary-text: #757575;
+	--divider-text: #BDBDBD;
+  
+  // todo - fuck all this amteruial deisgn color sceme thingee, just do that in a spearate css zen f¡garden kinda thin insetad !!!
+  
+  
+} /* ROOT */
+
+
+
+
+
+
+
+
+/* 
+ * SASS - VARIABLES - Colors 
+ */
+/*
+$c_primary: #FF5722;
+$c_primary_dark: #E64A19; 
+$c_primary_light: #FFCCBC; 
+
+$c_accent: #03A9F4;
+
+$c_white: #fff; // white 
+$c_text: #212121;
+$c_text_2: #727272;
+$c_divider: #B6B6B6;
+*/
+
+
+
+/* 
+ * SASS - VARIABLES - Colors  - Primal - maybe add a grey color ... TAKE GREY COLORS FROM OMG ETC . NOW IN WP EIMOE TOO ...
+ */
+// $c_black: #000; /* black */
+$c_black: var(--primary-text); /* black */
+// $c_white: #fff; /* white */
+$c_white: var(--text-icons); /* white */
+ 
+ 
+
+/* 
+ * SASS - VARIABLES - Colors - Project
+ */
+
+// dynamic range of colors
+// $c_primary: #FF5722; // https://www.colorhexa.com/ff5722
+// $c_primary: #FF5722; // https://www.colorhexa.com/ff5722
+// $c_primary: var(--primary-color); // https://www.colorhexa.com/ff5722 
+$c_primary: #F44336; // https://www.colorhexa.com/ff5722 
+// $c_primary: #F06;
+
+/*
+$c_primary_dark: #E64A19; 
+$c_primary_light: #FFCCBC; 
+*/
+// $c_primary_dark: darken($c_primary, 15%);  // no va con css avrioable ???
+// $c_primary_dark: darken(#F44336, 15%);  // no va con css avrioable ???
+// $c_primary_dark: darken(#D32F2F, 15%);  // no va con css avrioable ???
+// $c_primary_dark: #D32F2F;  // no va con css avrioable ???
+$c_primary_dark: var(--dark-primary-color);  // no va con css avrioable ???
+// $c_primary_light: lighten($c_primary, 25%); 
+// $c_primary_light: lighten(#F44336, 25%); 
+// $c_primary_light: lighten(#FFCDD2, 25%); 
+$c_primary_light: #FFCDD2; 
+// $c_primary_light: var(--light-primary-color); 
+
+
+
+// color, complimentary, to be used as the accent color
+
+// $c_accent: #03A9F4; // this blue colr was already soimilar to the colorhexa compliemtar y color.
+// also create garduattion
+// $c_accent: #22caff; // but make it css avriable ... 
+
+
+
+// $c_accent: $c_primary;
+
+// $c_accent: var(--accent-color);
+$c_accent: #CDDC39;
+$c_accent: #F06; // TEMP
+// $c_accent: #f06;
+
+
+// VS C_SPECIAL
+
+// $c_text: #212121;
+$c_text: var(--primary-text);
+// $c_text_2: #727272;
+$c_text_2: var(--secondary-text);
+// $c_divider: #B6B6B6; // FOR THE HR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! OJO,QUE DIVIDER IS THE SIMLEST DIVIDER, DUUUH, FOR SECTIOMNING CONTENT 
+$c_divider: var(--divider-text); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * 1 - DEFINE VARIABLES FOR COLORS
+ */	
+:root {
+	// --c-black: black;
+	// --c-black: #212121;
+	// --c-black-alt: #000; // vs hacer al reves, puro contr no puro...
+	--c-black: #000;
+	--c-black-alt: #212121; 
+	--c-white: #fff;
+	--c-white-alt: antiquewhite;
+	// --c-accent: #CDDC39;  
+	--c-special: #CDDC39;  
+	
+	
+	--c-gray-light: #ccc; // bg alt light mode
+	--c-gray-dark: #4A525A; // bg alt dark mode
+	
+	
+} /* ROOT */
+
+
+
+/* 
+ * 2 - IMPLEMENT VARIABLES FOR COLORS - this would be the basis for light mode, furtehr down, so copyt again?? 
+ */
+:root {
+	--c-text: var(--c-black);
+	--c-text-alt: var(--c-black-alt);
+	--c-text-inv: var(--c-white);
+	--c-text-inv-alt: var(--c-white-alt);
+	
+	--c-bg: var(--c-white);  
+	// --c-bg-alt: var(--c-white-alt);  
+	--c-bg-alt: var(--c-gray-light);  
+	// --c-bg-dark: var(--c-black);  
+	
+	--c-bg-inv: var(--c-black); 
+	--c-bg-inv-alt: var(--c-black-alt); 
+
+	--c-accent: var(--c-special); //  
+  
+} /* ROOT */
+
+
+
+
+
+
+   
+:root {
+	color-scheme: light dark; 
+	/*
+	background-color: white;
+	color: black;
+	*/	
+  }
+	
+  
+  /* If user prefers a dark appearance */
+  @media (prefers-color-scheme: dark) {
+	:root {
+	  /*
+	  background-color: black;
+	  color: white;
+	  */
+
+
+	  --c-accent: #f06;
+  
+	/*  
+	  --c-text: var(--c-white); // TO BE IMPLEMENTED ... 
+	  // --c-text-inv: var(--c-black    -alt);
+	  --c-bg: var(--c-black); // HERE WE LOCK THE TEXT AND ... FUCK .. BG COLOR, SAME OR DIFFERET, LOGIC,,, ALT VS INV
+	  --c-bg-inv: var(--c-white); // used for borders of header & footer... not clean enough
+	  --c-bg-alt: var(--c-gray-dark); 
+	*/
+
+	}
+  }
+  
+  
+  
+  html[data-theme="light"] {
+	color-scheme: light; // PRECAUTION BY KEVIN POWELL
+	// --background-color: var(--background-color-light);
+	// // // --c-bg: var(--c-white);
+	// --c-bg-alt: antiquewhite; // TEST ING
+	// --c-bg: var(--c-white-alt);
+	
+	// --c-bg-alt: var(--c-white-alt);
+	// --c-bg-alt: var(--c-gray-light); 
+  
+  
+	// --text-color: var(--text-color-light);
+	// --c-text: var(--c-black); 
+
+
+	--c-text: var(--c-black);
+	--c-text-alt: var(--c-black-alt);
+	--c-text-inv: var(--c-white);
+	--c-text-inv-alt: var(--c-white-alt);
+	
+	--c-bg: var(--c-white);  
+	// --c-bg-alt: var(--c-white-alt);  
+	--c-bg-alt: var(--c-gray-light);  
+	// --c-bg-dark: var(--c-black);  
+	
+	--c-bg-inv: var(--c-black); 
+	--c-bg-inv-alt: var(--c-black-alt); // VS GRAY
+
+	// --c-accent: var(--c-special); // always same variable name, but different value, so it is theme agnostic, but the value is not, so it is theme specific ...... 
+	
+	
+
+  }
+  
+  html[data-theme="dark"] {
+	color-scheme: dark; // PRECAUTION BY KEVIN POWELL
+	// TOD - TAKE ALL OF THIS AND ADD IT INTO THE PREFERS MEDIA QUERY ... 
+  
+	// --background-color: var(--background-color-dark);
+	--c-bg: var(--c-black);
+	// --c-bg-alt: var(--c-black); // NO DIFFERECE HERE, BUT I HAVCE TO PREPARE IT, AS I WANT T DIFFREEC EIN THE LIGHT MODE 
+	--c-bg-alt: var(--c-gray-dark); 
+	// --text-color: var(--text-color-dark);
+	--c-text: var(--c-white); 
+
+
+
+	--c-accent: #60f;
+
+
+
+	--c-text: var(--c-white);
+	--c-text-alt: var(--c-white-alt);
+	--c-text-inv: var(--c-black);
+	--c-text-inv-alt: var(--c-black-alt);
+	
+	--c-bg: var(--c-black);  
+	// --c-bg-alt: var(--c-white-alt);  
+	--c-bg-alt: var(--c-gray-dark);  
+	// --c-bg-dark: var(--c-black);  
+	
+	--c-bg-inv: var(--c-white); 
+	--c-bg-inv-alt: var(--c-white-alt); // VS GRAY 
+	
+	// OBS, REMMEBEWR THE ONLE LINE 2 COLOR DEFINITON !!!
+
+	// --c-accent: var(--c-special); 
+
+  }
+  
+  
+  
+  /* IMPLEMENTATION, IS THEME AGOSTIC */
+  body {
+	/*
+	// background-color: var(--background-color);
+	// background-color: var(--c-bg);
+	// background: var(--c-bg-alt); // TESTING
+	// color: var(--text-color);
+	*/
+	background: var(--c-bg); // TESTING
+	color: var(--c-text);
+	/* */ transition: background-color 0.3s, color 0.3s;   /* not good, because it loads on page load and makes a flash */ /* OBS, BUT STIL HAS A FLASH ... */
+	// I SOLVED THE FLAHS BY ADDING A SCRIPT TO THE HEADRE, A MINAML SCRIPT, TO CHEKC FOR THEME DEIFNITIOSN AND REFERED ETC 
+  }
+  
+  header#header {
+	transition: background-color 0.3s;
+  }
+  
+  
+  
