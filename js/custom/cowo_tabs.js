@@ -1,17 +1,19 @@
-// SCRIPT - jQuery CSS Tabs
-// all tabs have class .tab
-// menu must have class .jq_tabsMenu
+/*
+ * cowo-Boilerplate
+ * Script - jQuery
+ * cowo-tabs
+ */
 $(document).ready(function(){
-	$('#tabs .tab').hide(); 
-	
-	$('#tabs .tab:first').show();
-	$('#tabs .jq_tabsMenu li:first').addClass('active');
-	$('#tabs .jq_tabsMenu li a').click(function(){ 
-		$('#tabs .jq_tabsMenu li').removeClass('active');
-		$(this).parent().addClass('active'); 
+	$('.cowo-tabs .tab').hide(); // ALTERNATIVE - DONE WITH CSS, ALSO TO AVOID FOUC
+	$('.cowo-tabs .tab:first').show();
+	$('.cowo-tabs-menu li:first').addClass('is-active'); // THIS COULD BE DYNAMIC WITH PHP - but also defined through css
+	// .cowo-tabs .cowo-tabs-menu --> .cowo-tabs-menu // not really need to place the menu inside the same wrapper
+	$('.cowo-tabs-menu li a').click(function(){ 
+		$('.cowo-tabs-menu li').removeClass('is-active');
+		$(this).parent().addClass('is-active'); 
 		var currentTab = $(this).attr('href'); 
-		$('#tabs .tab').hide();
+		$('.cowo-tabs .tab').hide();
 		$(currentTab).show();
-		return false;
+		return false; // VIP, TO PREVENT DEFAULT BEHAVIOR OF THE LINK
 	});
 });
