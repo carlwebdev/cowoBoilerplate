@@ -1,0 +1,168 @@
+/*
+ * CSS
+ * Grid Products
+ */
+
+
+
+
+
+
+// / TODO - & remeebr that girds could evbe extended, tes that !!!!
+
+
+
+/*
+ *
+ * GRID - PRODUCT
+ *
+ */
+
+
+.grid_products { // naming system grid_products etc, nice and clena
+	// border: 3px solid green; // DEV
+	display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // must be a simpler shorthand way
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	// grid-template-columns: repeat(4, 25%); // TEST THIS
+	// grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+  	// grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 10% 10% 10%;
+	// grid-gap: 36px;
+	gap: 36px;
+	// grid-column-gap: 10px;
+	grid-row-gap: $spacing2;
+	@media only screen and (max-width: $bp_l) {grid-template-columns: repeat(3, 1fr);} // MEDIA-QUERY	
+	@media only screen and (max-width: $bp_m) {grid-template-columns: repeat(2, 1fr);} // MEDIA-QUERY	
+	@media only screen and (max-width: $bp_s) {grid-template-columns: repeat(1, 1fr);} // MEDIA-QUERY		
+} // grid_blog
+	
+	
+
+
+
+
+
+
+/*
+ *
+ * CARD - PRODUCT
+ *
+ */
+.card_product {
+  @include s_card;
+  
+
+  
+  // picture tag !!!!!!!!!!!!!!!!!!!!!
+  
+	.image {
+		// OPTION A - IMAGE
+		img {@include img;}
+
+		// OPTION B - BACKGORUND IMAGE
+		@include bg_img;
+		// @include ar_4_3;
+		@include ar_16_9;
+		@include bg_placeholder; 
+  } // image
+
+	.info { //etc, vs flex & grid layout !!!
+		// padding-top: 0.5em;
+		// padding-top: 1em;
+		padding: $spacing05;	
+		padding-top: $spacing075;
+
+    
+    
+    
+    .category {
+      margin-bottom: $spacing0125; 
+      margin-bottom: $spacing025; 
+      
+      color: var(--secondary-text);
+      // font-size: 14px;
+      font-size: 13px;
+      
+      a {
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+      
+    } // category
+    
+    
+    
+    
+    
+		.title {
+      
+      /*
+      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+      fs_card_text
+      fs_card_specs
+      */
+
+      font-size: 24px;
+      font-weight: bold;
+
+      // // // padding-bottom: $spacing025;
+      padding-bottom: $spacing0125;
+      // border-bottom: 2px solid;
+      // border-bottom: 1px solid;
+      // border-bottom: 1px solid var(--secondary-text);
+      border-bottom: 1px solid var(--divider-text);
+      margin-bottom: $spacing025;
+      // a
+
+      // @include css_line_clamp(3); // TEST 
+      @include css_line_clamp(2); // TEST 
+
+      a {
+        @include a_ui_alt;
+      }
+
+
+    } // title
+    
+    
+  
+    
+    // do lo de card fs ... variables or mixins... really.. or clas setxend ... no se i sisin tb permite hover thing s.... hmm 
+    
+
+  .text {
+    color: var(--secondary-text);
+    @include css_line_clamp(5); // TEST 
+    @include css_line_clamp(3); // TEST 
+  } // text
+
+    
+    
+    
+    
+    
+  .link {
+    margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    a {
+      @include a_ui_alt;
+      @extend %pill; // // add pil bevaiour as clas sected only placehodler 
+      // y aparte lso colores etc 
+    }
+  
+  } // link
+
+
+} // info
+
+  
+  
+  
+  
+
+} // card_blog

@@ -1,0 +1,120 @@
+/*
+ * CSS
+ * Grid Staff
+ */
+/* 
+ * GRID - STAFF
+ */
+.grid_staff {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: $spacing2;
+  
+  @media only screen and (max-width: $bp_l) { 
+    // grid-template-columns: repeat(4, minmax(0, 1fr));
+  } // MEDIA-QUERY	
+  @media only screen and (max-width: $bp_m) { 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  } // MEDIA-QUERY	
+  @media only screen and (max-width: $bp_s) { 
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  } // MEDIA-QUERY	
+  @media only screen and (max-width: $bp_xs) { 
+    grid-template-columns: 1fr;
+    // row-gap: 48px;
+  } // MEDIA-QUERY	
+  
+} // grid_staff
+
+
+
+
+/* 
+ * CARD - STAFF
+ */
+.card_staff { // item 
+  @include s_card;
+  
+
+  
+  // picture
+  
+    .image {
+      // border: 1px solid red; // TEMP
+
+      @include bg_c_placeholder;
+
+      img {@include img;}
+
+      // @include ar_square; // TEMP
+
+      // ADDD IMAGE THUMB SQUASRE FORMAT OPTION & REGERENART THUMBNAIIL ETC ....
+
+      // if no image is added..... build it !!!!
+      &.case-no-image {
+        @include ar_square; // TEMP 
+      } // case-no-image
+
+
+    } // image  
+
+
+  
+  
+  
+  // add info thingee.... 
+  
+  
+  
+  
+    /*
+    display: flex;
+    flex-direction: column;
+    */
+    // as preacution, of ma strectehes etc  - el de abajo margn top auto style
+
+    .title {
+      margin-top: $spacing05; // TEST
+      // margin-bottom: $spacing0125; // TEST
+      margin-bottom: $spacing025; // TEST
+
+      // font-size: $fs_m;
+      // font-size: $fs_m;
+      font-size: $fs_l;
+      font-weight: bold;
+      // color: var(--moss-c-a-4); // TEST
+    } // text  
+
+
+
+  // todo  is name is long, then make the role & email be aligend at the bototm .. nice precautin system 
+
+
+
+
+    .role {
+      margin-bottom: $spacing0125; // TEST
+      font-size: $fs_m;
+      // font-size: $fs_s;
+      // scolor: var(--moss-c-a-4); // TEST
+    } // text  
+  
+  
+  
+  
+    .email {
+      // font-size: $fs_m;
+      font-size: $fs_s;
+      // color: var(--moss-c-a-4); // TEST
+
+      a {  
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+
+
+
+    } // text  
+
+
+} // card_staff

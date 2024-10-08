@@ -1,0 +1,207 @@
+/* CSS Document - FRONT-END */
+
+
+		
+/* START - CODE FOR RESPONSIVE STICKY FOOTER + add class .block to footer */
+html, body {
+	height: 100%; /* VIP */
+	}
+#page {
+	// display: table; /* VIP */
+	height: 100%; /* VIP */
+	width:100%; /* VIP for RESPONSIVE */
+	}
+	
+.block {
+	// display: table-row; /* VIP */
+	// height: 1px; /* VIP */
+	}
+/*
+@mixin block {
+	display: table-row; // VIP
+	height: 1px; // VIP 
+	}
+*/
+
+
+/* ====================================================================================================================== */
+/* MACRO LAYOUT                                                                                                           */
+/* ====================================================================================================================== */
+
+body {
+	// background-color: $c_blue;
+	
+	// bg image
+	@include bg_img;
+	background-image:url(../img/bg/carl_1920.jpg);
+	
+	// background-position: right center; // hmmm
+		
+	}
+	
+#page {
+	// @extend .ghostFather;
+	height: 100%;
+	// background-color: #f06;
+	position: relative;
+	}
+	.ghostCenter {
+	  // background-color: rgba(#fff, 0.8); // TEST
+		// @extend .ghostChild;
+		@include vcenter;
+		// text-align: center;
+		
+		@include paddingv($spacing);
+		@include paddingh($spacing);
+		}
+		
+		
+
+.section_content {
+	margin-top: $spacing075;
+	width: 300px;
+	@include centered;
+	img {@include img;}
+	}
+
+
+.section_date {
+	font-size: 24px;
+	margin-top: $spacing075;
+	text-transform: uppercase; // PRECAUTION
+	} // section_date
+	
+	
+.section_details {
+	font-size: 20px;
+	
+	a {
+		padding-bottom:2px;
+		border-bottom: 1px solid transparent;
+		&:hover {border-bottom-color: inherit;}
+		} // a
+	
+	/*
+	margin-top: $spacing2;
+	margin-top: 36px; //1.5	
+	*/
+	} // section_details
+
+
+
+
+@media only screen and (max-width: $bp_m) {
+
+
+
+/*.section_content {
+	width: 240px;
+	}*/
+	
+	
+	
+	.section_date {font-size: 20px;} 
+	.section_details {font-size: 16px;}
+	
+} // MEDIA-QUERY
+
+
+
+
+@media only screen and (max-width: $bp_s) {
+
+
+/*.section_content {
+	width: 200px;
+	}*/
+	
+	
+	
+	.section_date {font-size: 16px;}
+	.section_details {font-size: 14px;}
+	
+} // MEDIA-QUERY
+	
+	
+	
+
+
+
+.l_bottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	overflow: hidden;	
+	
+	// background-color: #ccc;
+	} // l_bottom
+
+
+
+	.m_developer {
+		// font-size: 0px; 
+		float: right;
+		margin-right: $spacing;
+		margin-bottom: $spacing05;		
+		
+		.text {
+			@include font_light;
+			font-size: 12px;
+			display: inline-block;
+			@include font_bold;			
+			} 
+			
+		.logo {
+			display: inline-block;
+			vertical-align:middle;
+			width: 80px;
+			img {@include img;}			
+			} 
+									
+
+		} // m_developer
+
+
+
+
+
+// HEIGHT
+@media only screen and (max-height: 580px) {
+
+/*	
+.l_bottom {
+	position: relative;
+	// border: 12px solid red;
+	} // l_bottom	
+*/		
+} // MEDIA-QUERY	
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: $bp_m) {
+
+.l_bottom {
+	text-align: center;	
+	} // l_bottom
+	
+	.m_developer {
+		float: none;
+		
+		display: inline-block;
+		margin-right: 0px; // reset - vs auto
+		} // m_developer
+	
+		
+} // MEDIA-QUERY	
+	
+	
+	
+	
+	
+			

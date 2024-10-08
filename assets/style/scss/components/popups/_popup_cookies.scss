@@ -1,0 +1,170 @@
+/*
+ * CSS
+ * cowo-Boilerplate
+ * popup_cookies
+ */  
+.popup_cookies { 
+	z-index: $zi_popup;
+	position: fixed; 
+	width: 100%;
+	/* */
+
+  bottom: -200px; // es la altura que escondo mediante jquery - ahi debveria ser un toggle class para que funcione autonomamente
+	// bottom: 0px;
+  // have laytu options... 
+  
+  // bottom : 0px; // DEV
+	
+	// background-color: $c_primary_light;
+	// background-color: var(--light-primary-color);  
+	// background-color: var(--dark-primary-color);  
+	/*
+  background-color: var(--accent-color); 
+  border-top: 3px solid $c_primary_dark;
+	*/
+
+	// background-color: var(--c-bg-dark);
+	background-color: var(--c-bg);
+	// border-top: 3px solid var(--accent-color); 
+	border-top: 3px solid var(--c-accent); 
+  
+	@include paddingv($spacing); // same as frames padding horixzontal 
+
+  // change to PADDING BLOCK
+  
+	.inner {
+		position: relative;
+		display: flex;
+		// justify-content: space-between;
+		justify-content: center; // ??? 
+		align-items: center;
+		gap: 24px; // TEMP HACK
+
+		.text {
+			color: var(--c-text); // BUT WHY ?
+			font-size: $fs_m;
+			text-wrap: balance;
+			line-height: 1.5em;
+		}
+
+
+		// https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_basic
+		.options {
+
+			ul { // they are buttons, at leats, not list s.... 
+				display: flex;
+				// gap: 12px; // TEMP HACK							
+				// gap: 8px; // TEMP HACK							
+				gap: 1em; // TEMP HACK							
+				height: 100%;
+				align-items: center; // OPTIONAL .................
+			} 
+
+			li {
+				
+				/*
+				margin-right: 10px;
+				&:last-of-type {margin-right: 0;}
+				*/
+
+				a { // EXTEND A BUTTON CLASS MEJOR !!!!!!!!!!!!!!!!
+					cursor: pointer; /* para el ajax onclick - pasar esto a este reset, y luego al cowo-Reset  */
+					display: block; 
+					padding: 0.4em 0.8em; // 
+            		border-radius: 1em; //
+            
+            // GROUP - 2 atributes to unify size of both buttons
+					// min-width: 8em; // TEST
+					min-width: 6em; // TEST
+					text-align: center;
+          
+					// font-size: $fs_l;
+					font-size: $fs_m;
+					text-transform: uppercase;  
+            
+					// color: $c_white;
+					// color: var(--c-text-inv);
+					color: var(--c-text);
+					font-weight: bold;
+
+					// background-color: $c_primary;            
+					background-color: var(--accent-color);         
+					// @include transition(background-color, 0.5s); // sass it !!!!!!!!
+					transition: background-color $t_base linear;
+					&:hover {
+						background-color: $c_primary_dark;
+						// box-shadow: 1px 1px 1px var(--divider-text);
+            			}
+
+          } // a
+
+
+        } // li
+
+
+				} // options
+		
+		
+
+			} // leydecookies_content
+
+
+
+	
+	
+		@media only screen and (max-width: $bp_l) {
+
+			
+		} // MEDIA-QUERY
+
+
+		@media only screen and (max-width: $bp_s) {
+			background-color: transparent; /* RESET */
+			border-top-width: 0px; /* RESET */
+			
+			.inner {
+				// border: 3px solid blue; // s_border
+				background-color: $c_primary_light;
+				border: 3px solid $c_primary_dark; // OJO, IS BORDER BEING ADDEED UP TO THE BOX BORDER ??? 
+				// outline: 3px solid $c_primary_dark; // OJO, IS BORDER BEING ADDEED UP TO THE BOX BORDER ??? 
+				padding: $spacing; // no hace caso del padding horizontal... 
+				
+				flex-direction: column;
+				align-items: stretch; // TEST // vip - tiene sentido , stretch en el sentido particualr
+				
+				.options {
+					// border: 3px solid yellow;
+					ul {
+					// stretch: 1; // TEST 
+					/* align-items: center; */
+					// align-items: stretch;
+					} // ul
+					
+					li {
+						// stretch: 1; // TEST 
+						// align-self:stretch;
+						flex: 1; // vip
+					} // li
+					
+					
+				} // options
+
+
+			} // inner
+
+
+
+
+		} // MEDIA-QUERY
+	
+	
+	
+		@media only screen and (max-width: $bp_s) {
+
+
+
+		} // MEDIA-QUERY
+
+
+
+} /* END OF MODULE - cowo-cookies */

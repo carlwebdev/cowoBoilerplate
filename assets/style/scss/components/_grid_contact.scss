@@ -1,0 +1,106 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Content - MOSTLY DEMO STUFF TO CLEAR AWAY AND PROCESS
+ */
+
+
+.grid_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // gap: $spacing4; // TEST 
+  gap: $spacing6; // TEST 
+  
+  
+  @media only screen and (max-width: $bp_m) { 
+    grid-template-columns: repeat(1, 1fr);
+    gap: $spacing2; // TEST 
+  }	// MEDIA-QUERY
+  
+  
+  
+  // contact_text ... / or just a generic "nig text, but nor extcerpt porque eso tiene mas css asociado ...."
+  
+  .text {
+    // font-size: var(--fs-xl);
+    font-size: var(--fs-l);
+    // line-height: 1.8em;
+    line-height: 1.7em;
+  }
+  
+  
+  
+  
+  .contact_details {
+    // border: 3px solid red; 
+    
+    // @include paddingv($spacing);
+    
+    // hay rows ... lis ...
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      // gap: 12px; // TEST 
+      // gap: $spacing05; // TEST 
+      gap: $spacing075; // TEST 
+    }
+    
+    
+    li {
+      display: flex;
+      align-items: center;
+      // gap: 12px; // TEST 
+      // gap: 6px; // TEST 
+      // gap: $spacing025; // TEST 
+      gap: $spacing05; // TEST 
+      
+      
+      span { // TEXT SECTION
+        font-size: var(--fs-l);
+        
+      } //
+      
+      
+      span.material-icons {
+        // font-size: var(--fs-xxl);
+        font-size: var(--fs-xl);
+        
+      } //
+      
+      
+      
+      a {
+         
+        // @include a_ui_default; 
+        @include a_ui_alt; 
+        // @include a_ui_bold;  // no exiusts auqi 
+        
+      } // a
+      
+      
+      
+    } // li
+    
+    
+    
+    
+    
+  } // contact_details
+  
+  
+  
+  
+} // grid_contact
+
+
+
+
+
+
+
+
+
+
+

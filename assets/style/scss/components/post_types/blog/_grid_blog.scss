@@ -1,0 +1,723 @@
+/*
+ * CSS
+ * Grid Blog
+ */
+
+.grid_blog { // naming system grid_products etc, nice and clena
+  // border: $s_border; // DEV
+  
+  
+  // TODO - & remeebr that girds could evbe extended, tes that !!!!
+  
+	display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; // must be a simpler shorthand way
+	// grid-template-columns: 1fr 1fr 1fr 1fr;
+	// grid-template-columns: repeat(4, 25%); // TEST THIS
+	// grid-template-columns: repeat(4, 1fr);
+	// grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+  
+  // grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 10% 10% 10%;
+	// grid-gap: 36px;
+	// gap: 36px;
+  gap: 2em;
+  /*
+	// grid-column-gap: 10px;
+	grid-row-gap: $spacing2;
+  */
+	@media only screen and (max-width: $bp_l) {grid-template-columns: repeat(3, 1fr);} // MEDIA-QUERY	
+	@media only screen and (max-width: $bp_m) {grid-template-columns: repeat(2, 1fr);} // MEDIA-QUERY	
+	@media only screen and (max-width: $bp_s) {grid-template-columns: repeat(1, 1fr);} // MEDIA-QUERY		
+} // grid_blog
+	
+
+
+// FOR RECENT BLOG POSTS i WANTED IE A 4 COL GRID, SO i WOULD RELALY PREFER TO HAVE A GENRAL GRID SUSTEM TAH I CAN CALL AT ANY MOMENT..
+// grid_4_2_1
+// grid_4_2
+// grid_4_3_2_1
+// grid_4_3_2
+// etc etc etc 
+
+// so i can be sure to always separate teh cards from the grisdds.. unless the grid is very atypical & needy, of course... 
+
+
+
+
+/*
+ *
+ * CARD - BLOG
+ *
+ */
+.card_blog {
+  @include s_card;
+  
+
+
+
+
+
+
+	.image {
+		// OPTION A - IMAGE
+		img {@include img;}
+
+		// OPTION B - BACKGORUND IMAGE
+    @include bg_img;
+		@include ar_4_3;
+
+    // background-color: #ccc; /* TEMP PLACEHOLDER */
+    // background-color: var(--primary-color);
+    
+    @include bg_placeholder; // noto wroking as it's using bg image same as the imag e... ok - usar el fallback, plain color ... 
+    
+    // background-color: var(--primary-color); // FALL-BACK PRECAUTION ...
+    // background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+    
+    // background-image: radial-gradient(red, green, blue);
+    
+    position: relative;
+    a {
+      @include cover_absolute;
+      // border: 3px solid red;
+      
+      // css_scale ... ui_hover -... or sth like that 
+      // scale & 
+      // css filter ... only 1 allowed, so have a default onbe, balck and white or coloring opacity o lo del blurrr !!!!!!!!!
+      
+      // eso, aqui aplicar zoom fx & etc de moss & etc .. scale... rewuiqre overflwo hidden, etc , incorpoarte it !!!!
+    } // a
+    
+    
+  } // image
+
+  
+  
+  
+  
+
+
+	picture {
+
+    // border-radius: 4px; // 
+    border-radius: 6px; // 
+    overflow: hidden;
+
+
+
+    // for the loafding bg color to work, th picture tag must be disoalky block, so move it to reset 
+    // @include bg_placeholder; // noto wroking as it's using bg image same as the imag e... ok - usar el fallback, plain color ... 
+    @include bg_c_placeholder;
+    
+		img {
+      aspect-ratio: 4/3;
+    }
+
+    
+    position: relative;
+    a {
+      @include cover_absolute;
+      // border: 3px solid red;
+      
+      // css_scale ... ui_hover -... or sth like that 
+      // scale & 
+      // css filter ... only 1 allowed, so have a default onbe, balck and white or coloring opacity o lo del blurrr !!!!!!!!!
+      
+      // eso, aqui aplicar zoom fx & etc de moss & etc .. scale... rewuiqre overflwo hidden, etc , incorpoarte it !!!!
+    } // a
+    
+    
+  } // image
+  
+  
+
+
+
+
+
+
+
+  
+	.info { //etc, vs flex & grid layout !!!
+		// padding-top: 0.5em;
+		// padding-top: 1em;
+		padding: $spacing05;	
+		padding-top: $spacing075;
+
+    
+    
+    .category {
+      margin-bottom: $spacing0125; 
+      margin-bottom: $spacing025; 
+      
+      color: var(--secondary-text);
+      // font-size: 14px;
+      // font-size: 13px;
+      font-size: var(--fs-m);
+      // font-size: var(--fs-s);
+      
+      a {
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+      
+    } // category
+
+    
+    
+    
+		.title {
+      
+      /*
+      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+      fs_card_text
+      fs_card_specs
+      */
+
+      // font-size: 24px;
+      font-size: var(--fs-xl);
+      font-size: var(--fs-l);
+      
+      
+      
+      font-weight: bold;
+
+      // // // padding-bottom: $spacing025;
+      padding-bottom: $spacing0125;
+      // border-bottom: 2px solid; // WORKS      
+      // border-bottom: 1px solid var(--secondary-text);
+      border-bottom: 1px solid var(--divider-text);
+      margin-bottom: $spacing025;
+      // a
+
+      @include css_line_clamp(3); // TEST 
+
+      a {
+        @include a_ui_alt;
+      }
+
+
+    } // title
+    
+    
+    
+    
+   
+    .specs {
+      
+      display: flex;
+      justify-content: space-between;
+      // gap: $spacing05;
+      column-gap: $spacing05;
+      row-gap: $spacing0125;
+      flex-wrap: wrap;
+      
+      
+      
+      // margin-bottom: $spacing0125; 
+      // margin-bottom: $spacing025; 
+      margin-bottom: $spacing05; 
+      
+    
+      
+      
+      /* */
+      color: var(--secondary-text); // c-text-secondary VS c-text-(main), & c-text can be c-black ... 
+      
+      
+      
+      font-size: var(--fs-s);      
+      
+      a {
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+      
+    } // specs
+    
+    
+    
+    
+    
+
+  .text {
+    
+    color: var(--secondary-text);
+    
+    
+    // font-size: var(--fs-base); // REDUNDANT ...
+    line-height: 1.5em; // RESET ???
+    
+    
+    @include css_line_clamp(5); // TEST 
+  } // text
+
+    
+  .link {
+    margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    a {
+      @include a_ui_alt;
+      @extend %pill; // // add pil bevaiour as clas sected only placehodler 
+      // y aparte lso colores etc
+      // @extend %pill_small;
+      // @extend %pill_big;
+      
+      
+    }
+  
+  } // link
+
+
+} // info
+
+  
+  
+
+} // card_blog
+
+
+
+// grid blog file always include the card_css , as a general... helle, everything shoudl be nside the same blog fiel, o rque ?? hmm, no 
+
+
+
+
+// find the singel blog, si es que existe ... 
+
+
+
+
+
+// grid_blog, card_blog; feature_blog, recent_blog !! nice !!! , and single_blog, and archive_blog, and search_blog, etc !!!! 
+
+// featrure_blog
+
+
+
+
+
+.blog_feature { // blog_feature ....
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @include s_card;
+  
+	&:hover {
+		// cursor: pointer; // // // // // // // !!!!!!!!!!!!!!!!!!!
+		box-shadow: 0px 0px 4px 0px #ccc;
+		// @include transition(box-shadow, 0.2s);
+    transition: box-shadow $t_fast linear;
+  }
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	.image {
+		// OPTION A - IMAGE
+		img {@include img;}
+
+		// OPTION B - BACKGORUND IMAGE
+		@include bg_img;
+		// @include ar_4_3;
+		@include ar_cinemascope;
+		
+    
+    // background-color: #ccc; /* TEMP PLACEHOLDER */
+    // background-color: var(--primary-color);
+    
+    @include bg_placeholder; // noto wroking as it's using bg image same as the imag e... ok - usar el fallback, plain color ... 
+    
+    // background-color: var(--primary-color); // FALL-BACK PRECAUTION ...
+    // background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+    
+    // background-image: radial-gradient(red, green, blue);
+    
+    
+    
+    
+    // TODO - do the netflix lineag gardient down 40 to 90 o asi, con el texto abajo a al derehca, en blanco, bold or semibold.. nice 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    position: relative;
+    a {
+      @include cover_absolute;
+      // border: 3px solid red;
+      
+      // css_scale ... ui_hover -... or sth like that 
+      // scale & 
+      // css filter ... only 1 allowed, so have a default onbe, balck and white or coloring opacity o lo del blurrr !!!!!!!!!
+      
+      
+      
+      
+      // TESTING - BUT USAR TU TRUCO ESE D ENETFLIC EN IMAGE BANNER COMOM CLASS MODIFERI ...
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+      
+      
+      // span 
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end;
+      justify-content: flex-end;
+      
+      span {
+        display: inline-block;
+        // background-color: rgba(#f06,0.5);
+        background-color: rgba($c_accent,0.5);
+        padding: 24px;
+        
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        
+        // & use an alteranet font for this !!!! for some coro and niceness 
+        
+        
+      } // span
+      
+    } // a
+    
+    
+  } // image
+
+  
+  
+  
+  
+  
+	.info { //etc, vs flex & grid layout !!!
+		// padding-top: 0.5em;
+		// padding-top: 1em;
+		padding: $spacing05;	
+		padding-top: $spacing075;
+
+    
+    
+    .category {
+      margin-bottom: $spacing0125; 
+      margin-bottom: $spacing025; 
+      
+      color: var(--secondary-text);
+      // font-size: 14px;
+      font-size: 13px;
+      
+      a {
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+      
+    } // category
+
+    
+    
+    
+		.title {
+      
+      /*
+      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+      fs_card_text
+      fs_card_specs
+      */
+
+      font-size: 24px;
+      font-weight: bold;
+      /*
+      // // // padding-bottom: $spacing025;
+      padding-bottom: $spacing0125;
+      // border-bottom: 2px solid;
+      // border-bottom: 1px solid;
+      // border-bottom: 1px solid var(--secondary-text);
+      border-bottom: 1px solid var(--divider-text);
+      */
+      margin-bottom: $spacing025;
+      // a
+    
+      // @include css_line_clamp(3); // TEST 
+
+      a {
+        @include a_ui_alt;
+      }
+
+
+    } // title
+    
+    
+
+    .specs {
+      margin-bottom: $spacing; 
+      
+      /* */
+      color: var(--secondary-text); // variable improve 
+      font-size: 13px; // variable improve 
+      
+      a {
+        color: inherit; // THIS SHOULD BE A RESET , OR A TYPOGRAPHY RESETISH THINGEE THER EIN TYPOGRAPHY FIEL INSETAD, YEAH ... 
+        @include a_ui_alt;
+      } // a
+      
+    } // specs
+    
+    
+    
+    
+    
+
+  .text {
+    color: var(--secondary-text);
+    @include css_line_clamp(5); // TEST 
+  } // text
+
+    
+  .link {
+    margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    a {
+      @include a_ui_alt;
+      @extend %pill; // // add pil bevaiour as clas sected only placehodler 
+      // y aparte lso colores etc 
+    }
+  
+  } // link
+
+
+} // info
+
+  
+  
+  
+  
+
+} // card_blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ * SINGLE BLOG
+ */
+
+.single_blog { // blog_feature ....
+  
+  
+	.image {
+    // background-color: #ccc; /* TEMP PLACEHOLDER */
+    // background-color: var(--primary-color);
+    
+    @include bg_placeholder; // noto wroking as it's using bg image same as the imag e... ok - usar el fallback, plain color ... 
+    
+    // background-color: var(--primary-color); // FALL-BACK PRECAUTION ...
+    // background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+    
+    // background-image: radial-gradient(red, green, blue);
+    
+    
+    
+		// OPTION A - IMAGE
+		img {@include img;}
+
+		// OPTION B - BACKGORUND IMAGE
+		@include bg_img;
+		// @include ar_4_3;
+		@include ar_cinemascope;
+		
+
+    // TODO - do the netflix lineag gardient down 40 to 90 o asi, con el texto abajo a al derehca, en blanco, bold or semibold.. nice 
+    
+    
+    position: relative;
+    a {
+      @include cover_absolute;
+      // border: 3px solid red;
+      
+      // css_scale ... ui_hover -... or sth like that 
+      // scale & 
+      // css filter ... only 1 allowed, so have a default onbe, balck and white or coloring opacity o lo del blurrr !!!!!!!!!
+      
+      // TESTING - BUT USAR TU TRUCO ESE D ENETFLIC EN IMAGE BANNER COMOM CLASS MODIFERI ...
+      background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+      
+      // span 
+      display: flex;
+      flex-direction: column;
+      // align-items: flex-end;
+      justify-content: flex-end;
+      
+      span {
+        display: inline-block;
+        // background-color: rgba(#f06,0.5);
+        background-color: rgba($c_accent,0.5);
+        padding: 24px;
+        
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        // & use an alteranet font for this !!!! for some coro and niceness  
+      } // span
+      
+    } // a
+    
+  } // image
+
+  
+  
+  
+  
+  
+	.info { //etc, vs flex & grid layout !!!
+		// padding-top: 0.5em;
+		// padding-top: 1em;
+		/*
+    padding: $spacing05;	
+    */
+		// padding-top: $spacing075;
+		padding-top: $spacing2;
+    
+    
+    
+    .category {
+      margin-bottom: $spacing0125; 
+      margin-bottom: $spacing025; 
+      
+      color: var(--secondary-text);
+      // font-size: 14px;
+      font-size: 13px;
+      
+      a {
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+      
+    } // category
+
+    
+    
+    
+		.title {
+      
+      /*
+      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+      fs_card_text
+      fs_card_specs
+      */
+
+      font-size: 24px;
+      font-weight: bold;
+
+      // // // padding-bottom: $spacing025;
+      padding-bottom: $spacing0125;
+      // border-bottom: 2px solid;
+      // border-bottom: 1px solid;
+      // border-bottom: 1px solid var(--secondary-text);
+      border-bottom: 1px solid var(--divider-text);
+      margin-bottom: $spacing025;
+      // a
+
+      @include css_line_clamp(3); // TEST 
+
+      a {
+        @include a_ui_alt;
+      }
+
+
+    } // title
+    
+    
+    
+    
+   
+    .specs {
+      // margin-bottom: $spacing0125; 
+      // margin-bottom: $spacing025; 
+      margin-bottom: $spacing05; 
+      
+      /* */
+      color: var(--secondary-text);
+      font-size: 13px;
+      
+      a {
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+      
+    } // specs
+    
+    
+    
+    
+    
+
+  .text {
+    color: var(--secondary-text);
+    @include css_line_clamp(5); // TEST 
+  } // text
+
+    
+  .link {
+    margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
+    
+    display: flex;
+    justify-content: flex-end;
+    
+    a {
+      @include a_ui_alt;
+      @extend %pill; // // add pil bevaiour as clas sected only placehodler 
+      // y aparte lso colores etc 
+    }
+  
+  } // link
+
+
+} // info
+
+  
+  
+  
+  
+
+} // card_blog
+
+
+
+
+

@@ -1,0 +1,278 @@
+/* 
+ * Built by cowowo.cat
+ * Author: Carl Johansson
+ * Project: cowowo.cat
+ * File: Grid - Services
+ */
+ 
+
+
+// ESO, RENAME AS GRID_MASONRY ETC 
+
+
+
+// TODO - rename as dev(grid_masonry) a secas, y luego suffixes for sopecific cases .....
+
+
+
+
+
+
+ 
+ 
+/*
+ * MASONRY
+ */
+.dev-masonry-structure {
+	// @extend .clearfix;
+	
+  // border: 2px solid blue;
+  
+  // overflow: hidden;
+  
+  
+	/* MASONRY.JS */	
+	.gutter-sizer {
+    // width: 1%;
+    // width: 2%;
+    width: 32px;
+  } // test with px, anfcalc etc
+	 
+  
+	.grid-sizer {
+		// width: 32.666666666%; // 3 columas, con 2 gutters de 1%.
+		// width: ((100% - (1% * 2)) / 3);
+		// width: ((100% - (2% * 2)) / 3);
+		// width: ((100% - (32px * 2)) / 3);
+    width: calc((100% - (32px * 2)) / 3);
+		// width: ((100% - (64px)) / 3);
+		// width: calc((100% - 64px) / 3);
+    
+    
+		@media only screen and (max-width: $bp_l) {
+			// width: 49.5%;			
+			// width: 49%;		
+      width: calc((100% - (32px * 1)) / 2);
+			} // MEDIA-QUERY
+	
+		@media only screen and (max-width: $bp_s) { 
+			width: 100%;			
+			} // MEDIA-QUERY
+	
+		} // grid-sizer	
+		
+  
+  // WTF , SUNNO IF UNITAS ARE SAME IN BOTH SITUATIONS, NOR IF THEY SHOULD .... JUST MAKE IT WIORK IN Cb AND FORGET ABOUT IT ... 
+  
+  // ALSO TEST CSS GRID WITH MASONRY, IN FIOREFOXE ETC ETECETCEE
+  
+  // ASLOS REEMMEBR HOW TO TEST FOR ASPECFT RATIO AND ONJECT FIT ....
+  
+  
+  // ITEM SELEVCTOR = .COL
+  
+  
+  
+  
+  // WTF , SUNNO IF UNITAS ARE SAME IN BOTH SITUATIONS, NOR IF THEY SHOULD .... JUST MAKE IT WIORK IN Cb AND FORGET ABOUT IT ... 
+  
+  // ALSO TEST CSS GRID WITH MASONRY, IN FIOREFOXE ETC ETECETCEE
+  
+  // ASLOS REEMMEBR HOW TO TEST FOR ASPECFT RATIO AND ONJECT FIT ....
+  
+  
+  
+  // border: 3px solid red; 
+  // // // // // background-color: #ccc; // TEMP TEST 
+  
+  // !!! ojo, algo de que el col y el gutter sizer tenian que tener el miso ancho en %.. o algfo ,w whetever ... 
+  
+  /*
+  / se puede hacer que el grid sizer sea el col y asi no hay que hacerlo 2 veecs - check other examples in cB siet !!!
+  */
+  
+  // TODO - also copy w2 exalkes de cB etc 
+  
+  
+	.col {
+		float:left;
+		// width:32%;  
+    // width: 32.666666666%;
+		// width: ((100% - (1% * 2)) / 3);
+		// width: ((100% - (2% * 2)) / 3);
+    width: calc((100% - (32px * 2)) / 3);
+    
+		// margin-bottom: 2%; // add as variable, and add to the top ...
+		margin-bottom: 32px; // TEST
+    
+    
+    
+    
+
+		@media only screen and (max-width: $bp_l) { // DEBE COINCIDIR CON LOS CAMBIOS DEL GRID-SIZER
+			// width: 49%; 
+      // width: 49.5%;	
+      // width: 49%;	
+      width: calc((100% - (32px * 1)) / 2);
+		} // MEDIA-QUERY	
+			
+		@media only screen and (max-width: $bp_s) { // DEBE COINCIDIR CON LOS CAMBIOS DEL GRID-SIZER 
+			@include fullwidth; 
+		} // MEDIA-QUERY	
+			
+  } // col
+		
+		
+  
+  .item {
+    // @include s_paper; // VS S_CARD ETCE TECETECTEC
+    // @include card_base; / TEST 
+    // border: 3px solid red; 
+    // background-color: #999; // TEMP TEST 
+    @include s_card; // TODO - OBS, INVERT THE HOVER EFFECT, MAKE IT POP OUT ON HOVER, NOT THE OTE RWAY AROUND !!!
+	// padding: $spacing;
+	padding: $spacing05; // 12px
+	border-radius: 24px;
+
+	img {
+		@include img;
+		border-radius: 24px; // = border radiius pf parent + paadding opf parent.
+
+		border-radius: 12px;  // the diffrenece 
+
+	}
+	
+	// https://www.30secondsofcode.org/css/s/nested-border-radius/
+
+
+
+  } // item
+  
+  
+
+  
+} // dev-masonry-structure
+
+
+
+
+
+
+
+// tets masonry layot, with images fullblown, etc , rolo portfolio, o mini blog posts o rjust showcase images in big ...
+
+
+
+
+
+
+
+// check this here, and in cowowo, and kitar de auqi ... 
+
+
+// etso es all copied fomr cB, so here no inta nada ...
+
+// check whatever rthis thing is doing !!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.m_grid_serveis {
+		overlow:hidden;
+		// background-color:#f00;
+		// border: 3px solid #000;
+		// padding: 12px;
+		
+		padding: $spacing;
+		// position:relative; 
+		
+		
+		// @include s_paper;
+  
+    // border: 3px solid red; 
+
+		/*
+		.image { // 	es/era para el icon 
+				
+				img {@include img;}
+				
+				} // image
+		*/
+		
+		.info {
+				// background-color:#0ff;
+				// display:none;
+				// padding: $spacing;
+	
+				
+				// background-color: rgba(#333333, 0.5);
+				// color:#fff;
+
+				.title {
+						text-align: center;
+						// font-size:32px; 
+						font-size:20px;   
+						padding-bottom: $spacing025;
+						border-bottom: 1px solid #ddd;       
+						}
+				
+				.text {
+						// @include vcenter;
+						// background-color:#f00; 
+						margin-top: $spacing075;          
+						}
+												
+				
+				} // info
+		
+		
+		} // m_grid_serveis
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) { 
+
+    /*
+		.m_grid_serveis {
+        width:48%; 
+        
+        &:nth-of-type(3n) {margin-right:2%;}
+        &:nth-of-type(2n) {margin-right:0%;}
+        
+        } // m_grid_serveis
+     
+  */
+	
+	  
+} // MEDIA-QUERY
+
+
+
+
+
+
+
+@media only screen and (max-width: 650px) { 
+
+
+/*
+
+    .m_grid_serveis {
+        @include fullwidth; 
+        margin-right: 0%;
+        
+        &:nth-of-type(3n) {margin-right:0%;}
+        
+        } // m_grid_serveis
+    
+    
+*/    
+    
+    
+} // MEDIA-QUERY
+		

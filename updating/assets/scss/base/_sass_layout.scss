@@ -1,0 +1,146 @@
+/*
+ * Project: elcatala.cat
+ * Area: Front
+ * File: Sass - Layout
+ */	
+
+
+/* 
+ * VARIABLES - LAYOUT - MEDIA-QUERIES 
+ */
+// $bp_xl: 1240px;
+$bp_xl: 1400px;
+$bp_l: 1024px;
+$bp_m: 800px;
+$bp_s: 700px; /* 599 */
+
+
+
+	
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - SPACING
+ */
+$spacing: 24px;
+$spacing2: $spacing * 2;
+$spacing3: $spacing * 3;
+$spacing4: $spacing * 4;
+$spacing6: $spacing * 6;
+$spacing8: $spacing * 8;
+$spacing075: $spacing * 0.75;
+$spacing05: $spacing * 0.5;
+$spacing025: $spacing * 0.25;
+$spacing0125: $spacing * 0.125;
+
+
+
+/* 
+ * MIXINS - LAYOUT - RESPONSIVE 
+ */
+@mixin centered {
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	}
+@mixin  fullwidth {
+	float:none; 
+	width:100%;
+	}
+	
+/* 
+ * MIXINS - LAYOUT - PADDING 
+ */
+@mixin paddingh($paddingh) {
+	padding-left: $paddingh;
+	padding-right: $paddingh;
+	}
+@mixin paddingv($paddingv) {
+	padding-top: $paddingv;
+	padding-bottom: $paddingv;
+	}
+	
+/* 
+ * MIXINS - LAYOUT - IMAGES 
+ */	 
+@mixin img { 
+	width:100%;
+	display:block;
+	}
+
+
+@mixin bg_img {
+  // background-position: center center;
+	// background-position: right bottom; // bottom OK, bottom se ve
+	background-position: right top; // top OK, top se ve
+	// background-position: right center; // center OK
+	background-position: left center;
+  // background-repeat: no-repeat; // para que el bg image acompañe cuando hay scroll
+  background-size: cover; // CLARO, ESTO JODE LEFT / RIGHT, pero permite top / bottom
+  } 
+
+
+	
+	
+	
+/* 
+ * 
+ * SASS - EXTENDS AND PLACEHOLDERS 
+ *
+ */
+ 
+
+/* START - CLEARFIX */ /* apply clearfix to parent */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+/*/END - CLEARFIX */
+
+
+
+
+
+	
+	
+/* 
+ * CLASS EXTENDS (vs PLACEHOLDERS) - LAYOUT - VERTICAL (and horizontal) CENTERING
+ */
+
+.ghostFather { /* must be inisde a parent container with position: relative; */
+    position:absolute; top:0; right:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+     
+    /* The ghost, nudged to maintain perfect centering */
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em; /* Adjusts for spacing */
+      }
+     
+    } // ghost_father
+                    
+         
+.ghostChild {
+  width:95%; /* 100% width causes issues in Firefox... */
+  display: inline-block;
+  vertical-align: middle;
+    }  	
+
+
+
+@mixin vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+    } 

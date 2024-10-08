@@ -1,0 +1,7615 @@
+@charset "UTF-8";
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Global
+ */
+/*
+ * CSS
+ * Global
+ */
+/* cowo-Boilerplate
+ * Built by cowowo.cat
+ * Project: 
+ * Component: Cookies (section)
+ * Filename: cookies.php
+*/
+/*
+Susy: Responsive grids for Compass
+http://susy.oddbird.net/
+susy might not work as such in compass / scout / sass, unless manually downloaded and refernced to susy.
+now testing zengrids.com , as it seams to have support inside scout / for compass.
+http://zengrids.com/
+*/
+/* 
+ + CSS GLOBAL - INDEX
+ *
+ * compass
+ * 1 - reset
+ * 2 - variables (sass & css)
+
+// stylings
+
+
+ * 3 - typography
+ * 4 - buttons
+
+
+
+
+ * 5 - forms
+ * 6 - tables
+ * 7 - layout
+ * 8 - dev - - - - - - - 
+
+*/
+/* 
+ * COMPASS 
+ */
+/*
+
+@import "compass/css3"; // por el dw cc, que ah no hay compass aun whatver 
+
+*/
+/* 
+ * COMPASS 
+ */
+/*
+TASKS:
+- after-clean up partials paths, to make it simpler, as im teding to do now adays ...
+
+goal: header options, make them buttons, with rol, ans use olf rot ehe jg trigger & target roles...
+role[trigger_search] & role[target_search] ... etc ... 
+
+*/
+/* 
+ * 1 - CSS RESET(s)     
+ */
+/*
+ * Project: cowo-Boilerplate
+ * CSS
+ * File: CSS Reset
+ */
+/*
+ * CSS RESET
+ */
+/* css reset file , Section = "FORMATTING" */
+/*
+this makes sense, this is always applied,
+it's at teh same level as the border box apppying to all (so also add in¡it ere in my new "COWO-(CSS)-RESET FILE" PERO
+QUE SEA RELAMENTE EL MIO CON LO QUE YO APRENDO Y JUNTO DE LSO SITIOS, COSAS DE ios ETC
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0; /* this is the actual solver for the body margin issue */
+}
+
+/* 
+ * 1 - REMOVE MARGIN AROUND THE PAGE 
+ * BODY MARGIN 0 IS THE KEY 
+ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+ * 2 - BOX MODEL
+ * Universal Box Sizing - https://css-tricks.com/box-sizing/ 
+ */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* 
+ * BOX MODEL 
+ */
+* {
+  /* @include box-sizing(border-box); */ /* Sass - Compass */
+}
+
+/*
+ESTO DE LOS PSEUDO ELEEMNTS, NICE FOR RESET, CHECK IF IT WOIRKS WITH THEW FRUITS AND INSET ISSUES !!!!!!!!!!!!!!!! todo codepen !!!
+
+Universal Box Sizing with Inheritance
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*/
+html, body {
+  height: 100%; /* THIS SI FOR OTHER THING S... */
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+/* ==========================================================================
+   HTML5 display definitions - Normalize.css
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9. 
+ */
+/*
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+/*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*/
+/* COWOWO CSS RESET =============================================================== */
+/* html, body, */
+/*  div, span,*/
+/* h1, h2, h3, h4, h5, h6,  */
+/*  p, */
+/* pre, code, */ /* smp, smp , sample ... */
+img,
+ol, ul, li,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%; /* for headings, works */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; /* for headings, works */
+  /* font-weight: normal; */ /* aka 400 , vs el bold default-ish */
+  font-weight: 400; /* aka 400 , vs el bold default-ish */
+  /* margin: 0; */ /* OK, but might not be really relevant, unless I redo it after thsi reset ... */
+  /* padding: 0; */
+}
+
+/*
+
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+*/
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* The height is added to ensure the aspect ratio of the image is retained. */
+  /* 
+  display:block;  // this takes away the bottom margin of imgs, it's inline behaviour causes the margin / /& it also makes it fullwidth, but add it anywasys... 
+  width: 100%;
+  */
+}
+
+/* figure? video?? audi ?? iframe ??? */
+img,
+picture {
+  display: block;
+  width: 100%;
+}
+
+a {
+  background: transparent; /* Normalize.css - Remove the gray background color from active links in IE 10. */
+}
+
+/*
+a:visited {
+	color: inherit;
+	}
+*/
+a,
+a:visited,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: bold; /* Normalize.css - Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.  - Normalize.js ( O dont really use this tag anyways, hmmm...)
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers. - Normalize.css
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ====================================================================================================================== */
+/* FORMS                                                                                                                  */
+/* ====================================================================================================================== */
+/* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
+
+Write CSS? 
+
+Please don't forget to add :focus and :active styles along with :hover. :focus is important for keyboard and d-pad users.
+
+Iinput ytops _ HOVER &  FOCUS  ar now ok in my framework (and infoOD & fart be)
+
+BUT DSOES ACTIVE still apply to input typoes??????
+
+*/
+/* FORMS */
+/* FORMS - iOS etc RESET ======================================= */
+input[type=text],
+input[type=submit],
+input[type=reset],
+input[type=button],
+input[type=image],
+textarea,
+select {
+  -webkit-appearance: none; /* VIP - to override al i.e. iOS safari stryling */
+  border-radius: 0px;
+}
+
+input[type=text],
+input[type=search],
+input[type=password],
+input[type=email],
+input[type=tel],
+select,
+input[type=file],
+textarea {
+  width: 100%;
+}
+
+input[type=text],
+textarea {
+  border: none;
+}
+
+/* label, */ /* !!!! */
+input[type=submit],
+input[type=button],
+button {
+  cursor: pointer; /* Y ES DUDOSO REALMETE */
+}
+
+/* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */
+/*
+
+I USE overflow:hidden, hwich works the same, UNLESS YOU GET FUCKED UP BY DELETED OVERFLOWING CONTENT.
+view-source:http://mattbango.com/demos/hover-zoom/
+http://css-tricks.com/snippets/css/clear-fix/
+
+///
+to avoid cleafix hack, use display inline block, and then add the vertcal align top..
+but ther's the sapcing issue too... several ways to fix that
+
+*/
+/* FORM NORTMALIZE.CSS */ /* check updated css reset s & npormalizes.... */
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+textarea {
+  resize: vertical; /* HAY QUE CONFIGURARLO !!!! */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/* TABLES */
+/**
+ * Remove most spacing between table cells. (Nomalize.css & Eric Meyer's Reset)
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: asfasfasfasfasfasfasfasfaf
+ */
+/*
+css counter, solo va 1 a la vez ???
+
+
+https://stackoverflow.com/questions/29410563/css-list-with-multiple-counters-doesnt-count-properly
+
+maybe all css counter restes del body tahg... tiene que estar unidos, solo con espacio sin ninun caracter..
+
+  YES !!!
+
+  so, need counter reset file partial.. in dev...   or not, as i might actaully use this..
+*/
+body {
+  /* MIXIN TO INVOKE-CSS-COUNTER */
+  counter-reset: tab accordion-trigger gridlist vallenato section;
+}
+
+/*
+tab // cowo-tabs ..... 
+gridlist // cowo-gridlist
+
+*/
+/* 
+ * 2 - VARIABLES - (SCSS AND NOW ALSO NATIVE CSS VARIABLES) 
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * VARIABLES - COLORS
+ *
+ * 1 - defnitions
+ * 2 - usages (variables deinfed by previous variables)
+ * 3 - color sheme system (light / dark)
+ * next - other clor schemes
+ */
+/*
+ *
+ *
+ * CSS VARIABLES - RNAMEAS PLURAL !!!
+ *
+ *
+ */
+/* https://www.materialpalette.com/red/lime */
+/* BUILD AS MATERIAL DESIGN , SO COLORS, AND ROBOTO FONTS */
+:root {
+  /* 
+  	DEFINE VARIABLES FOR COLORS OF MATERIAL DESIGN SCHEME 
+  	https://www.materialpalette.com/red/lime
+  */
+  /*
+  --dark-primary-color: #D32F2F;
+  --light-primary-color: #FFCDD2;
+  --primary-color: #F44336;
+  --text-icons: #FFFFFF;
+  --accent-color: #CDDC39;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --divider-text: #BDBDBD;
+   */
+  --dark-primary-color: #D32F2F;
+  --light-primary-color: #FFCDD2;
+  --primary-color: #F44336;
+  --text-icons: #FFFFFF;
+  --accent-color: #CDDC39;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --divider-text: #BDBDBD;
+} /* ROOT */
+/* 
+ * SASS - VARIABLES - Colors 
+ */
+/*
+$c_primary: #FF5722;
+$c_primary_dark: #E64A19; 
+$c_primary_light: #FFCCBC; 
+
+$c_accent: #03A9F4;
+
+$c_white: #fff; // white 
+$c_text: #212121;
+$c_text_2: #727272;
+$c_divider: #B6B6B6;
+*/
+/* 
+ * SASS - VARIABLES - Colors  - Primal - maybe add a grey color ... TAKE GREY COLORS FROM OMG ETC . NOW IN WP EIMOE TOO ...
+ */
+/* black */
+/* white */
+/* 
+ * SASS - VARIABLES - Colors - Project
+ */
+/*
+$c_primary_dark: #E64A19; 
+$c_primary_light: #FFCCBC; 
+*/
+/* 
+ * 1 - DEFINE VARIABLES FOR COLORS
+ */
+:root {
+  --c-black: #000;
+  --c-black-alt: #212121;
+  --c-white: #fff;
+  --c-white-alt: antiquewhite;
+  --c-special: #CDDC39;
+  --c-gray-light: #ccc;
+  --c-gray-dark: #4A525A;
+} /* ROOT */
+/* 
+ * 2 - IMPLEMENT VARIABLES FOR COLORS - this would be the basis for light mode, furtehr down, so copyt again?? 
+ */
+:root {
+  --c-text: var(--c-black);
+  --c-text-alt: var(--c-black-alt);
+  --c-text-inv: var(--c-white);
+  --c-text-inv-alt: var(--c-white-alt);
+  --c-bg: var(--c-white);
+  --c-bg-alt: var(--c-gray-light);
+  --c-bg-inv: var(--c-black);
+  --c-bg-inv-alt: var(--c-black-alt);
+  --c-accent: var(--c-special);
+} /* ROOT */
+:root {
+  color-scheme: light dark;
+  /*
+  background-color: white;
+  color: black;
+  */
+}
+
+/* If user prefers a dark appearance */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*
+    background-color: black;
+    color: white;
+    */
+    --c-accent: #f06;
+    /*  
+      --c-text: var(--c-white); // TO BE IMPLEMENTED ... 
+      // --c-text-inv: var(--c-black    -alt);
+      --c-bg: var(--c-black); // HERE WE LOCK THE TEXT AND ... FUCK .. BG COLOR, SAME OR DIFFERET, LOGIC,,, ALT VS INV
+      --c-bg-inv: var(--c-white); // used for borders of header & footer... not clean enough
+      --c-bg-alt: var(--c-gray-dark); 
+    */
+  }
+}
+html[data-theme=light] {
+  color-scheme: light;
+  --c-text: var(--c-black);
+  --c-text-alt: var(--c-black-alt);
+  --c-text-inv: var(--c-white);
+  --c-text-inv-alt: var(--c-white-alt);
+  --c-bg: var(--c-white);
+  --c-bg-alt: var(--c-gray-light);
+  --c-bg-inv: var(--c-black);
+  --c-bg-inv-alt: var(--c-black-alt);
+}
+
+html[data-theme=dark] {
+  color-scheme: dark;
+  --c-bg: var(--c-black);
+  --c-bg-alt: var(--c-gray-dark);
+  --c-text: var(--c-white);
+  --c-accent: #60f;
+  --c-text: var(--c-white);
+  --c-text-alt: var(--c-white-alt);
+  --c-text-inv: var(--c-black);
+  --c-text-inv-alt: var(--c-black-alt);
+  --c-bg: var(--c-black);
+  --c-bg-alt: var(--c-gray-dark);
+  --c-bg-inv: var(--c-white);
+  --c-bg-inv-alt: var(--c-white-alt);
+}
+
+/* IMPLEMENTATION, IS THEME AGOSTIC */
+body {
+  /*
+  // background-color: var(--background-color);
+  // background-color: var(--c-bg);
+  // background: var(--c-bg-alt); // TESTING
+  // color: var(--text-color);
+  */
+  background: var(--c-bg);
+  color: var(--c-text);
+  /* */
+  transition: background-color 0.3s, color 0.3s; /* not good, because it loads on page load and makes a flash */ /* OBS, BUT STIL HAS A FLASH ... */
+}
+
+header#header {
+  transition: background-color 0.3s;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: CSS Reset
+ */
+/* aki no, pero ... font size, rem with px fallback */
+/* 
+ * SASS - VARIABLES - Font size 
+ */
+:root {
+  --fs-xs: 10px;
+  --fs-s: 12px;
+  --fs-m: 14px;
+  --fs-base: 16px;
+  --fs-l: 20px;
+  --fs-xl: 32px;
+  --fs-xxl: 48px;
+  --fs-xxxl: 56px;
+} /* ROOT */
+/*
+ * CSS
+ * Variables - Break Points - sass vs css !!!!!!!!!!!!!!!!!
+ */
+/*
+ * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
+ */
+/* BREAK POINTS FOR MEDIA QUERIES */
+/* CSS Variables Level 1’s var() cannot be used in media queries. - SO THIS IS A GOOD USE CASE FOR SASS VARIABLES USAGE , OK, GOOD */
+/* VS rem SYSTEM */
+/*
+--bp-1: 1024px; 
+--bp-m: 768px;
+--bp-s: 568px;
+--bp-xs: 414px; 
+*/
+/*
+ * SASS - VARIABLES - LAYOUT - MEDIA-QUERIES
+ */
+/*
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(max-width: 767px)";
+
+y entonces dentro del elemento que quiero que tenga una media query le meto esto:
+// @media (max-width: 767px){
+//    ...
+// }
+*/
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: CSS Reset
+ */
+/*
+ * GOLDEN RATIO (phi)
+ */
+/*
+$golden_long: 61.8%;
+$golden_short: 32.2%;
+*/
+/*
+ * SASS - VARIABLES - LAYOUT - SPACING => "SPACE" ... LESS IS MORE
+ */
+/* SPACINGS */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: CSS Reset
+ */
+/*
+ * CSS / Sass
+ * Variables - Z-Index's
+ */
+/*
+ * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
+ */
+/*
+ * SASS - VARIABLES - LAYOUT - Z-INDEX
+ */
+/* 
+ * 0 - STYLEGUIDE !!!! COPY SYSTEM FORM MOSS WESBIET, AND EXPAND IT !!!!S
+ */
+/* 
+ * 3 - BRANDING RESET - REQUIRES ACCENT COLOR TO BE DEFINED ...
+ */
+/* 
+ * CSS 
+ * Branding reset - use the site's qaccent color to personalize some features
+ */
+/* 
+ * STYLE IMPLEMENTATIONS 
+ *
+ * 1 - (text) selection
+ * 2 - caret (input) - chekc del historial css tricks...
+ * 3 - marker (li) - copy form moss
+ *
+
+
+ 4 - SROLL BAR - https://css-tricks.com/custom-scrollbars-in-webkit/
+
+
+ 5) checbox color ... 
+
+
+*/
+/* 
+ * 1 - (TEXT) SELECTION - aka tuypohgraphy ... 
+ */
+::-moz-selection {
+  background-color: #F06;
+  color: white;
+} /* Code for Firefox */
+::-moz-selection {
+  background-color: #F06;
+  color: white;
+}
+::selection {
+  background-color: #F06;
+  color: white;
+}
+
+/* 
+ * 2 - caret (input)  
+ */
+input, textarea {
+  caret-color: var(--primary-color);
+}
+
+/* 
+ * 3 - marker (li)
+ */
+li::marker {
+  color: #F06;
+}
+
+/* 
+ * 3 - STYLINGS (WORKING TITLE) - FOR EXTENDS & MIXINS ETC - MUST BE DEFINED BEFORE USAGES - if mixins, not clas extends, just fyi
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Sass - Layout
+ */
+/*
+ * BEHAVUIOUR BASICS - ANCHORS
+ */
+/*
+@mixin a_ui_bold { // TEST, ...
+  font-weight: bold;
+  //
+} // a_ui_default
+*/
+/* 
+ * SASS - MIXINS - TEXT
+ */
+/* 
+ * SASS - MIXINS - LAYOUT - line clamp / clamps // css clamps 
+ */
+/*
+ * SASS - MIXINS - LAYOUT - RESPONSIVE
+ */
+/* 
+ * SASS - MIXINS - LAYOUT - PADDING
+ */
+/* 
+ * SASS - MIXINS - LAYOUT - MARGIN
+ */
+/* 
+ * SASS - MIXINS - IMAGES
+ */
+/* */
+/* 
+ * SASS - MIXINS - IMAGES - ASPECT RATIOS
+ */
+/* 
+ * SASS - MIXINS - SIMPLE SHAPES
+ */
+/* START - CLEARFIX */ /* apply clearfix to parent */
+.clearfix:after, .frontWrapper_section:after, .social_contact ul:after, .formLine:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+* html .clearfix, * html .frontWrapper_section, .social_contact html ul, * html .formLine {
+  zoom: 1;
+} /* IE6 */
+*:first-child + html .clearfix, *:first-child + html .frontWrapper_section, *:first-child + html .social_contact ul, .social_contact *:first-child + html ul, *:first-child + html .formLine {
+  zoom: 1;
+} /* IE7 */
+/*/END - CLEARFIX */
+/* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */
+/*
+
+I USE overflow:hidden, hwich works the same, UNLESS YOU GET FUCKED UP BY DELETED OVERFLOWING CONTENT.
+
+view-source:http://mattbango.com/demos/hover-zoom/
+
+http://css-tricks.com/snippets/css/clear-fix/
+
+///
+to avoid cleafix hack, use display inline block, and then add the vertcal align top..
+but ther's the sapcing issue too... several ways to fix that
+
+*/
+/* CSS Document - SASS */
+/* Front-End */
+/* 
+ * BORDERS
+ */
+/*
+ *
+ * S CARD
+ *
+ */
+/* 
+ * FALLBACKS using Sass
+ */
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+/* FALLBACK for background opacity */
+#asfgasafasf {
+  background: #ccc; /* Fall-back for brosers that don't support opacity */
+  background: rgba(204, 204, 204, 0.85);
+}
+
+/*
+@mixin card {
+  // CARD - CONTAINER
+  background-color: $c_white;  // card - need bg color always, as precautin but also as best practices ...
+  // box-shadow: 0px 0px 2px #ccc;
+  // box-shadow: 0px 2px 11px 8px #999; // 999 - FOR EHWN BG IS CCC
+  box-shadow: 0px 4px 4px 2px #999; // 999 - FOR EHWN BG IS CCC
+  border-radius: 6px; // TEST 
+} // card
+*/
+.buttonStyleX, button.btn_icon_white, .button, .buttonBig, .cowo-lightboxme-close .close, .cowo-lightboxme-trigger, .buttonMedium, .cowo-index li a, input[type=submit],
+input[type=reset], .buttonSmall {
+  background-color: #F06;
+}
+.buttonStyleX:hover, button.btn_icon_white:hover, .button:hover, .buttonBig:hover, .cowo-lightboxme-close .close:hover, .cowo-lightboxme-trigger:hover, .buttonMedium:hover, .cowo-index li a:hover, input[type=submit]:hover,
+input[type=reset]:hover, .buttonSmall:hover {
+  background-color: var(--dark-primary-color);
+}
+
+/* do sass for colors, and for interactiuon behaviours - UI */
+/* do sass for interactiuon behaviours - UI */
+/* 
+ * FALLBACKS using Sass
+ */
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+/* FALLBACK for background opacity */
+/*
+DOC - OPACITY PREFIX BUNDLE
+*/
+/* START: OPACITY PREFIX BUNDLE */
+/* 
+ -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:alpha(opacity=50);
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+  */
+/* /END: OPACITY PREFIX BUNDLE */
+/*
+DOC - CSS TEXT SHADOW SUPER COOOL
+*/
+/*
+text-shadow:#253e45 -1px 1px 0,
+#253e45 -2px 2px 0,
+#d45848 -3px 3px 0,
+#d45848 -4px 4px 0;
+*/
+/* COM EN fITtEXT,JS DEMO STRETCH TO FIT. */
+/* 
+ * FALLBACKS using Sass
+ */
+/* CREATE MIXIN for rem fontsize and px fallback solution */
+/* FALLBACK for background opacity */
+#asfgasafasf {
+  background: #ccc; /* Fall-back for brosers that don't support opacity */
+  background: rgba(204, 204, 204, 0.85);
+}
+
+/* CSS Document - SASS */
+/* Front-End */
+/* 
+ * 4 - TYPOGRAPHY 
+ */
+/* CSS Document - FRONT-END */
+/* 
+FONT OPTIONS:
+FONT_FACE 
+vs GOOGLE_FONTS 
+Y TB TENGO MY ADOBE CC FONTS !!!!
+*/
+/*  TEXT: GENERAL TYPOGRAPHY ======================== */
+/*
+
+font-family: neo-sans, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: neo-sans, sans-serif;
+font-weight: 300;
+font-style: italic;
+
+font-family: neo-sans, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: neo-sans, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+*/
+/* 
+ * FONTS - FONT-FACE
+ */
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+/*
+@mixin f_roboto { // regular
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	}
+		@mixin f_roboto_italic {
+			@include f_roboto;
+			font-style: italic;
+			}
+	@mixin f_roboto_light { // f_roboto_light
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: 300;
+		}	
+		@mixin f_roboto_light_italic {
+			@include f_roboto_light;
+			font-style: italic;
+			}					
+	@mixin f_roboto_bold {
+		font-family: 'Roboto', Arial, sans-serif;
+		font-weight: bold;
+		// font-weight: 700;
+		}
+*/
+/*
+	@mixin f_neo_sans_light {
+		font-family: neo-sans, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		}
+	@mixin f_neo_sans_regular {
+		font-family: neo-sans, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		}
+
+
+*/
+/*
+MY REPO OF GOOGLE FONTS - MOVE TO COWOBOILERPLATE
+
+// LOBSTER font, move to repo 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+font-family: 'Raleway', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+font-family: 'Cantora One', sans-serif;
+
+*/
+/* 
+ * FONTS - FONT-FACE
+ */
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+/* "IMPORT" GOOGLE FONTS */
+/*
+@mixin f_roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+*/
+/*
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+*/
+/* ALL ROBOTO FAMILY */
+/* 
+ * SASS - VARIABLES - FONTS - "IMPORT" GOOGLE FONTS
+ */
+/*		
+@mixin f_inputs { // FORM - INPUTS
+    @include f_roboto_light;
+    }
+
+@mixin f_placeholders { // FORM - INPUT PLACEHOLDERS
+		@include f_roboto_light_italic;
+    }
+    ::-webkit-input-placeholder {@include f_placeholders;}
+    ::-moz-placeholder {@include f_placeholders;}
+    :-ms-input-placeholder {@include f_placeholders;}
+    input:-moz-placeholder {@include f_placeholders;} 
+
+*/
+/* CSS Document - FRONT-END */
+/* 
+ * DEPRECATED
+ */
+/* hgroup {} */
+/*
+body {
+  -webkit-user-select: none;  // Chrome all / Safari all
+  -moz-user-select: none;     // Firefox all
+  -ms-user-select: none;      // IE 10+
+  user-select: none;          // Likely future
+}
+*/
+/*
+// ideas de font size y line height
+body{
+  font-size:100%;
+  line-height: 1.5;
+}
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--c-text);
+  font-size: 16px; /* DEFAULT /
+/* line-height: $baseSpacing; */
+}
+
+p {
+  /*
+  margin-bottom: $space; // TODO - WHY ?
+  &:last-of-type {margin-bottom: 0px;} // TODO - WHY ?
+  */
+}
+
+/*  Typography - Headers ======================== */
+/*
+h1, h2, h3, h4, h5, h6 {
+	margin: 10px 0 5px 0;
+	// font-family: Arial, Helvetica, sans-serif;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight : normal;
+	margin-top: 0px;
+	// letter-spacing: -1px;
+
+	}
+
+
+h1 {font-size: 32px;}
+h2 {font-size: 28px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 16px;}
+
+*/
+/*
+h1 {
+	font-size:4rem;
+	// font-family: Arial, Helvetica, sans-serif;
+	line-height:1.4;
+	color:#000;
+	margin-bottom:0.2em;
+	}
+
+h2 {
+	font-size:2.5rem;
+	line-height:1.2;
+	color: #222;
+	margin-bottom:.5em;
+	margin-top:.5em;
+	}
+
+h3 {
+	font-size : 1.75rem;
+	line-height : 1.3; 
+	color: #333;
+	margin-bottom : 0.3em;
+	letter-spacing: -1px;
+	}
+
+h4 {
+font-size:1.5rem;
+	line-height:1.25; 
+	color:#444;
+	margin-bottom:0.5em;
+	}
+
+h5 {
+font-size:1.25rem; 
+	color:#555;
+	margin-bottom:1.25em;
+	}
+
+h6 {
+	// font-size:1rem; 
+	color:#666;
+
+	font-size: $fontsizeMedium; 
+	}
+*/
+/*  TEXT: ANCHORS ======================== */
+a {
+  /*color : #cc1122; */
+  /*
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  */
+}
+
+/*
+
+
+
+a:visited {color:#ee3344; /* HMM, ACTUALLY USE A COLRO IN THE SIOE, CHANGE OF STSTE IS ALDO NCE I GUESS, OR NOT ... }
+a:focus {outline:thin dotted; color:rgb(0,0,0);}
+a:hover, a:active {outline:0; color:#dd2233;}
+
+
+
+
+*/
+/** Text / TEXT FORMAT **/
+/*
+b, strong, .s {font-weight: bolder;} // VS bold ...
+i, em, .i {font-style: italic;}
+*/
+/*  TEXT - PARAGRAPHS ======================== */
+/* and do sth perhaps for p's firts line and first word stufff */
+/* CSS HYPHENATION */
+/*
+p {
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+hyphens: auto;
+}		
+*/
+/* ADD CODE, PRE, SMAPEL, XMP ETC ETC ETC */
+/*
+
+CSS FILE FOR TYPOGRAPHYS...
+
+h headings
+
+p ....
+
+then, 
+
+cursive
+
+pre/code stuff
+
+superscript, subscript ewtc
+
+*/
+/*  TEXT: GENERAL TYPOGRAPHY ======================== */
+.name {
+  font-variant: small-caps;
+  text-transform: capitalize;
+} /* SHOULD BE A CLASS !!!!!!!!!!!!!!!!!!!!!! */
+/*  TEXT: TYPES OF PARAGRAPHS ======================== */
+p.introtext {
+  font-family: MuseoSlab100, "lucida sans unicode", "lucida grande", "Trebuchet MS", verdana, arial, helvetica, helve, sans-serif;
+  font-size: 2.5em; /* 40 / 16 */
+  color: #333;
+  line-height: 1.4em;
+  letter-spacing: -1px;
+  margin-bottom: 0.5em;
+}
+
+p.handwritten {
+  font-family: HandSean, "lucida sans unicode", "lucida grande", "Trebuchet MS", verdana, arial, helvetica, helve, sans-serif;
+  font-size: 1.375em; /* 24 / 16 */
+  line-height: 1.8em;
+  margin-bottom: 0.3em;
+  color: #666;
+}
+
+/*
+ * cowo-Boilerplate
+ * CSS
+ * TYPOGRAPHY - HTML-EDITOR
+ */
+hr {
+  /* margin: 8px 0px; */
+  border: none;
+  height: 2px;
+  background-color: #000;
+  margin-block: 24px;
+}
+
+.m_htmleditor {
+  /*
+  ADD INDEX
+
+
+
+  X - hr
+
+  */
+  /*
+  // DO STH FOR DARK MODE SELSCCION, OR EVEN DETERCTION 
+  &.case_dark {
+  	// background-color: $c_black_2; // TEMP
+  	background-color: #252525;
+  	color: $c_white;
+  	a {color: inherit;} // TEST
+  	}
+  */
+  /* 1 - HEADERS - FONT & FONT STYLING ... */
+  /*
+  h1, h2, h3, h4, h5, h6 {
+
+  		// TEST WITH FNT SECINDARY ...
+  		// oPEN SASN VS ROBOTO.
+
+
+  		// DEFAULT VALUES
+  		font-weight: bolder;
+
+
+  		font-weight: 300; 
+
+  		// font
+  		// color
+
+  		color: $c_primary_dark; // TEST
+  		} // all headers
+
+
+     h1 {
+         font-size: 32px;
+         margin-top: $space;
+         margin-bottom: $space;
+         }
+
+     h2 { // tb se usa en legalpages !!!
+         font-size: 24px;
+         margin-top: $space;
+         margin-bottom: $space075;
+         }
+
+     h3 {
+         font-size: 19px;
+         // color: #f00;
+         margin-top:24px;
+         // margin-bottom:12px;
+  			margin-bottom:6px;
+  			margin-bottom: $space05;
+         // color: $c_blue;
+         }
+
+     h4 {
+         font-size: 16px;
+         margin-top:24px;
+         margin-bottom:36px;
+  			margin-bottom: $space05;
+         }
+
+     h5 {
+         font-size: 13px;
+         margin-top:24px;
+         margin-bottom: $space025;
+         }
+
+     h6 {
+         font-size: 11px;
+         margin-top:24px;
+         margin-bottom: $space025;
+         }
+
+  	*/
+  /*
+
+  https://stackoverflow.com/questions/14523927/vertically-centering-content-of-before-after-pseudo-elements
+  Assuming your element is not an <img> (because pseudo elements are not allowed on self-closing elements), let's suppose it's a <div>, so a way could be:
+
+  */
+  /*
+   * LISTS
+   */
+  /*
+   * MEDIA INSERTADO EN EL HTMLEDITOR - guardar esto, esto es para el contenido dinamico de la bbdd, almenos 1 solo tipo en cada web, quizás más.... hmm, ok.
+   */
+}
+.m_htmleditor hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  background-color: #000;
+  /* margin: 8px 0px; */
+}
+.m_htmleditor hr.case-accent {
+  background-color: #F06;
+}
+.m_htmleditor p {
+  /*  CSS COLUMNS  =============================================== */
+}
+.m_htmleditor p.p_cols_2 {
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  text-align: justify;
+}
+.m_htmleditor p.p_cols_3 {
+  -moz-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  text-align: justify;
+}
+.m_htmleditor p.p_cols_4 {
+  -moz-column-count: 4;
+  column-count: 4;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  text-align: justify;
+}
+.m_htmleditor p.p_cols_5 {
+  -moz-column-count: 5;
+  column-count: 5;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  text-align: justify;
+  FONT-SIZE: 14PX;
+}
+.m_htmleditor a {
+  font-weight: bold;
+}
+.m_htmleditor a:hover {
+  text-decoration: underline;
+}
+.m_htmleditor blockquote {
+  margin-left: 0px;
+  border-left: 3px solid var(--dark-primary-color);
+  background-color: black;
+  color: white;
+  padding: 24px 48px;
+  font-size: 2rem;
+}
+.m_htmleditor ul, .m_htmleditor ol {
+  margin-left: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.m_htmleditor ol {
+  list-style: decimal;
+}
+.m_htmleditor ul {
+  list-style: disc;
+}
+.m_htmleditor li {
+  margin-bottom: 12px;
+  /* SECOND LEVEL */
+}
+.m_htmleditor li ul, .m_htmleditor li ol {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.m_htmleditor li::marker {
+  color: #F06;
+}
+.m_htmleditor li___not {
+  position: relative;
+}
+.m_htmleditor li___not::before {
+  content: "•";
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -24px;
+  color: blue;
+  font-size: 24px;
+  line-height: 0.9em;
+}
+.m_htmleditor img {
+  width: 100%;
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.m_htmleditor iframe {
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+/*
+.m_link { // solo usado en email_enviado
+ 	margin-top: $space; // TEST
+
+	// font-size: 36px;
+	// text-align: center;
+
+	a {
+		// display: inline-block;
+		// display: block;
+		display: inline-block; // para que no sea fullwidth !!!
+		@extend .buttonMain;
+	} // a
+
+
+	// centrar el boton
+	@media only screen and (max-width: $bp_s) {
+		text-align: center;		
+		} // MEDIA-QUERY	
+
+} // link
+*/
+.m_htmleditor { /* REALMENTE SERIA S_ DE STYLE  */ } /* m_htmleditor */
+/*
+https://material.io/design/typography/the-type-system.html#type-scale
+*/
+.m_htmleditor h1 {
+  font-weight: 300; /* LIGHT - BUT NOT REALLY ADDED THROUGH THE CDN !!! I THINK ... */
+  font-size: 96px;
+  letter-spacing: -1.5px;
+  /* REM ETC */
+  /*  color: var(--dark-primary-color);*/
+  /*
+  margin-top: $spacing;
+      margin-bottom: $spacing;
+  */
+}
+
+.m_htmleditor h2 { /*tb se usa en legalpages !!! */
+  font-weight: 300; /* LIGHT - BUT NOT REALLY ADDED THROUGH THE CDN !!! I THINK ... */
+  font-size: 60px;
+  letter-spacing: -0.5px;
+  /*
+  margin-top: $spacing;
+  margin-bottom: $spacing075;
+  */
+}
+
+.m_htmleditor h3 {
+  /* margin-top:24px; */
+  /* margin-bottom:12px; */
+  /* margin-bottom:6px; */
+  /* margin-bottom: $spacing05; */
+  font-size: 48px;
+  font-weight: 400; /* NORMAL, AKA REGULRA, BUT WHY .. JUST CAUSE, FOR THE RESET IS NOT DOOUING IT !!!  */
+  /* so maybe ad dit to the reset, for other situations, makes sense 
+  did, but th happened ... 
+  */
+}
+
+.m_htmleditor h4 {
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.25px;
+  /*
+  margin-top:24px;
+  margin-bottom:36px;
+  */
+  /* margin-bottom: $spacing05; */
+}
+
+.m_htmleditor h5 {
+  /*
+  margin-top:24px;
+       margin-bottom: $spacing025;
+  */
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.m_htmleditor h6 {
+  /*
+  margin-top:24px;
+       margin-bottom: $spacing025;
+  */
+  font-weight: 500; /* MEDIUM */
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* que toda oestso sean mixins del materail desig type scale (system) */
+/*
+
+Subtitle 1
+Subtitle 2
+
+Body 1
+Body 2
+
+Button (uppercase)
+Caption
+Overline (uppercase)
+
+
+*/
+.m_htmleditor .aka_button {
+  /* font-size: 16px; */
+  /*
+  margin-top:24px;
+       margin-bottom: $spacing025;
+  */
+  font-weight: 500; /* MEDIUM */
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  /* TEXT TRANSOMR UPPERCASE */
+}
+
+button {
+  /* FOR RESET FILE */
+  /* border-radius: 0px; */ /* ALSO DO FOR IOS ETC */
+  /* this cause sglitcthy border color thingee */
+  border: 0; /* OK - THIS TAKES CARE OF THE BORDER ASPECT & RADIUS */
+  /*outline: 0;*/ /* DOES NOTHING */
+  padding: 0; /* OK */
+  /* margin: 0; */
+  background: none; /* OK, TO DELETE BG COLOR */
+  /* default is deisplay inline ((block)), so there is a spaceing */
+  /* display: block; */ /* ok, pero comentado por ahor aY LUEGO GETSINAR DESDE PARENT CON FLEX */
+  /* font reset */
+  /* */
+  font-family: "Roboto";
+  /* HAS BG COLR & BORDER ON FICUS (CLICK) */
+  font-weight: 500; /* MEDIUM - but looks a bit dirty wonky */
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase; /* PRECAUTION */
+  /* border: 1px solid red; */
+} /* button */
+button.text-button {
+  color: var(--dark-primary-color);
+  color: var(--accent-color);
+  padding: 0px 12px;
+} /* button */
+button.outlined-button {
+  color: var(--dark-primary-color);
+  color: var(--accent-color);
+  padding: 0px 16px;
+  border-radius: 3px; /* TEST */
+  border-radius: 6px; /* TEST */
+  border: 2px solid var(--divider-text);
+} /* button */
+button.contained-button-with-icon {
+  /* background-color: var(--dark-primary-color);*/
+  background-color: var(--accent-color);
+  color: var(--text-icons);
+  border-radius: 3px; /* TEST */
+  border-radius: 6px; /* TEST */
+} /* button */
+button.contained-button {
+  padding: 0px 16px;
+  /* background-color: var(--dark-primary-color);*/
+  background-color: var(--accent-color);
+  color: var(--text-icons);
+  border-radius: 3px; /* TEST */
+  border-radius: 6px; /* TEST */
+} /* button */
+/* DO NOTHING, JUST KEEP THE DEFAUKLT BEHAVIOUR, LESS IS MORE */
+.m_htmleditor p {
+  /* color: red;  */
+  /*
+  margin-bottom: 12px;
+  // padding-bottom: 12px; // LAST OF TYPE...
+  */
+}
+
+.m_htmleditor p:last-of-type {
+  /*
+  margin-bottom: 12px;
+  // padding-bottom: 12px; // LAST OF TYPE...
+  */
+}
+
+/*
+ * cowo-Boilerplate
+ * CSS
+ * TYPOGRAPHY - HTML-EDITOR - html tags new !!!!
+ */
+/*  
+ * HTML Tags - text-related
+ */
+abbr {
+  text-decoration-color: #F06;
+  text-decoration-style: dashed;
+}
+
+cite {
+  /*
+  color: $c_accent;
+  text-decoration: underline;
+  */
+}
+
+/*  
+ * HTML Tags - code-related
+ */
+kbd {
+  background-color: #ccc;
+  border: 1px solid #999;
+  padding: 2px;
+  display: inline-block;
+  min-width: 1.6em;
+  text-align: center;
+}
+
+/*  
+ * HTML Tags - layout-related
+ */
+/* 
+ * BASE / UI / BUTTONS 
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Buttons
+ */
+.cowo-buttonGroup ul {
+  display: flex;
+  align-items: center;
+}
+.cowo-buttonGroup li {
+  margin-right: 12px;
+}
+.cowo-buttonGroup li:last-of-type {
+  margin-right: 0px;
+}
+/* UI ELEMENTS / move to buttons file ================================================================================== */
+/* 
+ * "NORMAL" BUTTONS - but also make outlined buttns without bg color !!!!!! sth like button_outline ... no fill, or whatever
+... and then also have buttn without any decoartion at all !!!! but also the same 3 sizes... bg for the hover only in this last case... JUST BUILD IT ALL !!!!
+ */
+.button, .buttonBig, .cowo-lightboxme-close .close, .cowo-lightboxme-trigger, .buttonMedium, .cowo-index li a, input[type=submit],
+input[type=reset], .buttonSmall {
+  cursor: pointer;
+  transition: all 0.6s linear;
+  color: white;
+  /* LAYOUT RELATED - SHOULDN'T BE HERE !!! */
+}
+
+.buttonSmall {
+  border-radius: 3px;
+  padding: 0.5em 0.8em;
+  font-size: var(--fs-m);
+}
+
+.buttonMedium, .cowo-index li a, input[type=submit],
+input[type=reset] {
+  border-radius: 3px;
+  padding: 0.5em 0.8em;
+  font-size: var(--fs-base);
+}
+
+.buttonBig, .cowo-lightboxme-close .close, .cowo-lightboxme-trigger {
+  border-radius: 3px;
+  padding: 0.5em 0.8em;
+  font-size: var(--fs-l);
+}
+
+/* 
+ * PILL BUTTON
+ */
+.card_pricing .info .link a, .card_product .info .link a, .single_blog .info .link a, .blog_feature .info .link a, .card_blog .info .link a, .grid_features .item .link a, .cowo-buttonGroup .pill_big, .cowo-buttonGroup .pill_small, .cowo-buttonGroup .pill {
+  border-radius: 24px;
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.cowo-buttonGroup .pill_small {
+  font-size: 0.8em;
+}
+
+.grid_features .item .link a, .cowo-buttonGroup .pill_big {
+  font-size: 1.4em;
+}
+
+/* BEFORE FORMS !!!!!!!! - ui vs base... */
+/* 
+ * BASE / UI / TABLES 
+ */
+/* CSS Document - FRONT-END */
+/* ====================================================================================================================== */
+/* TABLES                                                                                                                 */
+/* ====================================================================================================================== */
+/** Tables **/
+/*
+
+.p, table.p tr td {padding: 10px;}
+.pmin, table.pmin tr td  {padding: 3px;}
+.pt, table.pt tr td {padding-top: 10px;}
+.pl, table.pl tr td {padding-left: 10px;}
+.pr, table.pr tr td {padding-right: 10px;}
+.pb, table.pb tr td {padding-bottom: 10px;}
+
+.m, table.m tr td {margin: 10px;}
+.mmin, table.mmin tr td  {margin: 3px;}
+.mt, table.mt tr td {margin-top: 10px;}
+.ml, table.ml tr td {margin-left: 10px;}
+.mr, table.mr tr td {margin-right: 10px;}
+.mb, table.mb tr td {margin-bottom: 10px;}
+
+ */
+table#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+table#customers td, table#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table#customers tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#customers tr:hover {
+  background-color: #ddd;
+}
+table#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--c-accent);
+  color: white;
+}
+
+/* 
+ * BASE / UI / FORMS - vip to have in under base, as its base ui - so move it all into base... 
+ */
+/*
+* cowoBoilerplate
+* Built by cowowo.cat
+* Author: Carl Johansson @carlwebdev 
+* Project: XXX
+* File: Forms
+* Filename: _forms.scss
+*/
+/*
+CURRENT GOAL:
+- CLEANUP THE FORM PARTIALS, TO MAKE EVERUYTHING MNICRE & TIDY ... 
+
+OBS, ALSO TYPOGRAPHY FORMS ..
+
+*/
+/*
+ STATES
+
+
+STATIC
+..DISABLED... ALSO THEOUGH <FIELDSET DIABLED> ALLIN ONE GO!
+HOVER
+FOCUS
+ERROR
+*/
+/* INFO FRAMWEORK INPUT HOVER FOCUS ACTIVE ETC ----
+
+Write CSS? 
+
+Please don't forget to add :focus and :active styles along with :hover. :focus is important for keyboard and d-pad users.
+
+Iinput ytops _ HOVER &  FOCUS  ar now ok in my framework (and infoOD & fart be)
+
+BUT DSOES ACTIVE still apply to input typoes??????
+
+*/
+form {
+  /*
+  max-width:400px;
+  @include centered;
+  */
+}
+form.onerow {
+  display: flex;
+  align-items: flex-end;
+}
+form.onerow > *:first-of-type {
+  flex-group: 1;
+}
+form.onerow .formLine {
+  margin-bottom: 0;
+}
+
+/* s_i is tight !!! */
+.s_form_contact {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  padding: 1em;
+}
+.s_form_contact:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+
+/* 
+ * FORM - FIELDSET + LEGEND
+ */
+fieldset {
+  margin-bottom: 24px;
+  border: 3px solid var(--dark-primary-color);
+  border-color: #F44336;
+}
+
+legend {
+  color: #F44336;
+}
+
+.formLine {
+  margin-bottom: 24px;
+}
+.formLine:last-of-type {
+  margin-bottom: 0px;
+}
+label {
+  /* LAYOUT */
+  display: inline-block; /* NEEDED FOR margin-bottom - COULD EVENT BE BLOCK, ELSE ... CHECKBOX SITUATION ... */
+  margin-bottom: 3px;
+  /* TEXT */
+  color: var(--secondary-text);
+  font-size: var(--fs-m);
+  cursor: pointer; /* for lables triggering checkboxes and radio buttons :-) */
+}
+/* ADD ALSO PLACEHOLDER TEXT THINGEES !!!!!!!!! - esto va en typogtraphy  */
+/* FRAMEWORK - input type image */
+/* input[type=file] & label trick */
+/* THE HTML
+        <label class="filebutton">
+        Seleccionar arxiu
+        <span><input type="file" name="doiser" id="dosier" /></span>
+        </label>
+*/
+label.filebutton {
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0 5px;
+}
+
+label.filebutton:hover {
+  background-color: #ddd;
+}
+
+label span input {
+  z-index: 999;
+  line-height: 0;
+  /* font-size: 50px; */
+  font-size: 15px;
+  position: absolute;
+  /* top: -2px; */
+  top: -4px;
+  /* left: -700px; */
+  left: -245px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  cursor: pointer;
+  /* _cursor: hand; */
+  margin: 0;
+  padding: 0;
+}
+
+/* END OF - FORM - label covering input[type=file] */
+label {
+  cursor: pointer;
+} /* for lables triggering checkboxes and radio buttons :-) */
+/*
+* CSS
+* Forms - 2 - Inputs
+*/
+/* 
+ * STATES
+ *
+ * 1 - Default
+ * 2 - Hover
+ * 3 - Focus
+ * 4 - Active
+ * 5 - ? Error? 
+ * 6 - Disabled - maybe inetrchange the last 2 rows
+ */
+/* 
+ * STATE - STANDARD / edefault - also add disabled, etc 
+ */
+input[type=text],
+input[type=search],
+input[type=password],
+input[type=email],
+input[type=tel],
+select,
+textarea,
+input[type=file] {
+  background-color: #E8E8E8;
+  border: none; /* RESET */
+  border-bottom: 2px solid #989898;
+  padding: 12px 12px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/*	
+option {
+	background-color: $c_white;
+	}	
+*/
+input[type=text]:disabled,
+input[type=search]:disabled,
+input[type=password]:disabled,
+input[type=email]:disabled,
+input[type=tel]:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: #ccc;
+  border-color: black;
+}
+
+/* 
+ * STATE - DEFAULT - FOCUS and ANIMATIONS - just UI animatiosn, and can go at the begining of the list  
+ */
+input[type=text],
+input[type=search],
+input[type=password],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  transition: all 0.2s linear;
+}
+
+/* 
+ * STATE - HOVER (must be before ACTIVE)
+ */
+input[type=text]:hover,
+input[type=search]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=tel]:hover,
+select:hover,
+textarea:hover {
+  /* background:#ff9999; */
+  /* border: 1px solid #D3D3D3; */
+  /* NO UI FX */
+}
+
+/* 
+ * STATE - ACTIVE (must be after HOVER)
+ */
+input[type=text]:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* VIP */
+  border-color: var(--dark-primary-color);
+}
+
+/*
+When it comes to validating the content of input fields on the frontend, things are much easier now than they they used to be. We can use the :required, :optional, :valid and :invalid pseudo-classes coupled with HTML5 form validation attributes like required or pattern to create very visually engaging results. These pseudo-classes work for input, textarea and select elements.
+*/
+input[type=email]:error {
+  outline: none; /* VIP */
+  background-color: red;
+  border: 30px solid var(--dark-primary-color);
+}
+
+input[type=email]:invalid {
+  border: 3px solid #f06;
+}
+
+input[type=text]:valid {
+  outline: none; /* VIP */
+}
+
+input[type=text]:required {
+  outline: none; /* VIP */
+  background-color: orange;
+  border: 30px solid var(--dark-primary-color);
+}
+
+input[type=text]:optional {
+  outline: none; /* VIP */
+}
+
+/* & meter lo de los checkboxes !!!!!!!!!!!!!!!!!!!!!! */
+/* scale ?? */
+/*
+* CSS
+* Forms - 2 - Inputs
+*/
+button.btn_icon_white {
+  color: var(--text-icons);
+  font-size: 32px;
+  /* */
+  transition: all 0.6s linear;
+}
+
+/* 
+ * STATES
+ *
+ * 1 - Default
+ * 2 - Hover
+ * 3 - Focus
+ * 4 - Active
+ * 5 - ? Error?  , yes, error
+ * 6 - Disabled - maybe inetrchange the last 2 rows
+ */
+input[type=submit],
+input[type=reset] {
+  border: none; /* VIP	*/
+}
+
+/*
+input[type=reset] {
+	@extend .buttonSmall; / USE SIMPLE BUTTON AS IN MD, AL LADO
+	}
+*/
+input[type=submit]:hover,
+input[type=reset]:hover {
+  /* border:none;	*/
+  /* background:#ff9999; */
+}
+
+input[type=submit]:focus,
+input[type=reset]:focus {
+  /* border:none;	*/
+  background: red;
+  outline: 3px solid blue;
+}
+
+input[type=submit]:active,
+input[type=reset]:active {
+  /* border:none;	*/
+  background: green;
+}
+
+/* BELONGS HERE IN FORMS IN RESET FILE  / class="css_submit_button" */
+/* USE css style for submit button (input) inseide generic_links */
+.css_submit_button {
+  cursor: pointer;
+  border: none;
+  border: 2px solid #000;
+  padding: 0.2rem 0.5rem;
+  background-color: #bdbec0; /* GRISACEO */
+  font-family: "Antonio", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.css_submit_button:hover {
+  background-color: #000;
+  color: #0d80a1;
+}
+
+input[type=submit].css_submit_button:disabled {
+  background: #dddddd;
+  color: #F00;
+  cursor: default;
+}
+
+button {
+  /*
+   @extend .buttonMedium;
+   width:125px;
+   */
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Forms - file button hack
+ */
+/* 
+ * FORM HACKS - input image / checkbox / select // SEEK AND DESTROOOY! - no creo que esté siendo usado en este cms, pspaaad !!! 
+ */
+/* FORM - label covering input[type=file] */
+/* HTML FOR THIS:
+<label class="filebutton">
+Browse For File!
+<span><input type="file" id="myfile" name="myfile"></span>
+</label>
+*/
+label.filebutton {
+  display: inline-block;
+  margin-top: 1px;
+  position: relative;
+  overflow: hidden;
+  height: 32px;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #F44336;
+  transition: background-color 0.6s linear 1s;
+}
+label.filebutton:hover {
+  background-color: #FFCDD2;
+}
+label.filebutton span input {
+  cursor: pointer;
+  /* _cursor: hand; */
+  z-index: 999;
+  position: absolute;
+  /* top: -2px; */
+  top: -4px;
+  left: -9999px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+}
+
+/* 
+ * 9 - DEV /This comes before the prodyct pages etc) & project pàges 
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Dev temp stuff
+ */
+/*
+.breaker { clear: both; }
+
+.button {cursor:pointer;}
+*/
+/* ROOT */
+/*
+QA - DEBUGGING
+img not alt, then red border
+& iframe not title, red border
+*/
+img:not([alt]) {
+  border: 3px solid #f06;
+}
+
+/* KILL THIS */
+.todo {
+  /*
+   background-color: #f0f;
+   padding: 24px;
+   */
+  /*
+  outline: 3px solid $c_dev;
+  // outline: 3px solid var(--c-dev);
+   outline-offset: 3px; 
+   */
+  padding-block: 96px;
+  border: 3px solid #f06;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+/*
+ * DEV HIDE
+ */
+.dev_hide {
+  display: none !important;
+}
+
+/*
+ * DEV MESSAGE
+ */
+.dev_msg {
+  background-color: #f06;
+  color: var(--text-icons);
+  font-size: var(--fs-xl);
+  padding: 1em;
+  text-align: center;
+}
+
+/* CSS Document */
+#devRuler {
+  background-color: var(--dark-primary-color);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 24px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  /* padding:10px 0px; */
+}
+#devRuler .item {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  #devRuler .item:nth-of-type(1) {
+    display: none;
+  }
+  #devRuler .item:nth-of-type(2) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #devRuler .item:nth-of-type(2) {
+    display: none;
+  }
+  #devRuler .item:nth-of-type(3) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #devRuler .item:nth-of-type(3) {
+    display: none;
+  }
+  #devRuler .item:nth-of-type(4) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #devRuler .item:nth-of-type(4) {
+    display: none;
+  }
+  #devRuler .item:nth-of-type(5) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #devRuler {
+    background-color: #c0392b;
+  }
+  #devRuler .item:nth-of-type(5) {
+    display: none;
+  }
+  #devRuler .item:nth-of-type(6) {
+    display: block;
+  }
+}
+
+/* 
+ * CSS
+ * Dev - Styleguide: 
+*/
+#demo_wrapper {
+  background-color: #ccc;
+  padding: 1em;
+}
+
+/* 
+ *
+ * STYLEGUIDE 
+ *
+ */
+/* 
+ * STYLEGUIDE - FONTS
+ */
+.styleguide_fonts {
+  font-size: 28px;
+}
+.styleguide_fonts .item:nth-of-type(1) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.styleguide_fonts .item:nth-of-type(2) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.styleguide_fonts .item:nth-of-type(3) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.styleguide_fonts .item:nth-of-type(4) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.styleguide_fonts .item:nth-of-type(5) {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.styleguide_fonts .item:nth-of-type(6) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.styleguide_fonts .item:nth-of-type(7) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.styleguide_fonts .item:nth-of-type(8) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* 
+ * STYLEGUIDE - COLORS
+ */
+.styleguide_colors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+.styleguide_colors .item {
+  aspect-ratio: 16/9;
+  /*
+    &:nth-of-type(1) { background-color: $c_primary_dark; &::after {content:'--dark-primary-color';} }	
+  &:nth-of-type(2) {background-color: $c_primary; &::after {content:'light-primary-color';} }	
+  &:nth-of-type(3) {background-color: $c_primary_light; &::after {content:'primary-color';} }	
+  &:nth-of-type(4) {background-color: $c_white; &::after {content:'text-icons';} }	
+  &:nth-of-type(5) {background-color: $c_accent; &::after {content:'accent-color';} }	
+  &:nth-of-type(6) {background-color: $c_text; &::after {content:'primary-text';} }	
+  &:nth-of-type(7) {background-color: $c_text_2; &::after {content:'secondary-text';} }	
+  &:nth-of-type(8) {background-color: $c_divider; &::after {content:'divider-text';} }	 
+    */
+}
+.styleguide_colors .item::after {
+  content: "hello";
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--text-icons);
+  font-weight: bold;
+}
+.styleguide_colors .item:nth-of-type(1) {
+  background-color: var(--dark-primary-color);
+}
+.styleguide_colors .item:nth-of-type(1)::after {
+  content: "--dark-primary-color";
+}
+.styleguide_colors .item:nth-of-type(2) {
+  background-color: var(--primary-color);
+}
+.styleguide_colors .item:nth-of-type(2)::after {
+  content: "primary-color";
+}
+.styleguide_colors .item:nth-of-type(3) {
+  background-color: var(--light-primary-color);
+}
+.styleguide_colors .item:nth-of-type(3)::after {
+  content: "light-primary-color";
+}
+.styleguide_colors .item:nth-of-type(4) {
+  background-color: var(--text-icons);
+}
+.styleguide_colors .item:nth-of-type(4)::after {
+  content: "--text-icons";
+  color: var(--secondary-text);
+}
+.styleguide_colors .item:nth-of-type(5) {
+  background-color: var(--accent-color);
+}
+.styleguide_colors .item:nth-of-type(5)::after {
+  content: "--accent-color";
+}
+.styleguide_colors .item:nth-of-type(6) {
+  background-color: var(--primary-text);
+}
+.styleguide_colors .item:nth-of-type(6)::after {
+  content: "--primary-text";
+}
+.styleguide_colors .item:nth-of-type(7) {
+  background-color: var(--secondary-text);
+}
+.styleguide_colors .item:nth-of-type(7)::after {
+  content: "--secondary-text";
+}
+.styleguide_colors .item:nth-of-type(8) {
+  background-color: var(--divider-text);
+}
+.styleguide_colors .item:nth-of-type(8)::after {
+  content: "--divider-text";
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Dev temp stuff
+ */
+section, .frame {
+  position: relative;
+}
+
+.dev-grid-columns {
+  /* LAYOUT - POSITIONING */
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* LAYOUT - GRID */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1em;
+  /* GENERIC INDIVIDUAL ITEM, FOR THE DEMO, FOR DEMO PURPOSES. */
+}
+.dev-grid-columns .item {
+  background-color: #F3F3F3;
+  /* border: 3px solid black; */
+  box-shadow: 0px 0px 2px 1px #ccc;
+  color: #ccc;
+  font-size: 3em;
+  text-align: center; /* no suple al flex */
+  /* LAYOUT - FLEX */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow */
+  /*
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-auto-flow: row dense;
+  */
+  /* css counter, as marker for the fornt end , nice !! visyallly nice tool */
+}
+
+/* MIXIN TO DECLARE-CSS-COUNTER */
+.dev-grid-columns .item::before {
+  counter-increment: section; /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */ /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+  /* content: "# " counter(section); */
+  content: counter(section);
+}
+
+/* 
+ *
+ *
+ * 9 - TEMPLATE - - - ALSO INCLUDE SIDEBARS ETC 
+ *
+ *
+ */
+/* 
+ * TEMPLATE - HEADER
+ */
+/*
+ *
+ * Header
+ * 
+ * 1 - BARS
+ * 2 - ITEMS
+ *
+ */
+/*
+ * CSS
+ * Header - Bars
+ */
+/*
+ *
+ * Header - Bar - Admin - is this one realy exsting, the class name i mean ?!
+ *
+ */
+.header_bar_admin {
+  border: 3px solid #F06;
+}
+.header_bar_admin .inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*
+ *
+ * Header - Bar - Top
+ *
+ */
+.header_bar_top .inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*
+ *
+ * Header - Bar - Main
+ *
+ */
+.header_bar_main {
+  padding-block: 1em;
+}
+.header_bar_main .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .header_bar_main .inner {
+    justify-content: flex-start;
+  }
+}
+
+/*
+ *
+ * Header - Bar - Bottom
+ *
+ */
+.header_bar_bottom {
+  background-color: var(--dark-primary-color);
+}
+.header_bar_bottom .inner {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*
+ * CSS
+ * HEADER
+ */
+/*
+ * Headroom.js
+ */
+#w_headroom {
+  /* PLACEHOLDER */
+  z-index: 101;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+header {
+  /* CASE : FIXED HEADER */
+  /*
+  background-color: rgba(#212121, 0.70); // TODO // must use a variable !!!!!
+  @include frosted_glass;
+  */
+  background-color: var(--c-bg-alt);
+}
+header.case-is-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/*
+ *
+ * Header - Bar - Main - COMPONENTS / ATOMS
+ *
+ */
+/*
+ *
+ * LOGO - HEADER - LOGO
+ *
+ */
+.header_logo {
+  flex-shrink: 0;
+  width: 320px;
+}
+@media only screen and (max-width: 768px) {
+  /*
+  .header_logo {
+
+   } // header_logo
+   */
+}
+/* header_logo_text, instead */
+.logo_header_text {
+  font-size: 28px;
+  color: var(--text-icons);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-weight: bold;
+}
+.logo_header_text a {
+  color: inherit;
+}
+
+/*
+ * CSS
+ * Header - Nav
+ */
+nav.main {
+  margin-left: auto;
+  /* MEDIA-QUERY */
+  /* 
+   * LEVEL #1 
+   */
+}
+@media only screen and (max-width: 768px) {
+  nav.main {
+    display: none;
+  }
+}
+nav.main .inner {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+}
+nav.main ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav.main li { /* SHOW NEXT LEVEL */
+  /* LEVEL #2 */
+}
+nav.main li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*  
+  // https://stackoverflow.com/questions/25952496/prevent-nested-nav-items-from-breaking-on-to-the-next-line  
+  white-space: nowrap;
+  // width: 100%;	
+  */
+  display: block;
+  padding: 0.5em 0.8em;
+  /* */
+  text-transform: uppercase;
+  /*
+  font-variant:small-caps; // !!!
+  text-transform:capitalize;
+  */
+  font-weight: bold;
+  font-size: var(--fs-l);
+  /*
+
+      transition: all $t_fast linear;			
+
+      */
+}
+nav.main li a:hover, nav.main li a.is_current {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+nav.main li:hover > ul {
+  display: block;
+}
+nav.main li ul {
+  display: none; /* UI - SHOW ON HOVER : CSS */
+  position: absolute;
+  background-color: var(--c-bg-alt);
+}
+nav.main li ul li {
+  float: none; /* RESET */
+  display: block;
+  margin-right: 0%;
+  position: relative;
+  /* 
+         * 3rd LEVEL 
+        */
+  /* SHOW NEXT LEVEL .... */
+}
+nav.main li ul li:hover ul {
+  display: block;
+}
+nav.main li ul li ul {
+  display: none;
+  top: 0;
+  left: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /*
+  li a {
+             // white-space: nowrap;
+           }
+           */
+}
+
+/* 
+ * CSS 
+ * Header
+ * HEADER BUTTONS
+ */
+.header_options_temp {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+/*
+// TETS MANUA OVVERDIDE:
+button, button span {
+    box-sizing: border-box;
+  }
+*/
+/*
+button, button span {
+  display: inline-block;
+  padding: 10px; // Adjust as needed
+  border: 1px solid #000; // Adjust as needed 
+}
+*/
+/*
+ *
+ * HEADER BUTTONS 
+ *
+ */
+.header_buttons {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+button.headericon {
+  display: block;
+  /*
+    // display: none; // UI 
+    @media only screen and (max-width: $bp_m) { 
+      display: block !important;	
+    } // MEDIA-QUERY	
+  */
+  cursor: pointer;
+  /* */
+  font-size: 1em;
+  /*
+  border-color: var(--c-text);
+  border-width: 2px;
+  border-radius: 100vh; // 
+  */
+  /*
+  // padding: 8px;
+  padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
+  */
+  /* OLÑD ICON FOTN, NOW IM USING MATERIUAL ICONS !!!! NI PROCESS !!!!!!!!!!!!!!!!!! */
+  /*
+  .icon { // esto aplica el icon font, solo aki, po rahora, pero lo he usado en otros sitios, y siempre uso el mismo style, osea que metelo como un mixin !!!!! @include icon, ah no!!!! no cal fer res, o no, si que hace falta !!!!!!!!!!
+    // background-color: #ff0; // TEST
+    display: block;
+    height: 1em; // YES !!!!!!!!!!!!
+    // font-size: 48px;
+    font-size: 32px;
+    // color: $c_green;
+    color: #fff;
+    // @include transition(color, 0.25s);
+    // &:hover {color: $c_green_light;	}
+    } // icon
+  */
+}
+button.headericon span {
+  border-color: var(--c-text);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100vh;
+  color: var(--c-text);
+  font-size: 2em;
+  display: block;
+  /* */
+  padding: 0.25em;
+  transition: all 0.5s ease-in-out;
+}
+button.headericon:hover {
+  /*
+  background-color: var(--c-text); // middle way gray - CHANGE THIS 
+  border-color: var(--c-accent); // NEW
+  */
+}
+button.headericon:hover span {
+  background-color: var(--c-text);
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+}
+
+[role=trigger_nav] {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  [role=trigger_nav] {
+    display: block !important;
+  }
+}
+
+body.debugging *, body.debugging *:before, body.debugging *:after {
+  outline: 1px solid #999 !important;
+}
+
+/* 
+ * CSS 
+ * Header
+ * HEADER BUTTONS
+ */
+.header_options_temp {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+/*
+// TETS MANUA OVVERDIDE:
+button, button span {
+    box-sizing: border-box;
+  }
+*/
+/*
+button, button span {
+  display: inline-block;
+  padding: 10px; // Adjust as needed
+  border: 1px solid #000; // Adjust as needed 
+}
+*/
+/*
+ *
+ * HEADER BUTTONS 
+ *
+ */
+.dev_buttons {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.dev_buttons.is-vertical {
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+button.devicon {
+  display: block;
+  /*
+    // display: none; // UI 
+    @media only screen and (max-width: $bp_m) { 
+      display: block !important;	
+    } // MEDIA-QUERY	
+  */
+  cursor: pointer;
+  /* */
+  font-size: 1em;
+  /*
+  border-color: var(--c-text);
+  border-width: 2px;
+  border-radius: 100vh; // 
+  */
+  /*
+  // padding: 8px;
+  padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
+  */
+}
+button.devicon span {
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100vh;
+  color: white;
+  font-size: 2em;
+  display: block;
+  /* */
+  padding: 0.25em;
+  transition: all 0.5s ease-in-out;
+}
+button.devicon:hover {
+  /*
+  background-color: var(--c-text); // middle way gray - CHANGE THIS 
+  border-color: var(--c-accent); // NEW
+  */
+}
+button.devicon:hover span {
+  background-color: var(--c-text);
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+}
+
+body.debugging *, body.debugging *:before, body.debugging *:after {
+  outline: 1px solid #999 !important;
+}
+
+/* 
+ * CSS 
+ * Header
+ * HEADER DROPDOWNS - obs, heigh tis defined by teh otyher script ... 
+ */
+.header_dropdowns {
+  /*
+  background-color: var(--c-bg-inv); // BETTER NAME, MORE AGNSOTIC
+  color: var(--c-text-inv); // should be c-text-inv y punto ....
+  */
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}
+
+.header_dropdowns {
+  border: 3px solid red;
+  display: none;
+  padding-block: 2em;
+  border-bottom: 2px solid var(--c-text);
+}
+
+/*
+.header_dropdowns.case-nav {
+  border: 3px solid red; 
+  display:none; // UI - jQuery
+
+  padding-block: 2em;
+  border-bottom: 2px solid var(--c-text);
+}
+.header_dropdowns.case-search {
+  border: 3px solid red; 
+  display:none; // UI - jQuery
+
+  padding-block: 2em;
+  border-bottom: 2px solid var(--c-text);
+}
+.header_dropdowns.case-language {
+  border: 3px solid red; 
+  display:none; // UI - jQuery
+
+  padding-block: 2em;
+  border-bottom: 2px solid var(--c-text);
+}
+*/
+/* 
+ * NAV MAIN..not, aka mobile, aka header_mobile or header.mobile or nav.header-mobile
+ */
+nav.mobile ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+nav.mobile li {
+  /*
+   * LEVEL 2 
+   */
+  position: relative;
+}
+nav.mobile li:hover {
+  /*
+  background-color: white;
+  color: black;
+  */
+  /*
+  background-color: black;
+  color: white;   
+  */
+  /*
+  background-color: $c_black;
+  color: $c_white_alt;
+  */
+  /* 
+  background-color: $c_white_alt;          
+  color: $c_black;
+  */
+  /*
+  border: 3px solid $c_accent;
+
+  a {
+    background-color: $c_white_alt;          
+    color: $c_black;
+  } // a
+  */
+}
+nav.mobile li a {
+  /* PILL */
+  display: block;
+  padding: 0.4em 1.2em;
+  /*
+
+
+  border-radius: 2em; // TEST 
+
+
+
+  */
+  border: 3px solid;
+  /*
+  color: $c_white_alt; // PRECAUTION, BUT NEEDED...
+  background-color: $c_black; // PRECAUTION, BUT NEEDED...   
+  // border: 2px solid white;
+  // border: 2px solid $c_white_alt;  
+  */
+  font-weight: bold;
+  /*
+  border: 1px solid $c_white_alt;
+  font-weight: 500; // TEST - semibold ...
+  */
+}
+nav.mobile li a:hover {
+  text-decoration: none;
+  /*
+  background-color: white;
+  color: black;
+  */
+  background-color: var(--c-accent);
+}
+nav.mobile li:hover > ul {
+  display: flex;
+}
+nav.mobile li ul {
+  display: none;
+}
+nav.mobile li ul {
+  padding: 24px 12px 12px;
+  /*
+
+
+
+  position: absolute; 
+  // left: -24px;
+  left: -18px;
+  left: -12px;
+
+
+
+
+  */
+  border-radius: 0px 0px 24px 24px;
+  flex-wrap: nowrap;
+  gap: 12px;
+  flex-direction: column;
+}
+nav.mobile li ul li {
+  white-space: nowrap;
+  /* 
+  &::before { // resetting the blue pseudo line     
+    content: ''; // RESET 
+    // position: relative; // RESET ??? - nt aa good reset at leats, if cerated those spaces below each anchor inside each li - so test now tihout this .
+    right: auto; // RESET ???  
+    top: auto; // RESET ??? 
+
+    display: inline-block; 
+    vertical-align: middle;
+    // float: left;
+  } // after	
+  */
+  /*
+   * LEVEL 3 
+   */
+  position: relative;
+}
+nav.mobile li ul li a {
+  /*
+  background-color: white;
+  color: black;
+  */
+  /*
+  background-color: $c_white_alt;          
+  color: $c_black;
+  */
+  /*            
+  background-color: $c_black;
+  color: $c_white_alt;            
+  */
+}
+nav.mobile li ul li a:hover {
+  /*
+  background-color: white;
+  color: black;
+  */
+  /*
+  background-color: black;
+  color: white;   
+  */
+  /*
+   background-color: $c_black;
+   color: $c_white_alt;
+  */
+  /*
+  background-color: $c_white_alt;          
+  color: $c_black;
+  */
+}
+nav.mobile li ul li:hover ul {
+  display: block;
+}
+nav.mobile li ul li ul {
+  display: none;
+}
+nav.mobile li ul li ul {
+  background-color: white;
+  position: absolute;
+  left: 100%;
+  top: 0px;
+}
+
+/*
+ * CSS
+ * Header - Smaller (Plugin: Resize Header On Scroll - or is it just a script ?? )
+ */
+header {
+  /*
+   * 1 - LIST THE CLASSES WHERE TRANSITIONS SHOULD APPLY
+   */
+  /*
+   * 2 - DEFINE WHAT ACTUALLY HAPPENS WHEN ACTIVATED
+   */
+}
+header .header_bar_main .inner,
+header .header_logo,
+header nav.main ul.menu li,
+header nav.main ul.menu li a {
+  transition: all 0.2s linear;
+}
+header.smaller {
+  /*
+   * Header - Bar - Main
+   */
+}
+header.smaller .header_logo {
+  width: 260px;
+}
+header.smaller nav.main ul.menu li {
+  margin-right: 6px;
+}
+header.smaller nav.main ul.menu li a {
+  font-size: 16px;
+}
+
+/* 
+ * TEMPLATE - FOOTER
+ */
+/*
+ * CSS
+ * Footer
+
+ * TODO:
+    developer
+    copyright
+
+    social links - copy el l homesocial bigge, o ese dejarlo como cowo-module-social... 
+
+    de paso, build social links for header as well !!!
+
+    sas folder for social... vs just 1 partial for all the social buttons, ok, good comepromise there...
+
+ */
+footer .inner {
+  padding-block: 48px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/*
+ * Footer - Bar - Top
+ */
+.footer_bar_top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.scrolltotop {
+  /*
+  display: flex;
+  justify-content: center;
+  */
+  /*
+  a {
+    // @include dev_border;
+    color: inherit;
+    cursor: pointer;
+    &:hover {color: $c_primary_light;}
+
+
+   // line height issue ....
+
+   .icon {
+     // @include dev_border;
+     font-size: 32px;
+     // line-height: 32px;
+     // line-height: 26px;
+     }
+
+   }	// a		
+
+   */
+}
+.scrolltotop button span {
+  display: block;
+}
+
+/*
+ * Footer - Bar - Main
+ */
+.footer_bar_main {
+  /*
+  .inner {
+    @include paddingv($spacing0125);
+    display:flex;
+    justify-content: flex-end; 
+    // align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
+  } // inner
+  */
+  /*
+  display: flex;
+  justify-content: flex-end;
+  */
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  /*
+  img {
+  	width: 86px;
+  	vertical-align: middle;
+  	}
+   */
+}
+.footerContent span {
+  font-size: 16px;
+}
+
+.logo_footer {
+  max-width: 320px;
+}
+.logo_footer img {
+  width: 100%;
+  display: block;
+}
+
+.footer_copyright {
+  font-size: 16px;
+}
+
+.footer_contact {
+  margin-top: 12px;
+  font-size: 16px;
+}
+.footer_contact a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer_contact a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Grid - Footer
+ */
+.grid_footer {
+  display: flex;
+  justify-content: space-between;
+}
+.grid_footer .item .title,
+.grid_footer .item h5,
+.grid_footer .item h6 {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: var(--fs-l);
+}
+.grid_footer .item .text {
+  font-size: var(--fs-m);
+}
+.grid_footer .item .text ul {
+  display: flex;
+  flex-direction: column;
+  /*
+  gap: 0.6rem;           
+  */
+}
+.grid_footer .item .text li a {
+  display: block;
+  padding-block: 6px;
+  color: inherit;
+  text-decoration: none;
+}
+.grid_footer .item .text li a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Footer - Bar - Bottom
+ */
+.footer_bar_bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer_developer span {
+  font-size: 16px;
+}
+.footer_developer img {
+  width: 10em;
+  vertical-align: middle;
+}
+
+/* 
+ * TEMPLATE - PAGE
+ */
+nav#lateral {
+  display: none;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--c-accent);
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  padding: 1em;
+  font-size: 0.8em;
+  z-index: 1;
+  /*
+  img {
+      // width: 3em; // 
+      width: 4em; //
+      margin-inline: auto; 
+  }
+  */
+}
+nav#lateral ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+nav#lateral li {
+  align-self: center;
+}
+/* 
+ *
+ *
+ * LAYOUT 
+ *
+ *
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: Layout
+ */
+.fit-vids-style {
+  display: none;
+}
+
+html {
+  /* START OF BLOCK */
+  scroll-behavior: smooth;
+  /* END OF BLOCK */
+  /* START OF BLOCK */
+  scroll-padding-top: 100px;
+  /* END OF BLOCK */
+}
+
+html {
+  /* ... */
+}
+
+body {
+  background-color: var(--c-bg);
+}
+
+#page {
+  /* PLACEHOLDER */
+}
+
+#page_content {
+  padding-top: var(--header-height);
+}
+
+/* move sticky footer flex here instead !! simpleer !!!!  */
+/* 
+ * VERTICAL - EXTREMES 
+ */
+footer {
+  background-color: var(--c-bg);
+}
+
+/* 
+ *
+ * HORIZONTAL - FRAMES 
+ *
+ */
+.frame {
+  margin-inline: auto;
+  min-width: 320px;
+  /* max-width:1300px; */
+  max-width: 1440px;
+  padding-left: 48px;
+  padding-right: 48px;
+  /*
+  @include transition(padding-left, $t_slow);
+  @include transition(padding-right, $t_slow);
+  */
+  transition: padding-left 0.6s linear, padding-right 0.6s linear;
+}
+@media only screen and (max-width: 1024px) {
+  .frame {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .frame {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.frame.narrow {
+  max-width: 1024px;
+}
+.frame.wide {
+  max-width: 1660px;
+}
+.frame.full {
+  max-width: 1920px;
+}
+.frame.flush {
+  /* !!! */
+  max-width: 1920px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* 
+ * SYSTEM ALTERNATING BACKGROUND COLORS 
+ */
+.backgrounds .background:nth-of-type(odd) {
+  background-color: none;
+}
+.backgrounds .background:nth-of-type(even) {
+  background-color: #e28630;
+}
+
+section {
+  /* 
+   * HEIGHT aka SCREEN REAL ESTATE 
+   */
+  /*
+  &.center_v {
+  	display: flex;
+     // flex-direction: column;
+
+     > div {
+       // ...
+       flex-grow: 1;
+
+     } 
+   }
+   */
+}
+section.fullscreen {
+  min-height: 100vh;
+}
+section.vcenter {
+  display: grid;
+  place-items: center;
+}
+section.padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+section.padding_2 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+section.padding_3 {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+section.padding_3_4 {
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+section.pb4 {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+section.pb8 {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+section.padding_4 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+section.padding_8 {
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+section.accent {
+  background-color: #F06;
+}
+section.light {
+  background-color: var(--divider-text);
+  background-color: rgba(16, 16, 16, 0.5);
+}
+section.fullHeightTest {
+  background-color: #f06;
+  height: 100vh;
+}
+section.test {
+  background-color: #ccc;
+  /* LAYOUT - FLEX */
+}
+section.test:nth-of-type(odd) {
+  background-color: #999;
+}
+
+#content {
+  /*
+  overflow:hidden; // ????????? 
+  @include paddingv($space2);
+  */
+  /*
+  position: relative;
+  height: 100%;
+  */
+}
+/*
+ * CSS
+ * Layout - Page (generic page elements)
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Module - Full-page item with backround image and overlay with text
+ */
+.fullpage_text {
+  /* DEV */
+  /* LAYOUT */
+  position: relative;
+  height: 100vh;
+  /* BG IMAGE */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* CENTER THE CHILD - horizonatlly & vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fullpage_text .text {
+  font-size: 92px;
+  color: white;
+}
+
+.l_fullpageImage {
+  border: 3px solid #f06;
+  height: 100vh;
+}
+
+.page_banner {
+  /* */
+  height: 61.8vh;
+  overflow: hidden;
+  /*
+  width: 30%;
+
+  // aspect-ratio: 16 / 9; // https://web.dev/aspect-ratio/
+  // aspect-ratio: 16 / 3; // https://web.dev/aspect-ratio/
+
+
+  object-fit: contain; // https://web.dev/aspect-ratio/ // SMIILAR TO BG PERO NOT BG ... MAGIC ?! // yesssssssssss !!!!!!!!!!!!! wow ! must learn css properties & !! atriubutes 
+  // err, maybe didnt do anything ....
+
+  */
+  /*
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+  */
+  position: relative;
+  /*   */
+}
+.page_banner img {
+  width: 100%;
+  display: block;
+}
+.page_banner .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.page_banner .cover {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  /* BUILD A FADE FROM TOP TO BOTTMO ... SPOTIFY STYLE */
+  /* opacity gradient form top to bottom */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 90%);
+  /*
+  display: grid; // https://css-tricks.com/almanac/properties/p/place-items/
+  place-items: center;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.page_banner .cover .text {
+  color: var(--text-icons);
+  text-shadow: 0px 2px 2px #000;
+  font-size: var(--fs-xxxl);
+  padding: 1em;
+}
+
+/*
+ * BREADCRUMBS
+ */
+.breadcrumbs {
+  padding-top: 24px;
+  font-size: 0.9em;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.breadcrumbs a {
+  color: var(--c-text);
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs span {
+  /*
+  &:not(:last-of-type) {
+    color: #ff0000;
+
+    &::after { //s not last, asi me ebvito la revsision de la excecpcin !!!!
+      content: '>';
+      margin-left: 0.3em;
+    } // after
+
+  }
+  */
+}
+.breadcrumbs span::after {
+  content: ">";
+  margin-left: 0.3em;
+}
+.breadcrumbs span:last-of-type::after {
+  content: "";
+  margin-left: unset;
+}
+
+/*
+ * TITLES - PAGE TITLE (h1)
+ */
+.page_title____NOT {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  /* TEXT */
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.page_title____NOT h1 {
+  margin: 0;
+}
+
+h1.page_title {
+  margin: 0;
+  /* TEXT */
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*
+ *
+ * TITLES - SECTION TITLE (h2)
+ *
+ */
+.section_title {
+  /* LAYOUT */
+  margin-bottom: 48px;
+  /* TEXT */
+  font-size: var(--fs-xxxl);
+}
+.section_title h2 {
+  margin: 0;
+  font-size: var(--fs-xxxl);
+  font-weight: bold;
+}
+.section_title.center {
+  text-align: center;
+}
+
+.page_excerpt {
+  /* LAYOUT */
+  padding-top: 24px;
+  padding-bottom: 24px;
+  /* TEXT */
+  font-size: 20px;
+  width: 68%;
+}
+.page_excerpt::first-line {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.page_excerpt::first-letter {
+  font-weight: bold;
+  color: #F06;
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+.card_base {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+}
+.card_base:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.card_base:hover {
+  box-shadow: 0px 0px 4px 0px #ccc;
+  transition: box-shadow 0.2s linear;
+}
+
+.card_slider {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+}
+.card_slider:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.card_slider:hover {
+  box-shadow: 0px 0px 4px 0px #ccc;
+  transition: box-shadow 0.2s linear;
+}
+
+.w_slick_carrousel .image {
+  padding-top: 100%;
+}
+
+.w_slick_slider .image {
+  padding-top: 50%;
+}
+
+.placeholder_slide {
+  /* cannot have border, as its border box or whatver in there ... */
+}
+.placeholder_slide .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*
+ * CSS
+ * Layout - Page (generic page elements) - Media
+ */
+/* MULTIMEDIA - layout_media PARTIAL FOR THIS !!! */
+.m_video video {
+  width: 100%;
+}
+
+audio {
+  width: 100%;
+}
+
+/* CREATE SASS PARTIAL FOR THIS */
+.fitvids_container {
+  /* 
+  width: 50%; 
+  margin:0px auto;
+  */
+  /*
+  padding: 5%;
+
+  background:#fff;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+  */
+}
+.fitvids_container .fitvids_container iframe {
+  /* width: 100%; */
+  /* height:auto; */
+}
+
+/*
+ * CSS
+ * Layout - Grids (generic page elements)
+ */
+.FAKE-grid {
+  /*
+  text-align: justify;
+  &:after {
+  	content: '';
+  	width: 100%; // 
+  	display: inline-block;
+  	}		
+  */
+}
+.FAKE-grid .FAKE-col {
+  /*
+  display: inline-block;
+  vertical-align: top; // TEST
+  text-align: left; // RESET - TEST
+  */
+}
+
+.l_gridBase_50_50 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.l_gridBase_50_50 .col {
+  background-color: var(--text-icons); /* PRECAUTION */
+  box-shadow: 0px 0px 8px 2px #ccc;
+  padding: 12px;
+  padding: 24px;
+}
+.l_gridBase_50_50 .col:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px #ccc;
+  transition: box-shadow 0.2s linear;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * File: Layout - Sticky Footer (Flex)
+ */
+/* 
+Reference Source - STICKY FOOTER - SOLVED BY FLEXBOX 
+https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+<body class="Site">
+  <header>…</header>
+  <main class="Site-content">…</main>
+  <footer>…</footer>
+</body>
+.Site { // MY CASE - apply to #page, and or body
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.Site-content { // MY CASE - apply to #content
+  flex: 1;
+}
+*/
+/* body , */
+#page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#page_content {
+  flex: 1;
+}
+
+/* 
+ *
+ *
+ * MODULES 
+ *
+ *
+ */
+.grid_features {
+  display: flex;
+  justify-content: space-around;
+  gap: 48px;
+}
+.grid_features .item {
+  text-align: center;
+}
+.grid_features .item .icon {
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--c-text-alt);
+  font-size: 48px;
+}
+.grid_features .item .icon span {
+  font-size: inherit;
+}
+.grid_features .item .icon a {
+  color: inherit;
+  text-decoration: none;
+}
+.grid_features .item .icon a:hover {
+  text-decoration: underline;
+}
+.grid_features .item .title {
+  /*
+  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+  fs_card_text
+  fs_card_specs
+  */
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.grid_features .item .title a {
+  color: var(--c-text);
+  text-decoration: none;
+}
+.grid_features .item .title a:hover {
+  text-decoration: underline;
+}
+.grid_features .item .text {
+  font-size: var(--fs-l);
+  color: var(--c-text-alt);
+  color: var(--c-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.grid_features .item .link {
+  margin-top: 2em;
+  /*
+  display: flex;
+  justify-content: flex-end;
+  */
+}
+.grid_features .item .link a {
+  text-decoration: none;
+}
+.grid_features .item .link a:hover {
+  text-decoration: underline;
+}
+
+/* 
+ *
+ * STRUCTIRES, REACTIONS ... 
+ *
+ */
+/* 
+ * Built by cowowo.cat
+ * Author: Carl Johansson
+ * Project: cowowo.cat
+ * File: Grid - Services
+ */
+/*
+ * MASONRY
+ */
+.dev-masonry-structure {
+  /* MASONRY.JS */
+  /*
+  / se puede hacer que el grid sizer sea el col y asi no hay que hacerlo 2 veecs - check other examples in cB siet !!!
+  */
+}
+.dev-masonry-structure .gutter-sizer {
+  width: 32px;
+}
+.dev-masonry-structure .grid-sizer {
+  width: calc((100% - 64px) / 3);
+}
+@media only screen and (max-width: 1024px) {
+  .dev-masonry-structure .grid-sizer {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (max-width: 568px) {
+  .dev-masonry-structure .grid-sizer {
+    width: 100%;
+  }
+}
+.dev-masonry-structure .col {
+  float: left;
+  width: calc((100% - 64px) / 3);
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 1024px) {
+  .dev-masonry-structure .col {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (max-width: 568px) {
+  .dev-masonry-structure .col {
+    float: none;
+    width: 100%;
+    /*
+    margin-left: 0px; // RESET PRECAUTION
+    margin-right: 0px; // RESET PRECAUTION
+    */
+  }
+}
+.dev-masonry-structure .item {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  padding: 12px;
+  border-radius: 24px;
+}
+.dev-masonry-structure .item:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.dev-masonry-structure .item img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+  border-radius: 12px;
+}
+
+.m_grid_serveis {
+  overlow: hidden;
+  padding: 24px;
+  /*
+  .image { // 	es/era para el icon 
+
+  		img {@include img;}
+
+  		} // image
+  */
+}
+.m_grid_serveis .info .title {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+}
+.m_grid_serveis .info .text {
+  margin-top: 18px;
+}
+
+@media only screen and (max-width: 1024px) {
+  /*
+  .m_grid_serveis {
+        width:48%; 
+
+        &:nth-of-type(3n) {margin-right:2%;}
+        &:nth-of-type(2n) {margin-right:0%;}
+
+        } // m_grid_serveis
+
+  */
+}
+@media only screen and (max-width: 650px) {
+  /*
+
+      .m_grid_serveis {
+          @include fullwidth; 
+          margin-right: 0%;
+
+          &:nth-of-type(3n) {margin-right:0%;}
+
+          } // m_grid_serveis
+
+
+  */
+}
+/* 
+ * ((((8)))) - COMPONENTS 
+ */
+/* 
+ * COMPONENTS - ATOMS (...maybe too granular...) or not...
+ */
+/* 
+ * COMPONENTS - MOLECULES
+ */
+/* 
+ * COMPONENTS - UI 
+ */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Reset
+ * CSS
+ * File: Header
+ */
+.map {
+  height: 100%;
+}
+.map iframe {
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* 
+ * CSS
+ * Social
+ *
+ * MOVE PARTIAL DTO MOLECULES, OR ATOMS ...  // MOVE TO MOLECULE S....................
+ */
+/*
+ * CASES: 
+ * - STANDLONE
+ * - HEADER
+ * - FOOTER
+ * - ... Y POST SHARE BUTTON SETC !!!!
+*/
+.social_header ul {
+  display: flex;
+  justify-content: center;
+}
+.social_header li {
+  margin-right: 12px;
+}
+.social_header li:last-of-type {
+  margin-right: 0px;
+}
+.social_header a {
+  font-size: 2em;
+  transition: all 0.2s linear;
+  color: var(--text-icons);
+}
+.social_header a:hover {
+  color: #F06;
+}
+.social_footer {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 2.5em;
+}
+.social_footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+}
+.social_footer li {
+  /*
+  margin-right: $spacing025;  
+  &:last-of-type {margin-right: 0;}
+  */
+}
+.social_footer a {
+  display: block;
+}
+.social_footer a {
+  color: white;
+  transition: all 0.2s linear;
+}
+.social_footer a:hover {
+  color: #F06;
+}
+.social_footer img {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 568px) {
+  .m_social {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.m_social ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.m_social li {
+  /*
+      margin-right: $spacing025;  
+      &:last-of-type {margin-right: 0;}
+  */
+}
+.m_social li a {
+  /*
+  display: block;
+  width: 100%; // 
+  */
+}
+.m_social li a i {
+  font-size: 3em;
+  font-size: 6em;
+}
+.m_social li a:hover {
+  color: #F06;
+}
+
+.social_contact {
+  /*
+   @include border; 
+
+  	@include background-opacity($c_primary_light, 0.25);
+  */
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 2.5em;
+}
+@media only screen and (max-width: 568px) {
+  .social_contact {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+.social_contact ul {
+  display: inline-block;
+}
+.social_contact li {
+  float: left;
+  width: 48px;
+  /*
+  margin-right: $spacing05;  
+  &:last-of-type {margin-right: 0;}
+  */
+  margin-right: 6px;
+}
+.social_contact li:last-of-type {
+  margin-right: 0px;
+}
+.social_contact a {
+  color: #F44336;
+  transition: all 0.2s linear;
+}
+.social_contact a:hover {
+  color: var(--dark-primary-color);
+}
+
+/*
+ * cowo-Boilerplate
+ * CSS
+ * cowo-gridlist // NOT ANYMORE 
+ * ui_gridlist
+ */
+/* MIXIN TO DECLARE-CSS-COUNTER */
+.ui_gridlist_items ul li::before {
+  counter-increment: gridlist; /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */ /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+  /* content: "# " counter(section); */
+  /* content: counter(section);  */
+  content: "Item " counter(gridlist);
+}
+
+.ui_gridlist {
+  /* PLACEHOLDER */
+}
+
+/*
+ * cowo-gridlist
+ * menu
+ */
+.ui_gridlist_menu {
+  display: flex;
+  margin-bottom: 12px;
+}
+.ui_gridlist_menu ul {
+  display: flex;
+  gap: 1em;
+}
+.ui_gridlist_menu li {
+  text-align: center;
+  color: var(--c-text);
+  border: 3px solid #F06;
+}
+.ui_gridlist_menu li a {
+  display: block; /* */
+  padding: 0.6em 1em;
+  background: var(--dark-primary-color);
+  color: inherit;
+}
+.ui_gridlist_menu li.is-active a {
+  background: #FFCDD2;
+  color: var(--dark-primary-color);
+}
+.ui_gridlist_menu li.is-active a:hover {
+  background: #FFCDD2;
+  color: var(--dark-primary-color);
+}
+.ui_gridlist_menu li a:hover {
+  background: #F44336;
+  color: var(--text-icons);
+}
+.ui_gridlist_menu li button {
+  background-color: red;
+}
+.ui_gridlist_menu li button.is-active {
+  background-color: green;
+}
+
+/*
+ * cowo-gridlist
+ * items
+ */
+.ui_gridlist_items {
+  border: 12px solid black;
+}
+.ui_gridlist_items ul li {
+  background-color: var(--c-bg-dark);
+  color: var(--c-text-inv);
+  border: 3px solid #F06;
+  padding: 24px;
+  padding: 3em;
+}
+.ui_gridlist_items ul.is-list {
+  display: grid;
+  gap: 1em;
+}
+.ui_gridlist_items ul.is-list li {
+  /* LAYOUT */
+  /*
+      margin-bottom: $spacing05;
+  :last-of-type {margin-bottom: 0px;}
+      */
+}
+.ui_gridlist_items ul.is-grid {
+  /* LAYOUT - CSS GRID */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 COLUMNS */
+  gap: 1em;
+}
+.ui_gridlist_items ul.is-grid li {
+  /* PLACEHOLDER */
+}
+
+/* 
+ * COMPONENTS - POPUPS
+ */
+/*
+ * CSS
+ * cowo-Boilerplate
+ * popup_cookies
+ */
+.popup_cookies {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  /* */
+  bottom: -200px;
+  /*
+   background-color: var(--accent-color); 
+   border-top: 3px solid $c_primary_dark;
+  */
+  background-color: var(--c-bg);
+  border-top: 3px solid var(--c-accent);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.popup_cookies .inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.popup_cookies .inner .text {
+  color: var(--c-text);
+  font-size: 16px;
+  text-wrap: balance;
+  line-height: 1.5em;
+}
+.popup_cookies .inner .options ul {
+  display: flex;
+  gap: 1em;
+  height: 100%;
+  align-items: center;
+}
+.popup_cookies .inner .options li {
+  /*
+  margin-right: 10px;
+  &:last-of-type {margin-right: 0;}
+  */
+}
+.popup_cookies .inner .options li a {
+  cursor: pointer; /* para el ajax onclick - pasar esto a este reset, y luego al cowo-Reset  */
+  display: block;
+  padding: 0.4em 0.8em;
+  border-radius: 1em;
+  min-width: 6em;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--c-text);
+  font-weight: bold;
+  background-color: var(--accent-color);
+  transition: background-color 0.6s linear;
+}
+.popup_cookies .inner .options li a:hover {
+  background-color: var(--dark-primary-color);
+}
+@media only screen and (max-width: 568px) {
+  .popup_cookies {
+    background-color: transparent; /* RESET */
+    border-top-width: 0px; /* RESET */
+  }
+  .popup_cookies .inner {
+    background-color: #FFCDD2;
+    border: 3px solid var(--dark-primary-color);
+    padding: 24px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .popup_cookies .inner .options ul {
+    /* align-items: center; */
+  }
+  .popup_cookies .inner .options li {
+    flex: 1;
+  }
+}
+/* END OF MODULE - cowo-cookies */
+/* 
+ * COMPONENTS - ORGANISMS
+ */
+/* 
+ * COMPONENTS - PAGES
+ */
+/* PAGES & GRIDS & MODULES */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: a grid ... 
+ */
+/*
+// boilerplate - kill ellipisi and js and just leave css line clamp - and test clamp for other atributes... 
+// CSS - line-clamp WORKS !
+*/
+/*
+// PHP AUDIT -. DISABLE IN SERVER WAMP TEMPORARILLY !!! 
+// BOILERPLATES - PHP LONG TAG, OK
+*/
+/*
+INSTRUCTIONS FOR ANY GRID: 
+separate grid behavior (wrapper & cols) from item behavior (and its own rwd behavior)
+*/
+.grid_base {
+  display: grid;
+  /* LAYOUT - COLUMNS */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  grid-row-gap: 48px;
+}
+@media only screen and (max-width: 1024px) {
+  .grid_base {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid_base {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 568px) {
+  .grid_base {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid_base.case_2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 568px) {
+  .grid_base.case_2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.m_item_base_01 {
+  background-color: var(--text-icons); /* PRECAUTION */
+  box-shadow: 0px 0px 8px 2px #ccc;
+  padding: 12px;
+}
+.m_item_base_01:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 0px #ccc;
+  transition: box-shadow 0.2s linear;
+}
+.m_item_base_01 .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 75%;
+  background-color: #ccc; /* TEMP PLACEHOLDER */
+}
+.m_item_base_01 .image img {
+  width: 100%;
+  display: block;
+}
+.m_item_base_01 .info {
+  padding: 12px;
+  padding-top: 18px;
+}
+.m_item_base_01 .info .title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 6px;
+  border-bottom: 2px solid;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.m_item_base_01 .info .text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.m_item_base_01 .info .link {
+  margin-top: 24px;
+}
+
+/* 
+ * SECTIONS: - now renamed as post types !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *
+ * Blog
+ * (Products)
+ * Staff
+ * Pricing
+ *
+ * etc ......
+ */
+/* 
+ * COMPONENTS - SECTIONS - BLOG (SYSTEM)
+ */
+/*
+ * CSS
+ * Grid Blog
+ */
+.grid_blog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  /*
+  // grid-column-gap: 10px;
+  grid-row-gap: $spacing2;
+   */
+}
+@media only screen and (max-width: 1024px) {
+  .grid_blog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid_blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 568px) {
+  .grid_blog {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*
+ *
+ * CARD - BLOG
+ *
+ */
+.card_blog {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+}
+.card_blog:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.card_blog .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 75%;
+  background-color: var(--light-primary-color);
+  background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+  position: relative;
+}
+.card_blog .image img {
+  width: 100%;
+  display: block;
+}
+.card_blog .image a {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.card_blog picture {
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f06;
+  position: relative;
+}
+.card_blog picture img {
+  aspect-ratio: 4/3;
+}
+.card_blog picture a {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.card_blog .info {
+  padding: 12px;
+  padding-top: 18px;
+}
+.card_blog .info .category {
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--secondary-text);
+  font-size: var(--fs-m);
+}
+.card_blog .info .category a {
+  color: inherit;
+  text-decoration: none;
+}
+.card_blog .info .category a:hover {
+  text-decoration: underline;
+}
+.card_blog .info .title {
+  /*
+  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+  fs_card_text
+  fs_card_specs
+  */
+  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--divider-text);
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card_blog .info .title a {
+  text-decoration: none;
+}
+.card_blog .info .title a:hover {
+  text-decoration: underline;
+}
+.card_blog .info .specs {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  row-gap: 3px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  /* */
+  color: var(--secondary-text);
+  font-size: var(--fs-s);
+}
+.card_blog .info .specs a {
+  color: inherit;
+  text-decoration: none;
+}
+.card_blog .info .specs a:hover {
+  text-decoration: underline;
+}
+.card_blog .info .text {
+  color: var(--secondary-text);
+  line-height: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card_blog .info .link {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.card_blog .info .link a {
+  text-decoration: none;
+}
+.card_blog .info .link a:hover {
+  text-decoration: underline;
+}
+
+.blog_feature {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+}
+.blog_feature:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.blog_feature:hover {
+  box-shadow: 0px 0px 4px 0px #ccc;
+  transition: box-shadow 0.2s linear;
+}
+.blog_feature .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 42.55%;
+  background-color: var(--light-primary-color);
+  background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+  position: relative;
+}
+.blog_feature .image img {
+  width: 100%;
+  display: block;
+}
+.blog_feature .image a {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.blog_feature .image a span {
+  display: inline-block;
+  background-color: rgba(255, 0, 102, 0.5);
+  padding: 24px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.blog_feature .info {
+  padding: 12px;
+  padding-top: 18px;
+}
+.blog_feature .info .category {
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--secondary-text);
+  font-size: 13px;
+}
+.blog_feature .info .category a {
+  color: inherit;
+  text-decoration: none;
+}
+.blog_feature .info .category a:hover {
+  text-decoration: underline;
+}
+.blog_feature .info .title {
+  /*
+  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+  fs_card_text
+  fs_card_specs
+  */
+  font-size: 24px;
+  font-weight: bold;
+  /*
+  // // // padding-bottom: $spacing025;
+  padding-bottom: $spacing0125;
+  // border-bottom: 2px solid;
+  // border-bottom: 1px solid;
+  // border-bottom: 1px solid var(--secondary-text);
+  border-bottom: 1px solid var(--divider-text);
+  */
+  margin-bottom: 6px;
+}
+.blog_feature .info .title a {
+  text-decoration: none;
+}
+.blog_feature .info .title a:hover {
+  text-decoration: underline;
+}
+.blog_feature .info .specs {
+  margin-bottom: 24px;
+  /* */
+  color: var(--secondary-text);
+  font-size: 13px;
+}
+.blog_feature .info .specs a {
+  color: inherit;
+  text-decoration: none;
+}
+.blog_feature .info .specs a:hover {
+  text-decoration: underline;
+}
+.blog_feature .info .text {
+  color: var(--secondary-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog_feature .info .link {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.blog_feature .info .link a {
+  text-decoration: none;
+}
+.blog_feature .info .link a:hover {
+  text-decoration: underline;
+}
+
+/* 
+ * SINGLE BLOG
+ */
+.single_blog .image {
+  background-color: var(--light-primary-color);
+  background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 42.55%;
+  position: relative;
+}
+.single_blog .image img {
+  width: 100%;
+  display: block;
+}
+.single_blog .image a {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.single_blog .image a span {
+  display: inline-block;
+  background-color: rgba(255, 0, 102, 0.5);
+  padding: 24px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.single_blog .info {
+  /*
+    padding: $spacing05;	
+    */
+  padding-top: 48px;
+}
+.single_blog .info .category {
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--secondary-text);
+  font-size: 13px;
+}
+.single_blog .info .category a {
+  color: inherit;
+  text-decoration: none;
+}
+.single_blog .info .category a:hover {
+  text-decoration: underline;
+}
+.single_blog .info .title {
+  /*
+  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+  fs_card_text
+  fs_card_specs
+  */
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--divider-text);
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.single_blog .info .title a {
+  text-decoration: none;
+}
+.single_blog .info .title a:hover {
+  text-decoration: underline;
+}
+.single_blog .info .specs {
+  margin-bottom: 12px;
+  /* */
+  color: var(--secondary-text);
+  font-size: 13px;
+}
+.single_blog .info .specs a {
+  color: inherit;
+  text-decoration: none;
+}
+.single_blog .info .specs a:hover {
+  text-decoration: underline;
+}
+.single_blog .info .text {
+  color: var(--secondary-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.single_blog .info .link {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.single_blog .info .link a {
+  text-decoration: none;
+}
+.single_blog .info .link a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * CSS
+ * Grid Products
+ */
+/*
+ *
+ * GRID - PRODUCT
+ *
+ */
+.grid_products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  grid-row-gap: 48px;
+}
+@media only screen and (max-width: 1024px) {
+  .grid_products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid_products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 568px) {
+  .grid_products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*
+ *
+ * CARD - PRODUCT
+ *
+ */
+.card_product {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+}
+.card_product:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.card_product .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 56.25%;
+  background-color: var(--light-primary-color);
+  background-image: radial-gradient(var(--dark-primary-color), var(--primary-color), var(--light-primary-color));
+}
+.card_product .image img {
+  width: 100%;
+  display: block;
+}
+.card_product .info {
+  padding: 12px;
+  padding-top: 18px;
+}
+.card_product .info .category {
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--secondary-text);
+  font-size: 13px;
+}
+.card_product .info .category a {
+  color: inherit;
+  text-decoration: none;
+}
+.card_product .info .category a:hover {
+  text-decoration: underline;
+}
+.card_product .info .title {
+  /*
+  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+  fs_card_text
+  fs_card_specs
+  */
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--divider-text);
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card_product .info .title a {
+  text-decoration: none;
+}
+.card_product .info .title a:hover {
+  text-decoration: underline;
+}
+.card_product .info .text {
+  color: var(--secondary-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card_product .info .link {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.card_product .info .link a {
+  text-decoration: none;
+}
+.card_product .info .link a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * CSS
+ * Grid Staff
+ */
+/* 
+ * GRID - STAFF
+ */
+.grid_staff {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px;
+}
+@media only screen and (max-width: 768px) {
+  .grid_staff {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 568px) {
+  .grid_staff {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media only screen and (max-width: 414px) {
+  .grid_staff {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 
+ * CARD - STAFF
+ */
+.card_staff {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  /*
+  display: flex;
+  flex-direction: column;
+  */
+}
+.card_staff:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.card_staff .image {
+  background-color: #f06;
+}
+.card_staff .image img {
+  width: 100%;
+  display: block;
+}
+.card_staff .image.case-no-image {
+  padding-top: 100%;
+}
+.card_staff .title {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card_staff .role {
+  margin-bottom: 3px;
+  font-size: 16px;
+}
+.card_staff .email {
+  font-size: 12px;
+}
+.card_staff .email a {
+  color: inherit;
+  text-decoration: none;
+}
+.card_staff .email a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * CSS
+ * Grid Pricing
+ */
+.grid_pricing {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  grid-row-gap: 48px;
+}
+@media only screen and (max-width: 1024px) {
+  .grid_pricing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid_pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 568px) {
+  .grid_pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card_pricing {
+  background-color: var(--text-icons); /* PRECAUTION */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 4px 0px #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  /* picture.thumbnail, */
+}
+.card_pricing:hover {
+  transition: box-shadow 0.2s linear;
+  /* box-shadow: 0px 0px 4px 0px #ccc; */
+  /* box-shadow: 0px 0px 8px 2px #ccc; */
+  box-shadow: 0px 0px 8px 4px #ccc;
+}
+.card_pricing picture { /* maybe do picture.image etc or better picture.thumbnail, as picture.image is too generic  */ }
+.card_pricing picture img {
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card_pricing .info {
+  padding: 12px;
+  padding-top: 18px;
+}
+.card_pricing .info .price {
+  font-size: 56px;
+}
+.card_pricing .info .category {
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--secondary-text);
+  font-size: 13px;
+}
+.card_pricing .info .category a {
+  color: inherit;
+  text-decoration: none;
+}
+.card_pricing .info .category a:hover {
+  text-decoration: underline;
+}
+.card_pricing .info .title {
+  /*
+  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+  fs_card_text
+  fs_card_specs
+  */
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--divider-text);
+  margin-bottom: 6px;
+}
+.card_pricing .info .title a {
+  text-decoration: none;
+}
+.card_pricing .info .title a:hover {
+  text-decoration: underline;
+}
+.card_pricing .info .link {
+  margin-top: 24px;
+  /*
+  display: flex;
+  justify-content: flex-end;
+  */
+}
+.card_pricing .info .link a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.card_pricing .info .link a:hover {
+  text-decoration: underline;
+}
+.card_pricing .info .text {
+  margin-top: 24px;
+  color: var(--secondary-text);
+}
+.card_pricing .info .list {
+  margin-top: 24px;
+  color: var(--secondary-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card_pricing .info .list ul {
+  list-style: disc;
+}
+.card_pricing .info .list li {
+  list-style: disc;
+}
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Content - MOSTLY DEMO STUFF TO CLEAR AWAY AND PROCESS
+ */
+.grid_contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 144px;
+}
+@media only screen and (max-width: 768px) {
+  .grid_contact {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 48px;
+  }
+}
+.grid_contact .text {
+  font-size: var(--fs-l);
+  line-height: 1.7em;
+}
+.grid_contact .contact_details ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.grid_contact .contact_details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.grid_contact .contact_details li span {
+  font-size: var(--fs-l);
+}
+.grid_contact .contact_details li span.material-icons {
+  font-size: var(--fs-xl);
+}
+.grid_contact .contact_details li a {
+  text-decoration: none;
+}
+.grid_contact .contact_details li a:hover {
+  text-decoration: underline;
+}
+
+/* 
+ * COMPONENTS - REACTIONS
+ */
+.slickslider {
+  /*
+  background-color: #f0f;
+  padding: 100px;
+  border: 3px solid red;
+  */
+  height: 100%; /* VIP FOR FULLHEIGHT SCENARIO */
+  /* border: 30px solid #ff0;	 */
+}
+
+/* 2 CLASSES INJECTED BY THE SCRIPT */
+.slick-list {
+  height: 100%;
+  position: relative;
+}
+
+.slick-track {
+  height: 100%;
+  position: relative;
+}
+
+/*
+
+.slickslider_slide {
+	background-color: #f0f;
+	border: 3px solid red;	
+	height: 100%;
+	// position: relative;
+	// height: 100vh;
+	}
+
+*/
+.content222 {
+  /* margin:auto; */
+  /* padding:0px 20px; */ /* ESTO ES LO QUE PERMITE MOSTRAR LOS NAV THINGEES !  */
+  /* padding:0px 0px; */
+  /* padding:10px 0px; */
+  /* width:600px; */
+  /* background-color:#ccc; */
+  /* padding:10px; */
+}
+
+.slick-slide img {
+  /* border:5px solid #FFF; */ /* borrar esta linea */
+  display: block;
+  width: 100%;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-loading .slick-list {
+  background: white url(./ajax-loader.gif) center center no-repeat;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  min-height: 1px;
+  display: none;
+  z-index: 1;
+  position: relative;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* Icons */
+/*
+@font-face { font-family: "slick"; src: url("./fonts/slick.eot"); src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg"); font-weight: normal; font-style: normal; }
+*/
+/* Arrows */
+.slick-prev, .slick-next {
+  z-index: 100; /* CARL */
+  /* color:#f00; */ /* CARL */
+  position: absolute;
+  display: block;
+  /*
+  height: 20px; 
+  width: 20px; 
+  */
+  /*
+         height: 40px; 
+  width: 40px; 
+  */
+  /* width: 60px;  */
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  /* color: #fff; */ /* TEST DE CARL - para el texto de los arrows - NO HA FUNCIONADO */
+  top: 50%;
+  /*
+  height: 20px; 
+  width: 20px; 
+  margin-top: -10px; 
+  */
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.slick-prev:focus, .slick-next:focus {
+  outline: none;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25; /* efecto interesante */
+  display: none; /* TEST DE CARL */
+  z-index: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 64px;
+  /* font-size: 60px; */
+  line-height: 0.6em;
+  color: #403e42;
+  font-weight: bold;
+  /* background-color:#f00; */
+  /* padding:15px 20px; */
+  display: block;
+  /* height:100%; */
+  padding: 10px 0px;
+  opacity: 0.85;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* CARL - EFECTO HOVER */
+/*
+.slick-prev:hover:before, 
+.slick-next:hover:before { 
+	// background-color: $c_main;
+	background-color: lighten(#FF5722, 5%);
+	}
+*/
+.slick-prev {
+  /* left: -25px;  */
+  left: 48px;
+}
+
+.slick-prev:before {
+  content: "<";
+  /* font-family: 'Gentium Basic', sans-serif; */
+}
+
+.slick-next {
+  /* right: -25px; */
+  right: 48px;
+}
+
+.slick-next:before {
+  content: ">";
+}
+
+/* Dots */
+/* .slick-slider { margin-bottom: 30px; } */
+.slick-dots {
+  position: absolute;
+  bottom: 24px;
+  z-index: 101;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0px;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0px 5px;
+  padding: 0px;
+  cursor: pointer;
+  border: 3px solid #403e42;
+  border-radius: 50%;
+}
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* CARL - pk no iba el current .. */
+.slick-dots li.slick-active {
+  background-color: #403e42;
+}
+
+.slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+}
+
+/* MODULES - DYNAMIC MODUES, DYNAMIC AS IN "IN MOTION", NOT STATIC - NIT JTS DYANMIC AS IN "DB DRIVEN " */
+/*
+ * cowo-Boilerplate
+ * CSS
+ * cowo-tabs
+ */
+/* 
+ * COW TABS - TABS - STANDALONE OPTION
+ */
+/* 
+ * CSS COUNTER 
+ */
+.cowo-tabs-menu ul li a::before {
+  counter-increment: tab; /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */ /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+  /* content: "# " counter(section); */
+  /* content: counter(section);  */
+  content: "Tab " counter(tab);
+}
+
+/* 
+ * COWO TABS
+ */
+.cowo-tabs {
+  /* 
+   * TAB
+   */
+}
+.cowo-tabs .tab {
+  min-height: 200px; /* DEMO */
+  padding: 3em;
+  /*
+  background: $c_primary_light;
+  color: $c_primary_dark; 
+  // color: $c_white; // USE "white", its cleaner... and "black" as well, less si more.	
+  */
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+  font-size: 1.5em;
+}
+.cowo-tabs .tab p {
+  margin-block: unset;
+}
+.cowo-tabs .tab p:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
+/*
+ * TABS MENU   - design it materlia styla, like the one in the cowoCMS ..   
+ // NEEDNOT BE LOCATED INSIDE THE OTHER WRAPPER, ITS FREE.. 
+ */
+.cowo-tabs-menu {
+  display: flex;
+  padding-bottom: 6px;
+  font-size: 1.5em;
+}
+.cowo-tabs-menu ul {
+  display: flex;
+  gap: 6px;
+}
+.cowo-tabs-menu li {
+  min-width: 4em; /* TEMP - DEMO */
+  min-width: 8em; /* TEMP - DEMO */
+  text-align: center;
+}
+.cowo-tabs-menu li a {
+  color: inherit;
+  display: block; /* */
+  padding: 6px;
+  /*
+     // background: $c_primary_dark; 				
+  background: $c_primary; 	
+     */
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+}
+.cowo-tabs-menu li a:hover {
+  /*
+      background:$c_primary_dark; 
+  color: $c_white;				
+      */
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.cowo-tabs-menu li.is-active a {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.cowo-tabs-menu li.is-active a:hover {
+  /*
+       background: $c_primary_light; 
+  color: $c_primary_dark; 					
+       */
+  /*
+       background-color: inherit; 
+  color: inherit; 	
+       */
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+
+@media only screen and (max-width: 600px) {
+  .cowo-tabs-menu li {
+    width: 23.5%;
+    margin-right: 2%;
+    color: #FF0 !important;
+  }
+  .cowo-tabs-menu li:last-of-type {
+    margin-right: 0%;
+  }
+} /* MEDIA-QUERY - width is inclusive */
+@media only screen and (max-width: 380px) {
+  .cowo-tabs-menu li a {
+    font-size: 0.75rem;
+  }
+} /* MEDIA-QUERY - width is inclusive */
+/* CSS Document */
+/* ============================================ */
+/* COWOWO ACCORDION                             */
+/* ============================================ */
+/* 
+ * CSS COUNTER 
+ */
+.cowo-accordion .accordion-pair .accordion-trigger::before {
+  counter-increment: accordion-trigger; /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */ /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+  /* content: "# " counter(section); */
+  /* content: counter(section);  */
+  content: "Accordion-Trigger " counter(accordion-trigger);
+}
+
+/* CONTAINER */
+.cowo-accordion {
+  display: grid;
+  gap: 0.5em;
+  font-size: 1.5em;
+}
+.cowo-accordion .accordion-pair {
+  margin-bottom: 18px;
+  /* HIDDEN SECTION */
+}
+.cowo-accordion .accordion-pair:last-of-type {
+  margin-bottom: 0px;
+}
+.cowo-accordion .accordion-pair .accordion-trigger {
+  /*
+     background-color:$c_primary;
+  color: white;	 // TODO - UNIFY VARIANBL EUSAGE 
+
+     padding: $spacing025;
+     */
+  cursor: pointer;
+  padding: 0.6em 1em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+}
+.cowo-accordion .accordion-pair .accordion-trigger:hover {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.cowo-accordion .accordion-pair .accordion-trigger.is-active {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+  /*
+  &:hover { // FORCED BEHAVIOR - COULD JUST USE AN IMPORTANT ON TOP Y PUNTO ... 
+        background-color: var(--c-accent); 
+        color: var(--c-text);   
+      }
+      */
+}
+.cowo-accordion .accordion-pair .accordion-target {
+  /* display:none; */ /* DO WITH CSS OR WITH JS.. simpler to be done through css, it's more failproof */
+  min-height: 200px; /* DEMO */
+  padding: 3em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+}
+.cowo-accordion .accordion-pair .accordion-target p {
+  margin-block: unset;
+}
+.cowo-accordion .accordion-pair .accordion-target p:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
+/*
+TASKS
+
+1) sassify nested
+2( change id to class
+change name of wrapper
+
+*/
+/* 
+ * CSS COUNTER 
+ */
+.accordion-container .accordion-header::before {
+  counter-increment: vallenato; /* Increment the value of section counter by 1 */
+  /* content: "# " counter(section) ": "; */ /* Display the word 'Section ', the value of section counter, and a colon before the content of each h3 */
+  /* content: "# " counter(section); */
+  /* content: counter(section);  */
+  content: "Accordion " counter(vallenato);
+}
+
+.accordion-container {
+  /* 
+  display: grid;
+  // gap: 1em;
+  gap: 0.5em;
+  */
+  font-size: 1.5em;
+}
+.accordion-container .accordion-header {
+  cursor: pointer;
+  padding: 0.6em 1em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+  /* SEPARATION BETWEEN ITEMS - solved without needing to build an "accordin pair" ...  but still */
+  /* */
+  margin-top: 12px;
+}
+.accordion-container .accordion-header:first-of-type {
+  margin-top: 0px;
+}
+.accordion-container .active-header {
+  /*
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  */
+  background: url(../img/icons/images-vallenato/active-header.gif) var(--dark-primary-color);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.accordion-container .active-header:hover {
+  background: url(../img/icons/images-vallenato/active-header.gif) var(--dark-primary-color);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.accordion-container .inactive-header {
+  background: url(../img/icons/images-vallenato/inactive-header.gif) #F44336;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-color: var(--c-bg-dark);
+  color: var(--c-text-inv);
+}
+.accordion-container .inactive-header:hover {
+  background: url(../img/icons/images-vallenato/inactive-header.gif) var(--dark-primary-color);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.accordion-container .accordion-content {
+  display: none;
+  padding: 3em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+  border-radius: 0 0 1em 1em;
+}
+
+/*
+ * cowo-Boilerplate
+ * CSS
+ * cowo-dropdown  -case 1 - jquery - then do a dialog summary verisn (its nota ccordion, ok)
+ */
+.cowo-dropdown {
+  display: grid;
+  gap: 1em;
+  font-size: 1.5em;
+}
+.cowo-dropdown .dropdown-pair {
+  /* HIDDEN SECTION */
+}
+.cowo-dropdown .dropdown-pair .dropdown-header {
+  /* PLACEHOLDER */
+}
+.cowo-dropdown .dropdown-pair .dropdown-trigger {
+  cursor: pointer;
+  padding: 0.6em 1em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+  /* STATE - HOVER */
+  /* STATE - ACTIVE */
+}
+.cowo-dropdown .dropdown-pair .dropdown-trigger:hover {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.cowo-dropdown .dropdown-pair .dropdown-trigger.is-active {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.cowo-dropdown .dropdown-pair .dropdown-trigger.is-active:hover {
+  background-color: var(--c-accent);
+  color: var(--c-text);
+}
+.cowo-dropdown .dropdown-pair .dropdown-target {
+  display: none; /* DO WITH CSS OR WITH JS.. simpler to be done through css, it's more failproof */
+  min-height: 200px; /* DEMO */
+  padding: 3em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+}
+.cowo-dropdown .dropdown-pair .dropdown-target p {
+  margin-block: unset;
+}
+.cowo-dropdown .dropdown-pair .dropdown-target p:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
+.genericDropdownItem_top {
+  position: relative; /* for the trigger */
+  padding-top: 5px;
+  background-color: #F44336;
+  min-height: 50px;
+}
+.genericDropdownItem_top .genericDropdownItem_top_trigger {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #F44336;
+  font-weight: bold;
+}
+.genericDropdownItem_top .genericDropdownItem_top_trigger .genericDropdownItem_top_trigger:hover,
+.genericDropdownItem_top .genericDropdownItem_top_trigger .genericDropdownItem_top_trigger.is_active {
+  background-color: #F44336; /* TESTING NEW THING */ /* SASS IT !!!!!!!!!!!!!! */
+  color: var(--text-icons);
+}
+
+/* FUNCTION */
+.jq_dropdown { /* THE PARENT OF EACH DROPDOWN TOP/BOTTOM PAIR */ }
+
+.jq_dropdown_trigger.is_active {
+  /*
+  background-color:$c_primary_dark;
+  color:$c_white;
+  */
+  background-color: #FFCDD2;
+  color: var(--dark-primary-color);
+}
+
+.jq_dropdown_trigger.is_active:hover {
+  color: #000;
+}
+
+/* 
+ * COMPONENTS - PLUGINS
+ */
+/* CSS Document - FRONT-END */
+/* =================================================================== */
+/* LIGHTBOX ME                                       				   */
+/* =================================================================== */
+/*
+ * LIGHTBOXME PLUGIN - LIGHTBOX TRIGER
+ */
+.cowo-lightboxme-trigger {
+  display: inline-block;
+}
+
+/*
+ * LIGHTBOXME PLUGIN - LIGHTBOX TARGET
+ */
+.cowo-lightboxme-target {
+  display: none;
+  /* width:700px; */
+  width: 62%;
+  border: 3px solid #F06;
+}
+
+.cowo-lightboxme-content {
+  /* COMMON STYLE */
+  /*
+    background-color:$c_primary_light; 
+  padding: $spacing;
+  color: $c_primary_dark; 	
+    */
+  padding: 2em;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
+  font-size: 1.5em;
+}
+.cowo-lightboxme-content p {
+  margin-block: unset;
+}
+.cowo-lightboxme-content p:not(:last-of-type) {
+  margin-bottom: 2em;
+}
+
+.cowo-lightboxme-close {
+  position: relative;
+}
+.cowo-lightboxme-close .close { /* ".close" for lightboxme script */
+  cursor: pointer;
+  position: absolute;
+  top: -36px;
+  right: -32px;
+  /* CIRCLE */
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 14px;
+  font-size: 32px;
+}
+/*
+	from DEMO css file
+*/
+/*
+nav:not(.mm-menu)
+{
+	display: none;
+}
+*/
+.navicon a {
+  /*
+  background: center center no-repeat transparent;
+  background-image: url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADhJREFUeNpi/P//PwOtARMDHQBdLGFBYtMq3BiHT3DRPU4YR4NrNAmPJuHRJDyahEeT8Ii3BCDAAF0WBj5Er5idAAAAAElFTkSuQmCC );
+
+  display: block;
+  width: 40px;
+  height: 40px;
+  */
+  /*
+  position: absolute;
+  top: 0;
+  left: 10px;
+  */
+}
+
+/*
+	jQuery.mmenu CSS
+*/
+/*
+	jQuery.mmenu oncanvas CSS
+*/
+.mm-hidden {
+  display: none !important;
+}
+
+.mm-wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.mm-menu,
+.mm-menu > .mm-panel {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.mm-menu {
+  background: inherit;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+}
+
+.mm-panel {
+  transition: transform 0.4s ease;
+  transform: translate3d(100%, 0, 0);
+}
+
+.mm-panel.mm-opened {
+  transform: translate3d(0%, 0, 0);
+}
+
+.mm-panel.mm-subopened {
+  transform: translate3d(-30%, 0, 0);
+}
+
+.mm-panel.mm-highest {
+  z-index: 1;
+}
+
+.mm-menu > .mm-panel {
+  background: inherit;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.mm-menu > .mm-panel.mm-hasheader {
+  padding-top: 40px;
+}
+
+.mm-menu > .mm-panel:before, .mm-menu > .mm-panel:after {
+  content: "";
+  display: block;
+  height: 20px;
+}
+
+.mm-vertical .mm-panel {
+  transform: none !important;
+}
+
+.mm-vertical .mm-listview .mm-panel,
+.mm-listview .mm-vertical .mm-panel {
+  display: none;
+  padding: 10px 0 10px 10px;
+}
+
+.mm-vertical .mm-listview .mm-panel .mm-listview > li:last-child:after,
+.mm-listview .mm-vertical .mm-panel .mm-listview > li:last-child:after {
+  border-color: transparent;
+}
+
+.mm-vertical li.mm-opened > .mm-panel,
+li.mm-vertical.mm-opened > .mm-panel {
+  display: block;
+}
+
+.mm-vertical .mm-listview > li > .mm-next,
+.mm-listview > li.mm-vertical > .mm-next {
+  height: 40px;
+  bottom: auto;
+}
+
+.mm-vertical .mm-listview > li > .mm-next:after,
+.mm-listview > li.mm-vertical > .mm-next:after {
+  top: 16px;
+  bottom: auto;
+}
+
+.mm-vertical .mm-listview > li.mm-opened > .mm-next:after,
+.mm-listview > li.mm-vertical.mm-opened > .mm-next:after {
+  transform: rotate(45deg);
+}
+
+.mm-header {
+  border-bottom: 1px solid transparent;
+  text-align: center;
+  line-height: 20px;
+  height: 40px;
+  padding: 0 40px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.mm-header > a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.mm-header .mm-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mm-header .mm-btn {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.mm-header .mm-btn:first-child {
+  padding-left: 20px;
+  left: 0;
+}
+
+.mm-header .mm-btn:last-child {
+  padding-right: 20px;
+  right: 0;
+}
+
+.mm-listview,
+.mm-listview > li {
+  list-style: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.mm-listview {
+  font: inherit;
+  /* font-size: 14px; */
+  font-size: 24px;
+  font-size: 18px;
+}
+
+.mm-listview a,
+.mm-listview a:hover {
+  text-decoration: none;
+}
+
+.mm-listview > li {
+  position: relative;
+}
+
+.mm-listview > li > a,
+.mm-listview > li > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: inherit;
+  line-height: 20px;
+  display: block;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+}
+
+.mm-listview > li:not(.mm-divider):after {
+  content: "";
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.mm-listview > li:not(.mm-divider):after {
+  left: 20px;
+}
+
+.mm-listview .mm-next {
+  background: rgba(3, 2, 1, 0);
+  width: 50px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.mm-listview .mm-next:before {
+  content: "";
+  border-left-width: 1px;
+  border-left-style: solid;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mm-listview .mm-next + a,
+.mm-listview .mm-next + span {
+  margin-right: 50px;
+}
+
+.mm-listview .mm-next.mm-fullsubopen {
+  width: 100%;
+}
+
+.mm-listview .mm-next.mm-fullsubopen:before {
+  border-left: none;
+}
+
+.mm-listview .mm-next.mm-fullsubopen + a,
+.mm-listview .mm-next.mm-fullsubopen + span {
+  padding-right: 50px;
+  margin-right: 0;
+}
+
+.mm-menu > .mm-panel > .mm-listview {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.mm-menu > .mm-panel > .mm-listview.mm-first {
+  margin-top: -20px;
+}
+
+.mm-menu > .mm-panel > .mm-listview.mm-last {
+  padding-bottom: 20px;
+}
+
+.mm-prev:before,
+.mm-next:after {
+  content: "";
+  border: 2px solid transparent;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.mm-prev:before {
+  border-right: none;
+  border-bottom: none;
+  left: 20px;
+}
+
+.mm-next:after {
+  border-top: none;
+  border-left: none;
+  right: 20px;
+}
+
+.mm-divider {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-indent: 20px;
+  line-height: 25px;
+}
+
+.mm-listview > li.mm-spacer {
+  padding-top: 40px;
+}
+
+.mm-listview > li.mm-spacer > .mm-next {
+  top: 40px;
+}
+
+.mm-listview > li.mm-spacer.mm-divider {
+  padding-top: 25px;
+}
+
+.mm-menu {
+  /* background: #f3f3f3; */
+  color: rgba(0, 0, 0, 0.7);
+  color: var(--primary-text);
+  /* color: #fff;  */
+}
+
+.mm-menu .mm-header {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu .mm-header > a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu .mm-header .mm-btn:before,
+.mm-menu .mm-header .mm-btn:after {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu .mm-listview > li:after {
+  border-color: rgba(0, 0, 0, 0.1);
+  /* border-color: #fff;  */
+  border-color: var(--divider-text);
+}
+
+.mm-menu .mm-listview > li > a.mm-prev, .mm-menu .mm-listview > li > a.mm-next {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu .mm-listview > li > a.mm-prev:before, .mm-menu .mm-listview > li > a.mm-next:after {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu .mm-listview > li > a.mm-prev:after, .mm-menu .mm-listview > li > a.mm-next:before {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu .mm-listview > li.mm-selected > a:not(.mm-next),
+.mm-menu .mm-listview > li.mm-selected > span {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.mm-menu.mm-vertical .mm-listview li.mm-opened > a.mm-next,
+.mm-menu.mm-vertical .mm-listview li.mm-opened > .mm-panel,
+.mm-menu .mm-listview li.mm-opened.mm-vertical > a.mm-next,
+.mm-menu .mm-listview li.mm-opened.mm-vertical > .mm-panel {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.mm-menu .mm-divider {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/*
+	jQuery.mmenu offcanvas addon CSS
+*/
+.mm-page {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.mm-slideout {
+  transition: transform 0.4s ease;
+}
+
+html.mm-opened {
+  overflow: hidden;
+  position: relative;
+}
+
+html.mm-opened body {
+  overflow: hidden;
+}
+
+html.mm-opened .mm-page {
+  min-height: 100vh;
+}
+
+html.mm-background .mm-page {
+  background: inherit;
+}
+
+#mm-blocker {
+  background: rgba(3, 2, 1, 0);
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+html.mm-opened #mm-blocker,
+html.mm-blocking #mm-blocker {
+  display: block;
+}
+
+.mm-menu.mm-offcanvas {
+  display: none;
+  position: fixed;
+}
+
+.mm-menu.mm-current {
+  display: block;
+}
+
+.mm-menu {
+  width: 80%;
+  min-width: 140px;
+  max-width: 440px;
+}
+
+html.mm-opening .mm-slideout {
+  transform: translate(80%, 0);
+}
+
+@media all and (max-width: 175px) {
+  html.mm-opening .mm-slideout {
+    transform: translate(140px, 0);
+  }
+}
+@media all and (min-width: 550px) {
+  html.mm-opening .mm-slideout {
+    transform: translate(440px, 0);
+  }
+}
+/*
+	jQuery.mmenu autoHeight addon CSS
+*/
+.mm-menu.mm-top.mm-autoheight, .mm-menu.mm-bottom.mm-autoheight {
+  max-height: 80%;
+}
+
+.mm-menu.mm-top.mm-autoheight.mm-fullscreen, .mm-menu.mm-bottom.mm-autoheight.mm-fullscreen {
+  max-height: 100%;
+}
+
+.mm-menu.mm-measureheight > .mm-panel {
+  bottom: auto !important;
+  height: auto !important;
+}
+
+/*
+	jQuery.mmenu buttonbars addon CSS
+*/
+.mm-buttonbar {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 20px;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.mm-buttonbar:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mm-buttonbar > * {
+  border-left: 1px solid transparent;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.mm-buttonbar > a {
+  text-decoration: none;
+}
+
+.mm-buttonbar > input {
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+}
+
+.mm-buttonbar > input:checked + label {
+  border-color: transparent !important;
+}
+
+.mm-buttonbar > *:first-child,
+.mm-buttonbar > input:first-child + * {
+  border-left: none;
+}
+
+.mm-buttonbar.mm-buttonbar-2 > * {
+  width: 50%;
+}
+
+.mm-buttonbar.mm-buttonbar-3 > * {
+  width: 33.33%;
+}
+
+.mm-buttonbar.mm-buttonbar-4 > * {
+  width: 25%;
+}
+
+.mm-buttonbar.mm-buttonbar-5 > * {
+  width: 20%;
+}
+
+.mm-header .mm-buttonbar {
+  margin-top: 0px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.mm-footer .mm-buttonbar {
+  border: none;
+  border-radius: none;
+  line-height: 40px;
+  margin: -10px -10px 0 -20px;
+}
+
+.mm-footer .mm-buttonbar > * {
+  border-left: none;
+}
+
+.mm-listview > li > .mm-buttonbar {
+  margin: 10px 20px;
+}
+
+.mm-menu .mm-buttonbar {
+  border-color: rgba(0, 0, 0, 0.7);
+  background: #f3f3f3;
+}
+
+.mm-menu .mm-buttonbar > * {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+.mm-menu .mm-buttonbar > input:checked + label {
+  background: rgba(0, 0, 0, 0.7);
+  color: #f3f3f3;
+}
+
+/*
+	jQuery.mmenu counters addon CSS
+*/
+em.mm-counter {
+  font: inherit;
+  font-size: 14px;
+  font-style: normal;
+  text-indent: 0;
+  line-height: 20px;
+  display: block;
+  margin-top: -10px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+}
+
+em.mm-counter + a.mm-next {
+  padding-left: 40px;
+}
+
+em.mm-counter + a.mm-next + a,
+em.mm-counter + a.mm-next + span {
+  margin-right: 90px;
+}
+
+em.mm-counter + a.mm-fullsubopen {
+  padding-left: 0;
+}
+
+.mm-vertical > .mm-counter {
+  top: 12px;
+  margin-top: 0;
+}
+
+.mm-vertical.mm-spacer > .mm-counter {
+  margin-top: 40px;
+}
+
+.mm-nosubresults > .mm-counter {
+  display: none;
+}
+
+.mm-menu em.mm-counter {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+	jQuery.mmenu dragOpen addon CSS
+*/
+html.mm-opened.mm-dragging .mm-menu,
+html.mm-opened.mm-dragging .mm-page,
+html.mm-opened.mm-dragging .mm-fixed-top,
+html.mm-opened.mm-dragging .mm-fixed-bottom,
+html.mm-opened.mm-dragging #mm-blocker {
+  transition-duration: 0s;
+}
+
+/*
+	jQuery.mmenu footer addon CSS
+*/
+.mm-footer {
+  background: inherit;
+  border-top: 1px solid transparent;
+  text-align: center;
+  line-height: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.mm-menu.mm-hasfooter > .mm-panel {
+  bottom: 40px;
+}
+
+.mm-menu .mm-footer {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+	jQuery.mmenu header addon CSS
+*/
+.mm-menu > .mm-header {
+  background: inherit;
+  z-index: 3;
+  transform: translate3d(0, 0, 0);
+}
+
+.mm-menu > .mm-header .mm-close:after {
+  content: "x";
+}
+
+.mm-menu.mm-hassearch > .mm-header {
+  top: 40px;
+}
+
+.mm-menu.mm-hasheader .mm-panel .mm-header {
+  display: none;
+}
+
+.mm-menu.mm-hasheader .mm-panel,
+.mm-menu.mm-hasheader .mm-fixeddivider {
+  top: 40px;
+}
+
+.mm-menu.mm-hasheader.mm-hassearch .mm-panel,
+.mm-menu.mm-hasheader.mm-hassearch .mm-fixeddivider {
+  top: 80px;
+}
+
+/*
+	jQuery.mmenu dividers addon CSS
+*/
+.mm-divider > span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  line-height: 25px;
+}
+
+.mm-divider.mm-opened a.mm-next:after {
+  transform: rotate(45deg);
+}
+
+.mm-collapsed:not(.mm-uncollapsed) {
+  display: none;
+}
+
+.mm-fixeddivider {
+  background: inherit;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transform: translate3d(0, 0, 0);
+}
+
+.mm-fixeddivider:after {
+  content: none !important;
+  display: none !important;
+}
+
+.mm-hasdividers .mm-fixeddivider {
+  display: block;
+}
+
+.mm-menu .mm-fixeddivider span {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/*
+	jQuery.mmenu searchfield addon CSS
+*/
+.mm-search,
+.mm-search input {
+  box-sizing: border-box;
+}
+
+.mm-menu > .mm-search {
+  background: inherit;
+  z-index: 3;
+  transform: translate3d(0, 0, 0);
+}
+
+.mm-search {
+  height: 40px;
+  width: 100%;
+  padding: 10px 10px 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mm-search input {
+  border: none;
+  border-radius: 25px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 25px;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.mm-search input::-ms-clear {
+  display: none;
+}
+
+.mm-panel.mm-hassearch {
+  padding-top: 40px;
+}
+
+.mm-panel.mm-hassearch.mm-hasheader {
+  padding-top: 80px;
+}
+
+.mm-panel.mm-hassearch.mm-hasheader .mm-search {
+  top: 40px;
+}
+
+.mm-noresultsmsg {
+  text-align: center;
+  font-size: 21px;
+  display: none;
+  padding: 40px 0;
+}
+
+.mm-noresults .mm-noresultsmsg {
+  display: block;
+}
+
+.mm-noresults .mm-indexer {
+  display: none !important;
+}
+
+.mm-menu li.mm-nosubresults > a.mm-next {
+  display: none;
+}
+
+.mm-menu li.mm-nosubresults > a.mm-next + a,
+.mm-menu li.mm-nosubresults > a.mm-next + span {
+  padding-right: 10px;
+}
+
+.mm-menu.mm-hassearch .mm-panel,
+.mm-menu.mm-hassearch .mm-fixeddivider {
+  top: 40px;
+}
+
+.mm-menu .mm-search input {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.mm-menu .mm-noresultsmsg {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+	jQuery.mmenu sectionIndexer addon CSS
+*/
+.mm-indexer {
+  background: inherit;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: -100px;
+  z-index: 3;
+  transition: right 0.4s ease;
+  transform: translate3d(0, 0, 0);
+}
+
+.mm-indexer a {
+  text-decoration: none;
+  display: block;
+  height: 3.71%;
+}
+
+.mm-indexer ~ .mm-panel.mm-hasindexer {
+  padding-right: 40px;
+}
+
+.mm-hasindexer .mm-indexer {
+  right: 0;
+}
+
+.mm-hasindexer .mm-fixeddivider {
+  right: 20px;
+}
+
+.mm-hasheader .mm-indexer {
+  top: 50px;
+}
+
+.mm-hasfooter .mm-indexer {
+  bottom: 50px;
+}
+
+.mm-hassearch .mm-indexer {
+  top: 50px;
+}
+
+.mm-hassearch.mm-hasheader .mm-indexer {
+  top: 90px;
+}
+
+.mm-menu .mm-indexer a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*
+	jQuery.mmenu toggles addon CSS
+*/
+input.mm-toggle,
+input.mm-check {
+  position: absolute;
+  left: -10000px;
+}
+
+label.mm-toggle,
+label.mm-check {
+  margin: 0;
+  position: absolute;
+  bottom: 50%;
+  z-index: 2;
+}
+
+label.mm-toggle:before,
+label.mm-check:before {
+  content: "";
+  display: block;
+}
+
+label.mm-toggle {
+  border-radius: 30px;
+  width: 50px;
+  height: 30px;
+  margin-bottom: -15px;
+}
+
+label.mm-toggle:before {
+  border-radius: 30px;
+  width: 28px;
+  height: 28px;
+  margin: 1px;
+}
+
+input.mm-toggle:checked ~ label.mm-toggle:before {
+  float: right;
+}
+
+label.mm-check {
+  width: 30px;
+  height: 30px;
+  margin-bottom: -15px;
+}
+
+label.mm-check:before {
+  border-left: 3px solid;
+  border-bottom: 3px solid;
+  width: 40%;
+  height: 20%;
+  margin: 25% 0 0 20%;
+  opacity: 0.1;
+  transform: rotate(-45deg);
+}
+
+input.mm-check:checked ~ label.mm-check:before {
+  opacity: 1;
+}
+
+label.mm-toggle, label.mm-check {
+  right: 20px;
+}
+
+label.mm-toggle + a,
+label.mm-toggle + span {
+  padding-right: 80px;
+}
+
+label.mm-check + a,
+label.mm-check + span {
+  padding-right: 60px;
+}
+
+a.mm-next + label.mm-toggle, a.mm-next + label.mm-check {
+  right: 60px;
+}
+
+a.mm-next + label.mm-toggle + a,
+a.mm-next + label.mm-toggle + span, a.mm-next + label.mm-check + a,
+a.mm-next + label.mm-check + span {
+  margin-right: 50px;
+}
+
+a.mm-next + label.mm-toggle + a,
+a.mm-next + label.mm-toggle + span {
+  padding-right: 70px;
+}
+
+a.mm-next + label.mm-check + a,
+a.mm-next + label.mm-check + span {
+  padding-right: 50px;
+}
+
+em.mm-counter + a.mm-next + label.mm-toggle, em.mm-counter + a.mm-next + label.mm-check {
+  right: 100px;
+}
+
+em.mm-counter + a.mm-next + label.mm-toggle + a,
+em.mm-counter + a.mm-next + label.mm-toggle + span, em.mm-counter + a.mm-next + label.mm-check + a,
+em.mm-counter + a.mm-next + label.mm-check + span {
+  margin-right: 90px;
+}
+
+.mm-menu label.mm-toggle {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu label.mm-toggle:before {
+  background: #f3f3f3;
+}
+
+.mm-menu input.mm-toggle:checked ~ label.mm-toggle {
+  background: #4bd963;
+}
+
+.mm-menu label.mm-check:before {
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+	jQuery.mmenu borderstyle extension CSS
+*/
+.mm-menu.mm-border-none .mm-listview > li:after,
+.mm-listview.mm-border-none > li:after {
+  content: none;
+}
+
+.mm-menu.mm-border-full .mm-listview > li:after,
+.mm-listview.mm-border-full > li:after {
+  left: 0 !important;
+}
+
+/*
+	jQuery.mmenu effects extension CSS
+*/
+html.mm-effect-slide .mm-menu.mm-offcanvas {
+  transition: transform 0.4s ease;
+}
+
+html.mm-effect-slide.mm-opened .mm-menu.mm-offcanvas {
+  transform: translate3d(-30%, 0, 0);
+}
+
+html.mm-effect-slide.mm-opening .mm-menu.mm-offcanvas {
+  transform: translate3d(0%, 0, 0);
+}
+
+html.mm-effect-slide.mm-right.mm-opened .mm-menu.mm-offcanvas {
+  transform: translate3d(30%, 0, 0);
+}
+
+html.mm-effect-slide.mm-right.mm-opening .mm-menu.mm-offcanvas {
+  transform: translate3d(0%, 0, 0);
+}
+
+html.mm-effect-zoom-menu .mm-menu.mm-offcanvas {
+  transition: transform 0.4s ease;
+}
+
+html.mm-effect-zoom-menu.mm-opened .mm-menu.mm-offcanvas {
+  transform: scale(0.7, 0.7) translate3d(-30%, 0, 0);
+  transform-origin: left center;
+}
+
+html.mm-effect-zoom-menu.mm-opening .mm-menu.mm-offcanvas {
+  transform: scale(1, 1) translate3d(0%, 0, 0);
+}
+
+html.mm-effect-zoom-menu.mm-right.mm-opened .mm-menu.mm-offcanvas {
+  transform: scale(0.7, 0.7) translate3d(30%, 0, 0);
+  transform-origin: right center;
+}
+
+html.mm-effect-zoom-menu.mm-right.mm-opening .mm-menu.mm-offcanvas {
+  transform: scale(1, 1) translate3d(0%, 0, 0);
+}
+
+html.mm-effect-zoom-panels .mm-menu .mm-panel {
+  transform: scale(1.5, 1.5) translate3d(100%, 0, 0);
+  transform-origin: left center;
+  transition-property: transform, left;
+}
+
+html.mm-effect-zoom-panels .mm-menu .mm-panel.mm-opened {
+  transform: scale(1, 1) translate3d(0%, 0, 0);
+}
+
+html.mm-effect-zoom-panels .mm-menu .mm-panel.mm-opened.mm-subopened {
+  transform: scale(0.7, 0.7) translate3d(-30%, 0, 0);
+}
+
+/*
+	jQuery.mmenu fullscreen extension CSS
+*/
+.mm-menu.mm-fullscreen {
+  width: 100%;
+  min-width: 140px;
+  max-width: 10000px;
+}
+
+html.mm-opening.mm-fullscreen .mm-slideout {
+  transform: translate(100%, 0);
+}
+
+@media all and (max-width: 140px) {
+  html.mm-opening.mm-fullscreen .mm-slideout {
+    transform: translate(140px, 0);
+  }
+}
+@media all and (min-width: 10000px) {
+  html.mm-opening.mm-fullscreen .mm-slideout {
+    transform: translate(10000px, 0);
+  }
+}
+html.mm-right.mm-opening.mm-fullscreen .mm-slideout {
+  transform: translate(-100%, 0);
+}
+
+@media all and (max-width: 140px) {
+  html.mm-right.mm-opening.mm-fullscreen .mm-slideout {
+    transform: translate(-140px, 0);
+  }
+}
+@media all and (min-width: 10000px) {
+  html.mm-right.mm-opening.mm-fullscreen .mm-slideout {
+    transform: translate(-10000px, 0);
+  }
+}
+.mm-menu.mm-fullscreen.mm-top, .mm-menu.mm-fullscreen.mm-bottom {
+  height: 100%;
+  min-height: 140px;
+  max-height: 10000px;
+}
+
+html.mm-opened.mm-fullscreen .mm-page {
+  box-shadow: none !important;
+}
+
+/*
+	jQuery.mmenu multiline extension CSS
+*/
+.mm-menu.mm-multiline .mm-listview > li > a,
+.mm-menu.mm-multiline .mm-listview > li > span,
+.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline > a,
+.mm-listview.mm-multiline > li .mm-listview > li.mm-multiline > span {
+  text-overflow: clip;
+  white-space: normal;
+}
+
+/*
+	jQuery.mmenu pageshadow extension CSS
+*/
+.mm-menu.mm-pageshadow:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 120%;
+  position: absolute;
+  left: 100%;
+  top: -10%;
+  z-index: 99;
+}
+
+.mm-menu.mm-pageshadow.mm-right:after {
+  left: auto;
+  right: 100%;
+}
+
+.mm-menu.mm-pageshadow.mm-next:after, .mm-menu.mm-pageshadow.mm-front:after {
+  content: none;
+  display: none;
+}
+
+.mm-menu.mm-pageshadow:after {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*
+	jQuery.mmenu position extension CSS
+*/
+.mm-menu.mm-top,
+.mm-menu.mm-bottom {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.mm-menu.mm-right {
+  left: auto;
+  right: 0;
+}
+
+.mm-menu.mm-bottom {
+  top: auto;
+  bottom: 0;
+}
+
+html.mm-right.mm-opening .mm-slideout {
+  transform: translate(-80%, 0);
+}
+
+@media all and (max-width: 175px) {
+  html.mm-right.mm-opening .mm-slideout {
+    transform: translate(-140px, 0);
+  }
+}
+@media all and (min-width: 550px) {
+  html.mm-right.mm-opening .mm-slideout {
+    transform: translate(-440px, 0);
+  }
+}
+/*
+	jQuery.mmenu z-position extension CSS
+*/
+html.mm-front .mm-slideout {
+  transform: none !important;
+  z-index: 0 !important;
+}
+
+.mm-menu.mm-front {
+  z-index: 1;
+}
+
+.mm-menu.mm-front, .mm-menu.mm-next {
+  transition: transform 0.4s ease;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.mm-menu.mm-front.mm-right, .mm-menu.mm-next.mm-right {
+  transform: translate3d(100%, 0, 0);
+}
+
+.mm-menu.mm-top {
+  transform: translate3d(0, -100%, 0);
+}
+
+.mm-menu.mm-bottom {
+  transform: translate3d(0, 100%, 0);
+}
+
+html.mm-opening .mm-menu.mm-front, html.mm-opening .mm-menu.mm-next {
+  transform: translate3d(0, 0, 0);
+}
+
+.mm-menu.mm-top, .mm-menu.mm-bottom {
+  height: 80%;
+  min-height: 140px;
+  max-height: 880px;
+}
+
+/*
+	jQuery.mmenu themes extension CSS
+*/
+.mm-menu.mm-theme-dark {
+  background: #333333;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mm-menu.mm-theme-dark .mm-header {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.mm-menu.mm-theme-dark .mm-header > a {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-header .mm-btn:before,
+.mm-menu.mm-theme-dark .mm-header .mm-btn:after {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-listview > li:after {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.mm-menu.mm-theme-dark .mm-listview > li > a.mm-prev, .mm-menu.mm-theme-dark .mm-listview > li > a.mm-next {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-listview > li > a.mm-prev:before, .mm-menu.mm-theme-dark .mm-listview > li > a.mm-next:after {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-listview > li > a.mm-prev:after, .mm-menu.mm-theme-dark .mm-listview > li > a.mm-next:before {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.mm-menu.mm-theme-dark .mm-listview > li.mm-selected > a:not(.mm-next),
+.mm-menu.mm-theme-dark .mm-listview > li.mm-selected > span {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu.mm-theme-dark.mm-vertical .mm-listview li.mm-opened > a.mm-next,
+.mm-menu.mm-theme-dark.mm-vertical .mm-listview li.mm-opened > .mm-panel,
+.mm-menu.mm-theme-dark .mm-listview li.mm-opened.mm-vertical > a.mm-next,
+.mm-menu.mm-theme-dark .mm-listview li.mm-opened.mm-vertical > .mm-panel {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mm-menu.mm-theme-dark .mm-divider {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mm-menu.mm-theme-dark .mm-buttonbar {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: #333333;
+}
+
+.mm-menu.mm-theme-dark .mm-buttonbar > * {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.mm-menu.mm-theme-dark .mm-buttonbar > input:checked + label {
+  background: rgba(255, 255, 255, 0.8);
+  color: #333333;
+}
+
+.mm-menu.mm-theme-dark label.mm-check:before {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.mm-menu.mm-theme-dark em.mm-counter {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-footer {
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-fixeddivider span {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.mm-menu.mm-pageshadow.mm-theme-dark:after {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.mm-menu.mm-theme-dark .mm-search input {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mm-menu.mm-theme-dark .mm-noresultsmsg {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark .mm-indexer a {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-dark label.mm-toggle {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.mm-menu.mm-theme-dark label.mm-toggle:before {
+  background: #333333;
+}
+
+.mm-menu.mm-theme-dark input.mm-toggle:checked ~ label.mm-toggle {
+  background: #4bd963;
+}
+
+.mm-menu.mm-theme-white {
+  background: white;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mm-menu.mm-theme-white .mm-header {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu.mm-theme-white .mm-header > a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-header .mm-btn:before,
+.mm-menu.mm-theme-white .mm-header .mm-btn:after {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-listview > li:after {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu.mm-theme-white .mm-listview > li > a.mm-prev, .mm-menu.mm-theme-white .mm-listview > li > a.mm-next {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-listview > li > a.mm-prev:before, .mm-menu.mm-theme-white .mm-listview > li > a.mm-next:after {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-listview > li > a.mm-prev:after, .mm-menu.mm-theme-white .mm-listview > li > a.mm-next:before {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu.mm-theme-white .mm-listview > li.mm-selected > a:not(.mm-next),
+.mm-menu.mm-theme-white .mm-listview > li.mm-selected > span {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.mm-menu.mm-theme-white.mm-vertical .mm-listview li.mm-opened > a.mm-next,
+.mm-menu.mm-theme-white.mm-vertical .mm-listview li.mm-opened > .mm-panel,
+.mm-menu.mm-theme-white .mm-listview li.mm-opened.mm-vertical > a.mm-next,
+.mm-menu.mm-theme-white .mm-listview li.mm-opened.mm-vertical > .mm-panel {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.mm-menu.mm-theme-white .mm-divider {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.mm-menu.mm-theme-white .mm-buttonbar {
+  border-color: rgba(0, 0, 0, 0.6);
+  background: white;
+}
+
+.mm-menu.mm-theme-white .mm-buttonbar > * {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.mm-menu.mm-theme-white .mm-buttonbar > input:checked + label {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.mm-menu.mm-theme-white label.mm-check:before {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.mm-menu.mm-theme-white em.mm-counter {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-footer {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-fixeddivider span {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.mm-menu.mm-pageshadow.mm-theme-white:after {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mm-menu.mm-theme-white .mm-search input {
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mm-menu.mm-theme-white .mm-noresultsmsg {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white .mm-indexer a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.mm-menu.mm-theme-white label.mm-toggle {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.mm-menu.mm-theme-white label.mm-toggle:before {
+  background: white;
+}
+
+.mm-menu.mm-theme-white input.mm-toggle:checked ~ label.mm-toggle {
+  background: #4bd963;
+}
+
+.mm-menu.mm-theme-black {
+  background: black;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mm-menu.mm-theme-black .mm-header {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-theme-black .mm-header > a {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-header .mm-btn:before,
+.mm-menu.mm-theme-black .mm-header .mm-btn:after {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-listview > li:after {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-theme-black .mm-listview > li > a.mm-prev, .mm-menu.mm-theme-black .mm-listview > li > a.mm-next {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-listview > li > a.mm-prev:before, .mm-menu.mm-theme-black .mm-listview > li > a.mm-next:after {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-listview > li > a.mm-prev:after, .mm-menu.mm-theme-black .mm-listview > li > a.mm-next:before {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-theme-black .mm-listview > li.mm-selected > a:not(.mm-next),
+.mm-menu.mm-theme-black .mm-listview > li.mm-selected > span {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.mm-menu.mm-theme-black.mm-vertical .mm-listview li.mm-opened > a.mm-next,
+.mm-menu.mm-theme-black.mm-vertical .mm-listview li.mm-opened > .mm-panel,
+.mm-menu.mm-theme-black .mm-listview li.mm-opened.mm-vertical > a.mm-next,
+.mm-menu.mm-theme-black .mm-listview li.mm-opened.mm-vertical > .mm-panel {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-theme-black .mm-divider {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-theme-black .mm-buttonbar {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: black;
+}
+
+.mm-menu.mm-theme-black .mm-buttonbar > * {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.mm-menu.mm-theme-black .mm-buttonbar > input:checked + label {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+
+.mm-menu.mm-theme-black label.mm-check:before {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.mm-menu.mm-theme-black em.mm-counter {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-footer {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-fixeddivider span {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-pageshadow.mm-theme-black:after {
+  content: none;
+  display: none;
+}
+
+.mm-menu.mm-theme-black .mm-search input {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mm-menu.mm-theme-black .mm-noresultsmsg {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black .mm-indexer a {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.mm-menu.mm-theme-black label.mm-toggle {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mm-menu.mm-theme-black label.mm-toggle:before {
+  background: black;
+}
+
+.mm-menu.mm-theme-black input.mm-toggle:checked ~ label.mm-toggle {
+  background: #4bd963;
+}
+
+/* Mmenu - Side menu */
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Content - MOSTLY DEMO STUFF TO CLEAR AWAY AND PROCESS
+ */
+/*
+ * COWO INDEX - molecule, like chips ... AND TAGS
+ */
+.cowo-index ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.cowo-index li {
+  /*
+  margin-bottom: $space05;
+  &:last-of-type {margin-bottom: 0px;}
+  */
+}
+.cowo-index li a {
+  display: inline-block;
+}
+
+.cowo_heromenu {
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+.cowo_heromenu .item {
+  border: 3px solid green;
+}
+
+/* DEMO FOR THE HOME PAGE */
+#frontWrapper {
+  padding-top: 24px;
+}
+
+#frontWrapper_headerMega {
+  font-size: 28px;
+  /* margin-bottom: $baseSpacing; */
+  /* @include space(5); */
+  margin-bottom: 60px;
+  /* text-align:right; */
+}
+
+#frontWrapper_header {
+  font-size: 20px;
+  /* margin-bottom: $baseSpacing; */
+  /* @include space(5); */
+  margin-bottom: 24px;
+}
+
+.frontWrapper_section {
+  /* margin-bottom: $space; */
+  margin-bottom: 48px;
+}
+
+.frontWrapper_sectionTitle {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: var(--secondary-text);
+}
+
+.frontWrapper_sectionContent {
+  font-size: 16px;
+}
+
+.frontWrapper_sectionContent a {
+  color: #F44336;
+  font-weight: bold;
+}
+.frontWrapper_sectionContent a:hover {
+  text-decoration: underline;
+}
+
+/* PAGES / TEMPLATES / VIEWS / MODULES */
+/* carl demo */
+.navbar {
+  background-color: #f00;
+}
+
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -300px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+/* FOR THE RESPONSIVE BEHAVIOUR *//*# sourceMappingURL=global.css.map */

@@ -1,0 +1,16 @@
+carljohansson_landing
+
+standalone folder
+
+for updating sequence
+
+with general carl image
+
+/////
+
+
+1) y eliminarla de standalone carl folder , cj_landing, 
+ponerla en cjnet project como carpeta updating, 
+luego ya htaccess whatever, o simlemete moverlo a aroot y pista - ojo con relative links etc 
+
+mjor mannejarlo todo con htaccess

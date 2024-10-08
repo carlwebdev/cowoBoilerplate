@@ -1,0 +1,466 @@
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: Global
+ */
+/*
+ * CSS
+ * Global
+ */
+ 
+/* cowo-Boilerplate
+ * Built by cowowo.cat
+ * Project: 
+ * Component: Cookies (section)
+ * Filename: cookies.php
+*/
+
+
+/*
+Susy: Responsive grids for Compass
+http://susy.oddbird.net/
+susy might not work as such in compass / scout / sass, unless manually downloaded and refernced to susy.
+now testing zengrids.com , as it seams to have support inside scout / for compass.
+http://zengrids.com/
+*/
+
+
+
+
+// global, partials, just in alphabetical order perhaps .....  in the folder, but not in the calinsg, the calling smustbe grouped conceptually...
+
+
+// 1 - do lynx page, just for localhost sites  - localhost.php
+
+
+
+
+
+/* 
+ + CSS GLOBAL - INDEX
+ *
+ * compass
+ * 1 - reset
+ * 2 - variables (sass & css)
+
+// stylings
+
+
+ * 3 - typography
+ * 4 - buttons
+
+
+
+
+ * 5 - forms
+ * 6 - tables
+ * 7 - layout
+ * 8 - dev - - - - - - - 
+
+*/
+
+
+
+/* 
+ * COMPASS 
+ */
+// - OJO, POR USAR EL SASS BRACKETS !!! QUE NO SE USAR EL COMPASS CON ESTO !! AUN !!! 
+// CREATE MY MIXINS LIBRARY TO NOT USE BRACKETS, AND TEST HOW IT GOES IN BRACKETS - AND THUS LEARN A LOT MORE ABOUT VENDOR PREFIXES ETC !!! BPL.
+/*
+
+@import "compass/css3"; // por el dw cc, que ah no hay compass aun whatver 
+
+*/
+
+/* 
+ * COMPASS 
+ */
+// // // @import "compass/css3"; // // // 
+
+
+
+
+/*
+TASKS:
+- after-clean up partials paths, to make it simpler, as im teding to do now adays ...
+
+goal: header options, make them buttons, with rol, ans use olf rot ehe jg trigger & target roles...
+role[trigger_search] & role[target_search] ... etc ... 
+
+*/
+
+
+/* 
+ * 1 - CSS RESET(s)     
+ */
+@import "partials/base/reset";
+@import "partials/base/body-counter-reset"; // ??? /* BEFORE ANY COUNTER IS CALLED !!! ... HMM OR NOT,.. */ // FOR COUNTERS !!!! VISUALLY INTERESTING SOMETIMES!!!
+
+/* 
+ * 2 - VARIABLES - (SCSS AND NOW ALSO NATIVE CSS VARIABLES) 
+ */
+@import "partials/base/variables/colors"; // plural ... imroove color shcemd & text colro variables neutral as amap... 
+// @import "partials/base/variables/color-scheme";
+
+@import "partials/base/variables/font-size"; // plural ...
+@import "partials/base/variables/break-points";
+@import "partials/base/variables/spacing";
+@import "partials/base/variables/speed";
+@import "partials/base/variables/z-index";
+
+
+
+
+
+/* 
+ * 0 - STYLEGUIDE !!!! COPY SYSTEM FORM MOSS WESBIET, AND EXPAND IT !!!!S
+ */
+
+/* 
+ * 3 - BRANDING RESET - REQUIRES ACCENT COLOR TO BE DEFINED ...
+ */
+@import "partials/base/branding-reset/branding_reset"; // aka branding ... 
+
+
+
+// TODO -  REMOVE THE S AL FINAL, STYLING, NOT STYLINGS... 
+/* 
+ * 3 - STYLINGS (WORKING TITLE) - FOR EXTENDS & MIXINS ETC - MUST BE DEFINED BEFORE USAGES - if mixins, not clas extends, just fyi
+ */
+@import "partials/base/sass_layout"; // was _sass_style - HTMLEDITO NEEDSA THE MIXIN FOIR IMG... THOUGH IT COULD BE MOVED BACK TO REET FILE !! YES, DO THAT IMG & IFRAME / IFRAME, ADD TITLE TO THE IFRAME ELEMET FOR ACCESSIBILITY 
+@import "partials/base/sass_stylings"; // was _sass_style
+@import "partials/base/sass_transitions"; // was _sass_style
+
+
+
+/* 
+ * 4 - TYPOGRAPHY 
+ */
+@import "partials/base/typography/fonts"; // fonts - que ls imports esten aqui adento, no en el head TODO
+@import "partials/base/typography/typography"; // fonts
+@import "partials/base/typography/typopgraphy_htmleditor"; // m_htmleditor --> HTMLEDITOR --> WYSIWIG !!!???
+
+@import "partials/base/typography/typopgraphy_htmltags"; // NEW ... 
+
+
+/* 
+ * BASE / UI / BUTTONS 
+ */
+@import "partials/base/ui/buttons";  /* BEFORE FORMS !!!!!!!! - ui vs base... */
+
+/* 
+ * BASE / UI / TABLES 
+ */
+ @import "partials/base/ui/tables"; // ui - tables, buttons etc 
+
+
+
+/* 
+ * BASE / UI / FORMS - vip to have in under base, as its base ui - so move it all into base... 
+ */
+@import "partials/base/ui/forms";
+@import "partials/base/ui/forms_2_inputs"; // NEW TEST
+@import "partials/base/ui/forms_3_buttons"; // NEW TEST
+@import "partials/base/ui/forms_filebutton"; // do this here again, to make it pretty, make it work as well as uplaoder filename hack that i idi in jobs in phonoivcs or such ...
+
+
+// and then add new css for checkboxes & radio buttons, natiev kevin powell & also w3s(schools tricks)
+
+// % CHECKBOX SWTICH !!!
+
+
+
+
+
+
+
+
+
+/* 
+ * 9 - DEV /This comes before the prodyct pages etc) & project pàges 
+ */
+@import "partials/dev/dev";
+@import "partials/dev/dev_ruler"; 
+@import "partials/dev/dev_styleguide"; // !!! this should prbabby by within the maon ppackage
+
+@import "partials/dev/dev-grid-columns"; // ???? DOW WITH A GRADIENT R¡OR WHATAER - AND THEN HAVE IT AS A TOGGLE FOR ADMIN DEV SETTINGS 
+
+
+
+
+// dev, el truco ese de lso asetriskos... y asi al final aun se veran los grid columnsddebajo del todo .
+
+
+
+
+
+/* 
+ *
+ *
+ * 9 - TEMPLATE - - - ALSO INCLUDE SIDEBARS ETC 
+ *
+ *
+ */ 
+
+
+
+// "TAILS"
+
+/* 
+ * TEMPLATE - HEADER
+ */ 
+/*
+ *
+ * Header
+ * 
+ * 1 - BARS
+ * 2 - ITEMS
+ *
+ */	 
+
+ @import "partials/template/header/header_bars"; 
+
+ @import "partials/template/header/header"; // VS header_main
+
+ // @import "components/molecules/nav"; 
+ @import "partials/template/header/nav";
+
+
+
+
+// hedaer buttons & header dropdwosn are related .
+@import "partials/template/header/header_buttons"; 
+@import "partials/template/header/dev_buttons"; // for vertcial scenario etc 
+ // @import "partials/layout/header_dropdowns"; // 
+ @import "partials/template/header/header_dropdowns"; 
+ @import "partials/template/header/header_smaller";  // new test - but script not woirking ... gmmmh 
+
+ /* 
+  * TEMPLATE - FOOTER
+  */
+@import "partials/template/footer/footer";  // VS footer_main ... not
+  
+ 
+ 
+
+
+ /* 
+  * TEMPLATE - PAGE
+  */
+  @import "partials/template/page/nav_lateral";  // its dev usage only for now !!! latu form eurolab, the aplied in wp_cowowo foe dev options
+
+
+/* 
+ *
+ *
+ * LAYOUT 
+ *
+ *
+ */
+@import "partials/layout/layout_main"; // GONNE FORMFOLFER !! WANTED TO COPY PAGE CONTENDT DTART INTO WP COWOWO.
+@import "partials/layout/layout_page";
+@import "partials/layout/layout_media";
+@import "partials/layout/layout_grids"; // testing
+// @import "partials/layout/layout_stickyFooter_table";
+@import "partials/layout/layout_stickyFooter_flex"; // SOLVED
+
+
+/* 
+ *
+ *
+ * MODULES 
+ *
+ *
+ */
+ @import "partials/modules/grid_features";
+
+
+
+/* 
+ *
+ * STRUCTIRES, REACTIONS ... 
+ *
+ */
+
+// IMPORVE THINGS HERE 
+
+@import "components/dev-masonry-structure"; // COPY INTO WP EIMOE SO I CAN START USING IT VIUSUALLY & CHOSSING IT IN THE BUIDLERS BY CPT TYPE !!
+
+
+
+
+/* 
+ * ((((8)))) - COMPONENTS 
+ */
+
+
+
+/* 
+ * COMPONENTS - ATOMS (...maybe too granular...) or not...
+ */
+// @import "components/atoms/map"; 
+
+// NOT - atoms, anymore
+// NOT - molecules, anymore
+/* 
+ * COMPONENTS - MOLECULES
+ */
+
+// @import "components/molecules/social";
+
+/* 
+ * COMPONENTS - UI 
+ */
+ @import "partials/ui/ui_map"; 
+ @import "partials/ui/ui_social"; // social media icons VS social share as s separate componete !!!!
+ // @import "partials/ui/ui-social-share"; // social media icons VS social share as s separate componete !!!!
+ 
+ // // // @import "partials/ui/ui_flipcard";
+
+@import "partials/ui/ui_gridlist";
+
+
+
+/* 
+ * COMPONENTS - POPUPS
+ */
+// 1 - BRANDING ELEMENTS
+@import "components/popups/popup_cookies"; // BRANDING ELEMENT
+
+
+
+
+
+/* 
+ * COMPONENTS - ORGANISMS
+ */ 
+
+ 
+ 
+/* 
+ * COMPONENTS - PAGES
+ */
+ 
+/* PAGES & GRIDS & MODULES */
+@import "components/page_products"; // ??????????????????????????????????????????? / move to pages, and clear , and commen taway, for the future systesm ...
+
+
+
+
+
+
+
+
+
+
+
+
+// grid_staff , etc    // y meter tb events.. calendario, etc 
+
+
+
+
+
+
+/* 
+ * SECTIONS: - now renamed as post types !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *
+ * Blog
+ * (Products)
+ * Staff
+ * Pricing
+ *
+ * etc ......
+ */
+
+
+
+
+
+
+
+
+/* 
+ * COMPONENTS - SECTIONS - BLOG (SYSTEM)
+ */
+// CREATE SELF SUFICENT FOLDERS FOR SYSTEMS, ALL INCUDEIVE, NICE SYSTEM... - do same in the php files, grids & itemcs /card inside each foder per system ...
+@import "components/post_types/blog/grid_blog"; 
+// @import "components/blog/single_blog"; // ???????????????
+
+// COMPONENTS - SECTIONS - PRODUCTS
+@import "components/post_types/products/grid_products";
+
+// COMPONENTS - SECTIONS - STAFF
+@import "components/post_types/staff/grid_staff"; // make it card style & etc !!!!! ................
+
+// COMPONENTS - SECTIONS - PRICING
+@import "components/post_types/pricing/grid_pricing";
+
+
+
+
+
+
+
+@import "components/grid_contact";
+
+
+
+
+
+
+ // PAGES, O TEMPLATES, SE REFEIERE AL TEMNPLATING PARA HACER UN LAYOUT DETERMINADO, COMO SIDEBAR LATERALKLBLIG LAYOUT, ET ETC ETCE.. 
+ // BASICAMENTE AL ESTRUCTUAR SOBRE LA CUAL SE AÑADEN LSO OTROS COMPONENETES... SMATRT WAY OF THINGING ABOUT IT..
+ 
+ 
+ 
+ 
+/* 
+ * COMPONENTS - REACTIONS
+ */ 
+@import "components/reactions/slick"; // NICE !!!
+
+
+
+
+
+
+
+
+/* MODULES - DYNAMIC MODUES, DYNAMIC AS IN "IN MOTION", NOT STATIC - NIT JTS DYANMIC AS IN "DB DRIVEN " */
+@import "modules/cowo_tabs";
+@import "modules/cowo_accordion";
+// @import "modules/vallenato"; // cowo_accordion_vallenato
+@import "modules/cowo_accordion_vallenato"; // just copy the code
+@import "modules/cowo_dropdown";
+// @import "modules/cowo_gridlist"; // moved to partials/ui/ui_gridlist.scss
+
+ 
+// @import "modules/megatron"; // DONE - RENAMED AS FLIPCARD
+ 
+ 
+/* 
+ * COMPONENTS - PLUGINS
+ */ 
+@import "modules/lightboxme"; // cowo-lightboxme
+@import "modules/jquery.mmenu.all"; /* Mmenu - Side menu */ // LAYOUT, UI , ET
+
+
+
+@import "components/content";  // PROCESS & S& D !!!!
+
+
+/* PAGES / TEMPLATES / VIEWS / MODULES */
+
+
+
+// @import "modules/cowo-accordion-vallenato"; // just copy the code
+// @import "modules/cowo-tabs-to-accordion";
+
+
+@import "modules/headroom"; // LAYOUT
+
+
+/* FOR THE RESPONSIVE BEHAVIOUR */
+// @import "grid/cowo_grid";
+// @import "grid/cowo_grid_queries";

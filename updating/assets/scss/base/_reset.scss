@@ -1,0 +1,66 @@
+/*
+ * Project: elcatala.cat
+ * Area: Front
+ * File: CSS Reset
+ */	
+ 
+ 
+
+/* 
+ * BOX MODEL 
+ */
+* {
+    @include box-sizing(border-box); /* Sass - Compass */
+    }
+	
+	
+	
+	
+/* HTML5 reset-ish, but not really necesary as I'm using htmlshiv,js */
+header, section, footer, aside, nav, main, article, figure
+	{ 
+	display: block; 
+	}
+
+
+
+
+
+/* COWOWO CSS RESET =============================================================== */
+
+html, body,
+div, span,
+h1, h2, h3, h4, h5, h6, 
+p, 
+pre, code, /* smp, smp , sample ... */
+img,
+dl, dt, dd, 
+ol, ul, li,
+img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size:100%; /* for headings, works */
+	}
+
+ol, ul {list-style:none;}
+
+img {
+	max-width:100%; 
+	height:auto; /* The height is added to ensure the aspect ratio of the image is retained. */
+	} 
+
+
+
+
+/* VIP !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  :-)  */
+// img {display:block;} 
+ /* 
+this takes away the bottom margin of imgs, it's inline behaviour causes the margin 
+pero tb hace lo que dice el codigo...
+*/
+/* img {display:inline-block;} */ /* THIS DIDN'T WORK */
+
+
+

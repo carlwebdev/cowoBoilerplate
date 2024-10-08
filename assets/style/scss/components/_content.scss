@@ -3,31 +3,124 @@
  * Project: cowo-Boilerplate
  * File: Content - MOSTLY DEMO STUFF TO CLEAR AWAY AND PROCESS
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // 
+
+/*
+ * COWO INDEX - molecule, like chips ... AND TAGS
+ */
+.cowo-index {
+	
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		// gap: $spacing025;
+		gap: 0.5em;
+	}
+	
+	li {
+		/*
+		margin-bottom: $space05;
+		&:last-of-type {margin-bottom: 0px;}
+		*/
+		
+		a {
+      display: inline-block; // VIP
+			// @extend .buttonSmall;
+			@extend .buttonMedium;
+    }
+
+  } // li
+
+} // cowo-index
+
+
+
+
+
+
+.cowo_heromenu {
+	
+	border: 3px solid red;
+	
+	
+	display: grid;
+	// grid-template-columns: repeat(1fr, 5);
+	// grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 24px;
+		
+		
+	
+	
+	.item {
+		border: 3px solid green;
+		
+	}
+	
+	
+	
+	
+	
+} // cowo_heromenu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
  
 
 	
-#content { // 
-	// min-height:200px; 
-	overflow:hidden; // ????????? 
-	// background-color: #999;
-	@include paddingv($spacing2);
-	
-	.inner {}
 	
 	
-	} // content
-
-
-
-
-
-section {
-	background-color: #CCC; 
-	margin-bottom: $spacing2; // TEST
 	
-	}
+	
+	
+	 
+ 
+ 
+// KILL ALL THIS,/ AAND KILL THE FILE 
+// & THE CALLING FORM GLOBAL
 
 
+
+
+
+
+// create sass file named miscellaneous... // NOT
 
 
 /* DEMO FOR THE HOME PAGE */
@@ -44,7 +137,7 @@ section {
 	
 	font-size: $fs_xl;
 	/* margin-bottom: $baseSpacing; */
-	/* @include spacing(5); */
+	/* @include space(5); */
 	margin-bottom: 60px;
 	/* text-align:right; */
 	// text-align:center;
@@ -57,7 +150,7 @@ section {
 	
 	font-size: $fs_l;
 	/* margin-bottom: $baseSpacing; */
-	/* @include spacing(5); */
+	/* @include space(5); */
 	margin-bottom: $spacing;
 	}
 	
@@ -65,7 +158,7 @@ section {
 	
 	
 .frontWrapper_section {
-	/* margin-bottom: $spacing; */
+	/* margin-bottom: $space; */
 	margin-bottom: 48px;
 	@extend .clearfix;
 	}	
@@ -91,14 +184,4 @@ section {
 			} // a		
 	
 
-
-
-
-
-
-
-@media only screen and (max-width: 1024px) { 
-
-			
-} // MEDIA-QUERY
 
