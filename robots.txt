@@ -10,10 +10,29 @@
 
 User-agent: *
 
-# Un-comment this line when in production
-Disallow: /
 
-
-# Dissalow always
-Disallow: /404.php
+# Dissalow always - Admin folder
 Disallow: /admin/
+
+# Dissalow always - unimportant pages
+Disallow: /404.php
+
+
+# Dissalow for now
+
+
+Disallow: /dev.php
+Disallow: /repo.php
+
+
+
+# Dissalow - section - events
+Disallow: /events.php
+Disallow: /events/
+
+# serveis folder ??? 
+Disallow: /serveis/
+
+
+Disallow: /websites/
+

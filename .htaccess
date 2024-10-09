@@ -2,7 +2,7 @@
 ### ErrorDocument 404 #
 #######################
 ### LOCAL SERVER
-ErrorDocument 404 http://cowoserver/carl_github/cowo-Boilerplate/404.php
+ErrorDocument 404 http://localhost/sync/sites/_carl_github/cowoBoilerplate/404.php
 ### STAGING SERVER
 # ErrorDocument 404 http://carljohansson.net/404.php
 ### PRODUCTION SERVER

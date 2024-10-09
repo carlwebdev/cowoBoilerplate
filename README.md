@@ -1,3 +1,11 @@
+PREACH:
+- a site always starts with an index, a global css file, and a global js file. Always start there.
+
+
+
+----------
+
+
 # cowo-Boilerplate
 a simple front-end PHP boilerplate
 

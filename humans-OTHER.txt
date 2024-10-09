@@ -1,0 +1,23 @@
+Developed by COWOWO
+http://www.cowowo.cat
+info [at] cowowo.cat
+
+
+/* TEAM */
+
+	Web Programmer: Joan Estadella
+	Contact: joan [at] cowowo.cat
+	From: Barcelona, Catalonia, Spain	
+	
+	Web Developer (Front-End): Carl Johansson
+	Contact: carl [at] cowowo.cat
+	Twitter: @lo_kal
+	Personal website: www.carljohansson.net
+	From: Barcelona, Catalonia, Spain
+		
+	Web Designer: 
+
+
+/* SITE */
+	Language: English
+	Doctype: HTML5	

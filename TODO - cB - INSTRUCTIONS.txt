@@ -1,0 +1,24 @@
+MANUAL - LAUNCH CHECKLIST - robots.txt - descomentar en production !!!
+
+
+
+
+cB - TASKS:
+-----------
+
+
+this should be on the manukla page of the site !!! ios rth lliek that, nifterier ly er sky !!!
+
+
+
+
+CONNECT cB to cowoCMS !!! have it a s a package to launche production AFAP !!! 
+cBoiler - should have a connected ddbb perhaps
+
+
+
+RELATIONSHIO TO MY WP TEMPLATES
+this cB is also as the build basis for [cowoBoilerplate (for ie wp_cowowo & wp_eimoe)]
+
+
+SIETAMP BUILKDING

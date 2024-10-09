@@ -1,0 +1,6 @@
+GOAL:
+cowoBoilerplate is the starting point of projects.
+It is to be used, to be simple.
+Take away everything that is unnecessary...
+
+

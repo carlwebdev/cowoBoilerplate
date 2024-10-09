@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/master.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
-<? include('../config/head_top.php'); ?>
-<? include('../config/config.php'); ?>
+<?php include('../config/head/head_top.php'); ?>
+<?php include('../config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
 <!-- InstanceEndEditable -->
-<? include('../config/seo.php'); ?>
-<? include('../config/head_bottom.php'); ?> 
+<?php include('../config/seo.php'); ?>
+<?php include('../config/head/head_bottom.php'); ?> 
 <!-- InstanceBeginEditable name="head" -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 <!-- InstanceEndEditable -->
 </head>
 <body>
-<div id="page">
-  <div id="w_headroom" class="headroom">
-	<? include('../components/dev/github.php'); ?> 
-  <? include('../components/cookies.php'); ?> 
-	<? include('../components/dev/dev_ruler.php'); ?>
-	<? include('../components/header.php'); ?> 
-  </div> <!-- /w_headroom -->  
-  <div id="content">
-    <div class="frame">
-    <!-- InstanceBeginEditable name="content" -->
+<?php 
+/*  
+ * PAGE START
+ */
+include ( '../components/template/page/page_start.php'); 
+?> 
+  <?php 
+  /*
+   * Header
+   */
+  include('../components/template/header.php'); 
+  ?> 
+  <?php 
+  /* Page Content Start 
+   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
+   */
+  include ('../components/template/page/page_content_start.php'); 
+  ?> 
+    
+	<!-- InstanceBeginEditable name="content" -->
 					<!-- InstanceEndEditable -->
-    </div> <!-- /frame --> 
-  </div> <!-- /content -->            
-	<? include('../components/footer.php'); ?>
-  
-<? include "../components/side_menu.php"; ?>    
-</div> <!-- /page -->
-<? include('../config/scripts.php'); ?>
+  <?php 
+  /* Page Content End 
+   * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
+   */
+  include ('../components/template/page/page_content_end.php'); 
+  ?> 	
+  <?php 
+  /*
+   * Footer
+   */
+  include('../components/template/footer.php'); 
+  ?>
+  <?php 
+  /*
+   * Cookes Popup
+   */
+  include('../components/cowo_cookies.php'); 
+  ?> 
+  <?php // include "../components/side_menu.php"; ?>   
+<?php 
+/*  
+ * PAGE END
+ */
+include ('../components/template/page/page_end.php'); 
+?> 
+<?php 
+/*
+ * Scripts
+ */
+include('../config/scripts.php'); 
+?>
 <!-- InstanceBeginEditable name="scripts" -->
 <!-- InstanceEndEditable -->
-<? include('../config/credits.php'); ?>  
+<?php // include('../config/credits.php'); ?>  
 </body>
 <!-- InstanceEnd --></html>

@@ -1,0 +1,18 @@
+VIP INSTRUCTIONS
+------------------
+
+WHEN IMPLEMENTING IN A NEW SITE FOLDER:
+1) change the config path for the domain, else css won't be linked correctly 
+etc
+
+cB - VIP INSTRUCTION, CHANGE CONFIG FIEL FOR CORRECT PATH !!! PUT THIS IN THE INDEX PAGE VISIBLY
+
+
+
+
+
+# SITE MGMT
+
+HTML
+CSS - CSS PREPROCESISNG - SASS
+  IN DW DIRECTLY, NICE

@@ -1,0 +1,14 @@
+CSS - calc() !!! 
+- SUPER COOL TO CALCULATE LAYOUTS N STUFF!!!!!!!!
+http://davidwalsh.name/css-calc
+
+
+CSS 3D - use -webkit-perspective (AS IN MEGATRON DEMO)
+
+
+
+PSEUDO-CLASSES:
+- combine nthchild with last child etc, combine pseudo classes, 
+and also nth of type, first of type etc
+
+DOC - CSS - nth child with math etc INSIDE

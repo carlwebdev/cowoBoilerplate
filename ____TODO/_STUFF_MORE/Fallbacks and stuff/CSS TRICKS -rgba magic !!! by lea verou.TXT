@@ -1,0 +1,40 @@
+background: rgba(255,200,35,0.5) url(somebackground.png) repeat-x 0 50%;
+border: 1px solid rgba(0,0,0,0.3);
+color: rgba(255,255,255,0.8);
+
+
+etc
+
+
+
+
+Here it is: rgba.php
+
+You use it like this:
+
+background: url(rgba.php?r=255&g=100&b=0&a=50) repeat;
+background: rgba(255,100,0,0.5);
+
+or, for named colors:
+
+background: url(rgba.php?name=white&a=50) repeat;
+background: rgba(255,255,255,0.5);
+
+
+
+
+
+
+
+http://lea.verou.me/2009/02/bulletproof-cross-browser-rgba-backgrounds/
+
+
+
+
+///
+
+
+
+css -tricks fallback solution:
+
+background: rgb(200, 54, 54); /* The Fallback */

@@ -1,0 +1,54 @@
+      		<? /*
+                <div id="tabs">
+                
+                	<div class="jq_tabsMenu">
+                        <ul>
+                            <li><a href="#tab-1">Base 1</a></li> <!-- anchor link -->
+                            <li><a href="#tab-2">Base 2</a></li> <!-- anchor link -->
+                            <li><a href="#tab-3">Images</a></li> <!-- anchor link -->
+                            <li><a href="#tab-4">SEO</a></li> <!-- anchor link -->
+                        </ul> 
+                	</div>
+            
+            
+                    <div class="tab" id="tab-1"> <!-- name is just anchor target -->         
+      					Tab 1	
+                    </div> <!-- /a tab --> 
+                    <div class="tab" id="tab-2"> <!-- name is just anchor target -->
+             			Tab 2
+                    </div> <!-- /a tab --> 
+                    <div class="tab" id="tab-3"> <!-- name is just anchor target -->
+        				Tab 3
+                    </div> <!-- /a tab -->  
+                    <div class="tab" id="tab-4"> <!-- name is just anchor target -->
+                    	Tab 4               
+                    </div> <!-- /a tab -->   
+                                                  
+
+                    
+				</div> <!-- /tabs --> 
+                
+				*/ ?>
+				
+        
+
+// SCRIPT - jQuery CSS Tabs
+// all tabs have class .tab
+// menu must have class .jq_tabsMenu
+
+/*
+$(document).ready(function(){
+	$('#tabs .tab').hide(); 
+	
+	$('#tabs .tab:first').show();
+	$('#tabs .jq_tabsMenu li:first').addClass('active');
+	$('#tabs .jq_tabsMenu li a').click(function(){ 
+		$('#tabs .jq_tabsMenu li').removeClass('active');
+		$(this).parent().addClass('active'); 
+		var currentTab = $(this).attr('href'); 
+		$('#tabs .tab').hide();
+		$(currentTab).show();
+		return false;
+	});
+});
+*/        

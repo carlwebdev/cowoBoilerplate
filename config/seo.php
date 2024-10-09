@@ -29,9 +29,21 @@ elseif ($pagename==$pagename_404) // 404
 else // ... takle away as elseif, just else.  hmm, ojo copn los osts dinamicos !!!! 
 
     ?>
-<title>NONAME - <?=$website_name ?></title>
+<title>NONAME - <?=$website_name?></title>
+<meta name="description" content="DESCRIPTION"> 
+<meta name="keywords" content="KEYWORDS"> 
+
+
+
+
+
+
+<title><?=$pagename?> - <?=$website_name?></title>
 <meta name="description" content="DESCRIPTION"> 
 <meta name="keywords" content="KEYWORDS">  
+
+
+ 
     <?
 
     {

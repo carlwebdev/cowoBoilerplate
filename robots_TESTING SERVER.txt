@@ -1,0 +1,15 @@
+# comment like this
+
+# User-agent = crawler
+# * = any
+# Disallow = not allow indexing
+# / = all
+#   = none
+# /bla.bla = specific
+
+
+User-agent: *
+
+Disallow: /
+
+
