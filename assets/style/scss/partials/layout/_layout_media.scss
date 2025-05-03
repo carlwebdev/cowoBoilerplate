@@ -13,30 +13,23 @@
 
 
 video {
-	// width: 100%; // MOVE TO RESET / here yes issue, as vdieo need sot be portoprtinal, could be with warpper and padding top trick..
+	
 	
 }
 
 
 
-
+// _layout_tags ...
 
 .m_video {
 	
-	video {
-		width: 100%; // MOVE TO RESET
-  }
-
-} // m_video
-
-
-
+} // m_vide
 
 
 
 
 audio {
-	width: 100%; // FREE SCENARIO , NO ISSUES // MOVE TO RESET - JUST O THIS !!!
+	// width: 100%; // FREE SCENARIO , NO ISSUES // MOVE TO RESET - JUST O THIS !!!
 }
 
 
@@ -44,7 +37,7 @@ audio {
 
 
 
-
+// FITVIDS IS SOI OBSOELETE !!!!!!!!!!!!!!!
 
 /* CREATE SASS PARTIAL FOR THIS */  
 .fitvids_container {
@@ -60,8 +53,7 @@ audio {
 	background:#fff;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 	*/
-	
-	
+
 	
 	.fitvids_container iframe {
 		/* width: 100%; */
@@ -69,9 +61,3 @@ audio {
 		}
 		
 } // fitvids_container
-
-
-
- 
- 
-

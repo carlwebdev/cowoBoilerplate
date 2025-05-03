@@ -16,12 +16,9 @@
 <div class="grid_pricing">	 <!-- CDO CASE WHATAVE,R PARA EL LAYOT CHANGE WAPO  -->
   <?php for ($i = 1; $i <= 4; $i++){ ?>
 
-
 <!--
 CREATE A N INCUDE FOR CARD, SO THAT I CAN HAVE DIFRENT CARDS 
 -->
-
-
 
     <?php 
      /*
@@ -37,7 +34,7 @@ CREATE A N INCUDE FOR CARD, SO THAT I CAN HAVE DIFRENT CARDS
         */
       ?>    
       <?php /*?><div class="image" style="background-image: url('https://picsum.photos/id/237/200/300');"><?php */?>
-      <?php /*?><div class="dev_hide___NOT image" style="background-image: url('<? echo $cb_img_random; ?>');"><?php */?>
+      <?php /*?><div class="dev_hide___NOT image" style="background-image: url('<?php echo $cb_img_random; ?>');"><?php */?>
       <?php /*?><div class="image"><?php */?> <?php /*?><!-- DONE - TODO - REMOVE THE BG IMAGE CSS FORM CSS --><?php */?>
 
         <picture class="thumbnail">
@@ -80,10 +77,5 @@ CREATE A N INCUDE FOR CARD, SO THAT I CAN HAVE DIFRENT CARDS
     </div> <!-- /card_blog -->
 
 
-
-
-
-
-
-  <? }  ?>
+  <?php }  ?>
 </div> <!-- /grid_pricing -->     

@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * Built by cowowo.cat
@@ -17,7 +17,7 @@
         <?php // for ($x = 1; $x <= 12; $x++) { ?>
         <?php for ($x = 0; $x <= 11; $x++) { ?>
           <div class="item"></div>
-        <? } ?> 
+        <?php } ?> 
       </div> <!-- /dev-grid -->
 
     </div>   

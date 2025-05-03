@@ -200,11 +200,21 @@ img {
 } // img
 
 /* figure? video?? audi ?? iframe ??? */
+// iframe,
 img, 
-picture {
-  display:block; 
+picture,
+video,
+audio {
   width: 100%;
+  display:block; 
 } // MEDIA TAGS
+
+video {
+	height: unset; 
+	aspect-ratio: 16 / 9; /* 16:9 */
+	object-fit: cover;
+}
+
 
 
 img, 
@@ -213,6 +223,16 @@ iframe {
   // display:block; 
   // width: 100%; // DOENS WORK WELL WITH FORK ON GITHUB BANNER
 } // MEDIA TAGS
+
+
+
+
+
+// _layout_tags ...
+
+
+
+
 
 
 
@@ -340,7 +360,12 @@ input[type="button"],
 button {
 	cursor:pointer; /* Y ES DUDOSO REALMETE */
 }
+
 	
+button {
+	cursor:pointer;
+	font-size: 1em; // VIP FOR RESET - there are also other tags taht requier font-size resetting!! which ?? ask!
+}
 	
 
 /* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */

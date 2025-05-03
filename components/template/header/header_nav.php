@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * PHP
  * HEADER - NAV MAIN vs nav header OBS, THEN -header must be header.header, ya tu sabes.
@@ -98,39 +98,24 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
     </li>
 
 
-    
 
 
 	  <?php /*?><li><a href="">Modules / grids, eModules / itmsm / etc</a></li>  <?php */?>  
-	  <li><a href=""><!-- Dev -->Demo</a>
+	  <li><a href="">Theme UI</a>
       <ul>
-
-        <!-- <li><a href="style-text.php">Style - Text</a></li> -->
-        <li><a href="style-guide.php">StyleGuide<!-- Style - Guide--> <!--  - PAGE, ADD INDEX, Y METER AHI COSAS .... LOGOS .... FONTS, COLORS, ICONS!! SHOW EM ICONS !! AND THEN TEXT STYTLES, FOMRS, ETC ETEC TC& TEN MY UI SCIPTS, AND THEN PLUGINS ETC ETCEETC --></a></li>
-          
-
-
-        <!-- <li><a href="dev-media.php">Media</a></li> -->
-        <li><a href="dev-ui.php">UI (Patterns)</a></li>
-        <li><a href="dev-jquery-plugins.php"><?php /*?>jQuery <?php */?>3 - Plugins</a></li>
-        
-        <li><a href="dev-snippets.php">Snippets</a></li>
-
-        
-        <li><a href="dev-grid.php">Grid</a></li>
-
-        <!-- <li><a href="dev-layout-flipcards.php">Megatron</a></li> --> <!-- esta en otra pahgina !!!!! -->
-        <!-- THIS HERE UP IS THE LIST FORM CB_PLAIN -->
-        <?php /*?><li><a href="dev-styleguide.php">Styleguide</a></li><?php */?>
-
-        <li><a href="dev-layout-masonry.php">Masonry</a></li>
-
-
+        <li><a href="theme-styleguide.php">StyleGuide</a></li> 
+        <li><a href="dev-ui.php">Patterns</a></li>
         <li><a href="dev-components.php">Components</a></li>
-
-
+        <li><a href="dev-layouts.php">Layouts</a></li>
+        <!--      
+        <li><a href="dev-templates.php">Templates</a></li>
+        <li><a href="dev-snippets.php">Snippets</a></li>
+	      <li><a href="">Demo Content</a></li>
+        -->
       </ul>
 	  </li>
+    
+    
 	<?php /*?>          
 	<li><a href="">3 level nav</a>
 		<ul>      

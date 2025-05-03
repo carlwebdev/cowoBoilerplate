@@ -8,12 +8,6 @@
  * Global
  */
  
-/* cowo-Boilerplate
- * Built by cowowo.cat
- * Project: 
- * Component: Cookies (section)
- * Filename: cookies.php
-*/
 
 
 /*
@@ -102,11 +96,11 @@ role[trigger_search] & role[target_search] ... etc ...
 @import "partials/base/variables/colors"; // plural ... imroove color shcemd & text colro variables neutral as amap... 
 // @import "partials/base/variables/color-scheme";
 
-@import "partials/base/variables/font-size"; // plural ...
-@import "partials/base/variables/break-points";
-@import "partials/base/variables/spacing";
-@import "partials/base/variables/speed";
-@import "partials/base/variables/z-index";
+
+@import "partials/base/css_variables"; 
+@import "partials/base/scss_variables"; 
+
+
 
 
 
@@ -316,6 +310,7 @@ role[trigger_search] & role[target_search] ... etc ...
  // @import "partials/ui/ui-social-share"; // social media icons VS social share as s separate componete !!!!
  
  // // // @import "partials/ui/ui_flipcard";
+ @import "partials/ui/ui_flipcard"; // TESTING NOW AGAIN ... 
 
 @import "partials/ui/ui_gridlist";
 

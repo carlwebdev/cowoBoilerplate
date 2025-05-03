@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * HTML
  * Form - Contact

@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * HTML / PHP
@@ -23,13 +23,13 @@ AND js script CONTAINS A NICE IF/ELSE CLAUSE IN JAVACSRIPT
   <?php for ($i = 1; $i <= 4; $i++){ ?>
     <div class="accordion-header"><!--Section 1A--></div> 
     <div class="accordion-content"> 
-      <? include('components/dev/lorem/slipsum-2.php'); ?>
+      <?php include('components/dev/lorem/slipsum-2.php'); ?>
     </div>  
     <div class="accordion-header"><!--Section 1B--></div> 
     <div class="accordion-content"> 
-      <? include('components/dev/lorem/slipsum.php'); ?>
+      <?php include('components/dev/lorem/slipsum.php'); ?>
     </div>        
-  <? }  ?>
+  <?php }  ?>
 </div>
 
 

@@ -36,7 +36,7 @@
         </div> <!-- /info -->        
       </div> <!-- /m_item_base_01 -->
            
-  <? }  ?>
+  <?php }  ?>
 </div> <!-- /grid_base -->      
       
       

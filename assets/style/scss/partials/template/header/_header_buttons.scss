@@ -9,7 +9,10 @@
  .header_options_temp {
   // border: 12px solid red; // 
   // border: $s_border; // 
-  color: red; //
+  /*
+  border: var(--s-border); // 
+  */
+  //color: red; //
 
   display: flex;
   justify-content: center;
@@ -17,7 +20,7 @@
   gap: 1em;
   
   
-} // header_buttons
+} // header_options_temp
 
 
 
@@ -48,24 +51,11 @@ button, button span {
 
 
 .header_buttons { // aka header_admin_settings
-  // border: 12px solid green; // 
-
-
-
-  // border: $s_border; // 
   display: flex;
   align-items: center; // PRECAUTION
-  gap: 1em;
-
-
-  // border: 12px solid red;
-
-
+  // gap: 1em;
+  gap: 0.5em;
 } // header_buttons
-
-
-
-
 
 
 // header_search - - - - BUTTON !!!!!!!!!!!! & BTN_FRESET CLASS.... MIXIN ...
@@ -84,7 +74,6 @@ button.modeicon */ {
  // obs issue with butotn & border box ?!??!
  // https://stackoverflow.com/questions/47828199/5-px-border-added-to-button-button-size-increases-box-sizing-not-working
 
-
 display: block; // 
 
 /*
@@ -96,17 +85,13 @@ display: block; //
   
 
 
-    // outline: 3px solid #f06; outline-offset: 2px;
-
-
-
     // display: none; // UI 
-    cursor:pointer; // they are button !!!   
+    // cursor:pointer; // they are button !!!   
     /* */
     // text color is presuposed // peor ha saido un gris..
     // border-style: solid; // see if this removes the shadow !!! YES !!!! / MOVE TO RESTE ........ OF BUTTON, OJO
     // move to reset     
-    font-size: 1em; // WHY IS THIS REQUIRED, BUTTON RESTE OR STH I GUESS 
+    // font-size: 1em; // WHY IS THIS REQUIRED, BUTTON RESTE OR STH I GUESS 
 
     /*
     border-color: var(--c-text);
@@ -116,7 +101,6 @@ display: block; //
 
 
 
-  // border: 2px solid red; // 
     /*
     // padding: 8px;
     padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
@@ -127,7 +111,27 @@ display: block; //
     // MDIcon
     span {
 
+      color: var(--c-text); // MODE
+      // color: white; // MODE
+
+      font-size: 2em; // 
+      // font-size: 3em; // 
+      // font-size: 4em; // 
+      
+      
+
       // next goal, make 3 mod clases for icon, round & square etc ..
+
+
+
+      display: block;
+
+
+      /* 
+
+      // padding: 8px;
+      padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
+
 
 
 
@@ -138,19 +142,7 @@ display: block; //
       border-style: solid;
       border-radius: 100vh; // 
 
-      color: var(--c-text); // MODE
-      // color: white; // MODE
-
-      font-size: 2em; // 
-      // font-size: 3em; // 
-      // font-size: 4em; // 
-      display: block;
-
-
-      /* */
-
-      // padding: 8px;
-      padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
+      */
 
 
           //
@@ -170,13 +162,22 @@ display: block; //
         // color: var(--c-accent);
         // MDIcon
         span {
+          /*
+          
+          
           background-color: var(--c-text); // middle way gray - CHANGE THIS 
           border-color: var(--c-accent); // NEW
+
+
+          */
           color: var(--c-accent);
         }
       
     } // hover
   
+
+
+
 
 
 

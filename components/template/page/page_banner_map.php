@@ -4,7 +4,7 @@
  */
 ?>
 <?php /*?><img src="https://picsum.photos/1920"><?php */?>
-<?php /*?><img src="<? echo $cb_img_random; ?>"><?php */?>
+<?php /*?><img src="<?php echo $cb_img_random; ?>"><?php */?>
 <div class="page_banner"> 
   
 <?php /*?>  <div class="image" style="background-image: url('<?php echo $cb_img_random; ?>');">

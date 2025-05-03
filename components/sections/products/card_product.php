@@ -6,7 +6,7 @@
 ?>
 <div class="card_product">	<?php /*?>TODO - RENAM E AS CARD - AND AL BLOG INTO BLOG FOLDER ....<?php */?>
   <?php /*?><div class="image" style="background-image: url('https://picsum.photos/id/237/200/300');"><?php */?>
-  <div class="image" style="background-image: url('<? echo $cb_img_random; ?>');">
+  <div class="image" style="background-image: url('<?php echo $cb_img_random; ?>');">
     <?php /*?>image<?php */?>
   </div> <!-- /image -->
   <div class="info">	

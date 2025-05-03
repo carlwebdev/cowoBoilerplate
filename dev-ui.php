@@ -15,24 +15,17 @@
 </head>
 <body>
 <?php 
-/*  
- * PAGE START
- */
+// PAGE START
 include ( 'components/template/page/page_start.php'); 
 ?> 
   <?php 
-  /*
-   * Header
-   */
+  // HEADER
   include('components/template/header.php'); 
   ?> 
   <?php 
-  /* Page Content Start 
-   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-   */
+  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
   include ('components/template/page/page_content_start.php'); 
-  ?> 
-    
+  ?>  
 	<!-- InstanceBeginEditable name="content" -->
 
 		
@@ -60,7 +53,7 @@ cB - [PATTERN LIBRARY]
 
 1 - - - - add al this to cB somehow, as concpet de pattern libray aka compmnenet libarry - to be coied form cB into any other project<br>
 
-resòponsive-pattern-tabs-to-accorion - MUS
+res�ponsive-pattern-tabs-to-accorion - MUS
 (aka) FROM COLUMNS TO ROWS   
 From Tabs to Accordion - copy from MUS and store  
 
@@ -69,19 +62,12 @@ FULLPAGE MAGE WITH CENTED TEXT ADAPTING WITH FITTEXT, POR EJEMPLO - or now clamp
 <?php */?>  
     
     
-    
-    
-    
-    
-    
-    
-    
-<?php /*?>AND MAKE THSI WHOLE PAGE WITH PAGEPILE OR THE OTHER VERSIONS, SO THAT EACH DEMO IS CENTERD IN EACH FULLPAGE..
+  
+<?php /*?>
+AND MAKE THSI WHOLE PAGE WITH PAGEPILE OR THE OTHER VERSIONS, SO THAT EACH DEMO IS CENTERD IN EACH FULLPAGE..
 <?php */?>
     
-    
-  
-    
+
     
     <?php 
       /* 
@@ -94,7 +80,7 @@ FULLPAGE MAGE WITH CENTED TEXT ADAPTING WITH FITTEXT, POR EJEMPLO - or now clamp
       // show popups etc etcetce
       $show_dev_columns = '0';
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      $show_page_banner = '1'; // hacky situation in this case .... or not
+      $show_page_banner = '0'; // hacky situation in this case .... or not
       $show_page_banner_map = '0';
       $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
       $show_page_title = '1'; 
@@ -105,27 +91,17 @@ FULLPAGE MAGE WITH CENTED TEXT ADAPTING WITH FITTEXT, POR EJEMPLO - or now clamp
     
     
     
-    
-    <!--
-    dev ui patterns, vs other tingees etc 
 
-
-
+<!--
+dev ui patterns, vs other tingees etc :::
 pattern_index
 pattern_tabs
 pattern_accordion // etc etceetce
-    -->
-    
-    
+-->
     
 
 
-    
-    
-    
-
-
-
+<!--
 
 <pre>
 TODO:
@@ -133,22 +109,21 @@ TODO:
 - rename "cowo-'s " as "pattern_tabs_js"
 - rename "cowo-'s " as "pattern_tabs_html_details & summary summary or whatver"
 
-
-
 create lihghtbox a la dialog
 pattern_lightbox aka patern_diallog (amodal)
 
-
 dialog, prolly need to add open atribute (as I did with details summary pen as well, so taht it activates, and ten do the css ceneter lightbox etc or modak on the side or bototm or wqhatver )   
 
-</pre>
-    
-    
-    
+</pre> 
+-->
+
+
+
+
+
 <?php /*?>    
 <dialog open>This is an open dialog window</dialog>    
 <?php */?>
-    
     
     
 <?php /*?>    
@@ -161,10 +136,7 @@ dialog, prolly need to add open atribute (as I did with details summary pen as w
 <?php */?>  
     
     
-    
-    
-    
-    
+
 <?php 
 /* 
  * START - LAYOUT SYSTEM - BACKGROUNDS (AND EVEN CSS GRID WHATEVER ... )
@@ -191,8 +163,35 @@ dialog, prolly need to add open atribute (as I did with details summary pen as w
 
     
     
+
+<!--
+    <pre>
+TODO
+Distinguish between funcitnlity irtems, and media items a secas etc
+
+site goals - turn this into a usabel boilerplate, that the concpet !! for spaghetti pho suiets!! 
+
+</pre>
+-->
+
+
+<?php /*?>
+- AND MAKE THSI WHOLE PAGE WITH PAGEPILE OR THE OTHER VERSIONS, SO THAT EACH DEMO IS CENTERD IN EACH FULLPAGE..
+- i can now do this with scrol behaviour, and do it smooth, and thereshold, and qwithh altenating bg colro sustem as well !!!
+<?php */?>
+
+
+
   <div class="cowo-index">   <!-- pattern_index.... -->
     <ul>
+
+
+      <li><a href="dev-ui.php#cowo-lightbox">Lightbox<?php /*?>(lightboxme)<?php */?></a></li>
+      <li><a href="dev-ui.php#cowo-fitvids">Fitvids (old school - obsolete, as we have aspect ratio & object fit)</a></li>
+      <li><a href="dev-ui.php#cowo-slider">Slick - Slider</a></li>
+      <li><a href="dev-ui.php#cowo-carrousel">Slick - Carrousel</a></li>
+        
+        
       <li><a href="dev-ui.php#cowo-tabs">Tabs</a></li> <?php /*?>local page link needed, due to my base url i guess...<?php */?>
       <?php /*?><li><a href="#cowo-tabs">Tabs</a></li><?php */?>
       <li><a href="dev-ui.php#cowo-dropdown">Dropdown</a></li>
@@ -252,12 +251,147 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 
 
+
+
+
+
+
+    
+    
+    
+<?php 
+/*
+ * Responsive jQuery Plugins
+ */
+?>
+    
+
+<section id="cowo-lightbox" class="background padding_4 test"> 
+	<div class="frame">  
+    
+    <div class="section_title">Lightbox<!--(me)--></div>
+    <?php 
+    // LIGHTBOX - RWD - LIGHTBOXME
+    // lighbox content, apply card, generically, and make mor epretty, and add modules in there, like link poutisde, and thingees...    
+    include('components/cowo_lightboxme.php'); 
+    ?> 
+    
+	</div> <!-- /frame -->     
+</section>  
+
+
+    
+    
+    
+
+<?php 
+/*
+ * RESPONSIVE VIDEO
+ */
+?>
+<section id="cowo-fitvids" class="background padding_4 test">  
+	<div class="frame narrow">
+    
+		<div class="section_title">FitVids.js - Responsive Video Plugin</div>   <!-- VIDEO , OJO, ADD ASPECT RATIO & OBJECT FIR THERE TOO IF POSSIBL E!!!!!!!!!!! -->
+    
+    <div class="card_base">
+      <?php include('components/cowo_fitvids.php'); ?>
+    </div> <!-- /frame -->   
+    
+	</div> <!-- /frame -->     
+</section>  
+
+    
+
+
+
+<?php /*?>
+// POPUPS, 
+// ALERTS WITH ALERTIFY ETC OR MORE MODERN SOLUTION...
+
+<?php */?>
+
+
+
+  
+    
+<?php 
+/*
+ * SLICK - SLIDER
+ */
+?>   
+<section class="background padding_4 test" id="cowo-slider">   
+	<div class="frame narrow"> 
+    
+	  <div class="section_title">Slick - Slider/Slideshow<?php /*?> - meter e slick slider por ejemplo, para empezar<?php */?></div>
+    <?php include('components/molecules/slider.php'); ?> <!--card slider o algo definri el aspect ratio dle slider, no?? o que ? hmm -->
+    
+	</div> <!-- /frame -->     
+</section>  
+    
+  
+  
+    
+    
+<?php 
+/*
+ * SLICK - CARROUSEL
+ */
+?>   
+<section class="background padding_4 test" id="cowo-carrousel">   
+	<div class="frame narrow"> 
+  
+		<div class="section_title">Slick - Carrousel<?php /*?> - idem<?php */?></div>
+    <?php include('components/molecules/carrousel.php'); ?>
+
+	</div> <!-- /frame -->     
+</section> 
+
+
+
+
+
+<section class="background padding_4 pb4___NOT">
+      <div class="frame wide___NOT narrow___NOT">
+        <?php 
+          $section_title = 'Slider'; // Slick - Slider/Slideshow
+          include('components/dynamic/section_title.php'); 
+        ?> 
+        <?php include('components/molecules/slider.php'); ?>
+
+      </div> <!-- /frame --> 
+    </section>
+
+
+
+    <section class="background padding_4 pb4___NOT test___NOT">   
+      <div class="frame"> 
+        <?php 
+          $section_title = 'Carrousel'; // Slick - Carrousel
+          include('components/dynamic/section_title.php'); 
+        ?>
+        <?php include('components/molecules/carrousel.php'); ?>
+
+      </div> <!-- /frame -->     
+    </section>  
+
+
+
+
+
+
+
+
+
+
+
+
     <?php 
     /*
     * UI - FLIPCARD
     */
     ?> 
-    <section class="background padding_4 test"> 
+    <section class="background padding_4 test ___NOT"> 
       <div class="frame"> 
 
 
@@ -275,29 +409,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 
     
-    <section class="background padding_4 pb4___NOT">
-      <div class="frame wide___NOT narrow">
-        <?php 
-          $section_title = 'Slider';
-          include('components/dynamic/section_title.php'); 
-        ?> 
-        <?php include('components/molecules/slider.php'); ?>
 
-      </div> <!-- /frame --> 
-    </section>
-
-
-
-    <section class="background padding_4 pb4___NOT test___NOT">   
-      <div class="frame"> 
-        <?php 
-          $section_title = 'Carrousel';
-          include('components/dynamic/section_title.php'); 
-        ?>
-        <?php include('components/molecules/carrousel.php'); ?>
-
-      </div> <!-- /frame -->     
-    </section>  
   
 
 
@@ -328,7 +440,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
  * jQuery - TABS
  */
 ?> 
-<section id="cowo-tabs" class="background fullscreen vcenter padding_2 test">  
+<section id="cowo-tabs" class="background fullscreen vcenter___NOT padding_2 test">  
 	<div class="frame">      
     
     <?php 
@@ -465,39 +577,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
     
     
     
-<!-- THESE ARE JUST HTML TAGS, SO THEY SHOULD GO TO HTM GLOSAY PAGE ETC ..... -->    
 
-<?php 
-/*
- * HTML5 - VIDEO
- */
-?>
-<section class="background fullscreen padding_2 test" id="">  
-	<div class="frame">
-		<div class="section_title">HTML5 - video</div>
-    
-    <div class="card_base">
-      <?php include('components/cowo_video.php'); ?>
-    </div> <!-- /card_base -->  
-    
-	</div> <!-- /frame -->     
-</section>  
-
-<?php 
-/*
- * HTML5 - AUDIO
- */
-?>
-<section id="" class="background fullscreen padding_2 test">
-	<div class="frame">
-		<div class="section_title">HTML5 - audio</div>
-
-    <div class="card_base">
-      <?php include('components/cowo_audio.php'); ?>
-    </div> <!-- /card_base --> 
-    
-	</div> <!-- /frame -->     
-</section>  
 
 
     
@@ -744,7 +824,7 @@ function showError(error)
 
 
 
- <? // $pagename = 'Dev - Media' ?>    
+ <?php // $pagename = 'Dev - Media' ?>    
     
 
 
@@ -872,18 +952,6 @@ USE GRID BASE, INCONJYNCITON TO ANY INCLUDE CARD THINGEES  MEERL EN LAYOUT _PAGE
 
 
 
-    <section class="fullscreen light padding_4">
-      <div class="frame">
-
-        <?php 
-        /* 
-         * SECTION CONTACT - MAP
-         */
-        ?> 
-        <?php include('components/sections/contact/section_contact_map.php'); ?> 
-
-      </div> <!-- /frame --> 
-    </section> 
 
 
 
@@ -915,34 +983,24 @@ USE GRID BASE, INCONJYNCITON TO ANY INCLUDE CARD THINGEES  MEERL EN LAYOUT _PAGE
 
 <!-- InstanceEndEditable -->
   <?php 
-  /* Page Content End 
-   * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-   */
+  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
   include ('components/template/page/page_content_end.php'); 
   ?> 	
   <?php 
-  /*
-   * Footer
-   */
+  // FOOTER
   include('components/template/footer.php'); 
   ?>
   <?php 
-  /*
-   * Cookes Popup
-   */
+  // COOKIES POPUP
   include('components/cowo_cookies.php'); 
   ?> 
   <?php // include "components/side_menu.php"; ?>   
 <?php 
-/*  
- * PAGE END
- */
+// PAGE END
 include ('components/template/page/page_end.php'); 
 ?> 
 <?php 
-/*
- * Scripts
- */
+// SCRIPTS
 include('config/scripts.php'); 
 ?>
 <!-- InstanceBeginEditable name="scripts" -->

@@ -46,15 +46,14 @@
     background: var(--c-bg-dark);
     color: var(--c-text-inv); 
     
+
+
     font-size: 1.5em;
     
     p {
       margin-block: unset;
-      &:not(:last-of-type) {
-        // margin-bottom: 1em;
-        margin-bottom: 2em;
-      }
-    } // P
+      &:not(:last-of-type) {margin-bottom: 1em;}
+    } // p
 
   } // tab
 	
@@ -85,13 +84,13 @@
 	li {
 		// width: 64px; /* TEMP - DEMO */ 
 		// min-width: 64px; /* TEMP - DEMO */ 
-		min-width: 4em; /* TEMP - DEMO */ 
+		// min-width: 4em; /* TEMP - DEMO */ 
 		min-width: 8em; /* TEMP - DEMO */ 
 		text-align: center; 
     // color: white;	
     // color: var(--c-text-inv); 
 		
-		a {
+		a { // TODO- CHANGE TO BUTTON? ASK !!! TOASK !!!!
 			color: inherit;
 			display: block; /* */ 
 			padding: $spacing025;
@@ -116,7 +115,7 @@
 				color: var(--c-text);
 		  }
 		
-		
+      // TO MAKE STHI SCLEANER, CHANGETH ESCRIPTSO THA HE ANCHOR IS TARGETTED FOR NOW... 
 			&.is-active a { // TODO - CHANGE HE ACTIVE TO THE A... AND FUCK THE A, MAKE IT A BUTTON !!!! 
         background-color: var(--c-accent); 
 				color: var(--c-text);

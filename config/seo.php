@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
 Project: cowo-Boilerplate
 Copyright: COWOWO, S.L.
@@ -7,9 +7,9 @@ COPY - pages & their seo
 */
 ?>
 
-<? /* $pagename = $pagename_index */ ?> 
+<?php /* $pagename = $pagename_index */ ?> 
 
-<?php /*?><? 
+<?php /*?><?php 
 if ($pagename==$pagename_index) // INDEX
     {
     ?>

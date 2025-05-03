@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * HTML / PHP
  * Map

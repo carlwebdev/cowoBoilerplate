@@ -13,8 +13,8 @@
 
 
 
-<link rel="stylesheet" href="assets/style/css/global.css" > 
-<!-- <link rel="stylesheet" href="assets/style/scss/global.css" > --> 
+<!-- <link rel="stylesheet" href="assets/style/css/global.css" > --> 
+ <link rel="stylesheet" href="assets/style/scss/global.css" >  
 <!-- LIVE SASS COMpILER - VSCODE EXTENSION "watch sass" - https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass -->
 
 <?php /*?>IF DEVELOPMENT STATUS = DEVELIPMENT (VS PRODUCTION, etc)<?php */?>  

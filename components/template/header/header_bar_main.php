@@ -9,6 +9,13 @@
       
 
 
+
+
+
+
+
+    
+
       <?php /* 
       <div class="logo_header_text">
       logo_header_text
@@ -35,6 +42,11 @@
 
 
 
+
+
+
+
+
       <?php 
       /*
        * HEADER NAV     
@@ -44,26 +56,37 @@
       // include('components/template/header/header_social.php'); 
       ?>
 
-      <?php 
-        /*  
-        * HEADER - BUTTONS - USE AS INCLUDE FOR NOW !!!!!!!!!!!!!! and rename as header_options perhaps
-        */
-      ?> 
-      <?php   
-      // HEADER options
-      include('components/template/header/header_options.php');
-      ?>
 
 
 
-      <!-- CREATE  AHEADER ICON FOR SHARE - obs but its not share, its links to sapocia media, so wrking icon really , AND THEN A DROPDOWN FOR SOCAL MEDI ALINKS, AND WHATOT, EMAIL TOO, TO UATO SEND EMAI LETC  -->
+      <div class="header_options_temp">
 
-      <div class="social_header">
-        <?php include('components/atoms/list-social.php'); // THESE CLEAN LISTS SHULD COME FORM DYNAMC, OR DB OR SETTINSG FOLDER INSTAD... ?>
-      </div> <!-- / social_header -->
+          <?php 
+            /*  
+            * HEADER - BUTTONS - USE AS INCLUDE FOR NOW !!!!!!!!!!!!!! and rename as header_options perhaps
+            */
+          ?> 
+          <?php   
+          // HEADER options
+          include('components/template/header/header_options.php');
+          ?>
+
+          <?php /*?>
+          <!-- CREATE  AHEADER ICON FOR SHARE - obs but its not share, its links to sapocia media, so wrking icon really , AND THEN A DROPDOWN FOR SOCAL MEDI ALINKS, AND WHATOT, EMAIL TOO, TO UATO SEND EMAI LETC  -->
+          <?php */?>       
+          <div class="social_header">
+            <?php include('components/atoms/list-social.php'); // THESE CLEAN LISTS SHULD COME FORM DYNAMC, OR DB OR SETTINSG FOLDER INSTAD... ?>
+          </div> <!-- / social_header -->
+
+      </div> <!-- /header_options_temp -->
 
 
-      
+
+
+
+
+
+
     </div> <!-- /inner -->
   </div> <!-- /frame -->   
 </div> <!-- /header_bar_main -->  

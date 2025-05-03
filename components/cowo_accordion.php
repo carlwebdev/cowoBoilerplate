@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * HTML / PHP

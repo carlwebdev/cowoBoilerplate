@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * Built by cowowo.cat

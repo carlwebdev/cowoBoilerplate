@@ -7,5 +7,5 @@
   <?php for ($i = 1; $i <= 12; $i++){ ?>
     <?php // include 'components/cards/card_product.php'; ?>  
     <?php include('components/sections/products/card_product.php'); ?>
-  <? }  ?>
+  <?php }  ?>
 </div> <!-- /grid_blog -->     

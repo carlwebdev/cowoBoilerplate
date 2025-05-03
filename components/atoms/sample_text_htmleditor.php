@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * HTML / PHP
  * Dev . Sample Text HTML-editor
@@ -71,6 +71,12 @@ the b tag
 
 <p>Fusce in ullamcorper dui. Duis et finibus justo. Phasellus eros massa, rhoncus at enim vitae, elementum scelerisque diam. Mauris pharetra magna at hendrerit cursus. Morbi placerat nulla quis dignissim vulputate. Aenean tincidunt, mi sed consectetur varius, nisi elit iaculis dui, eleifend dapibus nibh eros ut diam. Aliquam accumsan et odio sit amet sagittis.</p>
 
+
+<hr> 
+    <hr> 
+    <hr> 
+
+	
 <h2>Lorem ipsum</h2>
 
 <p>Suspendisse leo ipsum, fermentum interdum condimentum quis, pellentesque ac sapien. Curabitur quam nunc, ultrices vel risus non, sagittis ultricies justo. Phasellus sagittis cursus volutpat. Nam pretium, elit sit amet gravida pharetra, dui ipsum pharetra nunc, eget tempor nulla neque a mauris. Aliquam erat volutpat. Praesent nec neque ut enim mattis pulvinar. Curabitur venenatis ullamcorper est, facilisis tincidunt purus laoreet vitae. Nulla facilisi. Suspendisse vel cursus ante. Ut ultricies, magna at viverra pretium, elit sem laoreet lorem, sed sollicitudin velit neque eget erat.</p>

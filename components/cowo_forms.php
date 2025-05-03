@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * Built by cowowo.cat
@@ -108,6 +108,9 @@ BUILKDL 2 COL SUSTEM FOR HERE, TO SHOWCASE THE DIFFERET TYPES OF FORMS, NICER WA
 			</div>
 			
 			<form>
+				<legend>Log in</legend>
+
+
 				<div class="formLine">  
 					<label for="email">Email</label>
 					<input type="email" placeholder="Email" id="email"> <!-- IT AUTOVALIDATES !!! -->
@@ -594,7 +597,7 @@ Enter a date after 2000-01-01:<br>
 HTML5 INPUT TYPES
 <!-- HTML5 INPUT TYPES ------------------------------------ -->
 
-
+<!--
 <pre><code>
 HTML5 New Input Types
 HTML5 has several new input types for forms. These new features allow better input control and validation.
@@ -615,7 +618,7 @@ time
 url
 week
 </code></pre>
-
+-->
 
 <!-- HTML5 Input type color ------------------------------------ -->
 

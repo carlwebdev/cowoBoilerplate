@@ -1,5 +1,21 @@
+README
+
+Site Setup:
+
+
+1) TEMPLATING SYSTEM
+obs, this is using dwt template s !!!!
+
+2) SCSS COMPILATION
+- LOACLHOST VSCODE, IS WATCH SCSS
+
+
+
+
+
 VIP INSTRUCTIONS
 ------------------
+
 
 WHEN IMPLEMENTING IN A NEW SITE FOLDER:
 1) change the config path for the domain, else css won't be linked correctly 

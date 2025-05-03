@@ -1,7 +1,0 @@
-      	<? /*
-        <?
-        $images = array('registre_bcn.png','cole_admin.png','api.png','up_bcn.png');
-        for($i=0;$i<=sizeof($images)-1; $i++) { ?>
-          <li><img src="assets/img/logos/footer/<?=$images[$i]; ?>" alt=""/></li>  
-        <? } ?>   
-				*/ ?>

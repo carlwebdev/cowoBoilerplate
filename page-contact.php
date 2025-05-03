@@ -3,7 +3,7 @@
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<? $pagename = $pagename_contact ?>
+<?php $pagename = $pagename_contact ?>
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
 </head>
@@ -38,17 +38,17 @@ include ( 'components/template/page/page_start.php');
 
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
       // $show_page_banner = '0'; // hacky situation in this case .... or not
-      $show_page_banner = '1'; // hacky situation in this case .... or not
+      $show_page_banner = '0'; // hacky situation in this case .... or not
     
     
       // $show_page_banner_map = '1'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
       $show_page_banner_map = '0'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
     
     
-      $show_breadcrumbs = '0'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+      $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
       // $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
     
-      $show_page_title = '0'; 
+      $show_page_title = '1'; 
       // $show_page_title = '1'; 
     
       $show_page_excerpt = '0';
@@ -122,15 +122,13 @@ include ( 'components/template/page/page_start.php');
       <div class="frame">
 
         <?php 
-        /* 
-         * SECTION CONTACT - GRID, WHATEVER
-         */
+        // SECTION CONTACT - GRID, WHATEVER
+        // GRID CONTACT - AS IN MODULE, CONTACT ......................
+        include('components/sections/contact/grid_contact.php'); // AS IN MODULE, CONTACT ......................  // contact, comms, basics perhaps ...
         ?> 
-        <?php include('components/sections/contact/grid_contact.php'); // contact, comms, basics perhaps ... ?>
 
       </div> <!-- /frame --> 
     </section> 
-
 
 
 
@@ -148,16 +146,67 @@ include ( 'components/template/page/page_start.php');
       <div class="frame">
 
         <?php 
-        /* 
-         * SECTION CONTACT - MAP
-         */
+        // SECTION CONTACT - MAP - THIS COULD BE A MODULE, LIKE CNTACT,WITH THE MAP TO THE SIDE, AND OTHER CONTACT INFOS SUCH AS ADRES SAEC 
+        include('components/sections/contact/section_contact_map.php'); 
         ?> 
-        <?php include('components/sections/contact/section_contact_map.php'); ?> 
 
       </div> <!-- /frame --> 
     </section> 
     
     
+    <section class="background fullscreen_________not">
+      <?php include('components/template/page/page_banner_map.php'); // here shoudl be page banner, sino standalone module, to not confuse with actualpage banners !?>
+    </section> 
+
+
+
+
+
+
+
+
+    <?php /*?>  
+    BUILD CTA MOCDULE, AS HERO HOME KINDA TING, BUT REYUISABEL ....
+    
+    2 COLS, BG OPACITYSTH HAPEING, TOTLE, ETXT,M CTA BUTTON, ONLY ONE, TO THE RIGHT BOTTOM, AND CLEAR, TH BIG BUTTON PILL TYP ...
+    
+    THIS IS A NICE BUILDING THING, NOT JUST ORG THINGEES,,,
+    <?php */?>
+  
+  
+  
+
+    <section class="background fullscreen___NOT vcenter___NOT padding_4 accent___NOT light___NOT">    
+      <div class="frame"> 
+        <?php 
+        // GRID CONTACT - AS IN MODULE, CONTACT ......................
+        include('components/sections/contact/grid_contact.php'); // AS IN MODULE, CONTACT ...................... 
+        ?>   
+      </div>   
+    </section> 
+
+  
+  
+  
+    
+  
+
+    <section class="background fullscreen___NOT vcenter___NOT padding_4___NOT accent___NOT light___NOT padding_3_4">
+      <div class="frame">
+        <?php 
+        // SECTION CONTACT - MAP - THIS COULD BE A MODULE, LIKE CNTACT,WITH THE MAP TO THE SIDE, AND OTHER CONTACT INFOS SUCH AS ADRES SAEC 
+        include('components/sections/contact/section_contact_map.php'); 
+        ?> 
+      </div> <!-- /frame --> 
+    </section> 
+    
+    
+
+
+
+
+    
+
   <?php 
   // PAGE CONTENT END
   include ('components/template/page/page_content_end.php'); 

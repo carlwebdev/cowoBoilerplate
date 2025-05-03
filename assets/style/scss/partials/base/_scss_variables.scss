@@ -1,0 +1,143 @@
+/*
+ * CSS
+ * Variables - Break Points - sass vs css !!!!!!!!!!!!!!!!!
+ */
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
+ */ 
+
+// 1024, 768, 576 ... 480 ... 320 ..
+
+
+$bp_xl: 1200px;
+$bp_l: 1024px;
+$bp_m: 768px; // change to 767px ??? // 800px
+$bp_s: 568px; // 599px
+$bp_xs: 414px; // 480px
+
+
+	/* BREAK POINTS FOR MEDIA QUERIES */
+	/* CSS Variables Level 1’s var() cannot be used in media queries. - SO THIS IS A GOOD USE CASE FOR SASS VARIABLES USAGE , OK, GOOD */
+	/* VS rem SYSTEM */
+	/*
+	--bp-1: 1024px; 
+	--bp-m: 768px;
+	--bp-s: 568px;
+	--bp-xs: 414px; 
+	*/
+
+
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - MEDIA-QUERIES
+ */ 
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(max-width: 767px)";
+/*
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobile: "(max-width: 767px)";
+
+y entonces dentro del elemento que quiero que tenga una media query le meto esto:
+// @media #{$mobile}{
+//    ...
+// }
+*/
+
+
+
+
+
+/*
+ * Author: Carl Johansson @carlwebdev
+ * Project: cowo-Boilerplate
+ * File: CSS Reset
+ */
+
+
+/*
+ * GOLDEN RATIO (phi)
+ */ 
+/*
+$golden_long: 61.8%;
+$golden_short: 32.2%;
+*/
+
+
+
+
+
+/*
+ * SASS - VARIABLES - LAYOUT - SPACING => "SPACE" ... LESS IS MORE
+ */
+ $spacing: 24px;
+ $spacing2: $spacing * 2;
+ $spacing3: $spacing * 3;
+ $spacing4: $spacing * 4; 
+ $spacing6: $spacing * 6; // mayeb also add the 5 & 7, etc
+ $spacing8: $spacing * 8;
+ $spacing0875: $spacing * 0.875;
+ $spacing075: $spacing * 0.75;
+ $spacing0625: $spacing * 0.625;
+ $spacing05: $spacing * 0.5;
+ $spacing0375: $spacing * 0.375;
+ $spacing025: $spacing * 0.25;
+ $spacing0125: $spacing * 0.125;
+ 
+ // and remmeber rems font isze fomrat s !!!
+ 
+ 
+ 
+ // use the formula for any other case...
+ 
+ 
+ 
+ /* SPACINGS */
+ @mixin spaceing($anyth)  { // RENAME TO SPACE , no, to spacing - aahah pero esto es otra cosa es floaty griddy gap thig eee float_gap_experiment ... 
+     margin-bottom: $baseSpacing x $anyth; // ??!!!!!!!!!!!!!!!!!!!!
+     }
+
+
+
+
+// 3 SPEEDS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!	
+
+$t_fast: 0.2s;
+$t_base: 0.6s;
+$t_slow: 1.0s;		 
+
+
+
+
+
+/*
+ * CSS / Sass
+ * Variables - Z-Index's
+ */
+/*
+ * SASS - VARIABLES - LAYOUT - BREAK-POINTS 
+ */ 
+ $zi_header: 101; // for header : why 101?
+ $zi_popup: 100; // for popup_cookies
+ // totd o es por el tema de z-indez de slick ...
+ 
+ 
+ 
+ // VARIABLES FOR ZI_POPUP_FOOTER ...     
+  
+ 
+ 
+ 
+ /*
+  * SASS - VARIABLES - LAYOUT - Z-INDEX
+  */ 
+ $zi_lightbox: 12; 
+ // $zi_popup: 11; 
+ $zi_popup: 1000; // Due to slick slider  
+ $zi_header: 10; 
+ // etc
+ 
+ 
+ 

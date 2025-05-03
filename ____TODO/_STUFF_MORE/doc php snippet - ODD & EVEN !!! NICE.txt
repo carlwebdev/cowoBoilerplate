@@ -1,9 +1,0 @@
-<?php if($i%2 == 0) : ?>
-
-A BLOCK (FIRST AKA ODD)
-
-<?php else : ?>
-
-ANOTHER BLOCK (SECOND AKA EVEN) 
-
-<?php endif; ?> <?php $i++; ?> 

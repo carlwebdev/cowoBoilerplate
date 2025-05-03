@@ -18,6 +18,8 @@
  
 footer {
   
+  background-color: var(--c-bg-alt); 
+  
 	.inner {
     padding-block: $spacing2;
 		// text-align: center; // very unspecific    
@@ -26,7 +28,8 @@ footer {
     // color: $c_white; // very unspecific	- white, for the logo ... 
     // color: var(--c-text-inv);
     // color: var(--c-white);
-    color: white;
+    // color: white;
+    color: var(--c-text);
     // color: red;
     
     display: flex;
@@ -98,6 +101,9 @@ footer {
     
     span {display:block;}
     
+    font-size: 2em; // TEST
+
+
     
   } // button
   

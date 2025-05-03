@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * HTML / PHP
  * Dev . Sample Text HTML-editor - cookies

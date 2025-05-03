@@ -1,4 +1,4 @@
-<? 
+<?php 
 /* 
  * PHP
 * dev-masonry-structure
@@ -9,7 +9,7 @@
   <div class="gutter-sizer"></div>
   <div class="grid-sizer"></div>
 
-	<? for ($x = 0; $x <= 8; $x++) { ?>
+	<?php for ($x = 0; $x <= 8; $x++) { ?>
 
     <div class="col">      
       <div class="item">      
@@ -34,6 +34,6 @@
     </div> <!-- /col --> 
     
     
-    <? } ?>  
+    <?php } ?>  
   
 </div> <!-- /dev-masonry-structure -->

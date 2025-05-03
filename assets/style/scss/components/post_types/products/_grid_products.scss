@@ -68,6 +68,10 @@
 		@include bg_placeholder; 
   } // image
 
+
+
+
+  
 	.info { //etc, vs flex & grid layout !!!
 		// padding-top: 0.5em;
 		// padding-top: 1em;
@@ -75,18 +79,12 @@
 		padding-top: $spacing075;
 
     
-    
-    
     .category {
-      margin-bottom: $spacing0125; 
-      margin-bottom: $spacing025; 
-      
-      color: var(--secondary-text);
-      // font-size: 14px;
-      font-size: 13px;
-      
+      @include card_detail; 
+      margin-bottom: 1em; // 
+
       a {
-        color: inherit;
+        color: inherit; // RESET THIS 
         @include a_ui_alt;
       } // a
       
@@ -95,54 +93,27 @@
     
     
     
-    
+    // h3,
 		.title {
-      
-      /*
-      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
-      fs_card_text
-      fs_card_specs
-      */
+      @include card_title; 
 
-      font-size: 24px;
-      font-weight: bold;
-
-      // // // padding-bottom: $spacing025;
-      padding-bottom: $spacing0125;
-      // border-bottom: 2px solid;
-      // border-bottom: 1px solid;
-      // border-bottom: 1px solid var(--secondary-text);
+      padding-bottom: 0.5em;
       border-bottom: 1px solid var(--divider-text);
-      margin-bottom: $spacing025;
-      // a
+      margin-bottom: 1em;
 
-      // @include css_line_clamp(3); // TEST 
-      @include css_line_clamp(2); // TEST 
-
-      a {
-        @include a_ui_alt;
-      }
-
+      a {@include a_ui_alt;}
 
     } // title
     
-    
-  
-    
-    // do lo de card fs ... variables or mixins... really.. or clas setxend ... no se i sisin tb permite hover thing s.... hmm 
-    
 
-  .text {
-    color: var(--secondary-text);
-    @include css_line_clamp(5); // TEST 
-    @include css_line_clamp(3); // TEST 
-  } // text
+    .text {
+      color: var(--secondary-text);
+      @include css_line_clamp(5); // TEST 
+      @include css_line_clamp(3); // TEST 
+    } // text
 
     
-    
-    
-    
-    
+
   .link {
     margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
     

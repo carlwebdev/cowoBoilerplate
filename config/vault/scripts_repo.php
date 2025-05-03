@@ -6,21 +6,21 @@
 <!-- USAR IFS DE PHP CON SERVER SIDE STUFF PARA ACTIVAR DESACTIVAR SCRIPTS SEGUN SEA NECESARIO !!! -->
 <!-- detallar geeranlidad de lso scripts, y ponerlos segun init.js con seccioenes de windoww load, docuemte ready, para ajax etc -->
 <!-- TEST VALIDATE HTML 5 DOCTYPE, AND ADD MODERNIZR, and htmlshiv, etc etcetc ETC, test test test -->
-<? /*
+<?php /*
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='js/jquery-1.10.2.min.js'>\x3C/script>")</script>
 */ ?>
-<? /*
+<?php /*
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script><br>
 <script>window.jQuery || document.write(unescape('%3Cscript src="/js_folder/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>
 */ ?>
 
 
-<? /*
-<? if($min=='FALSE') 
+<?php /*
+<?php if($min=='FALSE') 
 { 
 ?>
-<? 
+<?php 
 } 
 elseif ($min='TRUE') 
 { 

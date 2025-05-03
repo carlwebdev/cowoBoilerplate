@@ -61,14 +61,23 @@
 // 1, 2, 3, 4 index
 
 
+
+
+
+
+
+
+
+
+
+
+
 .page_banner {
-  // 1 - dev border
-  // border: 3px solid $c_accent; // TEST 
+  // 1 - dev border 
+  // border: var(--s-border);
   
   // img vs bg image ... bg, as its decorative .... anyways, test also aspect rationow that we're at it !!!!
 
-  img {@include img;} // MOVE TO RESET.. SAME AS IFRAME ... 
-  
   .image {
     @include bg_img;    
     // border: 3px solid $c_accent; // TEST 
@@ -133,19 +142,17 @@
     
     // & lo de blurry !!!!! / como habia hecho en epic the missio ... 
     
-    
     // background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));  
     // background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));  
       
-      
-// background: -webkit-linear-gradient(bottom right,red,yellow 30%,green);
-// background: linear-gradient(to top left,red,yellow 30%,green);
-// background: linear-gradient(to top left,red,yellow 30%,transparent);
-// background: linear-gradient(to top left,$c_accent,yellow 30%,transparent);
-// background: linear-gradient(to top left,$c_accent,$c_primary 30%,transparent);
-// background: linear-gradient(to top right,$c_accent,$c_primary 30%,transparent);
-// background: linear-gradient(to top right,$c_accent,$c_primary 30%,transparent 50%);
-// background: linear-gradient(to top right,$c_accent,$c_primary 30%,red 50%, transparent 50%); // FUL PERFET TRIENGLE DIAGONBAL SPLIT.. NICE & RWD 
+    // background: -webkit-linear-gradient(bottom right,red,yellow 30%,green);
+    // background: linear-gradient(to top left,red,yellow 30%,green);
+    // background: linear-gradient(to top left,red,yellow 30%,transparent);
+    // background: linear-gradient(to top left,$c_accent,yellow 30%,transparent);
+    // background: linear-gradient(to top left,$c_accent,$c_primary 30%,transparent);
+    // background: linear-gradient(to top right,$c_accent,$c_primary 30%,transparent);
+    // background: linear-gradient(to top right,$c_accent,$c_primary 30%,transparent 50%);
+    // background: linear-gradient(to top right,$c_accent,$c_primary 30%,red 50%, transparent 50%); // FUL PERFET TRIENGLE DIAGONBAL SPLIT.. NICE & RWD 
 
     // background: linear-gradient(to top right,$c_accent,$c_primary 30%, transparent 50%);
     
@@ -170,10 +177,8 @@
     flex-direction: column;
     justify-content: flex-end;
     
-    
     .text {
       // @include dev_border;
-
       color: $c_white;
       text-shadow: 0px 2px 2px #000;
       // font-size: 48px; // CSS CLAMP !!!!!!!!
@@ -187,13 +192,8 @@
     
   } // cover
 
-  
-  
+
 } // page_banner
-
-
-
-
 
 
 
@@ -216,8 +216,7 @@
   font-weight: bold;
 
   a {
-    // color: var(--primary-text); // cudl be a rule,., / --C-TEXT / C-TEXT-2
-    color: var(--c-text); // cudl be a rule,., / --C-TEXT / C-TEXT-2
+    color: var(--c-text);
     // @include a_ui_default;
     @include a_ui_alt;
   } // a
@@ -328,10 +327,6 @@ h1.page_title {
   }
   
 } // m_sectionTitle
-
-
-
-
 
 
 
@@ -474,20 +469,3 @@ h1.page_title {
   
   
 } // placeholder_slide
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -21,11 +21,12 @@
 		display: flex;
 		justify-content: center;
 		// gap: $space05; 
+    gap: 0.5em; // TEST
   } // ul
 	
   
 	li {
-    @include gaph($spacing05);
+    // @include gaph($spacing05);
 		// @include rotate; // ??? if so, move down to anchor ...
   } // li	
 		
@@ -33,7 +34,8 @@
 		// display: block;
     font-size: 2em;
 		// font-size: 3em;
-    @include ui_c_white_to_accent;
+    // @include ui_c_white_to_accent;
+    @include ui_c_text_to_accent; // NEW
   }	 // a
 	
   
@@ -58,7 +60,9 @@
 .social_footer {
 	// @include dev_border;
 	// @include paddingv($space05);
-	@include marginv($spacing05); // DEMO
+	/*
+  0@include marginv($spacing05); // DEMO
+  */
 
 	ul {
 		display: flex;
@@ -90,6 +94,7 @@
     // color: var(--primary-color);  // C-PRIMARY, C-SECONDARY, C-ACCENT ....  & LIGTH/DARK MODIFIERS ...
     // color: $c_primary_light;
     // color: var(--c-white);
+   /*
     color: white;
     
     @include transitionGeneral; // TEST 
@@ -102,6 +107,16 @@
       color: $c_accent; 
     }
     
+    */
+
+    font-size: 2em;
+		// font-size: 3em;
+    // @include ui_c_white_to_accent;
+    @include ui_c_text_to_accent; // NEW
+    
+    
+
+
   } // a
   
   

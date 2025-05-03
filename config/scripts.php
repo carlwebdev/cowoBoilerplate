@@ -302,7 +302,7 @@ $(document).ready(function(){
 <?php include('js/components/lightboxme.php'); ?>
 
 
-<? 
+<?php 
 /* 
  * UI - Mmenu - Side menu
  */ 

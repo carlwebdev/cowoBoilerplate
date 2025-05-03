@@ -18,24 +18,17 @@
 </head>
 <body>
 <?php 
-/*  
- * PAGE START
- */
+// PAGE START
 include ( 'components/template/page/page_start.php'); 
 ?> 
   <?php 
-  /*
-   * Header
-   */
+  // HEADER
   include('components/template/header.php'); 
   ?> 
   <?php 
-  /* Page Content Start 
-   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-   */
+  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
   include ('components/template/page/page_content_start.php'); 
-  ?> 
-    
+  ?>  
 	<!-- InstanceBeginEditable name="content" -->
     
 
@@ -48,11 +41,11 @@ include ( 'components/template/page/page_start.php');
       // DEV QA  
       $show_dev_columns = '0';
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      $show_page_banner = '1'; // hacky situation in this case .... or not
+      $show_page_banner = '0'; // hacky situation in this case .... or not
       $show_page_banner_map = '0';
       // AQUI FALTA EL VIDEO ...
-      $show_breadcrumbs = '0'; 
-      $show_page_title = '0'; 
+      $show_breadcrumbs = '1'; 
+      $show_page_title = '1'; 
       $show_page_excerpt = '0';
       // ad the content, asin wp_eoimoe ... here just as a bollc sexample with htmleditro modil eetc ...
       include('components/includes/page_basics.php'); // PAGE BASICS
@@ -87,34 +80,24 @@ include ( 'components/template/page/page_start.php');
     
 	<!-- InstanceEndEditable -->
   <?php 
-  /* Page Content End 
-   * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-   */
+  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
   include ('components/template/page/page_content_end.php'); 
   ?> 	
   <?php 
-  /*
-   * Footer
-   */
+  // FOOTER
   include('components/template/footer.php'); 
   ?>
   <?php 
-  /*
-   * Cookes Popup
-   */
+  // COOKIES POPUP
   include('components/cowo_cookies.php'); 
   ?> 
   <?php // include "components/side_menu.php"; ?>   
 <?php 
-/*  
- * PAGE END
- */
+// PAGE END
 include ('components/template/page/page_end.php'); 
 ?> 
 <?php 
-/*
- * Scripts
- */
+// SCRIPTS
 include('config/scripts.php'); 
 ?>
 <!-- InstanceBeginEditable name="scripts" -->

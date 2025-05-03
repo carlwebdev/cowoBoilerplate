@@ -1,0 +1,122 @@
+/* aki no, pero ... font size, rem with px fallback */	
+
+/* 
+ * SASS - VARIABLES - Font size 
+ */
+ $fs_xxl: 44px;
+ $fs_xl: 28px;
+ $fs_l: 20px;
+ $fs_m: 16px;
+ $fs_s: 12px;
+ 
+ 
+ // turn into css variables, and actually use them, as well as the color s..... ..... 
+ 
+ 
+ :root {
+ 
+   --fs-xs: 10px; // rem, etc
+   --fs-s: 12px; // rem, etc
+   --fs-m: 14px; // rem, etc
+   --fs-base: 16px; // rem, etc
+   --fs-l: 20px; // rem, etc
+   // --fs-xl: 28px; // rem, etc
+   --fs-xl: 32px; // rem, etc
+   // --fs-xxl: 44px; // rem, etc
+   // --fs-xxl: 36px; // rem, etc
+   --fs-xxl: 48px; // rem, etc
+   --fs-xxxl: 56px; // rem, etc - page banner text s
+ 
+ } /* ROOT */
+
+
+
+
+ :root {
+  --s-border: 2px solid var(--c-accent); // 
+
+
+
+
+
+
+  --card-fs-title: var(--fs-l); // variable improve // var(--fs-xl)
+  --card-fs-description: var(--fs-base);
+  --card-fs-detail: var(--fs-m);
+  --card-fs-specs: var(--fs-s); 
+  --card-paddinng: 3em; // // variable improve
+
+
+
+} /* ROOT */
+
+
+
+// TODSO- CHECK HOW TO KINDA CREATE MIXINS IN CSS, SUING CLASSES ET .. BUT TO VERBOSE FOR NOW, JUST DO MIXIN !!! 
+// https://bholmes.dev/blog/how-you-can-sort-of-write-sass-mixins-in-plain-css/
+
+
+      /*
+      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+      fs_card_text
+      fs_card_specs
+      */
+      /*
+      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+      fs_card_text
+      fs_card_specs
+      */
+
+      /*
+      --card-fs-title: 3em; 
+      --card-fs-description: 3em; 
+      --card-fs-detail: 3em; // aka small
+      --card-paddinng: 3em; 
+      */
+
+
+// do lo de card fs ... variables or mixins... really.. or clas setxend ... no se i sisin tb permite hover thing s.... hmm 
+    
+
+
+// mixins for cards etc 
+
+// or event mxin for the whoel card !!! - star slow !!!
+// SL 
+// and then go to phabuous!!
+
+
+@mixin card_title { // mixin for the card title, with the font size, weight, etc, and the line clamp, etc ...
+      // @include css_line_clamp(3); // TEST 
+      // @include css_line_clamp(2); // TEST   
+  /*
+  // font-size: 24px;
+  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
+  */  
+  font-size: var(--card-fs-title); // variable improve
+
+  font-size: 24px; // !!!
+
+  font-weight: bold;
+}
+
+@mixin card_description { 
+  font-size: var(--card-fs-description); 
+  // color: red; //  just to see if it works
+  // color: var(--secondary-text);  
+  // font-size: var(--fs-base); // REDUNDANT ...
+  line-height: 1.5em; // RESET ???  
+
+}
+@mixin card_detail { 
+  font-size: var(--card-fs-detail); // variable improve
+  font-weight: bold;
+  color: var(--secondary-text);
+}
+@mixin card_specs { 
+  color: var(--secondary-text); // c-text-secondary VS c-text-(main), & c-text can be c-black ... 
+        
+  font-size: var(--card-fs-specs); // variable improve - min aka spoecs !!!
+  // font-weight: bold;
+}

@@ -19,7 +19,7 @@
 <!-- Normalize is a modern, HTML5-ready, alternative to the traditional CSS reset -->
 <!--<link rel="stylesheet" type="text/css" href="../css_special/normalize.css" >-->
 
-<? /*
+<?php /*
 <!--[if (lt IE 9) & (!IEMobile)]> -->
 <!--  <script src="js/lib/selectivizr-min.js"></script> -->
 <!--  <![endif]-->

@@ -3,7 +3,7 @@
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<? $pagename = 'Blank Page' // to Test Sticky Footer  - RENAME THIS FILE AS PAGE-BKLANK, AND ALSO HAVE PAGE_SAMPLE, Y LISTSO. ?>
+<?php $pagename = 'Blank Page' // to Test Sticky Footer  - RENAME THIS FILE AS PAGE-BKLANK, AND ALSO HAVE PAGE_SAMPLE, Y LISTSO. ?>
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
 </head>

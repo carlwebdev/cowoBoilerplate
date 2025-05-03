@@ -150,12 +150,16 @@
       margin-bottom: $spacing0125; 
       margin-bottom: $spacing025; 
       
-      color: var(--secondary-text);
+      
       // font-size: 14px;
       // font-size: 13px;
-      font-size: var(--fs-m);
+      // font-size: var(--fs-m);
       // font-size: var(--fs-s);
       
+      @include card_detail; 
+
+
+
       a {
         color: inherit;
         @include a_ui_alt;
@@ -165,22 +169,15 @@
 
     
     
-    
+    // h3 !!!
 		.title {
-      
-      /*
-      fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
-      fs_card_text
-      fs_card_specs
-      */
+      @include card_title; 
+      // @include css_line_clamp(3); // TEST 
 
-      // font-size: 24px;
-      font-size: var(--fs-xl);
-      font-size: var(--fs-l);
-      
-      
-      
-      font-weight: bold;
+      a {
+        @include a_ui_alt;
+      }
+
 
       // // // padding-bottom: $spacing025;
       padding-bottom: $spacing0125;
@@ -190,11 +187,9 @@
       margin-bottom: $spacing025;
       // a
 
-      @include css_line_clamp(3); // TEST 
+      
 
-      a {
-        @include a_ui_alt;
-      }
+ 
 
 
     } // title
@@ -207,29 +202,18 @@
       
       display: flex;
       justify-content: space-between;
-      // gap: $spacing05;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      /*
       column-gap: $spacing05;
       row-gap: $spacing0125;
-      flex-wrap: wrap;
-      
-      
-      
-      // margin-bottom: $spacing0125; 
-      // margin-bottom: $spacing025; 
-      margin-bottom: $spacing05; 
-      
-    
-      
-      
-      /* */
-      color: var(--secondary-text); // c-text-secondary VS c-text-(main), & c-text can be c-black ... 
-      
-      
-      
-      font-size: var(--fs-s);      
-      
+      */
+
+      margin-bottom: 1em;      
+      @include card_specs;
+
       a {
-        color: inherit;
+        color: inherit; // THIS SHOULD BE A RESET , OR A TYPOGRAPHY RESETISH THINGEE THER EIN TYPOGRAPHY FIEL INSETAD, YEAH ...
         @include a_ui_alt;
       } // a
       
@@ -241,20 +225,15 @@
     
 
   .text {
-    
-    color: var(--secondary-text);
-    
-    
-    // font-size: var(--fs-base); // REDUNDANT ...
-    line-height: 1.5em; // RESET ???
-    
-    
-    @include css_line_clamp(5); // TEST 
+    @include card_description; 
+    @include css_line_clamp(5); // TEMP
   } // text
+
+
 
     
   .link {
-    margin-top: 24px; // DO THE SYSTEM, YA ST SABES ... 
+    margin-top: 2em; 
     
     display: flex;
     justify-content: flex-end;
@@ -264,9 +243,7 @@
       @extend %pill; // // add pil bevaiour as clas sected only placehodler 
       // y aparte lso colores etc
       // @extend %pill_small;
-      // @extend %pill_big;
-      
-      
+      // @extend %pill_big;  
     }
   
   } // link
@@ -278,6 +255,10 @@
   
 
 } // card_blog
+
+
+
+
 
 
 

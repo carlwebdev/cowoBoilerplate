@@ -8,12 +8,6 @@
  * CSS
  * Global
  */
-/* cowo-Boilerplate
- * Built by cowowo.cat
- * Project: 
- * Component: Cookies (section)
- * Filename: cookies.php
-*/
 /*
 Susy: Responsive grids for Compass
 http://susy.oddbird.net/
@@ -237,9 +231,18 @@ img {
 
 /* figure? video?? audi ?? iframe ??? */
 img,
-picture {
-  display: block;
+picture,
+video,
+audio {
   width: 100%;
+  display: block;
+}
+
+video {
+  height: unset;
+  aspect-ratio: 16/9; /* 16:9 */
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -337,6 +340,11 @@ input[type=submit],
 input[type=button],
 button {
   cursor: pointer; /* Y ES DUDOSO REALMETE */
+}
+
+button {
+  cursor: pointer;
+  font-size: 1em;
 }
 
 /* oveflow:hidden; VS clearfix hack VS float:inline-block with font-size issues..... */
@@ -573,11 +581,6 @@ header#header {
   transition: background-color 0.3s;
 }
 
-/*
- * Author: Carl Johansson @carlwebdev
- * Project: cowo-Boilerplate
- * File: CSS Reset
- */
 /* aki no, pero ... font size, rem with px fallback */
 /* 
  * SASS - VARIABLES - Font size 
@@ -592,6 +595,30 @@ header#header {
   --fs-xxl: 48px;
   --fs-xxxl: 56px;
 } /* ROOT */
+:root {
+  --s-border: 2px solid var(--c-accent);
+  --card-fs-title: var(--fs-l);
+  --card-fs-description: var(--fs-base);
+  --card-fs-detail: var(--fs-m);
+  --card-fs-specs: var(--fs-s);
+  --card-paddinng: 3em;
+} /* ROOT */
+/*
+fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+fs_card_text
+fs_card_specs
+*/
+/*
+fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
+fs_card_text
+fs_card_specs
+*/
+/*
+--card-fs-title: 3em; 
+--card-fs-description: 3em; 
+--card-fs-detail: 3em; // aka small
+--card-paddinng: 3em; 
+*/
 /*
  * CSS
  * Variables - Break Points - sass vs css !!!!!!!!!!!!!!!!!
@@ -636,11 +663,6 @@ $golden_short: 32.2%;
  * SASS - VARIABLES - LAYOUT - SPACING => "SPACE" ... LESS IS MORE
  */
 /* SPACINGS */
-/*
- * Author: Carl Johansson @carlwebdev
- * Project: cowo-Boilerplate
- * File: CSS Reset
- */
 /*
  * CSS / Sass
  * Variables - Z-Index's
@@ -1764,6 +1786,18 @@ form.onerow .formLine {
   margin-bottom: 0;
 }
 
+form {
+  /*
+  border: 2px solid var(--c-black);
+  box-shadow: 4px 4px 0px var(--c-black); 
+  */
+}
+form legend {
+  color: var(--c-accent);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* s_i is tight !!! */
 .s_form_contact {
   background-color: var(--text-icons); /* PRECAUTION */
@@ -2422,7 +2456,7 @@ section, .frame {
  */
 /*
  * CSS
- * Header - Bars
+ * Header - Bars - move this bakc to main header partial, 
  */
 /*
  *
@@ -2527,6 +2561,22 @@ header.case-is-fixed {
 .header_logo {
   flex-shrink: 0;
   width: 320px;
+  /*
+  img {
+    // AS ITS A PNG ... 
+    // drop-shadow(5px 5px);
+    filter: drop-shadow(5px 5px var(--c-text)); // BACAUSE IMG IS PNG
+  }
+  */
+  /*
+  svg {
+    // AS ITS A PNG ... 
+    // drop-shadow(5px 5px);
+    // filter: drop-shadow(5px 5px var(--c-text)); // BACAUSE IMG IS PNG
+    filter: drop-shadow(5px 5px var(--c-accent));
+  }
+
+  */
 }
 @media only screen and (max-width: 768px) {
   /*
@@ -2644,7 +2694,9 @@ nav.main li ul li ul {
  * HEADER BUTTONS
  */
 .header_options_temp {
-  color: red;
+  /*
+  border: var(--s-border); // 
+  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2672,7 +2724,7 @@ button, button span {
 .header_buttons {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 button.headericon {
@@ -2683,9 +2735,7 @@ button.headericon {
       display: block !important;	
     } // MEDIA-QUERY	
   */
-  cursor: pointer;
   /* */
-  font-size: 1em;
   /*
   border-color: var(--c-text);
   border-width: 2px;
@@ -2711,15 +2761,25 @@ button.headericon {
   */
 }
 button.headericon span {
-  border-color: var(--c-text);
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 100vh;
   color: var(--c-text);
   font-size: 2em;
   display: block;
-  /* */
-  padding: 0.25em;
+  /* 
+
+  // padding: 8px;
+  padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
+
+
+
+
+  // GOAL, MOVE ALL THE STYLING TO THE SPAN, AND THEN THE BUTTON IS JUST A CONTAINER.. (CHATO WOW.)
+  border-color: var(--c-text);
+  // border-color: white; // vs einherit, ineate
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100vh; // 
+
+  */
   transition: all 0.5s ease-in-out;
 }
 button.headericon:hover {
@@ -2729,8 +2789,14 @@ button.headericon:hover {
   */
 }
 button.headericon:hover span {
-  background-color: var(--c-text);
-  border-color: var(--c-accent);
+  /*
+
+
+  background-color: var(--c-text); // middle way gray - CHANGE THIS 
+  border-color: var(--c-accent); // NEW
+
+
+  */
   color: var(--c-accent);
 }
 
@@ -3095,9 +3161,12 @@ header.smaller nav.main ul.menu li a {
     sas folder for social... vs just 1 partial for all the social buttons, ok, good comepromise there...
 
  */
+footer {
+  background-color: var(--c-bg-alt);
+}
 footer .inner {
   padding-block: 48px;
-  color: white;
+  color: var(--c-text);
   display: flex;
   flex-direction: column;
   gap: 48px;
@@ -3136,6 +3205,9 @@ footer .inner {
    }	// a		
 
    */
+}
+.scrolltotop button {
+  font-size: 2em;
 }
 .scrolltotop button span {
   display: block;
@@ -3329,7 +3401,11 @@ body {
  * VERTICAL - EXTREMES 
  */
 footer {
-  background-color: var(--c-bg);
+  /*
+
+  background-color: var(--c-bg);  
+
+  */
 }
 
 /* 
@@ -3381,6 +3457,16 @@ footer {
 /* 
  * SYSTEM ALTERNATING BACKGROUND COLORS 
  */
+.backgrounds {
+  /*
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: 100dvh; 
+
+
+    .background {scroll-snap-align: start;}
+  */
+}
 .backgrounds .background:nth-of-type(odd) {
   background-color: none;
 }
@@ -3406,7 +3492,7 @@ section {
    */
 }
 section.fullscreen {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 section.vcenter {
   display: grid;
@@ -3450,10 +3536,6 @@ section.accent {
 section.light {
   background-color: var(--divider-text);
   background-color: rgba(16, 16, 16, 0.5);
-}
-section.fullHeightTest {
-  background-color: #f06;
-  height: 100vh;
 }
 section.test {
   background-color: #ccc;
@@ -3528,10 +3610,6 @@ section.test:nth-of-type(odd) {
   */
   position: relative;
   /*   */
-}
-.page_banner img {
-  width: 100%;
-  display: block;
 }
 .page_banner .image {
   background-position: center center;
@@ -3720,14 +3798,6 @@ h1.page_title {
  * Layout - Page (generic page elements) - Media
  */
 /* MULTIMEDIA - layout_media PARTIAL FOR THIS !!! */
-.m_video video {
-  width: 100%;
-}
-
-audio {
-  width: 100%;
-}
-
 /* CREATE SASS PARTIAL FOR THIS */
 .fitvids_container {
   /* 
@@ -3774,15 +3844,39 @@ audio {
   gap: 48px;
 }
 .l_gridBase_50_50 .col {
-  background-color: var(--text-icons); /* PRECAUTION */
-  box-shadow: 0px 0px 8px 2px #ccc;
-  padding: 12px;
-  padding: 24px;
+  /*
+  // TEMP., CARD 
+
+
+  // border: 1px solid grey; 
+  // padding: 24px;
+
+
+
+
+
+  // .m_item_base_01 // COPIED FOMR HERE 
+  	background-color: $c_white; // PRECAUTION
+  	// box-shadow: 0px 0px 2px #ccc;
+  	// box-shadow: 0px 0px 4px 2px #ccc;
+  	// box-shadow: 0px 0px 8px -2px #ccc;
+  	box-shadow: 0px 0px 8px 2px #ccc;
+  	// padding: $space025;		
+  	padding: $spacing05;	
+
+
+    padding: 24px;
+
+  */
+  border: 2px solid var(--c-black);
+  box-shadow: 4px 4px 0px var(--c-black);
+  background-color: var(--c-white);
+  padding: 2em;
+  transition: box-shadow 0.2s linear;
 }
 .l_gridBase_50_50 .col:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 4px 0px #ccc;
-  transition: box-shadow 0.2s linear;
+  box-shadow: 1px 1px 0px var(--c-black);
 }
 
 /*
@@ -4061,24 +4155,20 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 .social_header ul {
   display: flex;
   justify-content: center;
-}
-.social_header li {
-  margin-right: 12px;
-}
-.social_header li:last-of-type {
-  margin-right: 0px;
+  gap: 0.5em;
 }
 .social_header a {
   font-size: 2em;
   transition: all 0.2s linear;
-  color: var(--text-icons);
+  color: var(--c-text);
 }
 .social_header a:hover {
-  color: #F06;
+  color: var(--c-accent);
 }
 .social_footer {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  /*
+   0@include marginv($spacing05); // DEMO
+   */
   font-size: 2.5em;
 }
 .social_footer ul {
@@ -4096,11 +4186,26 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
   display: block;
 }
 .social_footer a {
-  color: white;
+  /*
+   color: white;
+
+   @include transitionGeneral; // TEST 
+   &:hover {
+     // color: red;  
+     // color: $c_accent;  
+     // color: var(--primary-color);  
+     // color: $c_primary_light;   
+     // color: $c_primary_dark;  
+     color: $c_accent; 
+   }
+
+   */
+  font-size: 2em;
   transition: all 0.2s linear;
+  color: var(--c-text);
 }
 .social_footer a:hover {
-  color: #F06;
+  color: var(--c-accent);
 }
 .social_footer img {
   width: 100%;
@@ -4175,6 +4280,87 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 }
 .social_contact a:hover {
   color: var(--dark-primary-color);
+}
+
+.demo_item {
+  background-color: #000;
+  float: left;
+  width: 32%;
+  margin-right: 2%;
+  padding-top: 32%;
+  padding-top: 42.8%;
+  position: relative;
+}
+.demo_item:nth-of-type(3n) {
+  margin-right: 0%;
+}
+
+.demo_item_content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#transformers-rule {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%; /* 100 =  VERY COOL EFFECT !!! */
+  perspective: 1000px;
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition: 0.5s;
+  border: 3px solid black;
+}
+
+.face {
+  position: absolute; /* COOL! - HIDES THE BACK OF THE CARD (THE NEGATIVE SIDE */
+  backface-visibility: hidden;
+}
+
+/*
+.face.front img {
+	height: 100%;
+ 			object-fit: cover;
+	}
+*/
+.face img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.megatron {
+  /* float: left;  */
+  /* position: absolute;  */
+  /* -webkit-transform: rotate(5deg); */
+}
+
+.megatron .front {
+  width: 100%;
+  height: 100%;
+}
+
+.megatron .back {
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+  padding: 20px; /* DEMO */
+  background-color: #ccc;
 }
 
 /*
@@ -4560,8 +4746,9 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
 .card_blog .info .category {
   margin-bottom: 3px;
   margin-bottom: 6px;
+  font-size: var(--card-fs-detail);
+  font-weight: bold;
   color: var(--secondary-text);
-  font-size: var(--fs-m);
 }
 .card_blog .info .category a {
   color: inherit;
@@ -4572,20 +4759,16 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
 }
 .card_blog .info .title {
   /*
-  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
-  fs_card_text
-  fs_card_specs
-  */
+  // font-size: 24px;
   font-size: var(--fs-xl);
   font-size: var(--fs-l);
+  */
+  font-size: var(--card-fs-title);
+  font-size: 24px;
   font-weight: bold;
   padding-bottom: 3px;
   border-bottom: 1px solid var(--divider-text);
   margin-bottom: 6px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 .card_blog .info .title a {
   text-decoration: none;
@@ -4596,14 +4779,15 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
 .card_blog .info .specs {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  row-gap: 3px;
   flex-wrap: wrap;
-  margin-bottom: 12px;
-  /* */
+  gap: 0.5em;
+  /*
+  column-gap: $spacing05;
+  row-gap: $spacing0125;
+  */
+  margin-bottom: 1em;
   color: var(--secondary-text);
-  font-size: var(--fs-s);
+  font-size: var(--card-fs-specs);
 }
 .card_blog .info .specs a {
   color: inherit;
@@ -4613,7 +4797,7 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
   text-decoration: underline;
 }
 .card_blog .info .text {
-  color: var(--secondary-text);
+  font-size: var(--card-fs-description);
   line-height: 1.5em;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -4621,7 +4805,7 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
   overflow: hidden;
 }
 .card_blog .info .link {
-  margin-top: 24px;
+  margin-top: 2em;
   display: flex;
   justify-content: flex-end;
 }
@@ -4927,10 +5111,10 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
   padding-top: 18px;
 }
 .card_product .info .category {
-  margin-bottom: 3px;
-  margin-bottom: 6px;
+  font-size: var(--card-fs-detail);
+  font-weight: bold;
   color: var(--secondary-text);
-  font-size: 13px;
+  margin-bottom: 1em;
 }
 .card_product .info .category a {
   color: inherit;
@@ -4941,19 +5125,16 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
 }
 .card_product .info .title {
   /*
-  fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
-  fs_card_text
-  fs_card_specs
+  // font-size: 24px;
+  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
   */
+  font-size: var(--card-fs-title);
   font-size: 24px;
   font-weight: bold;
-  padding-bottom: 3px;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid var(--divider-text);
-  margin-bottom: 6px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  margin-bottom: 1em;
 }
 .card_product .info .title a {
   text-decoration: none;
@@ -5581,7 +5762,7 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
   margin-block: unset;
 }
 .cowo-tabs .tab p:not(:last-of-type) {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /*
@@ -5598,7 +5779,6 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
   gap: 6px;
 }
 .cowo-tabs-menu li {
-  min-width: 4em; /* TEMP - DEMO */
   min-width: 8em; /* TEMP - DEMO */
   text-align: center;
 }

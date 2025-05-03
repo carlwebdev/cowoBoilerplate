@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * Built by cowowo.cat
@@ -41,12 +41,12 @@
              
       </div> <!-- /genericDropdownItem_top -->
       <div class="dropdown-target jq_dropdown_hidden">  
-          <? include('components/dev/lorem/slipsum.php'); ?>
+          <?php include('components/dev/lorem/slipsum.php'); ?>
       </div> <!-- /genericDropdownItem_bottom -->
                        
     </div> <!-- /dropdown-pair --> <?php */?>
     
     
         
-  <? }  ?>
+  <?php }  ?>
 </div> <!-- /cowo-dropdown --> 

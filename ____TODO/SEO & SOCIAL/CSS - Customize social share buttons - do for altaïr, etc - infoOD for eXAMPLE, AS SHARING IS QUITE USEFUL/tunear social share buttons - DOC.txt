@@ -1,1 +1,0 @@
-tunear social share buttons, as in css tricks, can be done, but not with native popup, sino new page, eso ya lo sabia hacer e n altair testings desde el principio... - 

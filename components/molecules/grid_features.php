@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * PHP
  * Grid Features (default)

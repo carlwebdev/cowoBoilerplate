@@ -24,7 +24,7 @@
   <div class="info">	
     <div class="category"><a href="page-blog.php">Category</a></div> <!-- /category --> 
 
-    <div class="title"><a href="single-blog.php"><?php include('components/atoms/texts/text_lorem_excerpt.php'); ?></a></div> <!-- /title --> 
+    <div class="title"><a href="single-blog.php"><?php include('components/atoms/texts/text_lorem_title.php'); ?></a></div> <!-- /title --> 
 
     <?php /*?>DONE , KINDA - TODO - Sadd author & date .... add todasy date through php ....<?php */?>
     <div class="specs">

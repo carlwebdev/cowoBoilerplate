@@ -101,8 +101,29 @@ form.onerow { // for search box, and email signup box - but witrh diferrent inou
 
 
 
+// NEW FOR NEUBRUTAISM 
+form {
+	// border: 2px solid black;
+	/*
+	border: 2px solid var(--c-black);
+	box-shadow: 4px 4px 0px var(--c-black); 
+	*/
 
 
+	//
+	// h5 {margin-block: unset !important;}
+
+
+
+	// the 1st item in the fomr tag
+	legend {
+		color: var(--c-accent);
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+
+} // form
 
 
 

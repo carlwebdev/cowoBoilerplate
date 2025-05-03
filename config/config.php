@@ -4,7 +4,8 @@
  * CONFIG - base tag & minification
  */  
 // DEVELOPMENT SERVER
-$cowoserverfolder = 'sync/sites/_carl_github/cowoBoilerplate'; 
+// $cowoserverfolder = 'sync/sites/_carl_github/cowoBoilerplate'; 
+$cowoserverfolder = 'sync/dev_github/cowoBoilerplate'; 
 if($_SERVER['SERVER_NAME']=='localhost' || $_SERVER['SERVER_NAME']=='cowoserver' || $_SERVER['SERVER_NAME']=='172.16.0.100') {
 	$domain = 'localhost'; // for html // 'cowoserver' (NON-IP) doesn't work with devices // 172.16.0.100
 	// $path = 'http://'.$domain.'/carljohansson/'; // for php // NOT USED YET ! - for INCLUDES INSIDE INCLUDES THINGEE

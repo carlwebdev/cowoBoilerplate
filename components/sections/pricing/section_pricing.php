@@ -3,7 +3,7 @@
  * SECTION - GRID PRICING (ALL)
  */
 ?>
-<section class="background fullscreen vcenter___NOT     padding_3_4___NOT padding_4">
+<section class="background fullscreen vcenter___NOT  padding_3_4___NOT padding_4">
   <div class="frame wide___NOT">
 
     <?php 

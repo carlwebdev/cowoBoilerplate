@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * HTML
  * List - Social Media Icons - ideally a for loop with array
@@ -6,7 +6,7 @@
  * THE ARRAY ITSELF COULD BE AN INCLUDE, AS IT MIGHT BE USED IN DIFFERENT PLACES OF THE SITE !!!
  */ 
 ?>
-<? /* implementar foreach con 3 arrays */ ?>
+<?php /* implementar foreach con 3 arrays */ ?>
 <ul>
   <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><?php echo $icon_facebook ?></a></li>
   <li><a href="https://twitter.com/" title="Twitter" target="_blank"><?php echo $icon_twitter ?></a></li> 

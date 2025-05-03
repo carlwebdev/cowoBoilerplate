@@ -15,24 +15,17 @@
 </head>
 <body>
 <?php 
-/*  
- * PAGE START
- */
+// PAGE START
 include ( 'components/template/page/page_start.php'); 
 ?> 
   <?php 
-  /*
-   * Header
-   */
+  // HEADER
   include('components/template/header.php'); 
   ?> 
   <?php 
-  /* Page Content Start 
-   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-   */
+  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
   include ('components/template/page/page_content_start.php'); 
-  ?> 
-    
+  ?>  
 	<!-- InstanceBeginEditable name="content" -->
     
     
@@ -45,7 +38,7 @@ include ( 'components/template/page/page_start.php');
       // header positioning options
       // header layout options
       // show popups etc etcetce
-      $show_dev_columns = '1'; // ADD THIS TO THEME SETTINGS SYSTEMS - ASIN DEV ... 
+      $show_dev_columns = '0'; // ADD THIS TO THEME SETTINGS SYSTEMS - ASIN DEV ... 
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
     
     
@@ -63,6 +56,13 @@ include ( 'components/template/page/page_start.php');
     ?> 
     
     
+
+    <?php
+// PAGE BACKGROUNDS START
+include 'components/template/page/page_backgrounds_start.php';  
+?>  
+
+
     <?php
     /*
      * GRID STAFF - falta el title 
@@ -75,36 +75,34 @@ include ( 'components/template/page/page_start.php');
     </section>
 
      
+
+  <?php
+  // PAGE BACKGROUNDS END
+  include 'components/template/page/page_backgrounds_end.php';  
+  ?>   
+  
+  
+
 	<!-- InstanceEndEditable -->
   <?php 
-  /* Page Content End 
-   * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-   */
+  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
   include ('components/template/page/page_content_end.php'); 
   ?> 	
   <?php 
-  /*
-   * Footer
-   */
+  // FOOTER
   include('components/template/footer.php'); 
   ?>
   <?php 
-  /*
-   * Cookes Popup
-   */
+  // COOKIES POPUP
   include('components/cowo_cookies.php'); 
   ?> 
   <?php // include "components/side_menu.php"; ?>   
 <?php 
-/*  
- * PAGE END
- */
+// PAGE END
 include ('components/template/page/page_end.php'); 
 ?> 
 <?php 
-/*
- * Scripts
- */
+// SCRIPTS
 include('config/scripts.php'); 
 ?>
 <!-- InstanceBeginEditable name="scripts" -->

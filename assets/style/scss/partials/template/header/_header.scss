@@ -24,6 +24,10 @@ header {
   // border: $s_border; // DEV
   // border: $dev_border; // DEV
   
+
+
+
+
   /* CASE : FIXED HEADER */ // ALSO RQUIRES TEH SSCRIPT !!!!!!!!!!!!!!!!!!!!! - BUT 1ST MUST CELANY THE HEADROOM SITUATIN 
   &.case-is-fixed { // vs just "is-fixed"
     position: fixed; top: 0; width: 100%;
@@ -87,9 +91,34 @@ header {
 .header_logo {
   flex-shrink: 0; // FLEX PRECAUTION  
   width: 320px; // ??? // 420px !!! // 24em // 36em
+
+  // border: 3px solid red; // 
+  
   img {
    // @include img;
   } // RESET &/VS PICTURE TAG!! ELSE JUST PLAIN OLD IMAG SCON SU CLAS SI ACASO ... FRO MORE SEMANTIC AND ACCESSIBLE HTML !!
+  
+
+
+  /*
+  img {
+    // AS ITS A PNG ... 
+    // drop-shadow(5px 5px);
+    filter: drop-shadow(5px 5px var(--c-text)); // BACAUSE IMG IS PNG
+  }
+  */
+  
+  /*
+  svg {
+    // AS ITS A PNG ... 
+    // drop-shadow(5px 5px);
+    // filter: drop-shadow(5px 5px var(--c-text)); // BACAUSE IMG IS PNG
+    filter: drop-shadow(5px 5px var(--c-accent));
+  }
+
+  */
+  
+  
   
 } // header_logo
 	

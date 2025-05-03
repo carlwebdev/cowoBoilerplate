@@ -1,4 +1,4 @@
-<? 
+<?php 
 // invoke a component calling or sth similar s, or functionality ... function_headroom.php
 /* 
  * Masonry.js 

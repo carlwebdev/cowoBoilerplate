@@ -78,92 +78,101 @@ TASKS:
 
 
 
-
-<?php 
-/* 
-  * START - ALTERNATING BACKGROUNDS
-  */
-?> 
-<div class="backgrounds">
+<?php
+// PAGE BACKGROUNDS START
+include 'components/template/page/page_backgrounds_start.php';  
+?>  
 
 
-    <?php 
-    /* 
-     * BLOG - RECENT - GRID
-     */
-    ?> 
-    <section class="background light___not padding_3_4">
+
+
+  <section class="background padding_3_4___NOT padding_4">
       <div class="frame wide___NOT full___NOT">
-        <?php include('components/post_types/blog/section_blog_recent.php'); ?>   
-      </div>
-    </section> 
-
-
-    <?php 
-    /* 
-     * BLOG - FEATURED 
-     */
-    ?> 
-    <section class="background padding_3_4">
-      <div class="frame wide___NOT narrow_TAMPOCO medium__WTF narrow">
-        <?php include('components/sections/blog/blog_featured.php'); ?>
-      </div>
-    </section>
-    
-    
-
-    
-
-    <?php 
-    /* 
-     * SECTION - - - BLOG - ALL - GRID
-     */
-    ?>   
-    <section class="background padding_3">
-      <div class="frame wide ___NOT full___NOT">
-        <?php include('components/post_types/blog/section_blog_all.php'); ?>
-      </div>
-    </section>
-
-
-
-    <?php 
-    /* 
-    * SECTION - GRID BLOG RECENT 
-    */
-    ?>
-    <section class="background light___NOT padding_3_4">
-      <div class="frame wide___NOT">
-        <?php include('components/post_types/blog/section_blog_recent.php'); ?>
+        <?php 
+        // GRID BLOG RECENT - THS ONE CAME FOMR THE HOMEPAGE 
+        include('components/post_types/blog/section_blog_recent.php'); 
+        ?>
       </div> 
     </section> 
 
 
-    <?php 
-    /* 
-    * SECTION - GRID BLOG ALL 
-    */
-    ?>      
+
+    <section class="background light___not padding_3_4">
+      <div class="frame wide___NOT full___NOT">
+        <?php 
+        // BLOG - RECENT - GRID
+        include('components/post_types/blog/section_blog_recent.php'); 
+        ?>   
+      </div>
+    </section> 
+
+
+
+
+
+    <section class="background accent___NOT padding_4"> <!-- STODO - SUACVIZAR EL ACCENT - Y REVISAR LOS OCLORES !!! -->
+      <div class="frame wide___NOT narrow">
+        <?php 
+        // SECTION - BLOG - FEATURED     - THS ONE CAME FOMR THE HOMEPAGE 
+        include('components/sections/blog/blog_featured.php'); 
+        ?>
+      </div> 
+    </section>
+
+
+    <section class="background padding_3_4">
+      <div class="frame wide___NOT narrow_TAMPOCO medium__WTF narrow">
+        <?php 
+        // BLOG - FEATURED 
+        include('components/sections/blog/blog_featured.php'); 
+        ?>
+      </div>
+    </section>
+    
+    
+
+    
+
+
     <section class="background padding_3">
-      <div class="frame wide___NOT">
-        <?php include('components/post_types/blog/section_blog_all.php'); ?>
+      <div class="frame wide ___NOT full___NOT">
+        <?php 
+        // SECTION - - - BLOG - ALL - GRID
+        include('components/post_types/blog/section_blog_all.php'); 
+        ?>
       </div>
     </section>
 
 
 
 
+    <section class="background light___NOT padding_3_4">
+      <div class="frame wide___NOT">
+        <?php 
+        // SECTION - GRID BLOG RECENT 
+        include('components/post_types/blog/section_blog_recent.php'); 
+        ?>
+      </div> 
+    </section> 
 
-<?php 
-/* 
-  * END - ALTERNATING BACKGROUNDS
-  */
-?> 
-</div> <!-- /backgrounds -->
-    
-    
-    
-  
+
+   
+    <section class="background padding_3">
+      <div class="frame wide___NOT">
+        <?php 
+        // SECTION - GRID BLOG ALL 
+        include('components/post_types/blog/section_blog_all.php'); 
+        ?>
+      </div>
+    </section>
+
+
+
+
+  <?php
+  // PAGE BACKGROUNDS END
+  include 'components/template/page/page_backgrounds_end.php';  
+  ?>     
   <?php 
   // PAGE CONTENT END   
   include ('components/template/page/page_content_end.php'); 

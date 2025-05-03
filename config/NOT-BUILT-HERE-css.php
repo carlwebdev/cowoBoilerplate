@@ -5,10 +5,10 @@
 ?>
 <link rel="stylesheet" href="assets/css/global.css" />
 <!--
-<? if($min=='FALSE') { ?>
+<?php if($min=='FALSE') { ?>
 <link rel="stylesheet" href="assets/css/global.css" />
-<? } elseif ($min='TRUE') { ?>
+<?php } elseif ($min='TRUE') { ?>
 <link rel="stylesheet" href="assets/css/global.css" />
-<? /* <link rel="stylesheet" type="text/css" href="css/all-min.css" /> */ ?>   
-<? } ?>
+<?php /* <link rel="stylesheet" type="text/css" href="css/all-min.css" /> */ ?>   
+<?php } ?>
 -->

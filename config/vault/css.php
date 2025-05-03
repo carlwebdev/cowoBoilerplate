@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="assets/css/all-ie-only.css" />
 <![endif]-->
 
-<?php /*?><? if($min=='FALSE') 
+<?php /*?><?php if($min=='FALSE') 
 { 
 ?>
 <link rel="stylesheet" href="css/website_global.css" />
-<? 
+<?php 
 } 
 elseif ($min='TRUE') 
 { 
@@ -20,6 +20,6 @@ elseif ($min='TRUE')
 ?>
 <link rel="stylesheet" href="css/website_global.css" />
 <!-- <link rel="stylesheet" href="css/all-min.css" /> --> 
-<? 
+<?php 
 } 
 ?><?php */?>

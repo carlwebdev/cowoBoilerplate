@@ -3,7 +3,7 @@
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<? $pagename = $pagename_cookies ?>
+<?php $pagename = $pagename_cookies ?>
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
 </head>
@@ -54,7 +54,7 @@ include ( 'components/template/page/page_start.php');
     <section class="padding_4">
       <div class="frame wide___NOT">
 
-        <div class="m_htmleditor">	
+        <div class="m_htmleditor">	<!-- TODO - CERATE  CAS FOR LEGAL... SMALLER ETC -->
           <?php include('components/atoms/sample_text_cookies.php'); ?> 
         </div> <!-- /m_htmleditor -->
 

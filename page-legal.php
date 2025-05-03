@@ -39,7 +39,7 @@ include ( 'components/template/page/page_start.php');
       $show_dev_columns = '0';
 
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      $show_page_banner = '1'; // hacky situation in this case .... or not
+      $show_page_banner = '0'; // hacky situation in this case .... or not
       $show_page_banner_map = '0';
       $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
       $show_page_title = '1'; 
@@ -55,11 +55,14 @@ include ( 'components/template/page/page_start.php');
 
     
     
-  <?php /*?><? include('components/pages/cookies_view.php'); ?><?php */?>
+  <?php /*?><?php include('components/pages/cookies_view.php'); ?><?php */?>
     
     
     
-    
+<?php
+// PAGE BACKGROUNDS START
+include 'components/template/page/page_backgrounds_start.php';  
+?>  
     
     
     
@@ -79,7 +82,10 @@ include ( 'components/template/page/page_start.php');
     
     
     
-
+  <?php
+  // PAGE BACKGROUNDS END
+  include 'components/template/page/page_backgrounds_end.php';  
+  ?>   
   <?php 
   // PAGE CONTENT END
   include ('components/template/page/page_content_end.php'); 

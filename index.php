@@ -9,7 +9,6 @@
 <?php include('config/head/head_bottom.php'); ?> 
 
 <!-- InstanceBeginEditable name="head" -->
-  
 <?php
 // $pagename = $pagename_index;
 $pagename = 'This is a template';
@@ -17,7 +16,7 @@ $pagename = 'This is a template';
 ?>
 
 <?php /*?>(copied form cjnet) - I HAVE DEVELOPED 2 DIFRERENT WAYS TO MANEGE THE INCLUDES OF RELATIVE PATHS INSIEDE THE FILES.<?php */?>  
-  
+
 <?php /*?>LESS VERBOSE SYSTEM - either empty "", or "../" <?php */?>
 <?php // $level = "root" ?> <?php /*?>MORE VERBOSE SYSTEM<?php */?>  
 <?php /*?><!-- 
@@ -36,26 +35,21 @@ havcer una functrion, con esto por default, excepto en deisgnated pages, ergopro
 <?php // include $path2root."js/components/EXAMPLE.php"; ?>   
   
 <!-- InstanceEndEditable -->
+
 </head>
 <body>
 <?php 
-/*  
- * PAGE START
- */
+// PAGE START
 include ( 'components/template/page/page_start.php'); 
 ?> 
   <?php 
-  /*
-   * Header
-   */
+  // HEADER
   include('components/template/header.php'); 
   ?> 
   <?php 
-  /* 
-   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-   */
+  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
   include ('components/template/page/page_content_start.php'); 
-  ?> 
+  ?>  
 	<!-- InstanceBeginEditable name="content" -->
 		
 
@@ -93,12 +87,6 @@ contact form, etc
 add blog, news, team, testimonials, staff etc offices !!!
 <?php */?>
     
-    
-    
-
-    
-    
-  
     
     
     
@@ -142,24 +130,20 @@ selection of services, products, news, <br>
 <br>
 contact form, etc<br>
 
-
 add blog, news, team, testimonials, staff etc offices !!!
 
-  
 <?php */?>
     
     
     
     
-    
+    <?php /*?><div class="todo">
+  KILL THIS, ITS NOW REDUNDANT... S & D !!!!!!!
+</div> <!-- /todo -->
+</section><?php */?> 
   
     
-    
-<?php /*?><section class="fullHeightTest">
-  <div class="frame">
-  	fullHeightTest
-  </div> <!-- /frame --> 
-</section><?php */?>
+  
 
 
 
@@ -173,8 +157,34 @@ add blog, news, team, testimonials, staff etc offices !!!
 </div><?php */?>
 
 
+<?php /*?>MODULE - Fullpage module<?php */?>   
+<?php /*?><div class="m_fullPage" style="background-image: url('https://picsum.photos/id/237/1920/1080');">
+  <div class="frame">
+    <div class="text">
+      Centered Text<?php */?><?php /*?><br>
+			FitText.js !!<?php */?>
+<?php /*?>    </div> <!-- /text --> 
+  </div> <!-- /frame --> 
+</div>
+<?php */?>
+
+
+
+
+
+
+
+
+
     
- 
+    
+    
+
+
+
+
+
+
     
 
     
@@ -203,16 +213,13 @@ add blog, news, team, testimonials, staff etc offices !!!
     
 
     
-<?php 
-/* 
- * START - LAYOUT SYSTEM - BACKGROUNDS (AND EVEN CSS GRID WHATEVER ... )
- */
-?>    
-<div class="backgrounds">
+<?php
+// PAGE BACKGROUNDS START
+include 'components/template/page/page_backgrounds_start.php';  
+?>  
 
 
-
-<section class="background padding">
+<section class="dev_hide background padding">
       <div class="frame wide___NOT">
         <?php 
           $section_title = 'TODO';
@@ -220,7 +227,7 @@ add blog, news, team, testimonials, staff etc offices !!!
         ?> 
 
 
-
+<!--
 <pre>
 THINGS TO DO:
 
@@ -232,6 +239,10 @@ THINGS TO DO:
 
 
 </pre>
+-->
+
+
+
       </div> <!-- /frame --> 
     </section>
 
@@ -241,7 +252,7 @@ THINGS TO DO:
 
 
 
-  <section class="background fullscreen___NOT vcenter padding_4___NOT padding_8___NOT padding_3_4       accent___NOT light___NOT">
+  <section class="background fullscreen___NOT vcenter___NOT padding_4___NOT padding_8___NOT padding_3_4       accent___NOT light___NOT">
     <div class="frame">
 
       <div class="section_title center">What we're about !</div> 
@@ -275,115 +286,32 @@ THINGS TO DO:
   
   
 
-  <?php 
-  /* 
-   * SECTION - GRID PRICING (ALL)
-   */
-  include('components/sections/pricing/section_pricing.php'); 
-  ?>
+
 
 
   
-  
-  
-  
-  
-  
-  
-  
-    <?php 
-    /* 
-     * SECTION - GRID BLOG RECENT 
-     */
-    ?>  
-    <section class="background padding_3_4___BOT padding_4">
-      <div class="frame wide___NOT full___NOT">
-        <?php include('components/post_types/blog/section_blog_recent.php'); ?>
-      </div> 
-    </section> 
+
+
 
 
   
-    <?php 
-    /* 
-     * SECTION - BLOG - FEATURED 
-     */
-    ?>  
-    <section class="accent padding_4"> <!-- STODO - SUACVIZAR EL ACCENT - Y REVISAR LOS OCLORES !!! -->
-      <div class="frame wide___NOT narrow">
-        <?php include('components/sections/blog/blog_featured.php'); ?>
-      </div> 
-    </section>
 
-    
 
-  
-  
-  
-  
-  
-    <?php /*?>  
-    BUILD CTA MOCDULE, AS HERO HOME KINDA TING, BUT REYUISABEL ....
-    
-    2 COLS, BG OPACITYSTH HAPEING, TOTLE, ETXT,M CTA BUTTON, ONLY ONE, TO THE RIGHT BOTTOM, AND CLEAR, TH BIG BUTTON PILL TYP ...
-    
-    THIS IS A NICE BUILDING THING, NOT JUST ORG THINGEES,,,
-    <?php */?>
-  
-  
-  
-  
-    <?php 
-    /* 
-     * GRID CONTACT - AS IN MODULE, CONTACT ......................
-     */
-    ?>   
-    <section class="background fullscreen vcenter padding_4 accent___NOT light___NOT">    
-      <div class="frame"> 
-        <?php include('components/sections/contact/grid_contact.php'); // AS IN MODULE, CONTACT ...................... ?>   
-      </div>   
-    </section> 
-
-  
-  
-  
-    
-  
-    <?php 
-    /* 
-     * SECTION CONTACT - MAP - THIS COULD BE A MODULE, LIKE CNTACT,WITH THE MAP TO THE SIDE, AND OTHER CONTACT INFOS SUCH AS ADRES SAEC 
-     */
-    ?> 
-    <?php /*?><?php */?>
-    <section class="background fullscreen___NOT vcenter___NOT padding_4___NOT accent___NOT light___NOT padding_3_4">
-      <div class="frame">
-        <?php include('components/sections/contact/section_contact_map.php'); ?> 
-      </div> <!-- /frame --> 
-    </section> 
-    
-  
-  
-  
-  
-  
   
   
 
-  
-    <?php include('components/template/page/page_banner_map.php'); // here shoudl be page banner, sino standalone module, to not confuse with actualpage banners !?>
     
-
+  
   
 
-<?php 
-/* 
- * END - LAYOUT SYSTEM - BACKGROUNDS
- */
-?>  
-</div> <!-- /backgrounds -->
-    
-    
 
+  
+
+
+  <?php
+  // PAGE BACKGROUNDS END
+  include 'components/template/page/page_backgrounds_end.php';  
+  ?>    
     
     
     <!--
@@ -403,143 +331,46 @@ THINGS TO DO:
     
     
     
-<?php /*?>		
-<section class="padding accent">
-</section>
-<?php */?>  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
     
 <!-- partial - layout_page_basics ... -->    
 
-    
-    
-  
-    
     
     
 <!--
 map box - find us, also add the adress details, contat detas, specifci for address, ... stanfalone fomr email & tel ...
 -->
 
-    
-    
-    
-    
-
 
     
 
-<?php /*?><div class="todo">
-  KILL THIS, ITS NOW REDUNDANT... S & D !!!!!!!
-</div> <!-- /todo -->
-<section class="fullHeightTest">
-  <div class="frame">
-  	fullHeightTest
-  </div> <!-- /frame --> 
-</section><?php */?>
 
 
 
-<?php /*?>MODULE - Fullpage module<?php */?>
     
     
     
-    
-<?php /*?><div class="m_fullPage" style="background-image: url('https://picsum.photos/id/237/1920/1080');">
-  <div class="frame">
-    <div class="text">
-      Centered Text<?php */?><?php /*?><br>
-			FitText.js !!<?php */?>
-<?php /*?>    </div> <!-- /text --> 
-  </div> <!-- /frame --> 
-</div>
-<?php */?>
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-
+  
     
 	<!-- InstanceEndEditable -->
   <?php 
-  /* Page Content End 
-   * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-   */
+  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
   include ('components/template/page/page_content_end.php'); 
   ?> 	
   <?php 
-  /*
-   * Footer
-   */
+  // FOOTER
   include('components/template/footer.php'); 
   ?>
   <?php 
-  /*
-   * Cookes Popup
-   */
+  // COOKIES POPUP
   include('components/cowo_cookies.php'); 
   ?> 
   <?php // include "components/side_menu.php"; ?>   
 <?php 
-/*  
- * PAGE END
- */
+// PAGE END
 include ('components/template/page/page_end.php'); 
 ?> 
 <?php 
-/*
- * Scripts
- */
+// SCRIPTS
 include('config/scripts.php'); 
 ?>
 <!-- InstanceBeginEditable name="scripts" -->

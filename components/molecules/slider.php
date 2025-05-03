@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * PHP
  * Slider
@@ -14,7 +14,7 @@
       <?php for ($x = 0; $x <= 4; $x++) { ?>
 
           <div class="placeholder_slide s_bg_color_1">
-            <div class="image" style="background-image: url('<? echo $cb_img_random; ?>');">
+            <div class="image" style="background-image: url('<?php echo $cb_img_random; ?>');">
               <?php /*?>image<?php */?>
               <a href="single-blog.php"></a>
             </div> <!-- /image -->

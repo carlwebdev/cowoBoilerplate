@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * cowo-Boilerplate
  * Built by cowowo.cat
@@ -28,8 +28,8 @@
   </div>                              
   
   <div class="cowo-lightboxme-content">
-  	<? include('dev/lorem/slipsum-2.php'); ?>
-  	<? include('dev/lorem/slipsum-2.php'); ?>
+  	<?php include('dev/lorem/slipsum-2.php'); ?>
+  	<?php include('dev/lorem/slipsum-2.php'); ?>
   </div> <!-- / cowo-lightboxme-content" -->
       
 </div> <!-- / cowo-lightboxme-target --> 

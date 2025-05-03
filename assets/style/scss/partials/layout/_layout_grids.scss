@@ -55,7 +55,11 @@
 	gap: 48px;
 	
 	.col {
-		
+
+
+		// UI - WHATEVER
+
+		/*
 		// TEMP., CARD 
 		
 		
@@ -63,8 +67,11 @@
 		// padding: 24px;
 		
 		
+
+		
+
 		// .m_item_base_01 // COPIED FOMR HERE 
-			background-color: $c_white; /* PRECAUTION */
+			background-color: $c_white; // PRECAUTION
 			// box-shadow: 0px 0px 2px #ccc;
 			// box-shadow: 0px 0px 4px 2px #ccc;
 			// box-shadow: 0px 0px 8px -2px #ccc;
@@ -75,15 +82,29 @@
 		
 		  padding: 24px;
 		
-		
-			&:hover {
-				cursor: pointer; // 
-				box-shadow: 0px 0px 4px 0px #ccc;
-				// @include transition(box-shadow, 0.2s);
-        transition: box-shadow $t_fast linear;
-		  }
+		*/
 
-			// } 
+
+
+
+		  // UI - NEOBRUTALISM
+		  border: 2px solid var(--c-black);
+		  box-shadow: 4px 4px 0px var(--c-black); 
+		  background-color: var(--c-white); // PRECAUTION
+		  padding: 2em;
+
+
+		  
+		  transition: box-shadow $t_fast linear;
+		&:hover {
+			cursor: pointer; // 
+			// box-shadow: 2px 2px 0px var(--c-black); 
+			box-shadow: 1px 1px 0px var(--c-black); 
+			// @include transition(box-shadow, 0.2s);
+			// transition: box-shadow $t_fast linear;
+		}
+
+		// } 
 	
 	
 	

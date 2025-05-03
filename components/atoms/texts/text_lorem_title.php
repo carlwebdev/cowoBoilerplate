@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
  * TEXT LOREM TITLE
  */ 

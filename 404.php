@@ -23,24 +23,17 @@
 </head>
 <body>
 <?php 
-/*  
- * PAGE START
- */
+// PAGE START
 include ( 'components/template/page/page_start.php'); 
 ?> 
   <?php 
-  /*
-   * Header
-   */
+  // HEADER
   include('components/template/header.php'); 
   ?> 
   <?php 
-  /* Page Content Start 
-   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-   */
+  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
   include ('components/template/page/page_content_start.php'); 
-  ?> 
-    
+  ?>  
 	<!-- InstanceBeginEditable name="content" -->
     
     
@@ -80,28 +73,24 @@ Y LO BUENO DE FLEX SITIATION ES QU PERMITE TENER UNA CAPA QUE VAYA HASTA ABAJO .
     
     
     
-    
-    
-    
-    <!--
+
+  <!--
 
   todo add alyout godlen, as in wp_eimoe, for these secondar y text pages ..,,,,
     
-    
   -->  
+    
 
-    
-    
-    
-    
-    
-    
-    
-<?php /*?>MODULE - Fullpage module<?php */?>
-<?php /*?><?php */?>
-    
-    
-    
+<?php /*?>    
+meter imagen fullfold or casi, con texto on top etc 
+fukllpage image with text on top, at least as one of the options...
+<?php */?> 
+
+<!--    
+2 optis:
+    1 - simpe text
+    2 - img situation
+-->    
 <div class="fullpage_text" style="background-image: url('https://picsum.photos/id/237/1920/1080');">
   <div class="frame">
     <div class="text">
@@ -116,10 +105,7 @@ Y LO BUENO DE FLEX SITIATION ES QU PERMITE TENER UNA CAPA QUE VAYA HASTA ABAJO .
     
     
     
-<?php /*?>    
-meter imagen fullfold or casi, con texto on top etc 
-fukllpage image with text on top, at least as one of the options...
-<?php */?>
+
     
 <?php /*?>   
 <section class="padding_4 test___NOT">  
@@ -141,72 +127,37 @@ fukllpage image with text on top, at least as one of the options...
     
 <?php /*?><?php include('components/modules/page_title.php'); ?><?php */?>
 
-<?php /*?><section class="fullHeightTest">
-  <div class="frame">
-  	
-    
-    <?=$pagename ?> - Page Not Found
-    
-    
-  </div> <!-- /frame --> 
-</section><?php */?>
 
 
-    
-<!--    
-2 optis:
-    1 - simpe text
-    2 - img situation
--->    
-    
-    
-    
-    
-    
-    
-    
 
 
-    
-    
-    
 
-    
-    
+
+
     
   
     
     
 		<!-- InstanceEndEditable -->
   <?php 
-  /* Page Content End 
-   * PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-   */
+  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
   include ('components/template/page/page_content_end.php'); 
   ?> 	
   <?php 
-  /*
-   * Footer
-   */
+  // FOOTER
   include('components/template/footer.php'); 
   ?>
   <?php 
-  /*
-   * Cookes Popup
-   */
+  // COOKIES POPUP
   include('components/cowo_cookies.php'); 
   ?> 
   <?php // include "components/side_menu.php"; ?>   
 <?php 
-/*  
- * PAGE END
- */
+// PAGE END
 include ('components/template/page/page_end.php'); 
 ?> 
 <?php 
-/*
- * Scripts
- */
+// SCRIPTS
 include('config/scripts.php'); 
 ?>
 <!-- InstanceBeginEditable name="scripts" -->

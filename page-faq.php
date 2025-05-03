@@ -4,7 +4,7 @@
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
-<? $pagename = $pagename_faq ?>
+<?php $pagename = $pagename_faq ?>
 <!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
