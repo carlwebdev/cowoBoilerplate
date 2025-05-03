@@ -42,6 +42,25 @@
 
 
       GOAL - TO SEECb ONLINE, SIS TO COMMIT TIO REPO, AND CONNECT TO A CLOUDFLARE PAGE! THAT WOULD BE A NCIE SYSTEM, FOR PHP SITES...
+
+      DONE - COMMIT TO REPO
+      DOEN - CERATE CLUDFLARE PAGES 
+
+      MIOVE THESE NOTES TO NOTION !!!!!!!!
+
+
+      AS CLOUDFPARE PÀGE SDOENST SERVER PHP....
+      KILL THAT PAGES
+
+
+      AND BUIDL SUBDOMAIN COWOCOILERPLATE.CARLWEBDEV.COM FOR NOPW ..
+
+
+
+      done:
+      cowoboilerplate.carlwebdev.com
+
+      now; must connect github repo to it...
       
       -->
 
