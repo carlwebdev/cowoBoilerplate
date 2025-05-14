@@ -175,18 +175,34 @@
     
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    
+    // justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+
     .text {
       // @include dev_border;
-      color: $c_white;
-      text-shadow: 0px 2px 2px #000;
+      // color: $c_white;
+      // text-shadow: 0px 2px 2px #000;
+      color: var(--c-white);
+      text-shadow: 0px 2px 2px var(--c-black);
+
       // font-size: 48px; // CSS CLAMP !!!!!!!!
       // font-size: 56px; // CSS CLAMP !!!!!!!!
-      font-size: var(--fs-xxxl); // CSS CLAMP !!!!!!!!
+      
+      // font-size: var(--fs-xxxl); // CSS CLAMP !!!!!!!!
+      font-size: 4em;
+
+
+
       // padding: 48px;
       // padding: 2em; // TEST 
       padding: 1em; // TEST 
+
+
+      font-weight: bold;
+      text-transform: uppercase; 
+
+
     } // text 
     
     
@@ -206,10 +222,20 @@
   // @include dev;  
   // @include paddingv($spacing025);
   // padding-top: $spacing05;
-  padding-top: $spacing;
-  // font-size: 12px; 
-  // font-size: 13px; 
-  font-size: 0.9em; 
+  // padding-top: $spacing;
+  padding-top: 2em;
+
+
+
+
+  padding-bottom: 1em; // FALLBACK
+  // padding-bottom: 1lh; // ???
+
+
+
+
+  font-size: 0.9em; // TODO - USE VARIABLE
+
   // color: gray; //  ... / variabel de fonts colors etc 
   color: var(--secondary-text); // ETST / todo - --c-text-alt
   text-transform: uppercase;
@@ -236,10 +262,15 @@
     }
     */
     
+
+
+
+/*
     &::after { // not last, asi me ebvito la revsision de la excecpcin !!!!
       content: '>';
       margin-left: 0.3em;
-    } // afterss
+      margin-left: 0.8em;
+    } // after
     
     &:last-of-type {
       &::after { //s not last, asi me ebvito la revsision de la excecpcin !!!!
@@ -247,7 +278,20 @@
         margin-left: unset;
       } // after
     } // last
-    
+  */  
+
+&:not(:last-of-type)::after {
+  content: '>';
+  margin-left: 0.8em;
+  /* margin-left: 1em; */
+  margin-right: 0.4em;
+
+  font-size: 1.4em; // 
+
+} // after
+
+
+
   } // span
   
   
@@ -296,6 +340,9 @@ h1.page_title {
 } // page_title
 
 
+
+
+
 /*
  *
  * TITLES - SECTION TITLE (h2)
@@ -311,8 +358,11 @@ h1.page_title {
 	// font-size: $fs_xxl;
   // font-size: var(--fs-xxl);
   font-size: var(--fs-xxxl);
+  font-size: 3em; // TEST
 
-
+  font-weight: bold; 
+  text-transform: uppercase; // TEST
+  
   // color: var(--c-text);
   
   h2 {

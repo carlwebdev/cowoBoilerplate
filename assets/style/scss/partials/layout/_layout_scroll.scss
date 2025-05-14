@@ -1,0 +1,36 @@
+
+
+/* 
+ * SYSTEM ALTERNATING BACKGROUND COLORS 
+ */
+// DIDNT FIND THIS, SO I BUILT IT AGAIN:active
+
+.backgrounds { // s_
+  
+    /*
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: 100dvh; 
+  
+  
+    .background {scroll-snap-align: start;}
+  */
+  
+  
+    .background:nth-of-type(odd) { // ALWAYS START WITH LIGHTER COLOR
+      // background-color: #ccc;
+      background-color: none;
+      // background-color: $c_gray_medium; 
+      // background-color: $c_gray_light; 
+    } // odd
+    
+    .background:nth-of-type(even) { // AND CONTINUE WITH DARKER TONE
+      // background-color: #999;
+      // background-color: #ccc;
+      // background-color: #e28630;
+      background-color: var(--c-bg-alt); // 
+      // background-color: $c_gray_dark; 
+      // background-color: $c_gray_medium; 
+    } // even
+    
+  } // backgrounds

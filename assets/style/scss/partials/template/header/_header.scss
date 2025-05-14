@@ -59,8 +59,13 @@ header {
 
 
   // background-color: var(--c-bg-dark);
-  // background-color: var(--c-bg);  
-  background-color: var(--c-bg-alt); 
+
+  background-color: var(--c-bg);  
+  // background-color: var(--c-bg-alt); 
+
+
+
+
   // background-color: var(--c-gray-dark);
 
 // HERE WERE THE HEADER BARS
@@ -118,8 +123,16 @@ header {
 
   */
   
+
+  // TEXT
+  color: var(--c-text);
+  font-size: 2em; // TEST
   
-  
+  span {
+    font-weight: bold;     
+  } // span
+
+
 } // header_logo
 	
 

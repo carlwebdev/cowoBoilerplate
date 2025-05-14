@@ -31,9 +31,12 @@
       ?>
       <div class="header_logo">
         <a href="index.php" class="TODO-TEST-HEADER-LOG-HERE-INSTEAD">
-          <img src="<?php echo $website_logo ?>" alt="<?php echo $website_name ?>">
+          <!-- <img src="<?php echo $website_logo ?>" alt="<?php echo $website_name ?>"> -->
+          cowo<span>Boilerplate</span>
         </a>
       </div>
+
+
       <?php /*?>
       <!-- COPIED FORM CB_PLAIN , THE CSS STILL EXISTED HERE, SO DO A ACLEANUP... POSITION IT RIGH UNDER THE LOGO . , ADN KILL THE H1 & H2 IBVISOUSLY!! ITS SNOT SEMANTIC CONTENT -->
       <div id="slogan"><h2><span>a simple Front-End Boilerplate</span> <span>by <a href="https://twitter.com/carlwebdev" target="_blank">@carlwebdev</a></span></h2>

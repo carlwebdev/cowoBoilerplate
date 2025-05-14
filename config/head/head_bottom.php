@@ -11,10 +11,20 @@
 
 
 
-
+<?php
+// Random versioning for cache busting
+$randomVersion = '?v=' . mt_rand(10000, 99999);
+// Alternative: using timestamp
+// $randomVersion = '?v=' . time();
+?>
 
 <!-- <link rel="stylesheet" href="assets/style/css/global.css" > --> 
- <link rel="stylesheet" href="assets/style/scss/global.css" >  
+ <!-- 
+<link rel="stylesheet" href="https://cowoboilerplate.carlwebdev.com/assets/style/scss/global.css<?php echo $randomVersion; ?>" >  
+-->
+ <!-- <link rel="stylesheet" href="/assets/style/scss/global.css<?php echo $randomVersion; ?>" >   -->
+ <link rel="stylesheet" href="assets/style/scss/global.css<?php echo $randomVersion; ?>" >  
+
 <!-- LIVE SASS COMpILER - VSCODE EXTENSION "watch sass" - https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass -->
 
 <?php /*?>IF DEVELOPMENT STATUS = DEVELIPMENT (VS PRODUCTION, etc)<?php */?>  

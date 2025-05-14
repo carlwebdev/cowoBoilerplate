@@ -1,65 +1,44 @@
-
-// move to partial, organisms...
-
-
-
-// 7// YES, MOVE TO ORGANISM, SOMEWHERE AT LEATS IN COMPONENTS FOLDER ... 
-
-
-
-// I AM IN THE PROCESS OF COPYING THIS INTO WP_EIMO - SHOULD ALSO SEPARATE IT HERE IN CB INTO ITS OWN PARTIAL... 
-
-
 .grid_features {
-  // border: 3px solid red; 
-  
-  // @include paddingv($spacing); 
-  // @include paddingv($spacing2); 
-  // // @include paddingv($spacing4); 
-  
   display: flex;
   // justify-content: center;
-  justify-content: space-around;
-  // gap: $spacing4; 
-  gap: $spacing2; 
-  // gap: $spacing; 
+  justify-content: space-around; // ???
+  // gap: 4em; // 
+  gap: 6em; //   
   
-  // vs grid ....
   
 
-  // card_feature(s)
+  // TODO - RENAME AS card_feature(s)
   .item {
-    text-align: center;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center; // PRECAUTION
+  
     .icon {
-      margin-bottom: $spacing0125; 
-      margin-bottom: $spacing025; 
+      color: var(--c-text);
+      font-size: 5em;
       
-      // color: var(--secondary-text);
-      color: var(--c-text-alt);
-      // color: var(--c-text);
-
-
-      // font-size: 14px;
-      // font-size: 24px;
-      font-size: 48px;
-      
-      span {font-size: inherit;}
+      // border: 1px solid red;
+      height: 1em; // ?!
+      // icon !!!!
+      span {
+        font-size: inherit;
+        // border: 1px solid red;
+        aspect-ratio: 1 / 1; // !!
+      }
       
       a {
         color: inherit;
         @include a_ui_alt;
       } // a
       
-    } // category
+    } // icon
 
-    
-    
     
     // for font sysezes, use the card nomencalture, and use it throughioyt, nice ... ..... o not ?
     
 		.title {
-      
       /*
       fs_card_title  -variable, vs just misins... asi, con ele foint wiweight ewc 
       fs_card_text
@@ -71,22 +50,8 @@
       font-size: var(--fs-xl);
       // font-size: var(--fs-xxl);
       
-      
-      
-      
-      
       font-weight: bold;
 
-      // // // padding-bottom: $spacing025;
-      // padding-bottom: $spacing0125;
-      // padding-bottom: $spacing025;
-      // border-bottom: 2px solid;
-      // border-bottom: 1px solid;
-      // border-bottom: 1px solid var(--secondary-text);
-      // border-bottom: 1px solid var(--divider-text);
-      // margin-bottom: $spacing025;
-      // margin-bottom: $spacing075;
-      margin-bottom: 0.8em;
       // a
 
       @include css_line_clamp(3); // TEST  - aaaah 
@@ -104,46 +69,35 @@
     
 
   .text {
+    // text-align: center;
     font-size: var(--fs-l);
     // color: var(--secondary-text);
-    color: var(--c-text-alt);
+    // color: var(--c-text-alt);
     color: var(--c-text);
     @include css_line_clamp(2); // TEST 
   } // text
 
     
-  
   .link {
-    // margin-top: 48px; // DO THE SYSTEM, YA ST SABES ... 
-    margin-top: 2em; // DO THE SYSTEM, YA ST SABES ... 
-    
-    /*
-    display: flex;
-    justify-content: flex-end;
-    */
     
     // button pill simple whatever , just reuse moduels, make it scalabel a6 robust & stable 
     a {
+      display: inline-block; // 
       @include a_ui_alt;
       // @extend %pill; // // add pil bevaiour as clas sected only placehodler 
       @extend %pill_big; // // add pil bevaiour as clas sected only placehodler 
-      // y aparte lso colores etc 
-      
+      // y aparte lso colores etc  
       // def'ly iuse smalle rpils in the other grids... ya que aqui si que es vip, pero ehn hero usar el big 
     }
-  
-    
     // VS MAYBE ADD THE CLASSES TO THE A TAG IN THE FRON TEND !!!!! ???? 
-    
-    
-    
     
   } // link
     
     
+
 } // item
   
   
- 
+
   
 } // grid_features

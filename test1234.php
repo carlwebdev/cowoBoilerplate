@@ -40,6 +40,17 @@ havcer una functrion, con esto por default, excepto en deisgnated pages, ergopro
   
 <!-- InstanceEndEditable -->
 
+
+
+<style>
+  body {
+    background: yellow !important;
+  }
+</style>
+
+
+
+
 </head>
 <body>
 <?php 

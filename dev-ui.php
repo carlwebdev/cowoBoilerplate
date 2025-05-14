@@ -266,7 +266,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 ?>
     
 
-<section id="cowo-lightbox" class="background padding_4 test"> 
+<section id="cowo-lightbox" class="background test___NOT padding_4"> 
 	<div class="frame">  
     
     <div class="section_title">Lightbox<!--(me)--></div>
@@ -282,7 +282,88 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
     
     
+<?php 
+/*
+ * new - tags html glossary 
+ */
+?>
+<section id="cowo-tags" class="background fullscreen padding_2 test">   
+	<div class="frame"> 
     
+    <?php 
+      $section_title = 'Dialog Tag : {dialog}'; // build aside a dropdown native, html, with details & syummary 
+      include('components/dynamic/section_title.php'); 
+    ?> 
+
+	
+
+
+<article>
+    <h3>Dialog Example (modal...) lightbox.. </h3>
+    <button id="openDialog">Open Dialog</button>
+    
+    <dialog id="exampleDialog">
+      <h4>Dialog Title</h4>
+      <p>This is a dialog box. It can be used to display information or prompt the user for input.</p>
+      <button id="closeDialog">Close</button>
+    </dialog>
+    
+    <script>
+      // BY DEAFULT, ONLY CLSES IF CLCIK ON THE CLOSE BUTTON 
+      /*
+      document.getElementById('openDialog').addEventListener('click', function() {
+        document.getElementById('exampleDialog').showModal();
+      });
+    
+      document.getElementById('closeDialog').addEventListener('click', function() {
+        document.getElementById('exampleDialog').close();
+      });
+      */
+    </script>
+    
+
+
+    <script>
+
+      // By default, the <dialog> element cannot be closed by clicking outside the box. However, you can add JavaScript to achieve this functionality. Here's how you can modify the existing example to close the dialog when clicking outside of it:
+      const dialog = document.getElementById('exampleDialog');
+      const openDialogButton = document.getElementById('openDialog');
+      const closeDialogButton = document.getElementById('closeDialog');
+    
+      openDialogButton.addEventListener('click', function() {
+        dialog.showModal();
+      });
+    
+      closeDialogButton.addEventListener('click', function() {
+        dialog.close();
+      });
+    
+      // Close dialog when clicking outside of it
+      dialog.addEventListener('click', function(event) {
+        const rect = dialog.getBoundingClientRect();
+        const isInDialog = (
+          event.clientX >= rect.left &&
+          event.clientX <= rect.right &&
+          event.clientY >= rect.top &&
+          event.clientY <= rect.bottom
+        );
+        if (!isInDialog) {
+          dialog.close();
+        }
+      });
+    </script>
+    
+    
+    </article>
+
+
+	</div> <!-- /frame -->     
+</section>  
+
+
+
+
+
 
 <?php 
 /*
@@ -475,6 +556,111 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 	</div> <!-- /frame -->     
 </section>  
 
+
+
+
+
+
+
+<?php 
+/*
+ * new - tags html glossary 
+ */
+?>
+<section id="cowo-tags" class="background fullscreen padding_2 test">   
+	<div class="frame"> 
+    
+
+
+
+  <article>
+
+<h3>Details and Summary</h3>
+<details>
+  <summary>More Information</summary>
+  <p>This is additional information that is hidden by default and can be revealed by clicking on the summary.</p>
+</details>
+
+<details>
+  <summary>More Information</summary>
+  <p>This is additional information that is hidden by default and can be revealed by clicking on the summary.</p>
+</details>
+
+</article>
+
+
+
+
+<article>
+  <h3>Details and Summary</h3>
+  <details>
+    <summary>More Information</summary>
+    <p>This is additional information that is hidden by default and can be revealed by clicking on the summary.</p>
+    <ul>
+      <li>Item 1: Detailed description of item 1.</li>
+      <li>Item 2: Detailed description of item 2.</li>
+      <li>Item 3: Detailed description of item 3.</li>
+      <li>Item 4: Detailed description of item 4.</li>
+    </ul>
+  </details>    
+</article>
+
+
+<article>
+  <h3>Details and Summary (nested)</h3>
+  <details>
+    <summary>More Information 2</summary>
+    <p>This is additional information that is hidden by default and can be revealed by clicking on the summary.</p>
+    
+    <details>
+      <summary>Subsection 1</summary>
+      <p>Details for subsection 1.</p>
+    </details>
+    
+    <details>
+      <summary>Subsection 2</summary>
+      <p>Details for subsection 2.</p>
+    </details>
+    
+    <details>
+      <summary>Subsection 3</summary>
+      <p>Details for subsection 3.</p>
+    </details>
+  </details>
+</article>
+
+
+
+
+
+
+
+
+		<?php include('components/template/tags.php'); ?>
+	</div> <!-- /frame -->     
+</section>  
+
+
+
+
+
+    
+<?php 
+/*
+ * new - tags html glossary 
+ */
+?>
+<section id="cowo-tags" class="background fullscreen padding_2 test">   
+	<div class="frame"> 
+    
+    <?php 
+      $section_title = 'HTML Tgas'; // build aside a dropdown native, html, with details & syummary 
+      include('components/dynamic/section_title.php'); 
+    ?> 
+
+		<?php include('components/template/tags.php'); ?>
+	</div> <!-- /frame -->     
+</section>  
 
 
 

@@ -16,11 +16,11 @@ if($_SERVER['SERVER_NAME']=='localhost' || $_SERVER['SERVER_NAME']=='cowoserver'
   $min='FALSE';
 }
 // PRODUCTION SERVER
-elseif($_SERVER['SERVER_NAME']=='carljohansson.net' || $_SERVER['SERVER_NAME']=='www.carljohansson.net') {	
-	$domain = 'www.carljohansson.net/tools/cowoBoilerplate/';
+elseif($_SERVER['SERVER_NAME']=='cowoboilerplate.carlwebdev.com' || $_SERVER['SERVER_NAME']=='www.carljohansson.net') {	
+	$domain = 'cowoboilerplate.carlwebdev.com';
 	// $path = 'www.carljohansson.net';
 	?>       
-	<base href="http://<?=$domain ?>/">    
+	<base href="https://<?=$domain ?>/">    
 	<?php
 	// $min='TRUE';
 	$min='FALSE'; // vs TRUE (ALL MINIFIED AND CONCATENATED) (falta mejorar el grunt process, pero ya casi estoy ahi)
@@ -36,6 +36,26 @@ else
 	$min='FALSE'; // vs TRUE, to test grunt online
 }
 ?>
+
+
+
+
+
+
+
+<base href="<?php
+  $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https://' : 'http://';
+  $host = $_SERVER['HTTP_HOST'];
+  $path = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/\\') . '/';
+  echo $protocol . $host . $path;
+?>">
+
+
+
+
+
+
+
 
 <?php /*?>
 <style>

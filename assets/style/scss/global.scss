@@ -136,6 +136,11 @@ role[trigger_search] & role[target_search] ... etc ...
 
 @import "partials/base/typography/typopgraphy_htmltags"; // NEW ... 
 
+@import "partials/base/tags"; // html glossary copied fomr there . to start adding dialogs etc 
+
+
+
+
 
 /* 
  * BASE / UI / BUTTONS 
@@ -252,6 +257,7 @@ role[trigger_search] & role[target_search] ... etc ...
  *
  */
 @import "partials/layout/layout_main"; // GONNE FORMFOLFER !! WANTED TO COPY PAGE CONTENDT DTART INTO WP COWOWO.
+@import "partials/layout/layout_scroll"; // NEW
 @import "partials/layout/layout_page";
 @import "partials/layout/layout_media";
 @import "partials/layout/layout_grids"; // testing

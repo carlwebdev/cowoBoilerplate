@@ -1616,531 +1616,6 @@ kbd {
 /*  
  * HTML Tags - layout-related
  */
-/* HTML TAGS */
-/*  
-https://www.w3schools.com/tags/ref_byfunc.asp
-*/
-/* BRANDING */
-a {
-  /*
-
-
-  color: var(--c-accent) !important;
-
-
-  */
-  /*
-  &:hover {
-    text-decoration: none;
-  }  
-  */
-} /* a */
-hr {
-  border-color: var(--c-accent);
-  margin-block-start: 1em;
-}
-
-/* li marker ... */
-/* but firts, undo the reset */
-ol, ul {
-  /* list-style: none; */
-  /*
-  margin: 0;
-  padding: 0;
-     */
-  /*
-     margin: initial;
-  padding: initial;    
-  */
-}
-
-/*
-Initial / Unset / Revert / Inherit
-https://kjmonahan.dev/css-initial-vs-unset/#:~:text=Resets%20a%20CSS%20property%20to%20its%20inherited%20value%2C%20if%20it's,will%20still%20allow%20for%20inheritance.
-*/
-/* BRANDING */
-/*
-li::marker {
-    color: var(--c-accent);
-  }
-*/
-button {
-  color: var(--c-accent);
-  background-color: var(--c-bg);
-  border: 3px solid var(--c-accent);
-  padding: 0.5em 1em;
-  border-radius: 0.5em;
-  cursor: pointer;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-button:hover {
-  color: var(--c-bg);
-  background-color: var(--c-accent);
-}
-button:active {
-  transform: scale(0.95);
-}
-button:focus {
-  outline: 3px solid var(--c-accent);
-  outline-offset: 3px;
-}
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-button:disabled:hover {
-  color: var(--c-accent);
-  background-color: var(--c-bg);
-}
-
-menu {
-  list-style: none;
-  padding: unset;
-  display: flex;
-  gap: 1em;
-}
-
-/* dl, dt, dd {
-  margin: 0;
-  padding: 0;
-} */
-address {
-  color: var(--c-accent);
-}
-
-time {
-  color: var(--c-accent);
-}
-
-/*  
- * HTML Tags - text-related
- */
-abbr {
-  color: var(--c-accent);
-  /*
-  text-decoration: underline dotted;
-  cursor: help;
-  border-bottom: 1px dotted var(--c-accent);
-  */
-  /*
-  // text-decoration: dotted; // DEFAULT - only accepts dotted or underline
-
-  // GOAL- CHANGE COLOR OF DOTTED LINE ...
-  // color: $c_accent;
-  // text-decoration: underline;
-  // text-decoration: dashed;
-  */
-  /* text-decoration-color: $c_accent; */
-  text-decoration-style: dashed; /* TEST IN LONG-HAND = OK --> DASHED IS BETTER THAN DOTTED */
-}
-
-cite {
-  color: var(--c-accent);
-  /* font-style: italic; */ /* DEFAULT  */
-  /*
-  color: $c_accent;
-  text-decoration: underline;
-  */
-}
-
-q, s {
-  color: var(--c-accent);
-}
-
-/*
-sub, sup {
-  color: var(--c-accent);
-} 
-*/
-blockquote {
-  /*
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  */
-  /*
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  */
-  /* border-left: 10px solid var(--c-accent); */
-  border-left: 12px solid var(--c-accent);
-  /*
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;   
-  */
-  margin: 1.5em 1em;
-  padding: 0.5em 1em;
-}
-
-/*
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-}
-*/
-/*  
-* HTML Tags - code-related
-*/
-/* this could be as in reset, or barnding reset, ec , simple, above this layer anyways ...  */
-kbd {
-  /*
-   // DEFAULT
-   // font-family: monospace; // DEFAULT
-   background-color: #ccc;
-   border: 1px solid #999;
-   // padding: 6px;
-   padding: 2px;
-
-   display: inline-block;
-   // min-width: 2em;
-   // min-width: 1.4em;
-   min-width: 1.6em;
-   text-align: center;
-   */
-  background-color: var(--c-accent);
-  padding-inline: 0.4em;
-  /*
-  padding-inline: 1em;
-  padding-block: 1em;
-
-  padding-block: 0.4em;  
-  */
-  border-radius: 0.4em;
-  padding-block: 0.2em;
-}
-
-/*
-  background-color: var(--c-accent);
-  color: var(--c-bg);
-  padding: 0.4em;
-  border-radius: 0.4em;
-  font-family: monospace; // DEFAULT
-  font-size: 1.2em;
-  line-height: 1.5em;
-
-}
-*/
-/*  
- * HTML Tags - code-related
- */
-/*  
- * HTML Tags - media-related - add thigs to reste fie 
- */
-img, iframe {
-  /*
-  max-width: 100%;
-  height: auto;
-  display: block;
-  width: 100%;  
-  */
-  /*
-  border: 3px solid var(--c-accent); 
-  */
-}
-
-/*
- img {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
- }
-*/
-video, audio,
-iframe, canvas {
-  display: block;
-  width: 100%; /* This will make the tag responsive */
-  border: 3px solid var(--c-accent);
-}
-
-iframe {
-  /* aspect-ratio: 4 / 3; */
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover; /* REQUIRED TO UNSQUISH VIDEOS EEMBEDS */
-}
-
-figure {
-  /* RESET */
-  margin-block: unset; /* RESET */
-  margin-inline: unset; /* RESET */
-  /* 
-  display: block;
-  width: 100%;
-  */
-}
-figure figcaption {
-  color: var(--c-accent);
-  text-align: center;
-  margin-top: 1em;
-}
-
-/* Responsive table container */
-/*
- div {
-  overflow-x: auto;
-}
-*/
-/* Table styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 18px;
-  text-align: left;
-}
-
-/* Table header styling */
-th, td {
-  padding: 12px 15px;
-  border: 1px solid #ddd;
-}
-
-/* Table header background color */
-th {
-  background-color: var(--c-accent);
-}
-
-/* Table row hover effect */
-tbody tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* Alternate row background color */
-tbody tr:nth-child(odd) {
-  background-color: #333333; /* Dark Gray */
-}
-
-tbody tr:nth-child(even) {
-  background-color: #36454F; /* Charcoal */
-}
-
-/* Form container styling */
-form {
-  margin: 20px 0;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #333333; /* Dark Gray */
-}
-
-/* Form label styling */
-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-/* Form input, textarea, and button styling */
-form input[type=text],
-form input[type=password],
-form input[type=email],
-form input[type=search],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Form button styling */
-form button[type=submit] {
-  background-color: var(--c-accent);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button[type=submit]:hover {
-  background-color: #333333; /* Dark Gray */
-}
-
-/* Flex container for search form */
-form.search-form {
-  display: flex;
-  align-items: center;
-}
-
-form.search-form input[type=search] {
-  flex: 1;
-  margin-right: 10px;
-  margin-bottom: 0;
-}
-
-/* THERE IS A REAL POPVER !! https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_att_popover */
-/* Popover styling */
-.popover {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-.popover .popover-content {
-  display: none;
-  position: absolute;
-  bottom: 125%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #333333; /* Dark Gray */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-.popover:hover .popover-content {
-  display: block;
-}
-
-/* popover */
-/* Details container styling */
-details {
-  border: var(--s-border);
-  background-color: #333333; /* Dark Gray */
-  padding: 1em;
-  border-radius: 5px;
-  margin-bottom: 0.5em; /* */
-}
-
-details details {
-  background-color: #36454F; /* Charcoal */
-}
-
-/* Summary styling */
-/*
-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-summary .icon {
-  margin-left: auto;
-  transition: transform 0.3s ease;
-}
-*/
-summary::marker { /* Unfortunately, the ::marker pseudo-element is not directly manipulable with flexbox or absolute positioning. However, you can hide the native marker and use a custom marker that you can position as needed. */
-  color: var(--c-accent);
-}
-
-/* Rotate icon when details are open */
-/*
-details[open] summary .icon {
-  transform: rotate(90deg);
-}
-*/
-/* Hide the native marker */
-summary::marker {
-  content: "";
-}
-
-/* Custom summary styling */
-summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-weight: bold;
-  position: relative;
-  padding-right: 20px; /* Adjust padding to make space for the custom marker */
-}
-
-/* Custom marker */
-summary::after {
-  content: "▶"; /* Custom marker content */
-  position: absolute;
-  right: 0;
-  transition: transform 0.3s ease;
-}
-
-/* Rotate custom marker when details are open */
-details[open] summary::after {
-  transform: rotate(90deg);
-}
-
-/* anchoring position - - - aka tooltip com popover too ... pero diferent e- Anchor styling */
-.anchor {
-  anchor-name: --my-anchor;
-  /* border: var(--s-border); */
-  display: inline-block;
-  border: 3px solid var(--c-accent);
-}
-
-.target {
-  position: absolute;
-  position-anchor: --my-anchor;
-  position-area: top right;
-}
-
-/* Dialog styling */
-dialog {
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 400px;
-  width: 100%;
-  /* button */
-}
-dialog::backdrop {
-  /*
-  position: fixed;
-  inset: 0px;
-  background: rgba(0, 0, 0, 0.1);    
-  */
-  background-color: rgba(0, 0, 0, 0.5);
-}
-dialog h4 {
-  margin-top: 0;
-}
-dialog button {
-  background-color: var(--c-accent);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-dialog button:hover {
-  background-color: #333333; /* Dark Gray */
-}
-
-/* dialog */
-marquee {
-  background-color: var(--c-accent);
-  padding-block: 1em;
-  font-size: 1.618em;
-  font-weight: bold;
-}
-
-.marquee_content {
-  /*
-  display: flex;
-  align-items: center;
-  gap: 0.4em; // 
-  */
-}
-.marquee_content a {
-  display: inline-block;
-}
-.marquee_content img {
-  width: 8em;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /* 
  * BASE / UI / BUTTONS 
  */
@@ -2258,7 +1733,7 @@ table#customers th {
   padding-bottom: 12px;
   text-align: left;
   background-color: var(--c-accent);
-  color: var(--c-text);
+  color: white;
 }
 
 /* 
@@ -3775,7 +3250,6 @@ footer .inner {
 }
 
 .footerContent {
-  border: 3px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3823,8 +3297,6 @@ footer .inner {
 .grid_footer {
   display: flex;
   justify-content: space-between;
-  gap: 4em;
-  border: 3px solid red;
 }
 .grid_footer .item .title,
 .grid_footer .item h5,
@@ -4009,6 +3481,26 @@ footer {
   padding-right: 0px;
 }
 
+/* 
+ * SYSTEM ALTERNATING BACKGROUND COLORS 
+ */
+.backgrounds {
+  /*
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: 100dvh; 
+
+
+    .background {scroll-snap-align: start;}
+  */
+}
+.backgrounds .background:nth-of-type(odd) {
+  background-color: none;
+}
+.backgrounds .background:nth-of-type(even) {
+  background-color: #e28630;
+}
+
 section {
   /* 
    * HEIGHT aka SCREEN REAL ESTATE 
@@ -4090,26 +3582,6 @@ section.test:nth-of-type(odd) {
   height: 100%;
   */
 }
-/* 
- * SYSTEM ALTERNATING BACKGROUND COLORS 
- */
-.backgrounds {
-  /*
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    height: 100dvh; 
-
-
-    .background {scroll-snap-align: start;}
-  */
-}
-.backgrounds .background:nth-of-type(odd) {
-  background-color: none;
-}
-.backgrounds .background:nth-of-type(even) {
-  background-color: var(--c-bg-alt);
-}
-
 /*
  * CSS
  * Layout - Page (generic page elements)
@@ -4186,16 +3658,13 @@ section.test:nth-of-type(odd) {
   */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
 .page_banner .cover .text {
-  color: var(--c-white);
-  text-shadow: 0px 2px 2px var(--c-black);
-  font-size: 4em;
+  color: var(--text-icons);
+  text-shadow: 0px 2px 2px #000;
+  font-size: var(--fs-xxxl);
   padding: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 /*
@@ -4284,9 +3753,6 @@ h1.page_title {
   margin-bottom: 48px;
   /* TEXT */
   font-size: var(--fs-xxxl);
-  font-size: 3em;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 .section_title h2 {
   margin: 0;
@@ -4497,23 +3963,19 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 .grid_features {
   display: flex;
   justify-content: space-around;
-  gap: 6em;
+  gap: 48px;
 }
 .grid_features .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
   text-align: center;
 }
 .grid_features .item .icon {
-  color: var(--c-text);
-  font-size: 5em;
-  height: 1em;
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+  color: var(--c-text-alt);
+  font-size: 48px;
 }
 .grid_features .item .icon span {
   font-size: inherit;
-  aspect-ratio: 1/1;
 }
 .grid_features .item .icon a {
   color: inherit;
@@ -4530,6 +3992,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
   */
   font-size: var(--fs-xl);
   font-weight: bold;
+  margin-bottom: 0.8em;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -4544,14 +4007,21 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 }
 .grid_features .item .text {
   font-size: var(--fs-l);
+  color: var(--c-text-alt);
   color: var(--c-text);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.grid_features .item .link {
+  margin-top: 2em;
+  /*
+  display: flex;
+  justify-content: flex-end;
+  */
+}
 .grid_features .item .link a {
-  display: inline-block;
   text-decoration: none;
 }
 .grid_features .item .link a:hover {
@@ -4729,7 +4199,7 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
   gap: 0.5em;
 }
 .social_header a {
-  font-size: 1em;
+  font-size: 0.8em;
   transition: all 0.2s linear;
   color: var(--c-text);
 }
@@ -4743,7 +4213,13 @@ https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
 .social_footer ul {
   display: flex;
   justify-content: center;
-  gap: 0.8em;
+  gap: 0.5em;
+}
+.social_footer li {
+  /*
+  margin-right: $spacing025;  
+  &:last-of-type {margin-right: 0;}
+  */
 }
 .social_footer a {
   display: block;
@@ -6306,13 +5782,11 @@ separate grid behavior (wrapper & cols) from item behavior (and its own rwd beha
  * COWO TABS
  */
 .cowo-tabs {
-  border: 4px solid var(--c-accent);
   /* 
    * TAB
    */
 }
 .cowo-tabs .tab {
-  border: 4px solid var(--c-accent);
   min-height: 200px; /* DEMO */
   padding: 3em;
   /*
@@ -6554,7 +6028,7 @@ change name of wrapper
  */
 .cowo-dropdown {
   display: grid;
-  gap: 1.5em;
+  gap: 1em;
   font-size: 1.5em;
 }
 .cowo-dropdown .dropdown-pair {
@@ -6566,16 +6040,14 @@ change name of wrapper
 .cowo-dropdown .dropdown-pair .dropdown-trigger {
   cursor: pointer;
   padding: 0.6em 1em;
-  background: var(--c-bg);
-  color: var(--c-text);
-  transition: all 0.2s ease-in-out;
+  background: var(--c-bg-dark);
+  color: var(--c-text-inv);
   /* STATE - HOVER */
   /* STATE - ACTIVE */
 }
 .cowo-dropdown .dropdown-pair .dropdown-trigger:hover {
   background-color: var(--c-accent);
-  /* */
-  color: var(--c-text-inv);
+  color: var(--c-text);
 }
 .cowo-dropdown .dropdown-pair .dropdown-trigger.is-active {
   background-color: var(--c-accent);
@@ -6588,22 +6060,15 @@ change name of wrapper
 .cowo-dropdown .dropdown-pair .dropdown-target {
   display: none; /* DO WITH CSS OR WITH JS.. simpler to be done through css, it's more failproof */
   min-height: 200px; /* DEMO */
-  padding-block: 2em;
-  padding-inline: 2em;
-  padding-block: 1em;
-  padding-inline: 1em;
-  /*
+  padding: 3em;
   background: var(--c-bg-dark);
-  color: var(--c-text-inv); 
-  */
-  background: var(--c-bg);
-  color: var(--c-text);
+  color: var(--c-text-inv);
 }
 .cowo-dropdown .dropdown-pair .dropdown-target p {
   margin-block: unset;
 }
 .cowo-dropdown .dropdown-pair .dropdown-target p:not(:last-of-type) {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .genericDropdownItem_top {

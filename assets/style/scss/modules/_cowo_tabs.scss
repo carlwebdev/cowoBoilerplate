@@ -30,10 +30,23 @@
  */
 .cowo-tabs {
 	
+  // @include dev_border; // TESTING ONLY - REMOVE LATER !!!  
+  // @include s_border; // TESTING ONLY - REMOVE LATER !!!  
+  border: 4px solid var(--c-accent);
+
+
+
+
+
   /* 
    * TAB
    */  
   .tab {
+    
+    border: 4px solid var(--c-accent);
+
+
+
     min-height:200px; /* DEMO */
     // padding: $spacing;
     // padding: 2em;
@@ -46,6 +59,10 @@
     background: var(--c-bg-dark);
     color: var(--c-text-inv); 
     
+
+
+
+
 
 
     font-size: 1.5em;

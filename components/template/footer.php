@@ -20,26 +20,29 @@ BUT KEEP JHERER A FIEL PARTIAL FOR EACH TYPE OF STICKY FOOTER SOLUTION _TABLE _F
     
     
       <?php 
-      /*
-       * Footer - Bar - Top
-       */
-      ?> 
-      <?php include('components/template/footer/footer_bar_top.php'); ?>
+      // Footer - Bar - Top
+      // include('components/template/footer/footer_bar_top.php'); 
+      ?>
       
       <?php 
-      /*
-       * Footer - Bar - Main
-       */
-      ?> 
-      <?php include('components/template/footer/footer_bar_main.php'); ?>
+        // Footer - Bar - Main
+       include('components/template/footer/footer_bar_main.php'); 
+       ?>
       
       <?php 
-      /*
-       * Footer - Bar - Bottom
-       */
-      ?> 
-      <?php include('components/template/footer/footer_bar_bottom.php'); ?>
+      // Footer - Bar - Bottom
+       include('components/template/footer/footer_bar_bottom.php'); 
+       ?>
       
     </div> <!-- /inner -->
-  </div> <!-- /frame -->    
+  </div> <!-- /frame -->   
+  
+  
+  <marquee>
+      <div class="marquee_content">
+        Developed In Barcelona by <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png" alt="COWOWO"></a>
+      </div> <!-- /marquee_content -->
+  </marquee> 
+  
+  
 </footer>

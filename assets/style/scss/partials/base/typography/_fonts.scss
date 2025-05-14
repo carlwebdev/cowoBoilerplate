@@ -215,8 +215,32 @@ font-family: 'Cantora One', sans-serif;
 		// font-weight: 700;
 		}
 
+
+
+
+
+/*
+		@mixin f_main { // CMS MAIN FONT - for body tag 
+			@include f_roboto;
+			}	
+*/
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
 @mixin f_main { // CMS MAIN FONT - for body tag 
-    @include f_roboto;
+    // @include f_roboto;
+	font-family: 'Work Sans', sans-serif;
     }		
 		
 
@@ -245,4 +269,8 @@ font-family: 'Cantora One', sans-serif;
     input:-moz-placeholder {@include f_placeholders;} 
 
 */
+
+
+
+
 

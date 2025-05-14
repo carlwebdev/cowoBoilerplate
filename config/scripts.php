@@ -15,7 +15,7 @@ Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if ne
 
 
 <!-- -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 
 <!-- <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script> -->
@@ -367,7 +367,7 @@ $(document).ready(function(){
 
 
 <?php /*?>jQuery UI - Accordion<?php */?>
-<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css" />
 <script>
 $(function() {

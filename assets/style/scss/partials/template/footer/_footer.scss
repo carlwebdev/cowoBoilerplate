@@ -17,29 +17,21 @@
 
  
 footer {
-  
-  background-color: var(--c-bg-alt); 
-  
+  // background-color: var(--c-bg-alt); 
+  background-color: var(--c-bg); 
+  border-top: 3px solid var(--c-accent); // TODO - use a variable !!!
+  color: var(--c-text);
+
 	.inner {
-    padding-block: $spacing2;
+    // padding-block: $spacing2;
+    padding-block: 2em;
 		// text-align: center; // very unspecific    
-    // color:#fff; // very unspecific		
-    
-    // color: $c_white; // very unspecific	- white, for the logo ... 
-    // color: var(--c-text-inv);
-    // color: var(--c-white);
-    // color: white;
-    color: var(--c-text);
-    // color: red;
-    
     display: flex;
     flex-direction: column;
     gap: $spacing2; 
   } // inner
   
 } // footer
-
-
 
 
 
@@ -98,13 +90,29 @@ footer {
     
     // reset ya estaba ?? hmmm
     
+    // border: 2px solid var(--c-accent); // 
+
+    display:block;
+
+    span {
+      
+      display:block;
     
-    span {display:block;}
+      // border: 2px solid yellow; // 
+
+
+
+
+        font-size: 2em; 
+        height: 1em; // 
+
+
+    }
     
     font-size: 2em; // TEST
 
 
-    
+
   } // button
   
   
@@ -161,7 +169,8 @@ footer {
   justify-content: flex-end;
   */
   
-  
+  display: flex;
+  justify-content: space-between;
   
 
 } // footer_bar_main
@@ -182,6 +191,9 @@ footer {
 
 		.footerContent {
       // border: 3px solid red; // 
+      border: 3px solid red; 
+
+      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -251,9 +263,9 @@ footer {
   // margin-top: $spacing;
   display: flex;
   justify-content: space-between;
-
+  gap: 4em; // 
   
-  
+  border: 3px solid red; 
   
   
   .item {
@@ -335,15 +347,28 @@ footer {
  */	
 .footer_bar_bottom { 
   // background-color: rgba($c_black, 0.50); 
+  /*
   display:flex;
   justify-content: flex-end; 
+  */
   // align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
 } // footer_bar_bottom
 
 
 
   .footer_developer {
     // @include dev_border; // 
+    display: flex;
+    gap: 0.4em;
+
+
 
     span {
       // font-size: $fs_m;

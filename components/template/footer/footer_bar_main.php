@@ -9,9 +9,15 @@
     <?php include('components/template/footer/logo_footer.php'); ?>
     <?php include('components/template/footer/footer_copyright.php'); ?>
     <?php include('components/template/footer/footer_contact.php'); ?>
+
+
+    <?php include('components/template/footer/footer_social.php'); ?>
+
+
+
   </div> <!-- /footerContent -->	
 
-  <?php include('components/template/footer/footer_social.php'); ?>
+  
 
   <?php 
   /*
@@ -19,7 +25,7 @@
    */
   ?> 
   <div class="grid_footer">
-    <?php for ($x = 1; $x <= 5; $x++) { ?>
+    <?php for ($x = 1; $x <= 3; $x++) { ?>
       <div class="item">            
         <?php /*?><div class="title">Column title</div> <!-- h5 or h6 ???? -->  <?php */?>          
         <h5>Column title</h5> <!-- h5 or h6 ???? -->            

@@ -173,8 +173,8 @@ $c_divider: var(--divider-text);
 	--c-white: #fff;
 	--c-white-alt: antiquewhite;
 	// --c-accent: #CDDC39;  
-	--c-special: #CDDC39;  
-	
+	// --c-special: #CDDC39;  
+	--c-special: #f06;  
 	
 	--c-gray-light: #ccc; // bg alt light mode
 	--c-gray-dark: #4A525A; // bg alt dark mode
@@ -201,7 +201,13 @@ $c_divider: var(--divider-text);
 	--c-bg-inv: var(--c-black); 
 	--c-bg-inv-alt: var(--c-black-alt); 
 
-	--c-accent: var(--c-special); //  
+
+
+
+
+
+
+	--c-accent: var(--c-special); //  goes for both modes now
   
 } /* ROOT */
 
@@ -228,9 +234,10 @@ $c_divider: var(--divider-text);
 	  color: white;
 	  */
 
-
+		/*	
 	  --c-accent: #f06;
-  
+  */
+
 	/*  
 	  --c-text: var(--c-white); // TO BE IMPLEMENTED ... 
 	  // --c-text-inv: var(--c-black    -alt);
@@ -291,8 +298,8 @@ $c_divider: var(--divider-text);
 
 
 
-	--c-accent: #60f;
-
+	// --c-accent: #60f;
+	// --c-accent: #60f;
 
 
 	--c-text: var(--c-white);

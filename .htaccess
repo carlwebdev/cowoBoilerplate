@@ -1,3 +1,26 @@
+### HOSTING - SITEGROUND - START
+
+# guess that to allow php applicatuiiosn to be served (non wp app)
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# https://world.siteground.com/kb/disable-dynamic-caching-website/
+<IfModule mod_headers.c>
+Header set Cache-Control "private"
+</IfModule>
+
+### HOSTING - SITEGROUND - END
+
+
+
+
+
+
+
+
+
+
 #######################
 ### ErrorDocument 404 #
 #######################

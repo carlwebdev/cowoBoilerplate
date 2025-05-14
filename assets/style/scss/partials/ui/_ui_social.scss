@@ -32,8 +32,16 @@
 		
 	a {
 		// display: block;
-    font-size: 2em;
+
+    // font-size: 2em;
+    // font-size: 0.8em;
+
+
+    font-size: 1em;
+
+
 		// font-size: 3em;
+
     // @include ui_c_white_to_accent;
     @include ui_c_text_to_accent; // NEW
   }	 // a
@@ -58,25 +66,16 @@
 
 	
 .social_footer {
-	// @include dev_border;
-	// @include paddingv($space05);
-	/*
-  0@include marginv($spacing05); // DEMO
-  */
+  margin-block: 1em; // PPRECAUTION
 
 	ul {
 		display: flex;
 		justify-content: center;
-    gap: 0.25em;
+    gap: 0.8em;
 		}
 	
     li {
-      // width:32px; 
-      /*
-      margin-right: $spacing025;  
-      &:last-of-type {margin-right: 0;}
-      */
-      // @include rotate;
+      // @include rotate; // !
       } // li			
 		
       a {
@@ -85,9 +84,7 @@
       }	// a
 	
   
-  // font-size: 3em; // TEST 
-  // font-size: 2em; // TEST 
-  font-size: 2.5em; // TEST 
+  font-size: 0.8em; // TEST 
   
   a {
     // color: $c_accent; 
