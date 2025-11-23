@@ -65,7 +65,7 @@ include ( 'components/template/page/page_start.php');
       <div class="frame"> 
 
         <?php 
-          $section_title = '"Latest Products Deuce!"';
+          $section_title = '"Latest Products Thrice!"';
           include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
         ?> 
         
