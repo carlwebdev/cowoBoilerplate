@@ -15,7 +15,7 @@
 <!-- InstanceBeginEditable name="head" -->
 <?php
 // $pagename = $pagename_index;
-$pagename = 'This is a template';
+$pagename = 'This is a template, bitch!';
 // $pagename = 'This is a not just a template';
 ?>
 
@@ -101,7 +101,6 @@ add blog, news, team, testimonials, staff etc offices !!!
    *
    */  
   $show_dev_columns = '0'; // ADD TO DEV BUTOTN SA !! - // NICE DEV FEATURE !!!!!!!!!!!!!!!!!!!!!!!!!!!! - 1) fix this, and 2) add this to css dev mode ... 
-
   /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
   $show_page_banner = '1'; // hacky situation in this case .... or not
   $show_page_banner_map = '0'; // ADD OTPION TO ADD THIS IN THE FOOTER !!!!!!!!!! ABOVE THE OFOOTER, OSE A... NICE !! AS WELL ANS SIGN UP TO NEWSLETTE & PTHER CONATT DETAISL & ETC
