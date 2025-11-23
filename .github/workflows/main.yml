@@ -1,4 +1,4 @@
-name: Deploy via FTP to dashboard.carlwebdev.com
+name: Deploy via FTP to cowoboilerplate.carlwebdev.com
 
 on:
   push:
