@@ -3,7 +3,8 @@ name: Deploy via FTP to cowoboilerplate.carlwebdev.com
 on:
   push:
     branches:
-      - main  # Canvia-ho si treballes amb una altra branca
+      # - main  # Canvia-ho si treballes amb una altra branca
+      - master  # Canvia-ho si treballes amb una altra branca
 
 jobs:
   ftp-deploy:
