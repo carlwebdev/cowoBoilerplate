@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center; // PRECAUTION
   gap: 1em;
-  
+  flex-wrap: wrap; // PRECAUTION - RESPONSIVE - ALLOW WRAP IF NEEDED
   
 } // header_buttons
 
