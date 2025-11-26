@@ -49,15 +49,14 @@
 
 
 
-
-      <?php 
-      /*
-       * HEADER NAV     
-       */ 
-      // HEADER NAV
-      include('components/template/header/header_nav.php');
-      // include('components/template/header/header_social.php'); 
-      ?>
+.  
+      <div class="header_nav_desktop">
+          <?php 
+          // HEADER NAV
+          include('components/template/header/header_nav.php');
+          // include('components/template/header/header_social.php'); 
+          ?>
+      </div> <!-- /header_nav_desktop -->
 
 
 

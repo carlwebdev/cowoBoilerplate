@@ -28,11 +28,14 @@
       </nav>
     </div> <!-- /nav_mobile -->
 
-    <?php 
-    // HEADER NAV
-    include('components/template/header/header_nav.php'); 
-    ?>
-      
+
+    <div class="header_nav_mobile">
+        <?php 
+        // HEADER NAV
+        include('components/template/header/header_nav.php'); 
+        ?>
+    </div> <!-- /header_nav_mobile -->
+
 
   </div> <!-- /frame -->  
 </div> <!-- /header_dropdowns -->   

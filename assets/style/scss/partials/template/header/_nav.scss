@@ -5,10 +5,28 @@
 
  // 1 - MOVE TO HEADER TEMPLATE FOLDER .........
 
+
+
+ // dfpiomng  change to deskto / moviel sitaition ... with wrapper,s and hide / shwo the parens 
+
+ 
+.header_nav_desktop {}
+/*
+.header_nav_mobile {display: none;}
+*/
+
+@media only screen and (max-width: $bp_l) {
+	.header_nav_desktop {display: none;}
+	.header_nav_mobile {display: block;}
+} /* MEDIA-QUERY */
+
+// alnd also do the navicn etc !!!!!!!!!!!!!!!! and also the bp for wen shos navicomn !!
+
+
 nav.main { 
 	margin-left: auto; // FLEX
   
-	@media only screen and (max-width: $bp_m) {display: none;} /* MEDIA-QUERY */
+	/* @media only screen and (max-width: $bp_m) {display: none;} */ /* MEDIA-QUERY */
   
 	.inner {
 		@include paddingv($spacing05);
