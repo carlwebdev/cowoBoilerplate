@@ -66,7 +66,7 @@ include ( 'components/template/page/page_start.php');
     
     
     
-    
+    <?php /*?>
     <pre>
     
     
@@ -102,7 +102,7 @@ include ( 'components/template/page/page_start.php');
       
       
     </pre>
-    
+    <?php */?>
     
 
     

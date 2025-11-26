@@ -171,7 +171,20 @@ footer {
   
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; // PRECAUTION - RESPONSIVE - ALLOW WRAP IF NEEDED
   
+
+
+
+  @media only screen and (max-width: $bp_l) { 
+    flex-direction: column;
+
+
+
+  } // MEDIA-QUERY		
+
+
+
 
 } // footer_bar_main
 
