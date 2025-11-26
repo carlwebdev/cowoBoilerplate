@@ -70,16 +70,17 @@
     // background-color: var(--primary-color);  change to c-primary eytc etec etce
     // background-color: rgba(red, 0.50);  // must use a variable !!!!!
     padding-block: 1em; // 
-    
+    // padding-block: $spacing05;
     
     .inner {
-      // padding-block: $spacing05;
       display:flex;
       justify-content: space-between; // hacky, with nav with margin auto...
       // justify-content: flex-end;
       align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON.. - valign siempre interesa... 
       // gap: $spacing2;
       gap: $spacing;
+      flex-wrap: wrap; // PRECAUTION - RESPONSIVE - ALLOW WRAP IF NEEDED
+
 
       @media only screen and (max-width: $bp_m) { 
         justify-content: flex-start; // ok, pero could be better  - TEST NEW CSS ALIGN TEXT TYPOGRAPHY LINES ETC !!! DEL TWITER & POPICKET !!!

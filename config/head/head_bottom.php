@@ -18,12 +18,12 @@ $randomVersion = '?v=' . mt_rand(10000, 99999);
 // $randomVersion = '?v=' . time();
 ?>
 
-<!-- <link rel="stylesheet" href="assets/style/css/global.css" > --> 
- <!-- 
+<link rel="stylesheet" href="assets/style/css/global.css" > 
+<!-- 
 <link rel="stylesheet" href="https://cowoboilerplate.carlwebdev.com/assets/style/scss/global.css<?php echo $randomVersion; ?>" >  
--->
- <!-- <link rel="stylesheet" href="/assets/style/scss/global.css<?php echo $randomVersion; ?>" >   -->
- <link rel="stylesheet" href="assets/style/scss/global.css<?php echo $randomVersion; ?>" >  
+--> 
+ <!-- <link rel="stylesheet" href="/assets/style/scss/global.css<?php echo $randomVersion; ?>" >  -->  
+<!-- <link rel="stylesheet" href="assets/style/scss/global.css<?php echo $randomVersion; ?>" >  -->
 
 <!-- LIVE SASS COMpILER - VSCODE EXTENSION "watch sass" - https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass -->
 
