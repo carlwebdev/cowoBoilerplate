@@ -33,19 +33,10 @@ havcer una functrion, con esto por default, excepto en deisgnated pages, ergopro
 </head>
 <body>
 <?php 
-// PAGE START
-include ( 'components/template/page/page_start.php'); 
-?> 
-  <?php 
-  // HEADER
-  include('components/template/header.php'); 
-  ?> 
-  <?php 
-  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-  include ('components/template/page/page_content_start.php'); 
-  ?>  
-	<!-- InstanceBeginEditable name="content" -->
-		
+// PAGE TOP
+include ('template_parts/page/page_top.php'); 
+?>  
+
 
 <?php /*?>    
 <section>
@@ -82,13 +73,10 @@ add blog, news, team, testimonials, staff etc offices !!!
 <?php */?>
     
     
-    
-    
+     
 <?php 
   /* 
-   *
    * PAGE BASICS 
-   *
    */  
   $show_dev_columns = '0'; // ADD TO DEV BUTOTN SA !! - // NICE DEV FEATURE !!!!!!!!!!!!!!!!!!!!!!!!!!!! - 1) fix this, and 2) add this to css dev mode ... 
   /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
@@ -101,7 +89,7 @@ add blog, news, team, testimonials, staff etc offices !!!
   // ad the content, asin wp_eoimoe ... 
   include('components/includes/page_basics.php'); // PAGE BASICS
 ?> 
-   
+  
     
 
 <?php /*?> test dev partial, debufgging, etc  bno, not edebugigng, as its not the same as dev-temp <?php */?>
@@ -112,10 +100,9 @@ add blog, news, team, testimonials, staff etc offices !!!
 <?php */?>
     
     
-    
+
     
 <?php /*?>
-
 DESIGN - TYPICAL LAYOUT OF A HOMEPAGE
 fuklpage module<br>
 <br>
@@ -124,21 +111,15 @@ selection of services, products, news, <br>
 contact form, etc<br>
 
 add blog, news, team, testimonials, staff etc offices !!!
-
 <?php */?>
     
-    
-    
+     
     
     <?php /*?><div class="todo">
   KILL THIS, ITS NOW REDUNDANT... S & D !!!!!!!
 </div> <!-- /todo -->
 </section><?php */?> 
   
-    
-  
-
-
 
 <?php /*?>MODULE - Fullpage module<?php */?>
 <?php /*?><div class="m_fullPage" style="background-image: url('https://picsum.photos/id/237/200/300');">
@@ -161,23 +142,6 @@ add blog, news, team, testimonials, staff etc offices !!!
 </div>
 <?php */?>
 
-
-
-
-
-
-
-
-
-    
-    
-    
-
-
-
-
-
-
     
 
     
@@ -196,23 +160,13 @@ add blog, news, team, testimonials, staff etc offices !!!
 </section>  
     
 
-
-    
-  
-    
-    
-    
-    
-    
-
-    
 <?php
 // PAGE BACKGROUNDS START
 include 'components/template/page/page_backgrounds_start.php';  
 ?>  
 
 
-<section class="dev_hide background padding">
+<section class="dev_hide___NOT background padding">
       <div class="frame wide___NOT">
         <?php 
           $section_title = 'TODO';
@@ -271,40 +225,9 @@ THINGS TO DO:
 
   
   
-  
-  
-  
-  
-  
-  
-  
 
 
 
-
-  
-
-
-
-
-  
-
-
-  
-  
-
-    
-  
-  
-
-
-  
-
-
-  <?php
-  // PAGE BACKGROUNDS END
-  include 'components/template/page/page_backgrounds_end.php';  
-  ?>    
     
     
     <!--
@@ -336,38 +259,9 @@ map box - find us, also add the adress details, contat detas, specifci for addre
 
     
 
-
-
-
-    
-    
-    
-  
-    
-	<!-- InstanceEndEditable -->
-  <?php 
-  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  // COOKIES POPUP
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// SCRIPTS
-include('config/scripts.php'); 
-?>
-<!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable -->
-<?php // include('config/credits.php'); ?>  
-</body>
-<!-- InstanceEnd --></html>
+<?php
+// PAGE BACKGROUNDS END
+include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  

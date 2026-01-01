@@ -1,6 +1,6 @@
 <?php 
 /* 
- * BACKGROUNDS - END
+ * BACKGROUNDS - END - END - LAYOUT SYSTEM - BACKGROUNDS
  */
 ?>
 </div> <!-- /backgrounds -->

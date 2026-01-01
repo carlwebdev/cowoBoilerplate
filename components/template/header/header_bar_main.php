@@ -7,27 +7,14 @@
  <div class="frame full">
     <div class="inner">
       
-
-
-
-
-
-
-
-    
-
       <?php /* 
       <div class="logo_header_text">
       logo_header_text
       </div>
       */ ?>
 
-
-
       <?php 
-      /*
-       * HEADER LOGO   - VOVER A METERLO EN UN INCLUDE, PATRA PODER HACER VARISO LAYUT OPTIOSN DE HEADER, Y PODER CAMBIAR EL LOGO, ETC...   
-       */ 
+      // HEADER LOGO   - VOVER A METERLO EN UN INCLUDE, PATRA PODER HACER VARISO LAYUT OPTIOSN DE HEADER, Y PODER CAMBIAR EL LOGO, ETC...   
       ?>
       <div class="header_logo">
         <a href="index.php" class="TODO-TEST-HEADER-LOG-HERE-INSTEAD">
@@ -36,7 +23,6 @@
         </a>
       </div>
 
-
       <?php /*?>
       <!-- COPIED FORM CB_PLAIN , THE CSS STILL EXISTED HERE, SO DO A ACLEANUP... POSITION IT RIGH UNDER THE LOGO . , ADN KILL THE H1 & H2 IBVISOUSLY!! ITS SNOT SEMANTIC CONTENT -->
       <div id="slogan"><h2><span>a simple Front-End Boilerplate</span> <span>by <a href="https://twitter.com/carlwebdev" target="_blank">@carlwebdev</a></span></h2>
@@ -44,12 +30,6 @@
       <!-- dude, sloga under the logo is soo 2004... --->
 
 
-
-
-
-
-
-.  
       <div class="header_nav_desktop">
           <?php 
           // HEADER NAV
@@ -57,8 +37,6 @@
           // include('components/template/header/header_social.php'); 
           ?>
       </div> <!-- /header_nav_desktop -->
-
-
 
 
       <div class="header_options_temp">
@@ -81,12 +59,6 @@
           </div> <!-- / social_header -->
 
       </div> <!-- /header_options_temp -->
-
-
-
-
-
-
 
 
     </div> <!-- /inner -->

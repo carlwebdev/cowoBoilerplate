@@ -1,44 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/master_en.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<!-- InstanceBeginEditable name="config" -->
 <?php $pagename = "Single Blog Post" ?>
-<!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
-
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-
 </head>
 <body>
 <?php 
-// PAGE START
-include ( 'components/template/page/page_start.php'); 
-?> 
-  <?php 
-  // HEADER
-  include('components/template/header.php'); 
-  ?> 
-  <?php 
-  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-  include ('components/template/page/page_content_start.php'); 
-  ?>  
-	<!-- InstanceBeginEditable name="content" -->
-
+// PAGE TOP
+include ('template_parts/page/page_top.php'); 
+?>  
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-
   <?php /*?>here in single bog posyt, ahve title over the banner, at least to start off with.. no, just kekep it hthere ....<?php */?>
   <?php /*?>banner text , test cover with another layoutm so must have modifiers fomr the start  - i really want to see the tiotle at teh ebototm left, over tyhe image... nice visual <?php */?>
 
@@ -86,30 +61,11 @@ include ( 'components/template/page/page_start.php');
     
     
   
-  <!-- InstanceEndEditable -->
-  <?php 
-  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  // COOKIES POPUP
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// SCRIPTS
-include('config/scripts.php'); 
-?>
-<!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable -->
-<?php // include('config/credits.php'); ?>  
+<?php
+// PAGE BACKGROUNDS END
+// include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  
 </body>
-<!-- InstanceEnd --></html>
+</html>

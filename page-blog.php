@@ -10,17 +10,9 @@
 </head>
 <body>
 <?php 
-// PAGE START
-include ( 'components/template/page/page_start.php'); 
-?> 
-  <?php 
-  // HEADER
-  include('components/template/header.php'); 
-  ?> 
-  <?php 
-   // PAGE CONTENT START
-  include ('components/template/page/page_content_start.php'); 
-  ?> 
+// PAGE TOP
+include ('template_parts/page/page_top.php'); 
+?>  
     
 
   <?php 

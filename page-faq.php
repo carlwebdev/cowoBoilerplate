@@ -15,27 +15,9 @@
 </head>
 <body>
 <?php 
-/*  
- * PAGE START
- */
-include ( 'components/template/page/page_start.php'); 
-?> 
-  <?php 
-  /*
-   * Header
-   */
-  include('components/template/header.php'); 
-  ?> 
-  <?php 
-  /* Page Content Start 
-   * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-   */
-  include ('components/template/page/page_content_start.php'); 
-  ?> 
-    
-	<!-- InstanceBeginEditable name="content" -->
-    
-    
+// PAGE TOP
+include ('template_parts/page/page_top.php'); 
+?>  
     
     <?php 
       /* 

@@ -1,4 +1,8 @@
 .grid_features {
+
+
+
+
   display: flex;
   // justify-content: center;
   justify-content: space-around; // ???
@@ -12,12 +16,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    // gap: 2em;
+    gap: 1rem;
     text-align: center; // PRECAUTION
   
     .icon {
       color: var(--c-text);
-      font-size: 5em;
+      // font-size: 5em;
+      font-size: 4em;
       
       // border: 1px solid red;
       height: 1em; // ?!
@@ -45,17 +51,9 @@
       fs_card_specs
       */
 
-      // font-size: 24px;
-      // font-size: 32px;
-      font-size: var(--fs-xl);
-      // font-size: var(--fs-xxl);
-      
+      // font-size: var(--fs-xl);
+      font-size: var(--fs-xxl);      
       font-weight: bold;
-
-      // a
-
-      @include css_line_clamp(3); // TEST  - aaaah 
-      // @include css_line_clamp(2); // TEST 
 
       a {
         color: var(--c-text); // vs inherit ...
@@ -70,11 +68,13 @@
 
   .text {
     // text-align: center;
-    font-size: var(--fs-l);
+    // font-size: var(--fs-l);
+    font-size: var(--fs-m); // ???
     // color: var(--secondary-text);
     // color: var(--c-text-alt);
     color: var(--c-text);
-    @include css_line_clamp(2); // TEST 
+    // @include css_line_clamp(2); // TEST 
+    @include css_line_clamp(3); // TEST 
   } // text
 
     
@@ -85,7 +85,9 @@
       display: inline-block; // 
       @include a_ui_alt;
       // @extend %pill; // // add pil bevaiour as clas sected only placehodler 
-      @extend %pill_big; // // add pil bevaiour as clas sected only placehodler 
+      // @extend %pill_big; // // add pil bevaiour as clas sected only placehodler 
+      @extend %pill; // // add pil bevaiour as clas sected only placehodler 
+      // @extend %pill_small; // // add pil bevaiour as clas sected
       // y aparte lso colores etc  
       // def'ly iuse smalle rpils in the other grids... ya que aqui si que es vip, pero ehn hero usar el big 
     }

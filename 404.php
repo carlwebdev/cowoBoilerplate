@@ -23,37 +23,20 @@
 </head>
 <body>
 <?php 
-// PAGE START
-include ( 'components/template/page/page_start.php'); 
-?> 
-  <?php 
-  // HEADER
-  include('components/template/header.php'); 
-  ?> 
-  <?php 
-  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-  include ('components/template/page/page_content_start.php'); 
-  ?>  
-	<!-- InstanceBeginEditable name="content" -->
+// PAGE TOP
+include ('template_parts/page/page_top.php'); 
+?>  
     
-    
-<?php /*?>    
-<!--    
+<?php /*?>      
 APROVECHAR 404 PAGE (TTHOUGH HAVE DEDICTAED PAGE FOR STICKY FOOTER ETETSING ... 
     TO AKE EACH OF THE 2 STICKY FOOTER SCENARIOS TO WORK !!!!)    
     
-    
+ 
 Y LO BUENO DE FLEX SITIATION ES QU PERMITE TENER UNA CAPA QUE VAYA HASTA ABAJO ... HMMM
-<!--
-    
-    
+     
     <?php */?>
 
 
-    
-    
-    
-    
     
     <?php 
       /* 
@@ -70,7 +53,6 @@ Y LO BUENO DE FLEX SITIATION ES QU PERMITE TENER UNA CAPA QUE VAYA HASTA ABAJO .
       $show_page_excerpt = '0';
       include('components/includes/page_basics.php'); // PAGE BASICS
     ?> 
-    
     
     
 
@@ -100,13 +82,6 @@ fukllpage image with text on top, at least as one of the options...
 </div> <!-- /m_fullPage --> 
 
 
-
-    
-    
-    
-    
-
-    
 <?php /*?>   
 <section class="padding_4 test___NOT">  
 	<div class="frame">
@@ -117,51 +92,15 @@ fukllpage image with text on top, at least as one of the options...
     
     
     
-    
-    
-    
-
-    
-    
-    
-    
 <?php /*?><?php include('components/modules/page_title.php'); ?><?php */?>
 
 
-
-
-
-
-
-
     
-  
-    
-    
-		<!-- InstanceEndEditable -->
-  <?php 
-  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  // COOKIES POPUP
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// SCRIPTS
-include('config/scripts.php'); 
-?>
-<!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable -->
-<?php // include('config/credits.php'); ?>  
+<?php
+// PAGE BACKGROUNDS END
+// include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  
 </body>
-<!-- InstanceEnd --></html>
+</html>

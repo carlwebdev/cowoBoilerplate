@@ -24,10 +24,9 @@
     gap: 0.5em; // TEST
   } // ul
 	
-  
 	li {
     // @include gaph($spacing05);
-		// @include rotate; // ??? if so, move down to anchor ...
+		// @include rotate; // ??? if so, move down to anchor ... - no mixinm named roptate !!!!
   } // li	
 		
 	a {
@@ -36,10 +35,9 @@
     // font-size: 2em;
     // font-size: 0.8em;
 
-
-    font-size: 1em;
-
-
+    // font-size: 1em;
+    font-size: 1.618em;
+    // font-size: 2em; //
 		// font-size: 3em;
 
     // @include ui_c_white_to_accent;
@@ -66,7 +64,7 @@
 
 	
 .social_footer {
-  margin-block: 1em; // PPRECAUTION
+  margin-block: 1em; // PRECAUTION
 
 	ul {
 		display: flex;
@@ -79,7 +77,6 @@
       } // li			
 		
       a {
-        // border: 1px solid orange;
         display: block; // VIP, FOR FLEX
       }	// a
 	

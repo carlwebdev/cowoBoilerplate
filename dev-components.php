@@ -15,19 +15,10 @@
 </head>
 <body>
 <?php 
-// PAGE START
-include ( 'components/template/page/page_start.php'); 
-?> 
-  <?php 
-  // HEADER
-  include('components/template/header.php'); 
-  ?> 
-  <?php 
-  // PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
-  include ('components/template/page/page_content_start.php'); 
-  ?>  
-	<!-- InstanceBeginEditable name="content" -->
-    
+// PAGE TOP
+include ('template_parts/page/page_top.php'); 
+?>  
+
     <?php 
       /* 
        *
@@ -130,11 +121,6 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 
 
 
-
-
-
- 
-
 <!-- THESE ARE JUST HTML TAGS, SO THEY SHOULD GO TO HTM GLOSAY PAGE ETC ..... -->    
 
 <section id="video" class="background fullscreen vcenter__NOT_ENOUGH padding_2 test">  
@@ -171,9 +157,7 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 
 
 <?php 
-/*
- * GRID FEATURES
- */
+// GRID FEATURES
 ?> 
 <section id="grid-featured" class="padding_4 test___NOTS">  
 	<div class="frame wide_NOT">
@@ -217,11 +201,9 @@ just have sections that pont to pages that contina types of content <br>
       <div class="frame">
 
         <?php 
-        /* 
-         * SECTION CONTACT - MAP
-         */
+        // SECTION CONTACT - MAP
+        include('components/sections/contact/section_contact_map.php'); 
         ?> 
-        <?php include('components/sections/contact/section_contact_map.php'); ?> 
 
       </div> <!-- /frame --> 
     </section> 
@@ -232,34 +214,11 @@ just have sections that pont to pages that contina types of content <br>
 
 
 
-
-
-
-
-  <!-- InstanceEndEditable -->
-  <?php 
-  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  // COOKIES POPUP
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// SCRIPTS
-include('config/scripts.php'); 
-?>
-<!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable -->
-<?php // include('config/credits.php'); ?>  
+<?php
+// PAGE BACKGROUNDS END
+// include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  
 </body>
-<!-- InstanceEnd --></html>
+</html>
