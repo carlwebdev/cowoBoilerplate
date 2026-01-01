@@ -1,43 +1,33 @@
 <!DOCTYPE html>
 <html lang="en"><!-- InstanceBegin template="/Templates/master_en.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
-
 <?php // phpinfo(); ?>
-
-
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
 <!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
-
 <!-- InstanceBeginEditable name="head" -->
 <?php
 // $pagename = $pagename_index;
 $pagename = 'This is a template, bitch!';
 // $pagename = 'This is a not just a template';
 ?>
-
 <?php /*?>(copied form cjnet) - I HAVE DEVELOPED 2 DIFRERENT WAYS TO MANEGE THE INCLUDES OF RELATIVE PATHS INSIEDE THE FILES.<?php */?>  
-
 <?php /*?>LESS VERBOSE SYSTEM - either empty "", or "../" <?php */?>
 <?php // $level = "root" ?> <?php /*?>MORE VERBOSE SYSTEM<?php */?>  
 <?php /*?><!-- 
 havcer una functrion, con esto por default, excepto en deisgnated pages, ergoprojec, demo ,tool , etc items
 --><?php */?>
-  
 <?php // $path2root = ""; ?> <?php /*?>THIS SI THE SECOND SYSTEM, WHICH IS CLEANER, IAND IT' SWHAT I WIL BE USING <?php */?>
 <?php // $level = "root" ?> <?php /*?>THIS WAS THE OLD SOLUTION., WHICH IS MORE VERBOSE THAN THE NEW ONE <?php */?>
-  
 <?php /* if($level=='root') { ?>
   <?php include('xxx/yyy/zzz.php'); ?> 
 <?php } elseif($level=='sub') { ?>
   <?php include('../xxx/yyy/zzz.php'); ?>
 <?php } */ ?> 
-  
 <?php // include $path2root."js/components/EXAMPLE.php"; ?>   
-  
 <!-- InstanceEndEditable -->
 
 </head>

@@ -11,7 +11,7 @@
  */
 ?>
   <section id="DEV-GRID-COLUMNS" class="padding">
-    <div class="frame">
+    <div class="frame___not_for_now">
 
       <div class="dev-grid-columns"> 
         <?php // for ($x = 1; $x <= 12; $x++) { ?>

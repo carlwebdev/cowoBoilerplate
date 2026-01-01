@@ -14,22 +14,13 @@ BUT KEEP JHERER A FIEL PARTIAL FOR EACH TYPE OF STICKY FOOTER SOLUTION _TABLE _F
   <div class="frame">
     <div class="inner">
       
-
     <?php /*?>TODO - CHECK BUTOTN RESET IN THE FOOTER SCROL TO TOP EC ... YEAH,. CLENAUP THE FOOTER FILES, AND MOVE THE PARTIALS TO 09-TEMALET ETC .. DO THAT FIRST .. ALMOST <?php */?>
-    
-    
     
       <?php 
       // Footer - Bar - Top
       // include('components/template/footer/footer_bar_top.php'); 
-      ?>
-      
-      <?php 
         // Footer - Bar - Main
        include('components/template/footer/footer_bar_main.php'); 
-       ?>
-      
-      <?php 
       // Footer - Bar - Bottom
        include('components/template/footer/footer_bar_bottom.php'); 
        ?>
@@ -37,12 +28,24 @@ BUT KEEP JHERER A FIEL PARTIAL FOR EACH TYPE OF STICKY FOOTER SOLUTION _TABLE _F
     </div> <!-- /inner -->
   </div> <!-- /frame -->   
   
-  
+
+
+
+
+
+  <?php 
+  // for the marquee !!!!
+  // include('components/template/footer/footer_bar_top.php'); 
+    ?>
+
   <marquee>
       <div class="marquee_content">
         Developed In Barcelona by <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png" alt="COWOWO"></a>
       </div> <!-- /marquee_content -->
   </marquee> 
   
-  
+
+
+
+
 </footer>

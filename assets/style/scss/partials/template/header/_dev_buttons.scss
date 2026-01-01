@@ -4,8 +4,6 @@
  * HEADER BUTTONS
  */
 
-
-
  .header_options_temp {
   // border: 12px solid red; // 
   // border: $s_border; // 
@@ -18,8 +16,6 @@
   flex-wrap: wrap; // PRECAUTION - RESPONSIVE - ALLOW WRAP IF NEEDED
   
 } // header_buttons
-
-
 
 
 /*
@@ -35,8 +31,6 @@ button, button span {
   border: 1px solid #000; // Adjust as needed 
 }
 */ 
-
-
 
 /*
  *
@@ -55,21 +49,12 @@ button, button span {
   align-items: center; // PRECAUTION
   gap: 1em;
 
-
-
   &.is-vertical {
     flex-direction: column;
     gap: 0.5em; //
   }
 
-
-
-
 } // dev_buttons
-
-
-
-
 
 
 // header_search - - - - BUTTON !!!!!!!!!!!! & BTN_FRESET CLASS.... MIXIN ...
@@ -82,7 +67,6 @@ button.langicon,
 button.searchicon,
 button.modeicon */ {
 
-display: block; // 
 
 /*
   // display: none; // UI 
@@ -90,12 +74,12 @@ display: block; //
     display: block !important;	
   } // MEDIA-QUERY	
 */  
-
+cursor:pointer; // they are button !!!    
+display: block; // 
 
     // outline: 3px solid #f06; outline-offset: 2px;
 
-    // display: none; // UI 
-    cursor:pointer; // they are button !!!   
+
     /* */
     // text color is presuposed // peor ha saido un gris..
     // border-style: solid; // see if this removes the shadow !!! YES !!!! / MOVE TO RESTE ........ OF BUTTON, OJO
@@ -137,9 +121,9 @@ display: block; //
 
       /* */
       // padding: 8px;
-      padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
+      padding: 0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
           //
-      transition: all 0.5s ease-in-out; //
+      transition: all 0.5s ease-in-out; // TODO - LIMIT THIS
     }
   
     &:hover {

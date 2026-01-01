@@ -127,9 +127,7 @@ role[trigger_search] & role[target_search] ... etc ...
 
 
 
-/* 
- * 4 - TYPOGRAPHY 
- */
+// 4 - TYPOGRAPHY 
 @import "partials/base/typography/fonts"; // fonts - que ls imports esten aqui adento, no en el head TODO
 @import "partials/base/typography/typography"; // fonts
 @import "partials/base/typography/typopgraphy_htmleditor"; // m_htmleditor --> HTMLEDITOR --> WYSIWIG !!!???
@@ -182,7 +180,14 @@ role[trigger_search] & role[target_search] ... etc ...
 @import "partials/dev/dev_ruler"; 
 @import "partials/dev/dev_styleguide"; // !!! this should prbabby by within the maon ppackage
 
+
+
+// TODO - MAKE THE GARDIENT HTINGINMAGINNEE!!!
+
 @import "partials/dev/dev-grid-columns"; // ???? DOW WITH A GRADIENT R¡OR WHATAER - AND THEN HAVE IT AS A TOGGLE FOR ADMIN DEV SETTINGS 
+
+
+
 
 
 

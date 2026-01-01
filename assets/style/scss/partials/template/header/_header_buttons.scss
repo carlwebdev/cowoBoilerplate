@@ -111,30 +111,19 @@ display: block; //
 
     // MDIcon
     span {
-
-      color: var(--c-text); // MODE
-      // color: white; // MODE
-
+      display: block;
       font-size: 2em; // 
       // font-size: 3em; // 
-      // font-size: 4em; // 
-      
-      
+      // font-size: 4em; //       
+      color: var(--c-text); // MODE
+      // color: white; // MODE
 
       // next goal, make 3 mod clases for icon, round & square etc ..
 
 
-
-      display: block;
-
-
       /* 
-
       // padding: 8px;
       padding:0.25em; // = 8px compared to 2em, whch is 32px, so 1/4, ok
-
-
-
 
       // GOAL, MOVE ALL THE STYLING TO THE SPAN, AND THEN THE BUTTON IS JUST A CONTAINER.. (CHATO WOW.)
       border-color: var(--c-text);
@@ -145,10 +134,8 @@ display: block; //
 
       */
 
-
           //
       transition: all 0.5s ease-in-out; //
-
 
     }
   
@@ -178,10 +165,6 @@ display: block; //
   
 
 
-
-
-
-
   /* OLÑD ICON FOTN, NOW IM USING MATERIUAL ICONS !!!! NI PROCESS !!!!!!!!!!!!!!!!!! */ 
   /*
   .icon { // esto aplica el icon font, solo aki, po rahora, pero lo he usado en otros sitios, y siempre uso el mismo style, osea que metelo como un mixin !!!!! @include icon, ah no!!!! no cal fer res, o no, si que hace falta !!!!!!!!!!
@@ -197,8 +180,6 @@ display: block; //
     } // icon
   */
   
-  
-
 
   
   } // buttons

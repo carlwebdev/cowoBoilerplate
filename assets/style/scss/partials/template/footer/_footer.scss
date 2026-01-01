@@ -94,6 +94,10 @@ footer {
 
     display:block;
 
+    padding: unset; // 
+
+
+
     span {
       
       display:block;
@@ -173,18 +177,9 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap; // PRECAUTION - RESPONSIVE - ALLOW WRAP IF NEEDED
   
-
-
-
   @media only screen and (max-width: $bp_l) { 
     flex-direction: column;
-
-
-
   } // MEDIA-QUERY		
-
-
-
 
 } // footer_bar_main
 
@@ -192,21 +187,10 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-		.footerContent {
+		.footerContent { // aka footer_brand
       // border: 3px solid red; // 
-      border: 3px solid red; 
+      // border: 3px solid red; 
 
-      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -225,12 +209,7 @@ footer {
 		  */		
 		} // footerContent			
 			
-
-
-
-
-
-			
+	
     .logo_footer { // logo_footer // footer_logo
       // flex-shrink: 0; 
       max-width: 320px;
@@ -260,26 +239,14 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
 /*
  * Grid - Footer
  */	
 .grid_footer {
   // @include dev_border;
-  // margin-top: $spacing;
   display: flex;
   justify-content: space-between;
   gap: 4em; // 
-  
-  border: 3px solid red; 
-  
   
   .item {
 
@@ -324,28 +291,7 @@ footer {
 
   } // item	
 
-
 } // grid_footer	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -365,23 +311,16 @@ footer {
   justify-content: flex-end; 
   */
   // align-items: center; // ME INTERESA PARA CUANDO SALE EL NAVICON..
-
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-
 } // footer_bar_bottom
-
 
 
   .footer_developer {
     // @include dev_border; // 
     display: flex;
     gap: 0.4em;
-
-
 
     span {
       // font-size: $fs_m;
@@ -396,12 +335,3 @@ footer {
     }
 
   } // footer_developer			
-			
-
-
-			
-			
-
-
-
-
