@@ -53,14 +53,11 @@ include ('template_parts/page/page_top.php');
     </section>    
 
     
-    
-    
-    
+
     
     <?php /*?>
     <pre>
-    
-    
+      
     LEGAL BS ETC  - Ley de cookies - info
     
       info - LEY DE COOKIES
@@ -84,8 +81,7 @@ include ('template_parts/page/page_top.php');
 
         http://www.sport.es/es/politica-cookies.shtml      
     
-    
-    
+  
       PATI etc - LEY DE COOKIES - copia
       
         http://www.infoautonomos.com/blog/como-adaptar-tu-web-la-nueva-ley-de-cookies/
@@ -96,33 +92,13 @@ include ('template_parts/page/page_top.php');
     <?php */?>
     
 
+
     
-    
-    
-    
-  <?php 
-  // PAGE CONTENT END
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  /*
-   * Cookes Popup
-   */
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// SCRIPTS
-include('config/scripts.php'); 
-?>
-<?php // include('config/credits.php'); ?>  
+<?php
+// PAGE BACKGROUNDS END
+// include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  
 </body>
 </html>

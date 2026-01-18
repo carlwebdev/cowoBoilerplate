@@ -39,6 +39,19 @@ include ('template_parts/page/page_top.php');
     
 
 
+    
+    <?php 
+    /* 
+     * START - LAYOUT SYSTEM - BACKGROUNDS (AND EVEN CSS GRID WHATEVER ... )
+     */
+    ?>    
+    <!-- <div class="backgrounds"> -->
+      
+
+  <?php
+// PAGE BACKGROUNDS START
+include 'components/template/page/page_backgrounds_start.php';  
+?>  
 
 
 <?php 
@@ -214,9 +227,135 @@ just have sections that pont to pages that contina types of content <br>
 
 
 
+
+
+ 
+
+    <?php 
+    //  GRID FEATURES
+    ?>   
+    <section class="background padding_2 test___NOTS">  
+      <div class="frame wide_NOT">
+        
+        <?php 
+          $section_title = 'Grid Features';
+          include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+        ?> 
+        
+        <?php include('components/molecules/grid_features.php'); ?>
+        
+      </div> <!-- /frame -->     
+    </section>   
+
+
+
+
+
+      <?php 
+      /* 
+       * SECTION - GRID PRICING (ALL)
+       */
+      // include('components/sections/pricing/section_pricing.php'); ?>
+
+    
+    
+    
+
+
+
+      <section class="background fullscreen padding_3_4">
+        <div class="frame wide___NOT">
+          <?php 
+          // SECTION - GRID PRICING (ALL)
+          include('components/sections/pricing/section_pricing.php'); 
+          ?>
+          <!--
+          move to folder section pricing , and path, & card, & etc 
+
+          also the sass parial, in section folders ...
+          -->
+        </div>
+      </section>  
+
+
+
+
+    <?php 
+    // SECTION - GRID PRICING (ALL)
+    include('components/sections/pricing/section_pricing.php'); 
+    ?>
+    
+    
+
+
+
+
+    
+    
+    
+    
+    
+
+
+    <section class="background padding test___NOT">   
+      <div class="frame"> 
+
+        <?php 
+          $section_title = '"Latest Products Catorze!"';
+          include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+        ?> 
+        
+        <?php include('components/molecules/carrousel.php'); ?>
+
+      </div> <!-- /frame -->     
+    </section>  
+
+
+    
+    
+  
+  
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <section class="background padding">
+      <div class="frame wide___NOT">
+
+
+        <?php 
+          $section_title = '"Products Grid"';
+          include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+        ?> 
+        
+        <?php // include('components/patterns/grid_products.php'); ?> <!-- just need to have a price tag on it, for it to really be a comeple module - and blockify it into shop or products or single-prioducts etc -->
+        <?php 
+        include('components/sections/products/grid_products.php'); 
+        ?>
+
+      </div> <!-- /frame --> 
+    </section>  
+    
+
+    
+
+
+
+
+
+
+
+
 <?php
 // PAGE BACKGROUNDS END
-// include 'components/template/page/page_backgrounds_end.php';  
+include 'components/template/page/page_backgrounds_end.php';  
 // PAGE BOTTOM
 include ('template_parts/page/page_bottom.php'); 
 ?>  

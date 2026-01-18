@@ -40,11 +40,23 @@
 
 
 
-  --card-fs-title: var(--fs-l); // variable improve // var(--fs-xl)
-  --card-fs-description: var(--fs-base);
+  --card-fs-title: var(--fs-l); // variable improve // var(--fs-xl) / vs $fs_m   // // TODO --fs-card-title etc 
+  --card-fs-description: var(--fs-base); // vs $fs_s   // // --fs-card-text VS description
   --card-fs-detail: var(--fs-m);
   --card-fs-specs: var(--fs-s); 
-  --card-paddinng: 3em; // // variable improve
+  --card-paddinng: 3em; // // variable improve !!!!!!!!!!!! d&d misspelling !!!
+
+
+
+
+  // TODO - --card-fw-title eg bold
+
+// ??? --card-c-title
+
+  // do same for section .-...
+
+
+
 
 
 

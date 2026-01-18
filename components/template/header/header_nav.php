@@ -36,6 +36,10 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
 	  <li><a href="">Pages<?php /*?> - Default<?php */?></a>
 		<ul>
 
+      <?php 
+      // LEVEL 1 - BASE
+      ?>
+          
       <li><a href="page-blog.php"><?=$pagename_blog ?></a></li>
       
       <li><a href="page-about.php"><?=$pagename_about ?></a>
@@ -50,11 +54,8 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
       
 			<!--// CB - PAGE-NAMES LIKE IN WORDPRESS, FOR EASE OF USE... -->
 			<?php /*?>keep indesx (throiugh logo) to get to the dashboard pf this thiung the cB system <?php */?>
-			<?php 
-      /*
-       * LEVEL 1 - BASE
-       */
-      ?>
+			
+
 			<?php /*?><li><a href="page-home.php"><?=$pagename_index ?></a></li><?php */?>  <?php /*?>index.php<?php */?>                              
 		  <?php /*?><li><a href="page-about.php"><?=$pagename_about ?></a></li><?php */?> <?php /*?>about.php / about-us.php<?php */?>
 		  <?php /*?><li><a href="page-contact.php"><?=$pagename_contact ?><?php */?> <?php /*?>(severakl options!!! with separate html & css files)<?php */?></a></li> <?php /*?>contact.php / contact-us.php<?php */?> 
@@ -63,16 +64,13 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
       <?php /*?><li><a href="page-news.php"><?=$pagename_news ?></a></li><?php */?>
       <li><a href="page-cookies.php"><?=$pagename_cookies ?></a></li> <?php /*?>cookies.php<?php */?>
 		  <li><a href="404.php"><?=$pagename_404 ?></a></li> <?php /*?>404.php // aka Page Not Found<?php */?>
-			<?php 
-      /*
-       * LEVEL 2 - GENERIC CONTENTS
-       */
+			
+      <?php 
+      // LEVEL 2 - GENERIC CONTENTS
       ?>
-
-      <li><a href="style-blank-page.php">Blank Page<!--(Test Sticky Footer)--></a></li>
       <li><a href="style-sample-page.php"><!--Style - -->Sample Page</a></li> 
-
-
+      <li><a href="style-blank-page.php">Blank Page<!--(Test Sticky Footer)--></a></li>
+      
 		</ul>
 	  </li> 
 
@@ -83,8 +81,10 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
       * COMPONENTS
       */
     ?>
+    <?php 
+     /*    
 		<li><a href="page-components.php">Components</a>
-      <ul>
+      <!-- <ul>
         <li><a href="page-products.php"><?=$pagename_products ?></a></li>
         <li><a href="page-pricing.php"><?=$pagename_pricing ?></a></li>
         <li><a href="page-services.php"><?=$pagename_services ?></a>
@@ -95,8 +95,10 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
           </ul>
         </li>       
       </ul>
+      -->
     </li>
-
+      */
+    ?>
 
 
 

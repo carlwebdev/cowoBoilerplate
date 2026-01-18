@@ -624,7 +624,19 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 
 
-		<?php include('components/template/tags.php'); ?>
+
+
+
+
+
+		<?php // // // // // include('components/template/tags.php'); ?>
+
+
+
+
+
+
+
 	</div> <!-- /frame -->     
 </section>  
 
@@ -655,8 +667,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 
 <?php 
-/*
- * jQuery script ... duuh  - ACCORDION
+// jQuery script ... duuh  - ACCORDION
  */
 ?>
 <section class="background fullscreen padding___NOT padding_2 test">  
@@ -674,9 +685,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
     
     
 <?php 
-/*
- * jQuery - ACCORDION
- */
+// jQuery - ACCORDION
 ?>
 <section class="background fullscreen padding_2 padding___NOT test">  
 	<div class="frame">  
@@ -695,9 +704,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 
 <?php 
-/*
- * jQuery - ACCORDION
- */
+// jQuery - ACCORDION
 ?>
 <section class="background fullscreen padding test">  
 	<div class="frame">  
@@ -712,9 +719,7 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 
 <?php 
-/*
- * GRID LIST
- */
+// GRID LIST
 ?>
 <section id="cowo-gridlist" class="background fullscreen padding_2 test">  
 	<div class="frame">
@@ -745,61 +750,26 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 -->
     
     
-    
-    
-    
-    
-    
-    
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
 <!-- and this si an old example for plugins - so have aplugins integrations page too -->    
     
 
-<section class="fullscreen padding_2 test">  
-	<div class="frame"> 
+<!--
+20260104 - 
+KILLED - bakcstretch js - now use css background cover etc etc
+
+s&d: 
+- frontWrapper_header
+- frontWrapper_section
+- frontWrapper_sectionTitle
+- frontWrapper_sectionContent
+
+-->
+
     
-
-                  
-
-	<div id="frontWrapper_header">Backstretch.js</div> 
-    <div class="frontWrapper_section">
-        <div class="frontWrapper_sectionTitle">frontWrapper_sectionTitle</div>
-        <div class="frontWrapper_sectionContent">frontWrapper_sectionContent</div>
-    </div> 
+    
     
   
-    
-    
-    
-	</div> <!-- /frame -->     
-</section>  
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 <?php /*?>    
 <section class="padding_4 test"> 
@@ -809,9 +779,6 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 </section> 
 <?php */?>
   
-    
-    
-    
     
     
     
@@ -831,14 +798,6 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
     
     
 <?php /*?>   
-
-<br>
-<br>
-<br>
-<br>
-
-
-
 
     <p>Insert content here.</p>
         
@@ -873,16 +832,10 @@ ctx.drawImage(img,10,10);
 <br>
 <br>
 
-
-
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
   <polygon points="100,10 40,180 190,60 10,60 160,180"
   style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;">
 </svg>
-
-
-
-
 
 
 
@@ -971,31 +924,6 @@ function showError(error)
  
 
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  <?php // $pagename = 'Dev - Media' ?>    
@@ -1034,10 +962,8 @@ function showError(error)
 
 
 
-    <?php 
-/*
- * RESPONSIVE VIDEO
- */
+<?php 
+// RESPONSIVE VIDEO - this is also legacy now !!!!!!!!!!!!!
 ?>
 <section class="background fullscreen___NOT vcenter___NOT padding_2 test___NOT" id="">  
 	<div class="frame medium___NOTS narrow">
@@ -1121,59 +1047,20 @@ USE GRID BASE, INCONJYNCITON TO ANY INCLUDE CARD THINGEES  MEERL EN LAYOUT _PAGE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
 
 <!-- InstanceEndEditable -->
   <?php 
   // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
   include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
   // FOOTER
   include('components/template/footer.php'); 
-  ?>
-  <?php 
   // COOKIES POPUP
   include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
+  
+  // include "components/side_menu.php";  
 // PAGE END
 include ('components/template/page/page_end.php'); 
-?> 
-<?php 
 // SCRIPTS
 include('config/scripts.php'); 
 ?>

@@ -23,9 +23,11 @@ $s_border: 3px solid $c_accent;
 // $s_border_alt: ... ;
 
 
-
-
-
+/*
+ *
+ * S bgS
+ *
+ */
 
 @mixin frosted_glass { 
 
@@ -46,7 +48,6 @@ $s_border: 3px solid $c_accent;
 
 
 
-
 /*
  *
  * S CARD
@@ -56,34 +57,40 @@ $s_border: 3px solid $c_accent;
 // OJO, THSI SI STYLE - ok por eso lo he movido aqui 
 
 @mixin s_card { // // s_card_default // default / (base, or just npothing ...)
+
+  @include frosted_glass;
+
+  /*
   // s_CARD_BASE ... ETC 
-	background-color: $c_white; /* PRECAUTION */
+	background-color: $c_white; // PRECAUTION
+  */
+
+  border-radius: 1rem;
+  padding: 0.75rem;
+
+  border-radius: 2rem;
+  padding: 1rem;
+  
+  
 	// box-shadow: 0px 0px 2px #ccc;
 	// box-shadow: 0px 0px 4px 2px #ccc;
 	// box-shadow: 0px 0px 8px -2px #ccc;
 
-
-
 	/* box-shadow: 0px 0px 8px 2px #ccc; */
   box-shadow: 0px 0px 4px 0px #ccc;
 
-
-	// padding: $space025;		
-	padding: $spacing05;
-  border-radius: $spacing05;
+  transition: box-shadow $t_slow linear;
   
 	&:hover {
 		// cursor: pointer; // // // // // // // !!!!!!!!!!!!!!!!!!!
-    
 		// @include transition(box-shadow, 0.2s);
-    transition: box-shadow $t_fast linear;
-
+    transition-duration: $t_fast;
 
     /* box-shadow: 0px 0px 4px 0px #ccc; */
     /* box-shadow: 0px 0px 8px 2px #ccc; */
     box-shadow: 0px 0px 8px 4px #ccc;
-
 		// box-shadow: 0px 0px 4px 0px $c_accent;
+
   }
   
 } // mixin s_card
@@ -92,10 +99,6 @@ $s_border: 3px solid $c_accent;
 
 
 // forms, add fieldwety todo eso por accesibility !!!!
-
-
-
-
 
 
 

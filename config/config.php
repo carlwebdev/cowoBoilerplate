@@ -188,7 +188,8 @@ $pagename_contact = "Contact"; // Contact & Us
 $pagename_cookies = "Cookies";
 $pagename_404 = "404"; // Page Not Found
 // & faqs... whatever not, too much shit 
-$pagename_legal = "Legal (Notice)"; // Saka Legal Notice, etc
+// $pagename_legal = "Legal (Notice)"; // Saka Legal Notice, etc
+$pagename_legal = "Legal Page"; // Saka Legal Notice, etc
 
 
 

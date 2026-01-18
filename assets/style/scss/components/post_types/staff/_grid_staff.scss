@@ -8,7 +8,8 @@
 .grid_staff {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: $spacing2;
+  // gap: $spacing2;
+  gap: 2rem;
   
   @media only screen and (max-width: $bp_l) { 
     // grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -32,21 +33,33 @@
 /* 
  * CARD - STAFF
  */
-.card_staff { // item 
-  @include s_card;
+ // article.card_staff,
+.card_staff {
+    @include s_card;
   
-
-  
-  // picture
-  
-    .image {
+    picture {
+      /* 
+      outline: 3px solid red;
+      // outline-offset: -3px;
+      outline-offset: -6px;
+      */
       // border: 1px solid red; // TEMP
 
       @include bg_c_placeholder;
 
-      img {@include img;}
+      // border-radius: 0.25rem;
+      border-radius: 1rem;
+      overflow: hidden; // move to reste ...
 
-      // @include ar_square; // TEMP
+      img {
+        @include img; // ADD TO RESET !!!
+        /*
+        border-radius: 0.25rem;
+        overflow: hidden;   
+        */
+      }
+
+      // @include ar_square; // TEMP and/opr precaution, with object fir cover as well as a pack ?!
 
       // ADDD IMAGE THUMB SQUASRE FORMAT OPTION & REGERENART THUMBNAIIL ETC ....
 
@@ -55,56 +68,72 @@
         @include ar_square; // TEMP 
       } // case-no-image
 
+    } // picture  
 
-    } // image  
 
 
-  
-  
-  
+
   // add info thingee.... 
+  // with display: conetnst so that eh flex goes throug it !!! - for bototm margin auto posisbel and inherit gaps of cours etoo 
+
   
-  
-  
-  
-    /*
+
+
+
+
+    /* */
     display: flex;
     flex-direction: column;
-    */
+    
     // as preacution, of ma strectehes etc  - el de abajo margn top auto style
 
-    .title {
-      margin-top: $spacing05; // TEST
-      // margin-bottom: $spacing0125; // TEST
-      margin-bottom: $spacing025; // TEST
+    // gap: 1rem; // 
+    gap: 0.5rem; // 
 
-      // font-size: $fs_m;
-      // font-size: $fs_m;
-      font-size: $fs_l;
+    // .title,
+    h3 {
+      /*
+      margin-top: 1lh; // !!!
+      margin-bottom: 1lh; // !!!
+      // aka margin-block: 1lh; // !!!
+
+
+      // @include mx(1lh);
+      */
+
+      // margin-block: 0;
+      // margin-block: 1lh;
+      margin-bottom: 1lh; 
+      margin-top: 0.5lh; 
+
+
+
+
+      
+      font-size: var(--card-fs-title); // 
       font-weight: bold;
-      // color: var(--moss-c-a-4); // TEST
-    } // text  
+    } // h3  
 
 
 
   // todo  is name is long, then make the role & email be aligend at the bototm .. nice precautin system 
 
 
-
-
-    .role {
-      margin-bottom: $spacing0125; // TEST
-      font-size: $fs_m;
-      // font-size: $fs_s;
-      // scolor: var(--moss-c-a-4); // TEST
+    p.role {       
+      margin-block: 0; // RESET ??? !!!
+      // margin-bottom: 0.5lh; // !!!
+      
+      font-size: var(--card-fs-description); // 
     } // text  
   
   
-  
-  
+
+
+
+
+    // ? KILL
     .email {
-      // font-size: $fs_m;
-      font-size: $fs_s;
+      font-size: var(--card-fs-description); // 
       // color: var(--moss-c-a-4); // TEST
 
       a {  
@@ -112,9 +141,41 @@
         @include a_ui_alt;
       } // a
 
+    } // email  
 
+
+
+
+
+
+    address {
+      display: contents; // stil tetsing 
+
+      font-size: var(--card-fs-detail); // TEST
+
+      a {  
+        color: inherit;
+        @include a_ui_alt;
+      } // a
+
+    } // address
+
+
+
+
+    p.category { 
+      margin-top: auto; // 
+
+      padding-top: 16px; // 
+
+
+      font-size: var(--card-fs-detail); // 
+      
+      color: var(--c-gray-dark); // TEMP
 
     } // text  
+
+
 
 
 } // card_staff

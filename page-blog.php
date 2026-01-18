@@ -26,7 +26,7 @@ include ('template_parts/page/page_top.php');
     $show_page_banner_map = '0';
     
     $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
-    $show_page_title = '1'; 
+    $show_page_title = '0'; 
     $show_page_excerpt = '0';
     $show_page_content = '0';
     // ad the content, asin wp_eoimoe ... 
@@ -69,12 +69,10 @@ TASKS:
 <?php */?>
 
 
-
 <?php
 // PAGE BACKGROUNDS START
 include 'components/template/page/page_backgrounds_start.php';  
 ?>  
-
 
 
 
@@ -160,34 +158,12 @@ include 'components/template/page/page_backgrounds_start.php';
 
 
 
-
-  <?php
-  // PAGE BACKGROUNDS END
-  include 'components/template/page/page_backgrounds_end.php';  
-  ?>     
-  <?php 
-  // PAGE CONTENT END   
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  /*
-   * Cookes Popup
-   */
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// Scripts
-include('config/scripts.php'); 
-?>
-<?php // include('config/credits.php'); ?>  
+    
+<?php
+// PAGE BACKGROUNDS END
+include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  
 </body>
 </html>

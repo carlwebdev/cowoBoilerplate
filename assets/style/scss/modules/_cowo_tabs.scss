@@ -35,19 +35,19 @@
   border: 4px solid var(--c-accent);
 
 
-
+  outline: 3px solid yellow;
+  outline-offset: 3px; // 
 
 
   /* 
    * TAB
    */  
   .tab {
-    
     border: 4px solid var(--c-accent);
 
+    // min-height:200px; /* DEMO */
+    min-height:20em;
 
-
-    min-height:200px; /* DEMO */
     // padding: $spacing;
     // padding: 2em;
     padding: 3em;

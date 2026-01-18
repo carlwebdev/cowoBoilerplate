@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/master_en.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<!-- InstanceBeginEditable name="config" -->
 <?php $pagename = $pagename_faq ?>
-<!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
-
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-
 </head>
 <body>
 <?php 
@@ -79,30 +73,20 @@ include ('template_parts/page/page_top.php');
     
              
 
-	<!-- InstanceEndEditable -->
+
   <?php 
   // PAGE CONTENT END
   include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
   // FOOTER
   include('components/template/footer.php'); 
-  ?>
-  <?php 
-  /*
-   * Cookes Popup
-   */
+  // Cookes Popup
   include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
+  // include "components/side_menu.php";   
 // PAGE END
 include ('components/template/page/page_end.php'); 
-?> 
-<?php 
 // SCRIPTS
 include('config/scripts.php'); 
-?>
-<?php // include('config/credits.php'); ?>  
+// include('config/credits.php'); 
+?>  
 </body>
 </html>

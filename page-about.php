@@ -21,23 +21,11 @@ include ('template_parts/page/page_top.php');
     
   <!--
     <pre>
-
-
-
-
-
-
-
-
-
-
-    
     TODO - MAKE FLEX STICKY FOOTER WORK HERE AGAIN
     </pre>
     -->
     
-    
-    
+
 		<?php // include('components/pages/page-about.php'); ?> 
     <?php /*?>THIS SYSTEM IS NOT GOOD, IT'S TO MODULAR AND FAR -REACHING , KISSS !!!!!!!!!!!<?php */?>
     
@@ -51,6 +39,14 @@ include ('template_parts/page/page_top.php');
       // $show_dev_columns = '0'; 
       // THIS SHOUDL BE DEIFNED I CONFIG, FOR THE PAGE BASICS INCLUDE .. OR EVEN HAVE IT LCATED ELSEWHERE 
     
+
+
+
+
+
+
+
+      
       // PLUS ADD THE CSS DEBUGGING THSINGS, ALT IMAGE % ETC , EASY  
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
       $show_page_banner = '1'; // hacky situation in this case .... or not
@@ -78,9 +74,6 @@ include ('template_parts/page/page_top.php');
 
 
 
-
-
-
     <section class="padding_4">
       <div class="frame">
 
@@ -97,32 +90,14 @@ include ('template_parts/page/page_top.php');
 
 
 
+
     
     
-	<!-- InstanceEndEditable -->
-  <?php 
-  // PAGE CONTENT END - Sticky Footer Solved By FlexBox - end
-  include ('components/template/page/page_content_end.php'); 
-  ?> 	
-  <?php 
-  // FOOTER
-  include('components/template/footer.php'); 
-  ?>
-  <?php 
-  // COOKIES POPUP
-  include('components/cowo_cookies.php'); 
-  ?> 
-  <?php // include "components/side_menu.php"; ?>   
-<?php 
-// PAGE END
-include ('components/template/page/page_end.php'); 
-?> 
-<?php 
-// SCRIPTS
-include('config/scripts.php'); 
-?>
-<!-- InstanceBeginEditable name="scripts" -->
-<!-- InstanceEndEditable -->
-<?php // include('config/credits.php'); ?>  
+<?php
+// PAGE BACKGROUNDS END
+// include 'components/template/page/page_backgrounds_end.php';  
+// PAGE BOTTOM
+include ('template_parts/page/page_bottom.php'); 
+?>  
 </body>
-<!-- InstanceEnd --></html>
+</html>
