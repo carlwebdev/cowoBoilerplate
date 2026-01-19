@@ -2,13 +2,17 @@
 
 # User-agent = crawler
 # * = any
-# Dissalow = not allow indexing
+# Disallow = not allow indexing
 # / = all
 #   = none
 # /bla.bla = specific
 
 
 User-agent: *
+
+### Disallow: /
+
+
 
 
 # Dissalow always - Admin folder
@@ -18,7 +22,7 @@ Disallow: /admin/
 Disallow: /404.php
 
 
-# Dissalow for now
+# Disallow for now
 
 
 Disallow: /dev.php
@@ -26,7 +30,7 @@ Disallow: /repo.php
 
 
 
-# Dissalow - section - events
+# Disallow - section - events
 Disallow: /events.php
 Disallow: /events/
 

@@ -4,13 +4,12 @@
  * Header
  */
 ?>
-<?php // include('../components/dev/github.php'); ?>
-<?php // include('../components/dev/dev_ruler.php'); ?>
+<?php // include('components/dev/github.php'); ?>
+<?php // include('components/dev/dev_ruler.php'); ?>
 
 <?php /*?>
 builsd selectro choices system for inside the header and inside the footer, as a nic econfig syste, which later wil be coming frem the cms iutself, as theme option s.. 
 <?php */?>
-
 
 <?php
   /*
@@ -42,6 +41,5 @@ builsd selectro choices system for inside the header and inside the footer, as a
   // $header_position = '0'; // 0, 1, 2, 3, 
   // $header_position = '1'; // 0, 1, 2, 3, 
   $header_position = '3'; // 0, 1, 2, 3, / SHOUDL BE HEADER LAYUT ??  
-
   include('components/template/header_selector.php'); 
 ?> 

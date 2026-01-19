@@ -14,7 +14,7 @@ include ('template_parts/page/page_top.php');
 ?>  
 	   
 
-		<?php /* include('components/atoms/page_title.php'); */ ?>
+<?php /* include('components/atoms/page_title.php'); */ ?>
 	  
 	        
 <br>

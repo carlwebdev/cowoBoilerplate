@@ -4,6 +4,16 @@
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <?php $pagename = $pagename_cookies ?>
+<?php 
+  /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+  $show_dev_columns = '0';
+
+  $show_page_banner = '0'; // hacky situation in this case .... or not
+  $show_page_banner_map = '0';
+  $show_breadcrumbs = '1'; 
+  $show_page_title = '1'; 
+  $show_page_excerpt = '1'; 
+?> 
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
 </head>
@@ -13,31 +23,30 @@
 include ('template_parts/page/page_top.php'); 
 ?>  
     
-    <?php // include('components/pages/cookies_view.php'); ?>
+    <?php // include('components/pages/cookies_view.php'); // ?>
     
-    
-
     <?php 
       /* 
-       *
-       * PAGE BASICS 
-       *
+       * SITE BASICS 
        */
       // header positioning options
       // header layout options
 
+      /* 
+       * PAGE BASICS 
+       */
       // show popups etc etcetce
 
-      $show_dev_columns = '0';
+      // $show_dev_columns = '0';
 
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      $show_page_banner = '0'; // hacky situation in this case .... or not
-      $show_page_banner_map = '0';
-      $show_breadcrumbs = '0'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
-      $show_page_title = '1'; 
-      $show_page_excerpt = '0';
+      // $show_page_banner = '0'; // hacky situation in this case .... or not
+      // $show_page_banner_map = '0';
+      // $show_breadcrumbs = '0'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+      // $show_page_title = '0'; 
+      // $show_page_excerpt = '0';
 
-      // ad the content, asin wp_eoimoe ... 
+      // add the content, asin wp_eoimoe ... 
 
       include('components/includes/page_basics.php'); // PAGE BASICS
     ?> 
@@ -52,48 +61,6 @@ include ('template_parts/page/page_top.php');
       </div> <!-- /frame --> 
     </section>    
 
-    
-
-    
-    <?php /*?>
-    <pre>
-      
-    LEGAL BS ETC  - Ley de cookies - info
-    
-      info - LEY DE COOKIES
-      
-        http://www.infoautonomos.com/blog/como-adaptar-tu-web-la-nueva-ley-de-cookies/
-        http://www.bonillaware.com/cumplir-ley-de-cookies-y-analytics
-    
-      
-      mas cookie info
-      
-        http://www.cecarm.com/servlet/s.Sl?METHOD=DETALLENOTICIA&sit=c,731,m,2628&id=34206
-
-        //////
-
-        joan
-
-        SPORT.ES
-
-        Esta web utiliza 'cookies' propias y de terceros para ofrecerte una mejor experiencia y servicio. 
-        Al navegar o utilizar nuestros servicios, aceptas el uso que hacemos de ellas. Puedes cambiar la configuraci�n de 'cookies' en cualquier momento.
-
-        http://www.sport.es/es/politica-cookies.shtml      
-    
-  
-      PATI etc - LEY DE COOKIES - copia
-      
-        http://www.infoautonomos.com/blog/como-adaptar-tu-web-la-nueva-ley-de-cookies/
-        http://www.bonillaware.com/cumplir-ley-de-cookies-y-analytics
-      
-      
-    </pre>
-    <?php */?>
-    
-
-
-    
 <?php
 // PAGE BACKGROUNDS END
 // include 'components/template/page/page_backgrounds_end.php';  

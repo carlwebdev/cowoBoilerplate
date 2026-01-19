@@ -34,7 +34,16 @@
           <?php 
           // HEADER NAV
           include('components/template/header/header_nav.php');
-          // include('components/template/header/header_social.php'); 
+
+
+
+
+          // // // include('components/template/header/header_social.php'); // HEADER SOCIAL - MOVED TO OPTIONS INSTEAD - ???
+
+
+
+
+
           ?>
       </div> <!-- /header_nav_desktop -->
 
@@ -42,21 +51,32 @@
       <div class="header_options_temp">
 
           <?php 
-            /*  
-            * HEADER - BUTTONS - USE AS INCLUDE FOR NOW !!!!!!!!!!!!!! and rename as header_options perhaps
-            */
+          // HEADER - BUTTONS - USE AS INCLUDE FOR NOW !!!!!!!!!!!!!! and rename as header_options perhaps
           ?> 
           <?php   
           // HEADER options
-          include('components/template/header/header_options.php');
+          include('components/template/header/header_options.php'); // OBS, MAYEB THE SETTNIKGH BUTTON SHOUDL BE TO THE RIGHT OF THE DOICAL MEDIAICONS, AS STH TYOATTLY SEPARATEED
           ?>
 
           <?php /*?>
           <!-- CREATE  AHEADER ICON FOR SHARE - obs but its not share, its links to sapocia media, so wrking icon really , AND THEN A DROPDOWN FOR SOCAL MEDI ALINKS, AND WHATOT, EMAIL TOO, TO UATO SEND EMAI LETC  -->
-          <?php */?>       
+          <?php */?>     
+
+
+
+
+
+
+
           <div class="social_header">
             <?php include('components/atoms/list-social.php'); // THESE CLEAN LISTS SHULD COME FORM DYNAMC, OR DB OR SETTINSG FOLDER INSTAD... ?>
           </div> <!-- / social_header -->
+
+
+
+
+
+
 
       </div> <!-- /header_options_temp -->
 

@@ -51,13 +51,7 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
         </ul>
       </li>
       <li><a href="page-contact.php"><?=$pagename_contact ?>
-      
-			<!--// CB - PAGE-NAMES LIKE IN WORDPRESS, FOR EASE OF USE... -->
-			<?php /*?>keep indesx (throiugh logo) to get to the dashboard pf this thiung the cB system <?php */?>
-			
-
 			<?php /*?><li><a href="page-home.php"><?=$pagename_index ?></a></li><?php */?>  <?php /*?>index.php<?php */?>                              
-		  <?php /*?><li><a href="page-about.php"><?=$pagename_about ?></a></li><?php */?> <?php /*?>about.php / about-us.php<?php */?>
 		  <?php /*?><li><a href="page-contact.php"><?=$pagename_contact ?><?php */?> <?php /*?>(severakl options!!! with separate html & css files)<?php */?></a></li> <?php /*?>contact.php / contact-us.php<?php */?> 
 		  <li><a href="page-legal.php"><?=$pagename_legal ?></a></li> <?php /*?>TODO - legal pages - Legal Notice, Privacy Policy ... <?php */?>
       <?php /*?> ALSO ADD LEGAL NOTICE & PRIVACY POLICY ETC !!!!<?php */?>
@@ -65,12 +59,22 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
       <li><a href="page-cookies.php"><?=$pagename_cookies ?></a></li> <?php /*?>cookies.php<?php */?>
 		  <li><a href="404.php"><?=$pagename_404 ?></a></li> <?php /*?>404.php // aka Page Not Found<?php */?>
 			
+
+
+
+
       <?php 
-      // LEVEL 2 - GENERIC CONTENTS
+      // (SECTION ) (AREA) LEVEL 2 - GENERIC CONTENTS
       ?>
-      <li><a href="style-sample-page.php"><!--Style - -->Sample Page</a></li> 
-      <li><a href="style-blank-page.php">Blank Page<!--(Test Sticky Footer)--></a></li>
+      <li><a href="page-sample.php">Sample Page</a></li> 
+      <li><a href="page-blank.php">Blank Page</a></li>
       
+
+      <li><a href="page-under-construction.php">Under Construction</a></li>
+      <li><a href="page-maintenance.php">Maintenance</a></li>
+
+
+
 		</ul>
 	  </li> 
 
@@ -105,15 +109,14 @@ obs, the menu list, has to be store elsewhere, so that this menu can be vcellae 
 	  <?php /*?><li><a href="">Modules / grids, eModules / itmsm / etc</a></li>  <?php */?>  
 	  <li><a href="">Theme UI</a>
       <ul>
-        <li><a href="theme-styleguide.php">StyleGuide</a></li> 
-        <li><a href="dev-ui.php">Patterns</a></li>
-        <li><a href="dev-components.php">Components</a></li>
-        <li><a href="dev-layouts.php">Layouts</a></li>
-        <!--      
+        <li><a href="page-styleguide.php">StyleGuide</a></li> 
+        <li><a href="page-ui.php">Patterns</a></li>
+        <li><a href="page-components.php">Components</a></li>
+        <li><a href="page-layouts.php">Layouts</a></li>
+        <!-- -->      
         <li><a href="dev-templates.php">Templates</a></li>
         <li><a href="dev-snippets.php">Snippets</a></li>
-	      <li><a href="">Demo Content</a></li>
-        -->
+        
       </ul>
 	  </li>
     

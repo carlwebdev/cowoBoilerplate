@@ -15,3 +15,39 @@
   <li>Información estadística del uso de la web.</li>
   <li>El formato de la web preferente en el acceso desde dispositivos móviles.</li>
 </ul>
+
+    <?php /*?>
+    <pre>
+      
+    LEGAL BS ETC  - Ley de cookies - info
+    
+      info - LEY DE COOKIES
+      
+        http://www.infoautonomos.com/blog/como-adaptar-tu-web-la-nueva-ley-de-cookies/
+        http://www.bonillaware.com/cumplir-ley-de-cookies-y-analytics
+    
+      
+      mas cookie info
+      
+        http://www.cecarm.com/servlet/s.Sl?METHOD=DETALLENOTICIA&sit=c,731,m,2628&id=34206
+
+        //////
+
+        joan
+
+        SPORT.ES
+
+        Esta web utiliza 'cookies' propias y de terceros para ofrecerte una mejor experiencia y servicio. 
+        Al navegar o utilizar nuestros servicios, aceptas el uso que hacemos de ellas. Puedes cambiar la configuraci�n de 'cookies' en cualquier momento.
+
+        http://www.sport.es/es/politica-cookies.shtml      
+    
+  
+      PATI etc - LEY DE COOKIES - copia
+      
+        http://www.infoautonomos.com/blog/como-adaptar-tu-web-la-nueva-ley-de-cookies/
+        http://www.bonillaware.com/cumplir-ley-de-cookies-y-analytics
+      
+      
+    </pre>
+    <?php */?>

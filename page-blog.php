@@ -13,27 +13,24 @@
 // PAGE TOP
 include ('template_parts/page/page_top.php'); 
 ?>  
-    
+<?php 
+  /* 
+    * PAGE BASICS - PAGE LAYOUT OPTIONS ETC
+    */
+  $show_dev_columns = '0';
 
-  <?php 
-    /* 
-     * PAGE BASICS - PAGE LAYOUT OPTIONS ETC
-     */
-    $show_dev_columns = '0';
-
-    /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-    $show_page_banner = '1'; // hacky situation in this case .... or not
-    $show_page_banner_map = '0';
-    
-    $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
-    $show_page_title = '0'; 
-    $show_page_excerpt = '0';
-    $show_page_content = '0';
-    // ad the content, asin wp_eoimoe ... 
-    include('components/includes/page_basics.php'); // PAGE BASICS
-  ?> 
+  /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+  $show_page_banner = '1'; // hacky situation in this case .... or not
+  $show_page_banner_map = '0';
+  
+  $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+  $show_page_title = '0'; 
+  $show_page_excerpt = '0';
+  $show_page_content = '0';
+  // ad the content, asin wp_eoimoe ... 
+  include('components/includes/page_basics.php'); // PAGE BASICS
+?> 
  
-    
     
 <?php /*?>
 BUILD BLOG PAGE, AND BLOG ARTICLE, AND ASLOC CATEGORY PAGE !!!! 
@@ -52,8 +49,6 @@ BUILD BLOG PAGE, AND BLOG ARTICLE, AND ASLOC CATEGORY PAGE !!!!
 <?php */?> 
 
     
-    
- 
 <?php /*?>
 <pre>    
 TASKS:
@@ -61,7 +56,6 @@ TASKS:
 - create a blog layout thing, eith css grid, to make a more interesting system, and even with php, make the 1, and 2,3, to be a wholly different compoenent, insetad of alterin a mod   
 </pre>
 <?php */?>
-    
     
     
 <?php /*?>
@@ -96,10 +90,6 @@ include 'components/template/page/page_backgrounds_start.php';
       </div>
     </section> 
 
-
-
-
-
     <section class="background accent___NOT padding_4"> <!-- STODO - SUACVIZAR EL ACCENT - Y REVISAR LOS OCLORES !!! -->
       <div class="frame wide___NOT narrow">
         <?php 
@@ -108,7 +98,6 @@ include 'components/template/page/page_backgrounds_start.php';
         ?>
       </div> 
     </section>
-
 
     <section class="background padding_3_4">
       <div class="frame wide___NOT narrow_TAMPOCO medium__WTF narrow">
@@ -119,11 +108,6 @@ include 'components/template/page/page_backgrounds_start.php';
       </div>
     </section>
     
-    
-
-    
-
-
     <section class="background padding_3">
       <div class="frame wide ___NOT full___NOT">
         <?php 
@@ -132,9 +116,6 @@ include 'components/template/page/page_backgrounds_start.php';
         ?>
       </div>
     </section>
-
-
-
 
     <section class="background light___NOT padding_3_4">
       <div class="frame wide___NOT">
@@ -145,8 +126,6 @@ include 'components/template/page/page_backgrounds_start.php';
       </div> 
     </section> 
 
-
-   
     <section class="background padding_3">
       <div class="frame wide___NOT">
         <?php 
@@ -155,7 +134,6 @@ include 'components/template/page/page_backgrounds_start.php';
         ?>
       </div>
     </section>
-
 
 
     

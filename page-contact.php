@@ -12,74 +12,36 @@
 // PAGE TOP
 include ('template_parts/page/page_top.php'); 
 ?>  
+<?php 
+  /* 
+    * PAGE BASICS 
+    */
+  // header positioning options
+  // header layout options
+  // show popups etc etcetce
+  $show_dev_columns = '0';
+  // $show_dev_columns = '1';
+
+  /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+  $show_page_banner = '0'; // hacky situation in this case .... or not
+  $show_page_banner_map = '1'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
+  $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+  $show_page_title = '1'; 
+  $show_page_excerpt = '0';
+  // ad the content, asin wp_eoimoe ... 
+  include('components/includes/page_basics.php'); // PAGE BASICS
+?> 
     
 
-    <?php 
-      /* 
-       *
-       * PAGE BASICS 
-       *
-       */
-      // header positioning options
-      // header layout options
 
-      // show popups etc etcetce
+  <!--    
+TODO - BUIDL CONTACT PAGE MODULE, WITH HALF PAGE CONTRACT MAP, NICE, JUST DO IT !!!!!!!!!!!!!!
+-->    
+    
+    
+ 
 
-      $show_dev_columns = '0';
-      // $show_dev_columns = '1';
-
-      /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      // $show_page_banner = '0'; // hacky situation in this case .... or not
-      $show_page_banner = '0'; // hacky situation in this case .... or not
-    
-    
-      // $show_page_banner_map = '1'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
-      $show_page_banner_map = '0'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
-    
-    
-      $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
-      // $show_breadcrumbs = '1'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
-    
-      $show_page_title = '1'; 
-      // $show_page_title = '1'; 
-    
-      $show_page_excerpt = '0';
-      // $show_page_excerpt = '1';
-
-      // ad the content, asin wp_eoimoe ... 
-
-      include('components/includes/page_basics.php'); // PAGE BASICS
-    ?> 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    <?php /*?>rename as s_htmleditor !!!!!!!!! <?php */?>
+<?php /*?>rename as s_htmleditor !!!!!!!!! <?php */?>
     
 <?php /*?>    <div class="m_htmleditor"> 
       <?php include('components/atoms/sample_text_htmleditor.php'); ?>  
@@ -96,19 +58,6 @@ include ('template_parts/page/page_top.php');
 </div> <!-- /m_htmleditor -->    <?php */?>    
     
     
-    
-    
-    
-    
-    
-    
-    <!--    
-    TODO - BUIDL CONTACT PAGE MODULE, WITH HALF PAGE CONTRACT MAP, NICE, JUST DO IT !!!!!!!!!!!!!!
-    -->    
-
-
-
-
 
     <section class="fullscreen___NOT padding_3">
       <div class="frame">
@@ -121,8 +70,6 @@ include ('template_parts/page/page_top.php');
 
       </div> <!-- /frame --> 
     </section> 
-
-
 
 
     <!--    
@@ -152,11 +99,6 @@ include ('template_parts/page/page_top.php');
 
 
 
-
-
-
-
-
     <?php /*?>  
     BUILD CTA MOCDULE, AS HERO HOME KINDA TING, BUT REYUISABEL ....
     
@@ -179,10 +121,6 @@ include ('template_parts/page/page_top.php');
 
   
   
-  
-    
-  
-
     <section class="background fullscreen___NOT vcenter___NOT padding_4___NOT accent___NOT light___NOT padding_3_4">
       <div class="frame">
         <?php 

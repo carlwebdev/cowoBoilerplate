@@ -3,7 +3,7 @@
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<?php $pagename = 'Blank Page' // to Test Sticky Footer  - RENAME THIS FILE AS PAGE-BKLANK, AND ALSO HAVE PAGE_SAMPLE, Y LISTSO. ?>
+<?php $pagename = 'Blank Page' ?>
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
 </head>
@@ -13,11 +13,6 @@
 include ('template_parts/page/page_top.php'); 
 ?>  
   
-    <?php // include('components/atoms/page_banner.php'); ?>
-    <?php // include('components/atoms/breadcrumbs.php'); ?>
-    <?php // include('components/atoms/page_title.php'); ?>
-    <?php // include('components/atoms/page_excerpt.php'); ?>
-    
     <!--
 		PAGES, NLANCK PAGE, JYUST ADD THE PAGE TITLE, BUT MAKE IT BEING THE H1, SO RESET THE H1 IN RESTE, AND TEHN REDOI AMRGINS OF ALL H'2 IN THE HTMLEDITOSD MODULE !!! IF IT MAKES ANY SENS E
 		JUSTAMENET ME GUARDE LA INFO DE LSO FEADUALT HEADRE SIZES AND MARGINS... 
@@ -25,9 +20,7 @@ include ('template_parts/page/page_top.php');
     
     <?php 
       /* 
-       *
        * PAGE BASICS 
-       *
        */
       // header positioning options
       // header layout options
@@ -47,6 +40,9 @@ include ('template_parts/page/page_top.php');
       include('components/includes/page_basics.php'); // PAGE BASICS
     ?> 
     
+
+
+
 <?php
 // PAGE BACKGROUNDS END
 // include 'components/template/page/page_backgrounds_end.php';  

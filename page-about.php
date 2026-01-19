@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/master_en.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<!-- InstanceBeginEditable name="config" -->
 <?php $pagename = $pagename_about ?> 
-<!-- InstanceEndEditable -->
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
-
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-
 </head>
 <body>
 <?php 
@@ -24,7 +18,6 @@ include ('template_parts/page/page_top.php');
     TODO - MAKE FLEX STICKY FOOTER WORK HERE AGAIN
     </pre>
     -->
-    
 
 		<?php // include('components/pages/page-about.php'); ?> 
     <?php /*?>THIS SYSTEM IS NOT GOOD, IT'S TO MODULAR AND FAR -REACHING , KISSS !!!!!!!!!!!<?php */?>
@@ -39,13 +32,6 @@ include ('template_parts/page/page_top.php');
       // $show_dev_columns = '0'; 
       // THIS SHOUDL BE DEIFNED I CONFIG, FOR THE PAGE BASICS INCLUDE .. OR EVEN HAVE IT LCATED ELSEWHERE 
     
-
-
-
-
-
-
-
       
       // PLUS ADD THE CSS DEBUGGING THSINGS, ALT IMAGE % ETC , EASY  
       /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */

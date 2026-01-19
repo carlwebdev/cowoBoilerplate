@@ -668,7 +668,6 @@ PASAR ESTAS OTEMS AQUI PARA TENERLO YA CENTRALIZADO<br><?php */?>
 
 <?php 
 // jQuery script ... duuh  - ACCORDION
- */
 ?>
 <section class="background fullscreen padding___NOT padding_2 test">  
 	<div class="frame">  

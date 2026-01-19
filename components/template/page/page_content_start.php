@@ -1,6 +1,6 @@
 <?php 
 /*  
- * PAGE CONTENT START
+ * PAGE CONTENT START - Sticky Footer Solved By FlexBox - start
  */
 ?>
 <?php /*?><div id="content"><?php */?>

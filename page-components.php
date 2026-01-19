@@ -5,50 +5,27 @@
 <?php include('config/config.php'); ?>
 <!-- InstanceBeginEditable name="config" -->
 <?php $pagename = 'Dev - Components' ?>
-<!-- InstanceEndEditable -->
+<?php 
+// PAGE BASICS 
+$show_dev_columns = '0'; // THIS SHOULD BE A GENRAL FILE, NOT PER PAGE .... HMMM OK
+// PLUS ADD THE CSS DEBUGGING THSINGS, ALT IMAGE % ETC , EASY  
+/* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+$show_page_banner = '0'; // hacky situation in this case .... or not
+$show_page_banner_map = '0'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
+$show_breadcrumbs = '0'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
+$show_page_title = '1'; 
+$show_page_excerpt = '0';
+// ad the content, asin wp_eoimoe ... 
+?> 
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
-
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-
 </head>
 <body>
 <?php 
 // PAGE TOP
 include ('template_parts/page/page_top.php'); 
-?>  
-
-    <?php 
-      /* 
-       *
-       * PAGE BASICS 
-       *
-       */
-      $show_dev_columns = '0'; // THIS SHOULD BE A GENRAL FILE, NOT PER PAGE .... HMMM OK
-      // PLUS ADD THE CSS DEBUGGING THSINGS, ALT IMAGE % ETC , EASY  
-      /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      $show_page_banner = '0'; // hacky situation in this case .... or not
-      $show_page_banner_map = '0'; // hacky situation in this case .... or not - / TODO - ADD - SOPTION FOR FULLPAGE .................................... 
-      $show_breadcrumbs = '0'; // ADD OPTIN FOR BREADCRUMBS INSIDE THE BANNER ........ AND ALSO THE TITLE, CHOOSE... OPTIONS AS COMBOS... 
-      $show_page_title = '1'; 
-      $show_page_excerpt = '0';
-      // ad the content, asin wp_eoimoe ... 
-      include('components/includes/page_basics.php'); // PAGE BASICS
-    ?> 
-    
-
-
-    
-    <?php 
-    /* 
-     * START - LAYOUT SYSTEM - BACKGROUNDS (AND EVEN CSS GRID WHATEVER ... )
-     */
-    ?>    
-    <!-- <div class="backgrounds"> -->
-      
-
-  <?php
+// PAGE BASICS 
+include('components/includes/page_basics.php'); // PAGE BASICS
 // PAGE BACKGROUNDS START
 include 'components/template/page/page_backgrounds_start.php';  
 ?>  
@@ -59,7 +36,7 @@ include 'components/template/page/page_backgrounds_start.php';
  * INDEX
  */
 ?> 
-<section class="background padding_2 pb4___NOT test___NOT accent___NOT"> 
+<section id="index" class="background padding_2 pb4___NOT test___NOT accent___NOT"> 
 	<div class="frame">       
     
     <?php 
@@ -69,8 +46,6 @@ include 'components/template/page/page_backgrounds_start.php';
     <?php /*?> - build it as flex wrap, could be cool<?php */?>
 
     
-    
-
 <!--
     <pre>
 TODO
@@ -91,6 +66,8 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 
   <div class="cowo-index">   <!-- pattern_index.... -->
     <ul>
+        <li><a href="dev-components.php#features">Features</a></li>
+        <li><a href="dev-components.php#pricing">Pricing</a></li>
 
         <li><a href="dev-components.php#social-icons">Social Media<!--  - Icons --></a></li>
         <!-- <li><a href="dev-components.php#social-share">Social Media - Share</a></li> -->
@@ -99,7 +76,7 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 
         <!-- <li><a href="dev-components.php#cowo-carrousel">Slick - Carrousel</a></li> -->
 
-        <li><a href="dev-components.php#grid-featured">Grid Featured <!-- (must rename this concept) --></a></li>
+        
       
         <li><a href="dev-components.php#contact_map">Contact Map</a></li>
         
@@ -112,13 +89,67 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
   
   
 
-    
-    
-<section id="social-icons" class="background padding_4 test">  
-	<div class="frame narrow">  
-    
-    <div class="section_title">Social Media Icons</div>
 
+<?php 
+// GRID FEATURES
+?>   
+<section id="features" class="background padding_2 test___NOTS">  
+  <div class="frame wide_NOT">
+    <?php 
+      $section_title = 'Grid Features';
+      include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+    ?>         
+    <?php include('components/molecules/grid_features.php'); ?>
+  </div> <!-- /frame -->     
+</section>   
+
+
+
+
+      <?php 
+      /* 
+       * SECTION - GRID PRICING (ALL)
+       */
+      // include('components/sections/pricing/section_pricing.php'); ?>
+
+
+      <section id="pricing" class="background fullscreen padding_3_4">
+        <div class="frame wide ___NOT">
+
+
+
+          <?php 
+          // SECTION - GRID PRICING (ALL)
+          include('components/sections/pricing/section_pricing.php'); 
+          ?>
+          <!--
+          move to folder section pricing , and path, & card, & etc 
+
+          also the sass parial, in section folders ...
+          -->
+        </div>
+      </section>  
+
+
+    <?php 
+    // SECTION - GRID PRICING (ALL)
+    include('components/sections/pricing/section_pricing.php'); 
+    ?>
+
+
+
+
+
+
+
+
+
+<section id="social-icons" class="background padding_4 test">  
+	<div class="frame narrow___NOT">  
+      <?php 
+        $section_title = 'Social Media Icons';
+        include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+      ?>  
       <div class="m_social">
       	<?php 
         // SOCIAL ICONS 
@@ -126,86 +157,41 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
         include('components/atoms/list-social.php'); 
         ?>  
       </div> <!-- / m_social -->
-  
 	</div> <!-- /frame -->     
 </section> 
-
-
 
 
 
 <!-- THESE ARE JUST HTML TAGS, SO THEY SHOULD GO TO HTM GLOSAY PAGE ETC ..... -->    
 
 <section id="video" class="background fullscreen vcenter__NOT_ENOUGH padding_2 test">  
-	<div class="frame narrow">
-
-		<div class="section_title">video</div>
+	<div class="frame narrow___NOT">
+    <?php 
+      $section_title = 'Video';
+      include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+    ?>      
     <div class="card_base">
       <?php 
-      // HTML5 - VIDEO
-      include('components/cowo_video.php'); 
+      include('components/cowo_video.php'); // HTML5 - VIDEO 
       ?>
     </div> <!-- /card_base -->  
-    
 	</div> <!-- /frame -->     
 </section>  
 
 
 <section id="audio" class="background fullscreen vcenter__NOT_ENOUGH padding_2 test">
 	<div class="frame narrow">
-
-		<div class="section_title">audio</div>
+    <?php 
+      $section_title = 'Audio';
+      include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
+    ?>     
     <div class="card_base">
       <?php 
-      // HTML5 - AUDIO
-      include('components/cowo_audio.php'); 
+      include('components/cowo_audio.php'); // HTML5 - AUDIO
       ?>
     </div> <!-- /card_base --> 
-    
 	</div> <!-- /frame -->     
 </section>  
-
-
-
-
-
-<?php 
-// GRID FEATURES
-?> 
-<section id="grid-featured" class="padding_4 test___NOTS">  
-	<div class="frame wide_NOT">
-		<div class="section_title">Grid Features</div>
-		<?php include('components/molecules/grid_features.php'); ?>
-	</div>     
-</section> 
-
-
-
-
-
-
-
-
-
-<?php /*?> 
-<section>
-	<div class="frame">
-
-just have sections that pont to pages that contina types of content <br>
-<br>
-		NOW ALSO THINKING FOR TH ESITEMAP .... EACH BOX CAN CONTAIN LIST OF THINGS IT EBNCOMPASSES.. 
-<br>	  
-
-		
-		
-    <?php // include('components/cowo_heromenu.php'); ?>
-
-	</div> <!-- /frame --> 
-</section>
-<?php */?>
-
-
-
 
 
 
@@ -227,76 +213,45 @@ just have sections that pont to pages that contina types of content <br>
 
 
 
+<?php /*?> 
+<section>
+	<div class="frame">
+
+just have sections that pont to pages that contina types of content <br>
+<br>
+		NOW ALSO THINKING FOR TH ESITEMAP .... EACH BOX CAN CONTAIN LIST OF THINGS IT EBNCOMPASSES.. 
+<br>	  
+
+
+    <?php // include('components/cowo_heromenu.php'); ?>
+
+	</div> <!-- /frame --> 
+</section>
+<?php */?>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
 
-    <?php 
-    //  GRID FEATURES
-    ?>   
-    <section class="background padding_2 test___NOTS">  
-      <div class="frame wide_NOT">
-        
-        <?php 
-          $section_title = 'Grid Features';
-          include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
-        ?> 
-        
-        <?php include('components/molecules/grid_features.php'); ?>
-        
-      </div> <!-- /frame -->     
-    </section>   
 
-
-
-
-
-      <?php 
-      /* 
-       * SECTION - GRID PRICING (ALL)
-       */
-      // include('components/sections/pricing/section_pricing.php'); ?>
-
-    
-    
-    
-
-
-
-      <section class="background fullscreen padding_3_4">
-        <div class="frame wide___NOT">
-          <?php 
-          // SECTION - GRID PRICING (ALL)
-          include('components/sections/pricing/section_pricing.php'); 
-          ?>
-          <!--
-          move to folder section pricing , and path, & card, & etc 
-
-          also the sass parial, in section folders ...
-          -->
-        </div>
-      </section>  
-
-
-
-
-    <?php 
-    // SECTION - GRID PRICING (ALL)
-    include('components/sections/pricing/section_pricing.php'); 
-    ?>
-    
-    
 
 
 
 
     
     
-    
-    
-    
-
-
     <section class="background padding test___NOT">   
       <div class="frame"> 
 
@@ -324,7 +279,7 @@ just have sections that pont to pages that contina types of content <br>
     
     
     
-    
+    <!-- sexcrtion vs block, section has the sectin tag, block not -->
 
     <section class="background padding">
       <div class="frame wide___NOT">
@@ -343,15 +298,6 @@ just have sections that pont to pages that contina types of content <br>
       </div> <!-- /frame --> 
     </section>  
     
-
-    
-
-
-
-
-
-
-
 
 <?php
 // PAGE BACKGROUNDS END

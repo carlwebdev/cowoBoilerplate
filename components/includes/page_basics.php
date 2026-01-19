@@ -110,9 +110,6 @@ if($show_page_banner_map == '1') {
   include('components/template/page/page_banner_map.php'); // PAGE BANNER - MAP (VS VIDEO, IN WP_EIMOE)
 } 
 
-
-
-
 // BREADCRUMBS
 if($show_breadcrumbs == '1') { 
   include('components/template/page/breadcrumbs.php'); 

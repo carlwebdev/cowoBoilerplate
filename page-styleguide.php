@@ -4,6 +4,27 @@
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
 <?php $pagename = 'StyleGuide';?>
+<?php 
+  /* 
+    *
+    * PAGE BASICS
+    *
+    */
+  // header positioning options
+  // header layout options
+
+  // show popups etc etcetce
+
+  $show_dev_columns = '0';
+
+  /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
+  $show_page_banner = '0'; // hacky situation in this case .... or not
+  $show_page_banner_map = '0'; // hacky situation in this case .... or not
+  $show_breadcrumbs = '0'; 
+  $show_page_title = '1'; 
+  $show_page_excerpt = '0';
+  // ad the content, asin wp_eoimoe ... 
+?> 
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
 </head>
@@ -11,35 +32,9 @@
 <?php 
 // PAGE TOP
 include ('template_parts/page/page_top.php'); 
-?>  
-	  
-	  
-    <?php 
-      /* 
-       *
-       * PAGE BASICS
-       *
-       */
-      // header positioning options
-      // header layout options
-
-      // show popups etc etcetce
-
-      $show_dev_columns = '0';
-
-      /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
-      $show_page_banner = '0'; // hacky situation in this case .... or not
-      $show_page_banner_map = '0'; // hacky situation in this case .... or not
-      $show_breadcrumbs = '0'; 
-      $show_page_title = '1'; 
-      $show_page_excerpt = '0';
-
-      // ad the content, asin wp_eoimoe ... 
-
-
-      include('components/includes/page_basics.php'); // PAGE BASICS
-    ?> 
-    
+//  PAGE BASICS
+include('components/includes/page_basics.php'); // PAGE BASICS
+?> 
 
 <?php /*?>  
     USAGE OF THSI DEV PAGE . 
@@ -50,16 +45,9 @@ include ('template_parts/page/page_top.php');
     
 <?php /*?>HERE NEEDS APCE, FOR Z-INDEZ, HEADER NO TENDAR ARPOSISITON DECALARADO, Y AHORA SE L HE PUESTO PAL BANNER SITUATION ...<?php */?>   
     
-    
-
-    
-    <!--s
-    
-    S
+  
+    <!--
     in this case, ommove to new page dev-components ..... 
-    
-    
-    
     -->
     
   
@@ -77,18 +65,9 @@ include ('template_parts/page/page_top.php');
     build html glossary page, as well as for css, as w3schools... 
     -->
   
-    
-    
-  
-    
 
 
-
-
-
-
-
-    <?php 
+<?php 
 /*
  * INDEX
  */
@@ -101,9 +80,6 @@ include ('template_parts/page/page_top.php');
       include('components/dynamic/section_title.php'); // FIOLDER NAMING QUE IMPLIQUE QUE SON VARIABLES ANBLE S.. DYNAMIC 
     ?> 
     <?php /*?> - build it as flex wrap, could be cool<?php */?>
-
-    
-    
 
 <!--
     <pre>
@@ -168,19 +144,21 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 <section class="padding_4 test" id="theme-typography"> 
 	<div class="frame narrow aka_fw_m">  
     
-    <div class="section_title">Typography<!--  - Fonts --></div>
+    <?php 
+      $section_title = 'Typography'; // Fonts ...
+      include('components/dynamic/section_title.php'); 
+    ?> 
+    
     <?php 
     // LIGHTBOX - RWD - LIGHTBOXME
     // lighbox content, apply card, generically, and make mor epretty, and add modules in there, like link poutisde, and thingees...    
     // include('components/cowo_lightboxme.php'); 
     ?> 
     
-
     <?php /*?>  <div class="frontWrapper_section">
       <div class="frontWrapper_sectionContent"><?php */?>
     <div id="demo_wrapper">
-      
-        
+       
       <div class="styleguide_fonts"> 
         <div class="item">Roboto</div> 
         <div class="item">Roboto Italic</div> 
@@ -196,8 +174,6 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
   </section>  
 
 
-
- 
     
 <?php /*?>  ADD BLOCKQUOTE,, AND ANY OTHER SECONDARY TAGS TAT CAN BE USED AT TIMES...<?php */?>
   
@@ -209,15 +185,13 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
  */
 ?>
 
-
 <section class="padding_4 test" id="theme-colors"> 
 	<div class="frame narrow">  
 
-
-
-  <div class="section_title">Colors<!--  - Fonts --></div>
-  
-  
+  <?php 
+  $section_title = 'Colors'; // Color Scheme
+  include('components/dynamic/section_title.php'); 
+  ?> 
 
   <div id="demo_wrapper">
 
@@ -254,19 +228,22 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 ?>
 
 <section class="padding_4 test" id="theme-icons"> 
-	<div class="frame narrow">  
+	<div class="frame narrow___NOT">  
+
+    <?php 
+    $section_title = 'Icons';
+
+    // p = Material design icons
+
+    include('components/dynamic/section_title.php'); 
+    ?> 
 
 
-
-  <div class="section_title">Icons</div>
-  
 
 <div class="m_htmleditor">	
 
   <h2>Icons</h2>
   <h3>Material design icons ...</h3>
-
-  
   
   <?php echo $mdi_menu; ?>
   <?php echo $mdi_search; ?> 
@@ -286,10 +263,14 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 
 
 
-<section class="background padding_4 test" id="theme-social-icons">  
-	<div class="frame narrow">  
+<section id="theme-social-icons" class="background padding_4 test">  
+	<div class="frame narrow___NOT">  
     
-    <div class="section_title">Social Media Icons</div>
+    <?php 
+    $section_title = 'Social Media Icons';
+    include('components/dynamic/section_title.php'); 
+    ?> 
+    
 
       <div class="m_social">
       	<?php 
@@ -306,11 +287,15 @@ site goals - turn this into a usabel boilerplate, that the concpet !! for spaghe
 
 
 
-<section class="background padding_4 test" id="theme-buttons">  
-	<div class="frame narrow">  
+<section id="theme-buttons" class="background padding_4 test">  
+	<div class="frame narrow___NOT">  
     
-    <div class="section_title">Buttons</div>
-
+    <?php 
+    $section_title = 'Buttons';
+    include('components/dynamic/section_title.php'); 
+    ?> 
+    
+    
 		<!--
 		<button>Click me (reset the button behavior firts .. </button>
 

@@ -3,7 +3,7 @@
 <head>
 <?php include('config/head/head_top.php'); ?>
 <?php include('config/config.php'); ?>
-<?php $pagename = $pagename_404 ?>
+<?php $pagename = 'Maintenance' ?>
 <?php 
   /* PAGE BASICS - FOR CMS CUSTOMIZATION TOWARDS WP THEME */
   $show_dev_columns = '0';
@@ -16,6 +16,14 @@
 ?> 
 <?php include('config/seo.php'); ?>
 <?php include('config/head/head_bottom.php'); ?> 
+
+
+<style>
+header, footer {display:none;}
+</style>
+
+
+
 </head>
 <body>
 <?php 
@@ -58,22 +66,13 @@ fukllpage image with text on top, at least as one of the options...
 <div class="fullpage_text" style="background-image: url('https://picsum.photos/id/237/1920/1080');">
   <div class="frame">
     <div class="text">
-      <?=$pagename ?> - Page Not Found
+      <?=$pagename ?>
     </div> <!-- /text --> 
   </div> <!-- /frame --> 
 </div> <!-- /m_fullPage --> 
 
-
-<?php /*?>   
-<section class="padding_4 test___NOT">  
-	<div class="frame">
-		<?php include('components/pages/page-404.php'); ?>
-	</div> <!-- /frame --> 
-</section>
-<?php */?>
     
-    
-    
+  
 <?php /*?><?php include('components/modules/page_title.php'); ?><?php */?>
 
 
