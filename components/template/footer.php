@@ -3,49 +3,28 @@
  * FOOTER
  */
 ?>
-<?php /*?>
-IMPLEEMNT FLEXBOX STICKY FOOTER !!!!!!!!!!!!! - it has issues with the sllic slider!!!!!! also tbel ahas it as well.... 
-MAKESTICKY FOOtER WORK..
-GO TO SOLVED BY FLEXBOX, FOR THE STICKY GOOTER THER 
-BUT KEEP JHERER A FIEL PARTIAL FOR EACH TYPE OF STICKY FOOTER SOLUTION _TABLE _FLEX ETC
-// todo in the footer, after sticky footer is solved !!!! - - - FOOTER_COINTACT / FOOTER_dEVELOPER / /FOOTER_COPYRIGHT / /EC 
-<?php */?>
-<footer class="block">
+<footer class="block" id="site-footer" role="contentinfo">
   <div class="frame">
     <div class="inner">
-      
-    <?php /*?>TODO - CHECK BUTOTN RESET IN THE FOOTER SCROL TO TOP EC ... YEAH,. CLENAUP THE FOOTER FILES, AND MOVE THE PARTIALS TO 09-TEMALET ETC .. DO THAT FIRST .. ALMOST <?php */?>
-    
-      <?php 
-      // Footer - Bar - Top
-      // include('components/template/footer/footer_bar_top.php'); 
-        // Footer - Bar - Main
-       include('components/template/footer/footer_bar_main.php'); 
-      // Footer - Bar - Bottom
-       include('components/template/footer/footer_bar_bottom.php'); 
-       ?>
-      
+
+      <?php
+      if (!empty($footer_enable_bar_top)) {
+        include('components/template/footer/footer_bar_top.php');
+      }
+
+      include('components/template/footer/footer_bar_main.php');
+      include('components/template/footer/footer_bar_bottom.php');
+      ?>
+
     </div> <!-- /inner -->
   </div> <!-- /frame -->   
-  
 
-
-
-
-
-  <?php 
-  // for the marquee !!!!
-  // include('components/template/footer/footer_bar_top.php'); 
-    ?>
-
-  <marquee>
+  <?php if (!empty($footer_show_marquee)) { ?>
+    <marquee>
       <div class="marquee_content">
-        Developed In Barcelona by <a href="http://cowowo.cat" target="_blank"><img src="assets/img/logos/logo_cowowo.png" alt="COWOWO"></a>
+        Developed In Barcelona by <a href="https://cowowo.cat" target="_blank" rel="noopener noreferrer"><img src="assets/img/logos/logo_cowowo.png" alt="COWOWO"></a>
       </div> <!-- /marquee_content -->
-  </marquee> 
-  
-
-
-
+    </marquee>
+  <?php } ?>
 
 </footer>

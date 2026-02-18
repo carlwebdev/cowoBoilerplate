@@ -9,43 +9,48 @@
     <?php include('components/template/footer/logo_footer.php'); ?>
     <?php include('components/template/footer/footer_copyright.php'); ?>
     <?php include('components/template/footer/footer_contact.php'); ?>
-
-
     <?php include('components/template/footer/footer_social.php'); ?>
-
-
-
   </div> <!-- /footerContent -->	
 
-  
+  <?php
+  $footerColumns = array();
 
-  <?php 
-  /*
-   * Footer - Grid Footer - "FOR LOOP"
-   */
-  ?> 
-  <div class="grid_footer">
-    <?php for ($x = 1; $x <= 3; $x++) { ?>
-      <div class="item">            
-        <?php /*?><div class="title">Column title</div> <!-- h5 or h6 ???? -->  <?php */?>          
-        <h5>Column title</h5> <!-- h5 or h6 ???? -->            
-        <?php /*?><h6>Column title</h6> <!-- h5 or h6 ???? --> <?php */?>           
-        <div class="text">							
-          <?php /*?>  HMM MUST LEARN PHP FOR LOOP INSIDE ANOTEHR FOR LOOP...
-          <?php for ($x = 1; $x <= 5; $x++) { ?>
-            text<br> 
-          <?php } ?> 
-          <?php */?>                
-          <?php /*?>can be text or links<?php */?>
-          <ul>
-            <li><a href="http://www.cowowo.cat">Link to something</a></li>
-            <li><a href="http://www.cowowo.cat">Link to something</a></li>
-            <li><a href="http://www.cowowo.cat">Link to something</a></li>
-            <li><a href="http://www.cowowo.cat">Link to something</a></li>
-          </ul>                             
-        </div> <!-- /text" -->           
-      </div> <!-- /item" -->  
-    <?php } ?> 
-  </div> <!-- /grid_footer -->
+  if (isset($footer_links_columns) && is_array($footer_links_columns) && !empty($footer_links_columns)) {
+    $footerColumns = $footer_links_columns;
+  }
+  ?>
+
+  <?php if (!empty($footerColumns)) { ?>
+    <div class="grid_footer" aria-label="Footer links">
+      <?php foreach ($footerColumns as $column) { ?>
+        <?php
+        $columnTitle = isset($column['title']) ? $column['title'] : '';
+        $columnLinks = (isset($column['links']) && is_array($column['links'])) ? $column['links'] : array();
+        ?>
+        <div class="item">
+          <?php if ($columnTitle !== '') { ?>
+            <h5><?php echo htmlspecialchars($columnTitle, ENT_QUOTES, 'UTF-8'); ?></h5>
+          <?php } ?>
+          <?php if (!empty($columnLinks)) { ?>
+            <div class="text">
+              <ul>
+                <?php foreach ($columnLinks as $link) { ?>
+                  <?php
+                  $label = isset($link['label']) ? $link['label'] : '';
+                  $url = isset($link['url']) ? $link['url'] : '#';
+                  ?>
+                  <?php if ($label !== '') { ?>
+                    <li>
+                      <a href="<?php echo htmlspecialchars($url, ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($label, ENT_QUOTES, 'UTF-8'); ?></a>
+                    </li>
+                  <?php } ?>
+                <?php } ?>
+              </ul>
+            </div> <!-- /text -->
+          <?php } ?>
+        </div> <!-- /item -->
+      <?php } ?>
+    </div> <!-- /grid_footer -->
+  <?php } ?>
 
 </div> <!-- /footer_bar_main -->    

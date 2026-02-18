@@ -159,6 +159,44 @@ $copy_popup_cookies = "Aquesta web utilitza 'cookies' propies i de tercers per o
 $website_logo ="assets/img/logos/logo_cowoBoilerplate_white.svg";
 // ojo, whiuyte svg logo is a bit smaller than the black png (x4) wtf wahatver ... 
 
+// FOOTER SETTINGS
+$footer_enable_bar_top = false;
+$footer_show_marquee = false;
+$footer_company_legal_name = $website_name;
+$footer_developer_name = 'COWOWO';
+$footer_developer_url = 'https://cowowo.cat';
+$footer_developer_logo = 'assets/img/logos/logo_cowowo.png';
+
+$footer_links_columns = array(
+  array(
+    'title' => 'Company',
+    'links' => array(
+      array('label' => 'Home', 'url' => 'index.php'),
+      array('label' => 'About', 'url' => 'page-about.php'),
+      array('label' => 'Staff', 'url' => 'page-staff.php'),
+      array('label' => 'Testimonials', 'url' => 'page-testimonials.php'),
+    ),
+  ),
+  array(
+    'title' => 'Content',
+    'links' => array(
+      array('label' => 'Blog', 'url' => 'page-blog.php'),
+      array('label' => 'FAQ', 'url' => 'page-faq.php'),
+      array('label' => 'UI / Components', 'url' => 'page-ui.php'),
+      array('label' => 'Styleguide', 'url' => 'page-styleguide.php'),
+    ),
+  ),
+  array(
+    'title' => 'Legal',
+    'links' => array(
+      array('label' => 'Contact', 'url' => 'page-contact.php'),
+      array('label' => 'Legal', 'url' => 'page-legal.php'),
+      array('label' => 'Cookies', 'url' => 'page-cookies.php'),
+      array('label' => 'Maintenance', 'url' => 'page-maintenance.php'),
+    ),
+  ),
+);
+
 // DEV ASSETS:
 $cb_img_random ="https://picsum.photos/1920"; // demo_img_random, demo_img
 
